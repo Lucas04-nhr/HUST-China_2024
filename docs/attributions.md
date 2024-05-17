@@ -23,7 +23,7 @@ for more information.
   <script type="text/javascript">
     // Listen to size change and update form height
     window.addEventListener("message", function (e) {
-      if (e.origin === "https://attributions.igem.org") {
+      if (e.origin === "https://teams.igem.org") {
         const {type, data} = JSON.parse(e.data);
         if (type === "igem-attribution-form") {
           const element = document.getElementById("igem-attribution-form");
@@ -33,7 +33,7 @@ for more information.
     });
   </script>
   <iframe style='width: 100%' id="igem-attribution-form"
-    src="https://attributions.igem.org?team=TeamName&year=2024">
+    src="https://teams.igem.org/TeamID/attributions">
   </iframe>
 </div>
 <!-- DO NOT REMOVE THE IFRAME CODE ABOVE -->
