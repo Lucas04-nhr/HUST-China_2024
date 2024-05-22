@@ -33,7 +33,7 @@ for more information.
     });
   </script>
   <iframe style='width: 100%' id="igem-attribution-form"
-    src="https://teams.igem.org/TeamID/attributions">
+    src="https://teams.igem.org/wiki/TeamID/attributions">
   </iframe>
 </div>
 <!-- DO NOT REMOVE THE IFRAME CODE ABOVE -->
