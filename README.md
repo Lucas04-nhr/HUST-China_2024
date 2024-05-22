@@ -36,8 +36,8 @@ the `wiki` directory, and the pages live in the `docs` directory. Unless you are
 an experienced and/or adventurous human, you probably shouldn't change other
 files.
 
-    |__ static/             -> static assets (CSS and JavaScript files only)
     |__ docs/               -> Documentation files
+    |__ static/             -> static assets (CSS and JavaScript files only)
         |__ *.md            -> Markdown files with the content of your wiki
     |__ wiki/               -> Main directory for the pages and layouts
         |__ base.html       -> Main layout of your wiki. All the pages will follow its structure
@@ -45,12 +45,13 @@ files.
         |__ menu.html       -> Menu that will appear in all the pages
     |__ .gitignore          -> Tells GitLab which files/directories should not be uploaded to the repository
     |__ .gitlab-ci.yml      -> Automated flow for building, testing and deploying your website.
+    |__ .prettierignore     -> (Optional) Tells Prettier which files/directories should not be formatted
+    |__ .prettierrc.json    -> (Optional) Prettier configuration file
     |__ LICENSE             -> License CC-by-4.0, all wikis are required to have this license - DO NOT MODIFY
     |__ README.md           -> File containing the text you are reading right now
     |__ app.py              -> Python code managing your wiki
     |__ dependencies.txt    -> Software dependencies from the Python code
-    |__ .prettierignore     -> (Optional) Tells Prettier which files/directories should not be formatted
-    |__ .prettierrc.json    -> (Optional) Prettier configuration file
+    |__ package-lock.json   -> (Optional) Lockfile that captures the exact versions of packages and their dependencies
     |__ package.json        -> (Optional) NPM dependencies for formatting the code
 
 ### Technologies
