@@ -1,4 +1,4 @@
-# Team TeamName 2024 Wiki
+# iGEM TeamName Wiki
 
 The main language used to write wikis in this repository is `Markdown`.
 
