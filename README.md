@@ -37,8 +37,8 @@ an experienced and/or adventurous human, you probably shouldn't change other
 files.
 
     |__ docs/               -> Documentation files
-    |__ static/             -> static assets (CSS and JavaScript files only)
         |__ *.md            -> Markdown files with the content of your wiki
+    |__ static/             -> static assets (CSS and JavaScript files only)
     |__ wiki/               -> Main directory for the pages and layouts
         |__ base.html       -> Main layout of your wiki. All the pages will follow its structure
         |__ footer.html     -> Footer that will appear in all the pages
