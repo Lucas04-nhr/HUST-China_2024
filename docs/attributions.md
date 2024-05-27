@@ -1,19 +1,20 @@
+In the iGEM Competition, we celebrate student effort and achievement. The Attributions form helps the judges
+differentiate between what students accomplished from how their external collaborators supported them. Therefore, teams
+must clearly explain on the standard Project Attributions form what work they have conducted by themselves and what has
+been done by others.
+
+Teams must use the standard Attributions form. To meet the attributions requirement, you must display the standard form
+on your Wiki by following the instructions
+here: [Project Attribution page](https://competition.igem.org/deliverables/project-attribution).
+
 #### Bronze Medal Criterion \#2
 
-Describe what work your team members did and what other people did for your
-project.
+Describe what work your team members did and what other people did for your project.
 
-The form that bas been embded in an iframe in this page shows your team's
-Project Attribution form. This page must keep the form as it is.
+The form that has been embedded in an iframe in this page shows your team's Project Attribution form. This page must
+keep the form as it is.
 
-If you use a different website framework, make sure to embed the right URL for
-your team's form.
-
----
-
-Please see the
-[Project Attribution page](https://competition.igem.org/deliverables/project-attribution)
-for more information.
+If you use a different website framework, make sure to embed the right URL for your team's form.
 
 <!-- !!! LEAVE THE IFRAME CODE BELOW AS IT IS, THE ATTRIBUTION FORM OF YOUR TEAM !!! -->
 <!-- !!! WILL BE DISPLAYED ON THIS PAGE. DO NOT REMOVE IT, OTHERWISE YOU RISK OF !!! -->

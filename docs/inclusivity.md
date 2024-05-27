@@ -8,9 +8,8 @@ participate in, and/or be represented by these communities? To compete for this
 prize, activities do not have to be directly related to your team’s project.
 Document your approach, how you improved inclusivity, and what was learned.
 
-To compete for the Inclusivity award, please describe your work on this page and
-also fill out the description on the
-[judging form](https://competition.igem.org/deliverables/judging-form).
+To compete for the Inclusivity award, select the prize on
+the [judging form](https://competition.igem.org/deliverables/judging-form) and describe your work on this page.
 
 ---
 
@@ -33,7 +32,7 @@ implications of research.
 
 ---
 
--   [2020 Fudan](https://2020.igem.org/Team:Fudan/Inclusion)
--   [2020 CCU Taiwan](https://2020.igem.org/Team:CCU_Taiwan/Inclusion)
--   [2020 Concordia Montreal](https://2020.igem.org/Team:Concordia-Montreal/Inclusion)
--   [2020 CLS CLSG UK](https://2020.igem.org/Team:CLS_CLSG_UK/Inclusione)
+- [2020 Fudan](https://2020.igem.org/Team:Fudan/Inclusion)
+- [2020 CCU Taiwan](https://2020.igem.org/Team:CCU_Taiwan/Inclusion)
+- [2020 Concordia Montreal](https://2020.igem.org/Team:Concordia-Montreal/Inclusion)
+- [2020 CLS CLSG UK](https://2020.igem.org/Team:CLS_CLSG_UK/Inclusione)

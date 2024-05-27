@@ -1,22 +1,17 @@
 #### Best Supporting Entrepreneurship
 
-The Best Supporting Entrepreneurship award recognizes exceptional effort to
-build a business case and commercialize an iGEM project. This award is open to
-all teams to show that entrepreneurship is something all teams can aspire to do
-with their project. This award can go to an new project, or to a previous
-project that a team aimed to commercialize. Have you filed a provisional patent
-on your project/device/process? Have you raised money to build and ship
-products? Have you pitched your idea to investors and received money? As always
-in iGEM, the aim is to impress the judges!
+The Best Supporting Entrepreneurship award recognizes exceptional effort to build a business case and commercialize an
+iGEM project. This award is open to all teams to show that entrepreneurship is something all teams can aspire to do with
+their project. This award can go to an new project, or to a previous project that a team aimed to commercialize. Have
+you filed a provisional patent on your project/device/process? Have you raised money to build and ship products? Have
+you pitched your idea to investors and received money? As always in iGEM, the aim is to impress the judges!
 
-To compete for the Best Supporting Entrepreneurship prize, please describe your
-work on this page and also fill out the description on the
-[judging form](https://competition.igem.org/deliverables/judging-form).
+To compete for the Best Supporting Entrepreneurship prize, select the prize on
+the [judging form](https://competition.igem.org/deliverables/judging-form) and describe your work on this page.
 
----
+------------------------------------------------------------------------
 
-Please see the [2024 Awards Page](https://competition.igem.org/judging/awards)
-for more information.
+Please see the [2024 Awards Page](https://competition.igem.org/judging/awards) for more information.
 
 ## Patents and intellectual property
 
@@ -41,9 +36,9 @@ before coming to a decision.
 
 ---
 
--   [2019 UCopenhagen](https://2019.igem.org/Team:UCopenhagen/Entrepreneurship)
--   [2019 Thessaly](https://2019.igem.org/Team:Thessaly/Entrepreneurship)
--   [2019 NCKU Tainan](https://2019.igem.org/Team:NCKU_Tainan/Entrepreneurship)
--   [2020 TAS Taipei](https://2020.igem.org/Team:TAS_Taipei/Entrepreneurship)
--   [2020 KCL UK](https://2020.igem.org/Team:KCL_UK/Entrepreneurship)
--   [2020 Calgary](https://2020.igem.org/Team:Calgary/Entrepreneurship)
+- [2019 UCopenhagen](https://2019.igem.org/Team:UCopenhagen/Entrepreneurship)
+- [2019 Thessaly](https://2019.igem.org/Team:Thessaly/Entrepreneurship)
+- [2019 NCKU Tainan](https://2019.igem.org/Team:NCKU_Tainan/Entrepreneurship)
+- [2020 TAS Taipei](https://2020.igem.org/Team:TAS_Taipei/Entrepreneurship)
+- [2020 KCL UK](https://2020.igem.org/Team:KCL_UK/Entrepreneurship)
+- [2020 Calgary](https://2020.igem.org/Team:Calgary/Entrepreneurship)
