@@ -7,7 +7,7 @@ These should be detailed enough for another team to repeat your experiments.
 
 If you made Parts this year, please remember to put all information,
 characterization, and measurement data on the Part's Main Page on the
-[Registry](http://parts.igem.org/Main_Page).
+[Registry](https://parts.igem.org/Main_Page).
 
 ## Inspirations
 

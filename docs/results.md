@@ -15,7 +15,7 @@
   important part of your project that the judges will look for.
 - Show data, but remember **all measurement and characterization data must
   also be on the Part's Main Page on the
-  [Registry](http://parts.igem.org/Main_Page).** Otherwise these data will not
+  [Registry](https://parts.igem.org/Main_Page).** Otherwise these data will not
   be in consideration for any medals or part awards!
 - Consider including an analysis summary section to discuss what your results
   mean. Judges like to read what you think your data means, beyond all the

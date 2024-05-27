@@ -1,8 +1,3 @@
-In the iGEM Competition, we celebrate student effort and achievement. The Attributions form helps the judges
-differentiate between what students accomplished from how their external collaborators supported them. Therefore, teams
-must clearly explain on the standard Project Attributions form what work they have conducted by themselves and what has
-been done by others.
-
 Teams must use the standard Attributions form. To meet the attributions requirement, you must display the standard form
 on your Wiki by following the instructions
 here: [Project Attribution page](https://competition.igem.org/deliverables/project-attribution).
@@ -28,7 +23,7 @@ If you use a different website framework, make sure to embed the right URL for y
         const {type, data} = JSON.parse(e.data);
         if (type === "igem-attribution-form") {
           const element = document.getElementById("igem-attribution-form");
-          element.style.height = `${data + 50}px`;
+          element.style.height = `${data + 100}px`;
         }
       }
     });
