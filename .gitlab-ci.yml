@@ -13,6 +13,5 @@ pages:
   artifacts:
     paths:
       - _site/
-  destination: _site
   only:
     - main
