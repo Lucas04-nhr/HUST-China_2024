@@ -12,6 +12,6 @@ pages:
     - bundle exec jekyll build
   artifacts:
     paths:
-      - public
+      - ./public
   only:
     - main
