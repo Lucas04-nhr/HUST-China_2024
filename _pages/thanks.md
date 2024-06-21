@@ -1,6 +1,5 @@
 ---
 title: Thanks!
-permalink: /thanks/
 indexing: false
 sitemap: false
 ---
