@@ -1,4 +1,4 @@
 source "https://rubygems.org"
 
 gemspec
-jekyll-remote-theme
+gem 'jekyll-remote-theme'
