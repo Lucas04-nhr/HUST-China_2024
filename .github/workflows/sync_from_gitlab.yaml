@@ -37,9 +37,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@main
+        with:
+            token: ${{ secrets.GH_TOKEN }}
+
       - name: Set up Git
         run: |
-          cd $GITHUB_WORKSPACE
           git config user.name "Lucas04-nhr"
           git config user.email "lucas04@foxmail.com"
 
