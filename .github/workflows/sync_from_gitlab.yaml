@@ -31,8 +31,8 @@ jobs:
 
       - name: Set up GitHub
         run: |
-          git config user.name "Lucas04-nhr"
-          git config user.email "lucas04@foxmail.com"
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
 
       - name: Set Git Configurations
         run: |
