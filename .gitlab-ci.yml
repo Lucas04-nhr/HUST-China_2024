@@ -1,20 +1,12 @@
-image: python:3.6
-
-build:
-  stage: build
-  script:
-    - pip install --no-cache-dir -r dependencies.txt
-    - FLASK_APP=app.py flask freeze
-  rules:
-    - if: $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
+image: ruby:2.7
 
 pages:
-  stage: build
+  stage: deploy
   script:
-    - pip install --no-cache-dir -r dependencies.txt
-    - FLASK_APP=app.py flask freeze
+    - gem install jekyll
+    - jekyll build -d public
   artifacts:
     paths:
       - public
-  rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  only:
+    - main
