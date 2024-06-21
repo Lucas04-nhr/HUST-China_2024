@@ -34,17 +34,7 @@ jobs:
       - name: Sync to GitHub
         run: |
 
-          # 将内容同步到 GitHub 仓库
-          cd $GITHUB_WORKSPACE
-
-          # 添加更改并签名提交到 GitHub
-          git config user.email "actions@github.com"
-          git config user.name "GitHub Actions"
-          git add .
-          git commit -S -m "Sync from GitLab"
-          git push origin main
-
-          # 同步到 GitLab
-          cd ${{ github.workspace }}/gitlab-repo
-          git push origin main
-
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            git config --global user.name "GitHub Actions"
+            git remote add github-origin ${{ github.repository }}
+            git push github-origin main
