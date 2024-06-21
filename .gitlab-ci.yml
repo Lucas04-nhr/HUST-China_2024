@@ -7,7 +7,8 @@ pages:
   script:
     - gem install bundler
     - gem install jekyll
-    - jekyll build -d public
+    - bundle install
+    - bundle exec jekyll build
   artifacts:
     paths:
       - public
