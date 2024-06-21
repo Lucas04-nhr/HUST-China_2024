@@ -7,12 +7,12 @@ on:
       - main
 
 jobs:
-  sync:
+  Pull_from_GitLab:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Checkout Code
+        uses: actions/checkout@latest
 
       - name: Pull from GitLab
         env:
@@ -26,6 +26,11 @@ jobs:
           git fetch origin
           git checkout main
 
+  Push_to_GitHub:
+    needs: Pull_from_GitLab
+    runs-on: ubuntu-latest
+
+    steps:
       - name: Sync to GitHub
         run: |
 
