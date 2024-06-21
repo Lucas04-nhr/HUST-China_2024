@@ -29,17 +29,7 @@ jobs:
           git fetch gitlab
           git merge -X theirs --allow-unrelated-histories --no-ff gitlab/main
 
-  Push_to_GitHub:
-    needs: Pull_from_GitLab
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@main
-        with:
-            token: ${{ secrets.GH_TOKEN }}
-
-      - name: Set up Git
+      - name: Set up GitHub
         run: |
           git config user.name "Lucas04-nhr"
           git config user.email "lucas04@foxmail.com"
