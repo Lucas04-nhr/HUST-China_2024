@@ -4,6 +4,9 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 * * * *'
+  push:
+    branches:
+      - main
 
 jobs:
   Pull_from_GitLab:
@@ -22,7 +25,7 @@ jobs:
         run: |
           git remote add gitlab $GITLAB_REPO
           git fetch gitlab
-          git merge -X theirs --allow-unrelated-histories --no-ff gitee/main
+          git merge -X theirs --allow-unrelated-histories --no-ff gitlab/main
 
   Push_to_GitHub:
     needs: Pull_from_GitLab
