@@ -33,8 +33,7 @@ jobs:
         run: |
             git config user.name "Lucas04"
             git config user.email "lucas04@foxmail.com"
-            git config --global credential.helper "store --file=.git/credentials"
-            echo "https://gitlab.igem.org username:${{ secrets.GITLAB_TOKEN }}" > ~/.git/credentials
+            git config --global user.token $GITLAB_TOKEN
 
       - name: Push to GitLab
         env:
