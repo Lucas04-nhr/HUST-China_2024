@@ -38,5 +38,6 @@ jobs:
             GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
         run: |
             git remote add gitlab $GITLAB_REPO
+            git config credential.helper store
             git push gitlab main
         
