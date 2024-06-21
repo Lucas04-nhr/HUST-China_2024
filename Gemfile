@@ -1,4 +1,2 @@
-source "https://rubygems.org"
-
-gemspec
-gem 'jekyll-remote-theme'
+source 'https://rubygems.org'
+gem 'jekyll', '~> 4.2.0'
