@@ -9,6 +9,3 @@ node_modules
 # macOS
 .DS_Store
 ._*
-
-# Actions temp files
-gitlab_repo
