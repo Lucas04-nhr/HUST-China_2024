@@ -43,7 +43,7 @@ jobs:
             git remote add gitlab https://gitlab.igem.org/2024/hust-china.git
             git remote set-url gitlab https://Lucas04:vYestP-_1m6UCPwkgq6C@gitlab.igem.org/2024/hust-china.git
             git fetch --unshallow gitlab main
-            git merge -X ours --no-ff  --allow-unrelated-history gitlab/main
+            git merge -X ours --no-ff  --allow-unrelated-histories gitlab/main
             git commit -m "Sync GitHub to GitLab"
             git push gitlab main
         
