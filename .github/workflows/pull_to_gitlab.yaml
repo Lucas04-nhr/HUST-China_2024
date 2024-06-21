@@ -37,10 +37,10 @@ jobs:
 
       - name: Push to GitLab
         env:
-            GITLAB_REPO: ${{ secrets.GITLAB_REPO }}
             GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
         run: |
-            git remote add gitlab https://Lucas04:vYestP-_1m6UCPwkgq6C@gitlab.igem.org/2024/hust-china.git
+            git remote add gitlab https://gitlab.igem.org/2024/hust-china.git
+            git remote set-url gitlab https://Lucas04:vYestP-_1m6UCPwkgq6C@gitlab.igem.org/2024/hust-china.git
             git fetch gitlab
             git merge -X theirs --allow-unrelated-histories --no-ff gitlab/main
             git push gitlab main
