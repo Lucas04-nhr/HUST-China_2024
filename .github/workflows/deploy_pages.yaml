@@ -1,6 +1,7 @@
 name: Build and Deploy
 
 on:
+    workflow_dispatch:
     push:
         branches:
             - main
@@ -9,24 +10,24 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout code
-              uses: actions/checkout@v2
-            
-            - name: Set up Python 3.6
-              uses: actions/setup-python@v2
-             with:
-                    python-version: 3.6
-            
-            - name: Install dependencies
-              run: pip install --no-cache-dir -r dependencies.txt
-            
-            - name: Flask freeze (non-default branch)
-              if: github.ref != 'refs/heads/main'
-              run: FLASK_APP=app.py flask freeze
-            
-            - name: Flask freeze (default branch)
-              if: github.ref == 'refs/heads/main'
-              run: FLASK_APP=app.py flask freeze
+        - name: Checkout code
+          uses: actions/checkout@v2
+    
+        - name: Set up Python 3.6
+          uses: actions/setup-python@v2
+          with:
+            python-version: 3.6
+    
+        - name: Install dependencies
+          run: pip install --no-cache-dir -r dependencies.txt
+    
+        - name: Flask freeze (non-default branch)
+          if: github.ref != 'refs/heads/main'
+          run: FLASK_APP=app.py flask freeze
+    
+        - name: Flask freeze (default branch)
+          if: github.ref == 'refs/heads/main'
+          run: FLASK_APP=app.py flask freeze
 
     deploy:
         needs: build
@@ -38,7 +39,7 @@ jobs:
             
             - name: Deploy to GitHub Pages
                 # Use an appropriate action for deployment, such as jamesIves/github-pages-deploy-action@4.1.4
-                uses: jamesIves/github-pages-deploy-action@4.1.4
-                with:
-                    branch: gh-pages # The branch the action should deploy to.
-                    folder: public # The folder the action should deploy.
+              uses: jamesIves/github-pages-deploy-action@4.1.4
+              with:
+                branch: gh-pages # The branch the action should deploy to.
+                folder: wiki # The folder the action should deploy.
