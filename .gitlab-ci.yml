@@ -32,3 +32,4 @@ deploy:
     - build
   only:
     - jekyll_test
+    
