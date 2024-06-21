@@ -18,6 +18,11 @@ jobs:
         with:
             token: ${{ secrets.GH_TOKEN }}
 
+      - name: Set up GitLab
+        run: |
+          git config user.name "Lucas04"
+          git config user.email "lucas04@foxmail.com"
+
       - name: Pull from GitLab
         env:
           GITLAB_REPO: ${{ secrets.GITLAB_REPO }}
