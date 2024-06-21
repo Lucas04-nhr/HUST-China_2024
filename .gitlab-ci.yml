@@ -1,34 +1,14 @@
 # .gitlab-ci.yml
 
-stages:
-  - build
-  - deploy
+image: ruby:3.3
 
-variables:
-  JEKYLL_ENV: production
-
-before_script:
-  - gem install bundler
-  - bundle install
-
-build:
-  stage: build
-  image: ruby:3.3
+pages:
+  stage: deploy
   script:
-    - bundle exec jekyll build --baseurl $CI_PROJECT_NAME
+    - gem install jekyll
+    - jekyll build -d public
   artifacts:
     paths:
       - public
   only:
-    - jekyll_test
-
-deploy:
-  stage: deploy
-  image: alpine:latest
-  script:
-    - apk add --update rsync
-    - rsync -av --delete public/ $CI_PAGES_URL
-  dependencies:
-    - build
-  only:
-    - jekyll_test
+    - main
