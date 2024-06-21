@@ -29,7 +29,7 @@ If you use a different website framework, make sure to embed the right URL for y
     });
   </script>
   <iframe style='width: 100%' id="igem-attribution-form"
-    src="https://teams.igem.org/wiki/TeamID/attributions">
+    src="https://teams.igem.org/wiki/5175/attributions">
   </iframe>
 </div>
 <!-- DO NOT REMOVE THE IFRAME CODE ABOVE -->
