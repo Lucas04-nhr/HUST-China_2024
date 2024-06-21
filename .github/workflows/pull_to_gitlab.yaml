@@ -1,0 +1,44 @@
+name: Sync GitHub to GitLab
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+    
+  Checkout_GitHub:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@main
+        with:
+            token: ${{ secrets.GH_TOKEN }}
+
+  Push_to_GitLab:
+    needs: Checkout_GitHub
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@main
+        with:
+            token: ${{ secrets.GH_TOKEN }}
+
+      - name: Set up Git
+        run: |
+            git config user.name "Lucas04"
+            git config user.email "lucas04@foxmail.com"
+
+      - name: Push to GitLab
+        env:
+            GITLAB_REPO: ${{ secrets.GITLAB_REPO }}
+            GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+        run: |
+            git remote add gitlab $GITLAB_REPO
+            git fetch gitlab
+            git merge -X theirs --allow-unrelated-histories --no-ff gitlab/main
+            git push gitlab main
+        
