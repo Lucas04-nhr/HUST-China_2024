@@ -16,7 +16,7 @@ jobs:
 
       - name: Sync from GitLab
         env:
-          GITLAB_REPO: ${{ variables.GITLAB_REPO }}
+          GITLAB_REPO: ${{ env.GITLAB_REPO }}
           GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
         run: |
           git config --global credential.helper "store --file=.git/credentials"
