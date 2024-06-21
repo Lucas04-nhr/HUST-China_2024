@@ -7,12 +7,6 @@ Describe how and why you chose your iGEM project.
 Please see the [2024 Medals Page](https://competition.igem.org/judging/medals)
 for more information.
 
-## Test
-
-test2024
-test2024
-test20240621
-
 ## What should this page contain?
 
 ---
