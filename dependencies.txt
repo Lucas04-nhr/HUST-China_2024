@@ -1,0 +1,2 @@
+frozen-flask
+pypandoc_binary
