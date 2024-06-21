@@ -1,6 +1,6 @@
 # .gitlab-ci.yml
 
-image: ruby:3.3
+image: ruby:2.7
 
 pages:
   stage: deploy
@@ -8,7 +8,7 @@ pages:
     - gem install bundler
     - gem install jekyll
     - bundle install
-    - bundle exec jekyll build --trace
+    - bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" --destination "_site"
   artifacts:
     paths:
       - public
