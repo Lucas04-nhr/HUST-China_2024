@@ -1,0 +1,45 @@
+name: Sync GitLab to GitHub
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  Pull_from_GitLab:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@main
+        with:
+            token: ${{ secrets.GH_TOKEN }}
+
+      - name: Set up GitLab
+        run: |
+          git config user.name "Lucas04"
+          git config user.email "lucas04@foxmail.com"
+
+      - name: Pull from GitLab
+        env:
+          GITLAB_REPO: ${{ secrets.GITLAB_REPO }}
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+        run: |
+          git remote add gitlab $GITLAB_REPO
+          git fetch gitlab
+          git merge -X theirs --allow-unrelated-histories --no-ff gitlab/main
+
+      - name: Set up GitHub
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Set Git Configurations
+        run: |
+          git config pull.rebase false
+
+      - name: Push to GitHub
+        run: |
+          git fetch origin
+          git checkout -b main origin/main
+          git push origin main
