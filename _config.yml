@@ -39,7 +39,7 @@ plugins:
 remote_theme: daviddarnes/alembic@main
 paginate: 2 # jekyll-paginate > items per page
 paginate_path: blog/page:num # jekyll-paginate > blog page
-author: iGEM HUST-China 2024 # jekyll-seo-tag > default author
+author: iGEM HUST-China # jekyll-seo-tag > default author
 # markdown: CommonMark # Markdown parse settings, CommonMark performs slightly better an others in build time
 # commonmark:
   # options: ["SMART", "FOOTNOTES"]
@@ -71,13 +71,13 @@ defaults:
       image: "/assets/default-social-image.png" # Default image for sharing
   -
     scope:
-      path: ""
+      path: "_posts"
       type: "posts"
     values:
       layout: post # Set the default layout for posts
   -
     scope:
-      path: ""
+      path: "_pages"
       type: "pages"
     values:
       layout: page # Set the default layout for pages
