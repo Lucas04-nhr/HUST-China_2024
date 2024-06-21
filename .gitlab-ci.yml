@@ -7,6 +7,7 @@ pages:
   script:
     - gem install jekyll
     - gem install jekyll-remote-theme
+    - gem install jemoji
     - jekyll build -d public
   artifacts:
     paths:
