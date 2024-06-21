@@ -14,20 +14,23 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Sync from GitLab
+      - name: Pull from GitLab
         env:
           GITLAB_REPO: ${{ env.GITLAB_REPO }}
           GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
         run: |
+        
           git config --global credential.helper "store --file=.git/credentials"
-          git clone $GITLAB_REPO /tmp/gitlab-repo
-          cd /tmp/gitlab-repo
+          git clone $GITLAB_REPO ${{ github.workspace }}/gitlab-repo
           git fetch origin
           git checkout main
 
+      - name: Sync to GitHub
+        run: |
+
           # 将内容同步到 GitHub 仓库
           cd $GITHUB_WORKSPACE
-          cp -r /tmp/gitlab-repo/* .
+          cp -r ${{ github.workspace }}/gitlab-repo/* .
 
           # 添加更改并签名提交到 GitHub
           git config user.email "actions@github.com"
@@ -37,6 +40,6 @@ jobs:
           git push origin main
 
           # 同步到 GitLab
-          cd /tmp/gitlab-repo
+          cd ${{ github.workspace }}/gitlab-repo
           git push origin main
 
