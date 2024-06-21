@@ -2,9 +2,8 @@ name: Sync GitLab to GitHub
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: '0 * * * *'
 
 jobs:
   Pull_from_GitLab:
@@ -13,28 +12,35 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@main
+        with:
+            token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Pull from GitLab
         env:
           GITLAB_REPO: ${{ secrets.GITLAB_REPO }}
           GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
         run: |
-        
-          git config --global credential.helper "store --file=.git/credentials"
-          mkdir -p ${{ github.workspace }}/gitlab-repo
-          git clone $GITLAB_REPO ${{ github.workspace }}/gitlab-repo
-          git fetch origin
-          git checkout main
+          git remote add gitlab $GITLAB_REPO
+          git fetch gitlab
+          git pull gitlab main
+          git merge -X theirs --allow-unrelated-histories --no-ff gitee/main
 
   Push_to_GitHub:
     needs: Pull_from_GitLab
     runs-on: ubuntu-latest
 
     steps:
-      - name: Sync to GitHub
+      - name: Set up Git
         run: |
+          git config user.name "Lucas04-nhr"
+          git config user.email "lucas04@foxmail.com"
 
-            git config --global user.email "github-actions[bot]@users.noreply.github.com"
-            git config --global user.name "GitHub Actions"
-            git remote add github-origin ${{ github.repository }}
-            git push github-origin main
+      - name: Set Git Configurations
+        run: |
+          git config pull.rebase false
+
+      - name: Push to GitHub
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git push origin main
