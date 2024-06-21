@@ -36,7 +36,6 @@ jobs:
 
           # 将内容同步到 GitHub 仓库
           cd $GITHUB_WORKSPACE
-          cp -r ${{ github.workspace }}/gitlab-repo/* .
 
           # 添加更改并签名提交到 GitHub
           git config user.email "actions@github.com"
