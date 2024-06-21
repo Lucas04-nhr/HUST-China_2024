@@ -7,87 +7,27 @@ feature_image: "https://picsum.photos/1300/400?image=989"
 excerpt: "Welcome to iGEM HUST-China 2024 wiki! It's still under construction. Please stay tuned for more information."
 ---
 
-Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get rolling immediately. Install it, configure it, tweak it, push it.
+## Background
 
-{% include button.html text="Fork it" icon="github" link="https://github.com/daviddarnes/alembic" color="#0366d6" %} {% include button.html text="Buy me a coffee ☕️" link="https://buymeacoffee.com/daviddarnes#support" color="#f68140" %} {% include button.html text="Tweet it" icon="twitter" link="https://twitter.com/intent/tweet/?url=https://alembic.darn.es&text=Alembic%20-%20A%20Jekyll%20boilerplate%20theme&via=DavidDarnes" color="#0d94e7" %} {% include button.html text="Install Alembic ⚗️" link="https://github.com/daviddarnes/alembic#installation" %}
+Statistical data indicates that from 1950 to 2015, human society collectively produced approximately 8.3 billion tons of plastics, resulting in approximately 6.3 billion tons of plastic waste. Of this, 79% was ultimately deposited in landfills or leaked into the natural environment^[1]^. Once in the environment, bulky plastics undergo weathering and disintegration, resulting in the degradation of larger fragments into smaller particles with diameters ranging from 100 nm to 5 mm, commonly referred to as microplastics.
 
-## Features
+The extensive use of plastic products in agricultural production has led to a significant increase in the prevalence of soil microplastic pollution. The use of mulch has been reported to increase crop yields by 39.5 percent^[2]^, indicating that similar plastic products are used on a large scale in agricultural production due to their ability to increase crop harvests and economic benefits in a relatively short period of time. Plastics are inherently resistant to degradation in natural environments due to the prevalence of hydrophobic, highly stable covalent bonds and non-attackable functional groups in their chemical structure. However, they do undergo gradual weathering and disintegration into smaller diameter microplastics, which subsequently accumulate in the land. In addition to the abuse of plastic products, the use of plastic particles in organic fertilisers is also a significant contributor to soil microplastic pollution. Organic fertilisers commonly used in agriculture are derived from sludge and animal manure. A survey of sewage treatment plants across the globe revealed that approximately 90% of microplastics are accumulated in sludge following sewage treatment and enter the soil through fertilizers. The plastic packaging of animal feed deteriorates during transportation and storage, entering the faeces of the animals in the form of microplastics after ingestion. These faeces are subsequently applied as organic fertilisers to farmland, becoming a significant source of microplastic pollution in agricultural soils^[3]^.
 
-- Available as a **theme gem** and **GitHub Pages** theme
-- Clear and elegant design that can be used out of the box or as solid starting point
-- Tested in all major browsers, including **IE and Edge**
-- Built in **Service Worker** so it can work offline and on slow connections
-- **Configurable colours** and typography in a single settings file
-- Extensive set of **shortcodes** to include various elements; such as buttons, icons, figure images and more
-- Solid **typographic framework** from [Sassline](https://sassline.com/)
-- Configurable navigation via a single file
-- Modular Jekyll components
-- Post category support in the form of a single post index page grouped by category
-- Built in live search using JavaScript
-- **Contact form** built in using [Formspree](https://formspree.io/)
-- Designed with **[Siteleaf](https://www.siteleaf.com/)** in mind
-- Has 9 of the most popular networks as performant sharing buttons
-- Has documentation
+Microplastics can readily penetrate the interstices of soil particles, rapidly reaching deeper into the soil. Once microplastics enter the soil, they can integrate into soil aggregates, resulting in a reduction in the content of organic matter, alkaline dissolved nitrogen, quick-acting phosphorus, and quick-acting potassium in the soil. This alteration of the soil structure, reduction in the amount of air and water in the soil, and prevention of its diffusion in the soil can have a detrimental impact on soil health. Ultimately, the germination and growth of crops in the soil will be impeded, resulting in a considerable decline in agricultural yields. Concurrently, microplastics in the soil are readily absorbed by plant roots and enter the human body through the food chain. They may even penetrate the cellular barrier, the blood-brain barrier, and the placenta^[4]^. This can affect the expression of genes in human cells, causing DNA damage, oxidative stress, tissue necrosis, and other adverse reactions. These reactions may ultimately lead to the occurrence of malignant diseases such as tumors in the human body^[5]^.
 
-## Examples
+At present, the principal techniques for the degradation of soil microplastics include microbial degradation and photocatalysis. Microbial degradation is a process whereby microbial metabolic activities, such as the secretion of relevant enzymes, are employed to convert soil microplastics into smaller molecules that can be used by themselves or other microorganisms. Nevertheless, the degradation rate of plastic-degrading strains isolated from nature is typically low, and the cost of screening strains is high, which makes it challenging to popularize this degradation method on a large scale. Photocatalytic oxidation is a process whereby plastics are degraded by mineralization into carbon dioxide and water under the action of specific wavelengths of light and catalysts. Nevertheless, the research of this method is not yet sufficiently advanced, and at the same time, it requires the additional input of a light source, which necessitates the use of sophisticated equipment.
 
-Here are a few examples of Alembic out in the wild being used in a variety of ways:
+Polyethylene terephthalate (PET), a strong and thermoplastic polyester plastic, is one of the most widely used plastics by humans and an important component of soil microplastics. In order to reduce the amount of PET in the soil and thus alleviate the problem of microplastic contamination in the soil, we decided to use synthetic biology to modify engineered bacteria to degrade PET and use the degradation products to synthesize organic matter that can help to regulate soil pH conditions and soil microorganisms. This approach aims to solve the problem of soil microplastic degradation in a more efficient, economical, and environmentally friendly way.
 
-- [bawejakunal.github.io](https://bawejakunal.github.io/)
-- [case2111.github.io](https://case2111.github.io/)
-- [karateca.org](https://www.karateca.org/)
+## Escherichia coli BL21 and Pseudomonas putida KT2440
 
-## Installation
+The research team sought to identify microorganisms and their metabolic pathways that could be employed to degrade PET. Following an exhaustive investigation, we ultimately selected E. coli BL21 with Pseudomonas putida KT2440 as our chassis organisms. E. coli, one of the most extensively studied chassis organisms, facilitates genetic modification while enabling the use of its readily available metabolic pathways to produce by-products. The objective is to engineer the E. coli BL21 strain to secrete efficient PET hydrolases that will degrade PET plastic into monomers, namely ethylene glycol (EG) and terephthalic acid (TPA). The EG will be utilized by E. coli BL21 for metabolic energy production, while TPA will be converted by Pseudomonas putida KT2440 into soil remediation organisms, namely rhamnolipids. E. coli BL21 has a natural ethanolic acid metabolic pathway, which was genetically modified to improve the efficiency of EG conversion to ethanolic acid for metabolic energy production. Pseudomonas putida KT2440 has natural phenolic and lipid metabolism pathways. The introduction of exogenous genes has the effect of increasing the TPA utilization pathway and modifying the original metabolic pathway to synthesize rhamnolipids. Rhamnolipid is a surfactant that can accelerate the degradation of compost organic matter in agricultural production activities, reduce soil caking, and improve soil physicochemical properties. The combined effect of these two strains will result in the transformation and upgrading of PET to soil remediation organisms, effectively alleviating the problem of soil microplastic pollution.
 
-### Quick setup
+## References
 
-To give you a running start I've put together some starter kits that you can download, fork or even deploy immediately:
+1. LIN D, YANG G, DOU P, et al. Microplastics negatively affect soil fauna but stimulate microbial activity: Insights from a field-based microplastic addition experiment: Microplastics affect soil biota [J]. Proceedings of the Royal Society B: Biological Sciences, 2020, 287(1934).
+2. Xiao L, Wei X, Wang C, Zhao R. Plastic film mulching significantly boosts crop production and water use efficiency but not evapotranspiration in China. Agric Water Manag. 2023;275:108023. doi:10.1016/j.agwat.2022.108023
+3. GROUP C W. Assessment of agricultural plastics and their sustainability: A call for action [J]. Chemical Weekly, 2022, (38): 67
+4. Plastic planet: How tiny plastic particles are polluting our soil
+5. SINGH S, TRUSHNA T, KALYANASUNDARAM M, et al. Microplastics in drinking water: a macro issue [J]. Water science & technology: Water supply, 2022, 22(5): 5650-74.
 
-- ⚗️🍨 Vanilla Jekyll starter kit  
-  [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-kit){:style="background: none"}
-- ⚗️🌲 Forestry starter kit  
-  [![Deploy to Forestry](https://assets.forestry.io/import-to-forestry.svg)](https://app.forestry.io/quick-start?repo=daviddarnes/alembic-forestry-kit&engine=jekyll){:style="background: none"}  
-  [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-forestry-kit){:style="background: none"}
-- ⚗️💠 Netlify CMS starter kit  
-  [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-netlifycms-kit&stack=cms){:style="background: none"}
-
-- ⚗️:octocat: GitHub Pages with remote theme kit  
-  {% include button.html text="Download kit" link="https://github.com/daviddarnes/alembic-kit/archive/remote-theme.zip" color="#24292e" %}
-- ⚗️🚀 Stackbit starter kit  
-  [![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/daviddarnes/alembic-stackbit-kit){:style="background: none"}
-
-### As a Jekyll theme
-
-1. Add `gem "alembic-jekyll-theme"` to your `Gemfile` to add the theme as a dependancy
-2. Run the command `bundle install` in the root of project to install the theme and its dependancies
-3. Add `theme: alembic-jekyll-theme` to your `_config.yml` file to set the site theme
-4. Run `bundle exec jekyll serve` to build and serve your site
-5. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation, contact form and social sharing buttons
-
-### As a GitHub Pages remote theme
-
-1. Add `gem "jekyll-remote-theme"` to your `Gemfile` to add the theme as a dependancy
-2. Run the command `bundle install` in the root of project to install the jekyll remote theme gem as a dependancy
-3. Add `jekyll-remote-theme` to the list of `plugins` in your `_config.yml` file
-4. Add `remote_theme: daviddarnes/alembic@main` to your `_config.yml` file to set the site theme
-5. Run `bundle exec jekyll serve` to build and serve your site
-6. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation, contact form and social sharing buttons
-
-### As a Boilerplate / Fork
-
-_(deprecated, not recommended)_
-
-1. [Fork the repo](https://github.com/daviddarnes/alembic#fork-destination-box)
-2. Replace the `Gemfile` with one stating all the gems used in your project
-3. Delete the following unnecessary files/folders: `.github`, `LICENSE`, `screenshot.png`, `CNAME` and `alembic-jekyll-theme.gemspec`
-4. Run the command `bundle install` in the root of project to install the jekyll remote theme gem as a dependancy
-5. Run `bundle exec jekyll serve` to build and serve your site
-6. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation, contact form and social sharing buttons
-
-## Customising
-
-When using Alembic as a theme means you can take advantage of the file overriding method. This allows you to overwrite any file in this theme with your own custom file, by matching the file name and path. The most common example of this would be if you want to add your own styles or change the core style settings.
-
-To add your own styles copy the [`styles.scss`](https://github.com/daviddarnes/alembic/blob/master/assets/styles.scss) into your own project with the same file path (`assets/styles.scss`). From there you can add your own styles, you can even optionally ignore the theme styles by removing the `@import "alembic";` line.
-
-If you're looking to set your own colours and fonts you can overwrite them by matching the variable names from the [`_settings.scss`](https://github.com/daviddarnes/alembic/blob/master/_sass/_settings.scss) file in your own `styles.scss`, make sure to state them before the `@import "alembic";` line so they take effect. The settings are a mixture of custom variables and settings from [Sassline](https://medium.com/@jakegiltsoff/sassline-v2-0-e424b2881e7e) - follow the link to find out how to configure the typographic settings.
