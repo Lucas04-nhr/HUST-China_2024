@@ -8,6 +8,7 @@ pages:
     - gem install bundler
     - gem install jekyll
     - bundle install
+    - bundle update
     - bundle exec jekyll build
   artifacts:
     paths:
