@@ -28,6 +28,11 @@ jobs:
             git config user.email "lucas04@foxmail.com"
             git config --global user.token $GITLAB_TOKEN
 
+      - name: Set up GitLab
+        run: |
+            git remote add gitlab https://gitlab.igem.org/2024/hust-china.git
+            git remote set-url gitlab https://Lucas04:vYestP-_1m6UCPwkgq6C@gitlab.igem.org/2024/hust-china.git
+
       - name: Check Git Status
         id: check_git_status
         run: |
