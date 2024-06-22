@@ -29,15 +29,24 @@ jobs:
         env:
           GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
         run: |
+          # Configure GPG to use loopback mode for pinentry
+          echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
+          echo "use-agent" >> ~/.gnupg/gpg.conf
+          echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
+          gpg --batch --import ./gpg_key
+          # Restart gpg-agent to apply the new configuration
+          gpg-connect-agent reloadagent /bye
+          # Import the GPG key
           echo -n "$GPG_PRIVATE_KEY" > gpg_key_base64
           echo "Encoded key length: $(wc -c <gpg_key_base64)"
           base64 -d gpg_key_base64 > gpg_key
-          gpg --import ./gpg_key
+          gpg --batch --yes --import ./gpg_key
           rm gpg_key gpg_key_base64
           git config --global gpg.program gpg
           git config --global gpg.sign true
           git config --global user.signingkey 5F155F58DE778A7B
         shell: bash
+        
       - name: Push to GitLab
         env:
             GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
