@@ -32,8 +32,6 @@ jobs:
             git config pull.rebase false
             git remote add gitlab https://gitlab.igem.org/2024/hust-china.git
             git remote set-url gitlab https://Lucas04:vYestP-_1m6UCPwkgq6C@gitlab.igem.org/2024/hust-china.git
-            # git fetch --unshallow gitlab sync_github
-            git merge -X ours --no-ff  --allow-unrelated-histories gitlab/main
-            git push gitlab main
+            git push gitlab sync_github
 
         
