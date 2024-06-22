@@ -8,17 +8,7 @@ on:
 
 jobs:
     
-  Checkout_GitHub:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@main
-        with:
-            token: ${{ secrets.GH_TOKEN }}
-
   Push_to_GitLab:
-    needs: Checkout_GitHub
     runs-on: ubuntu-latest
 
     steps:
@@ -34,6 +24,16 @@ jobs:
             git config user.name "Lucas04"
             git config user.email "lucas04@foxmail.com"
             git config --global user.token $GITLAB_TOKEN
+
+      - name: Set up GPG key
+        env:
+            GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+        run: |
+            echo $GPG_PRIVATE_KEY | base64 --decode > ./gpg_key
+            gpg --import ./gpg_key
+            rm ./gpg_key
+            git config --global gpg.program gpg
+            git config --global gpg.sign true
 
       - name: Push to GitLab
         env:
