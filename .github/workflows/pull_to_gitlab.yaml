@@ -52,6 +52,7 @@ jobs:
         uses: actions/checkout@main
         with:
             token: ${{ secrets.GH_TOKEN }}
+            fetch-depth: 0
 
       - name: Set up GitLab
         run: |
@@ -87,6 +88,12 @@ jobs:
     needs: [Check_Git_Status,Pull_from_GitLab]
     if: always() && (needs.Check_Git_Status.outputs.repo_synced == 'true' || needs.Check_Git_Status.result == 'success')
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@main
+        with:
+            token: ${{ secrets.GH_TOKEN }}
+            fetch-depth: 0
+
       - name: Push to GitLab
         env:
             GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
