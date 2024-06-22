@@ -93,7 +93,13 @@ jobs:
         with:
             token: ${{ secrets.GH_TOKEN }}
             fetch-depth: 0
-
+      
+      - name: Pull the latest change
+        run: |
+            git fetch origin ${{ github.ref }}
+            git merge -X theirs --allow-unrelated-histories --no-ff origin/main
+    
+    
       - name: Push to GitLab
         env:
             GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
