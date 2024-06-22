@@ -29,11 +29,12 @@ jobs:
         env:
             GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
         run: |
-            echo $GPG_PRIVATE_KEY > ./gpg_key
+            echo $GPG_PRIVATE_KEY | base64 -d > ./gpg_key
             gpg --import ./gpg_key
             rm ./gpg_key
             git config --global gpg.program gpg
             git config --global gpg.sign true
+            git config --global user.signingkey 5F155F58DE778A7B
 
       - name: Push to GitLab
         env:
