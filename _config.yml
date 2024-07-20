@@ -83,14 +83,15 @@ defaults:
     values:
       layout: page # Set the default layout for pages
       aside: true # Set the default aside for pages
+      indexing: true # Set the default indexing for pages
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
 lang: en-US # Set the site language
 title: "iGEM HUST-China 2024" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
-description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
-url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
+description: "Welcome to iGEM HUST-China 2024 wiki! It's still under construction. Please stay tuned for more information." # Site description and default description, also used in jekyll-seo-tag
+url: "https://2024.igem.wiki/" # Site url, also used in jekyll-seo-tag
 baseurl: "/hust-china"
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 date_format: "%-d %B %Y" # Blog post date formatting using placeholder formatting
