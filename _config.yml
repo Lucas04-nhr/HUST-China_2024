@@ -70,7 +70,7 @@ defaults:
     values:
       image: "/assets/default-social-image.png" # Default image for sharing
       layout: page # Set the default layout for pages
-      aside: true # Set the default aside for pages
+      # aside: true # Set the default aside for pages
   - scope:
       path: ""
       type: "posts"
