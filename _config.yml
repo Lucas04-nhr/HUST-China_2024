@@ -11,30 +11,30 @@
 
 # 1. Files excluded from Jekyll builds
 exclude:
-- README.md
-- CODE_OF_CONDUCT.md
-- CONTRIBUTING.md
-- screenshot.png
-- LICENSE
-- CNAME
-- Gemfile
-- Gemfile.lock
-- alembic-jekyll-theme.gemspec
-- .jekyll-cache
-- unused_files
+  - README.md
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - screenshot.png
+  - LICENSE
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - alembic-jekyll-theme.gemspec
+  - .jekyll-cache
+  - unused_files
 
 # 2. Installed Gems
 plugins:
-- jekyll-sitemap
-- jekyll-mentions
-- jekyll-paginate
-- jekyll-seo-tag
-- jekyll-redirect-from
-- jekyll-feed
-- jekyll-commonmark
-- jekyll-include-cache
-- jekyll-remote-theme
-- jemoji
+  - jekyll-sitemap
+  - jekyll-mentions
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-commonmark
+  - jekyll-include-cache
+  - jekyll-remote-theme
+  - jemoji
 
 # 3. Gem settings
 remote_theme: daviddarnes/alembic@main
@@ -49,7 +49,7 @@ author: iGEM HUST-China # jekyll-seo-tag > default author
 # 4. Jekyll settings
 sass:
   style: compressed # Style compression
-  permalink: /:basename/  # Permalink style (/page-name/)
+  permalink: /:basename/ # Permalink style (/page-name/)
 excerpt_separator: <!-- more --> # Marks end of excerpt in posts
 timezone: Asia/Shanghai # Timezone for blog posts and alike
 
@@ -65,20 +65,17 @@ collections:
 
 # 6. Jekyll collections settings
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       image: "/assets/default-social-image.png" # Default image for sharing
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       layout: post # Set the default layout for posts
       aside: true # Set the default aside for posts
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
@@ -102,75 +99,75 @@ css_inline: true # Will insert all styles into a single <style> block in the <he
 
 # 8. Site favicons & manifest icons
 favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
-  16: '/assets/logos/logo@16px.png'
-  32: '/assets/logos/logo@32px.png'
-  96: '/assets/logos/logo@96px.png'
-  120: '/assets/logos/logo@120px.png'
-  144: '/assets/logos/logo@144px.png'
-  180: '/assets/logos/logo@180px.png'
-  512: '/assets/logos/logo@512px.png'
-  1024: '/assets/logos/logo@1024px.png'
+  16: "/assets/logos/logo@16px.png"
+  32: "/assets/logos/logo@32px.png"
+  96: "/assets/logos/logo@96px.png"
+  120: "/assets/logos/logo@120px.png"
+  144: "/assets/logos/logo@144px.png"
+  180: "/assets/logos/logo@180px.png"
+  512: "/assets/logos/logo@512px.png"
+  1024: "/assets/logos/logo@1024px.png"
 
 # 9. Site navigation
 navigation_header:
-- title: Home
-  url: /
-- title: Project
-  sub_navigation:
-    - title: Description
-      url: /description/
-    - title: Safety
-      url: /safety/
-    - title: Proposed Implementation
-      url: /proposed-implementation/
-- title: Wet Lab
-  sub_navigation:
-    - title: Design
-      url: /design/
-    - title: Engineering
-      url: /engineering/
-    - title: Protocols
-      url: /protocols/
-    - title: Results
-      url: /results/
-    - title: Notebook
-      url: /notebook/
-    - title: Parts
-      url: /parts/
-- title: Dry Lab
-  url: /dry-lab/
-- title: Hardware
-  url: /hardware/
-- title: HP
-  sub_navigation:
-    - title: Human Practices
-      url: /human-practices/
-    - title: Education & Communication
-      url: /education/
-- title: Team
-  sub_navigation:
-    - title: Members
-      url: /members/
-    - title: Contribution
-      url: /contribution/
-    - title: Attributions
-      url: /attributions/
-    - title: Prize
-      url: /prize/
-- title: Description
-  url: /description/
-- title: Elements
-  url: /elements/
-- title: Blog
-  url: /blog/
-- title: Categories
-  url: /categories/
-- title: Search
-  url: /search/
+  - title: Home
+    url: /
+  - title: Project
+    sub_navigation:
+      - title: Description
+        url: /description/
+      - title: Safety
+        url: /safety/
+      - title: Proposed Implementation
+        url: /proposed-implementation/
+  - title: Wet Lab
+    sub_navigation:
+      - title: Design
+        url: /design/
+      - title: Engineering
+        url: /engineering/
+      - title: Protocols
+        url: /protocols/
+      - title: Results
+        url: /results/
+      - title: Notebook
+        url: /notebook/
+      - title: Parts
+        url: /parts/
+  - title: Dry Lab
+    url: /dry-lab/
+  - title: Hardware
+    url: /hardware/
+  - title: HP
+    sub_navigation:
+      - title: Human Practices
+        url: /human-practices/
+      - title: Education & Communication
+        url: /education/
+  - title: Team
+    sub_navigation:
+      - title: Members
+        url: /members/
+      - title: Contribution
+        url: /contribution/
+      - title: Attributions
+        url: /attributions/
+      - title: Prize
+        url: /prize/
+  - title: Description
+    url: /description/
+  - title: Elements
+    url: /elements/
+  - title: Blog
+    url: /blog/
+  - title: Categories
+    url: /categories/
+  - title: Search
+    url: /search/
 
 navigation_footer:
-- title: iGEM HUST-China 2024
-  url: https://2024.igem.wiki/hust-china
+  - title: iGEM HUST-China 2024
+    url: https://2024.igem.wiki/hust-china
 
 sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
   Email: true
