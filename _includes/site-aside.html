@@ -14,43 +14,10 @@
     
 
   {% elsif page.layout == "page" or page.layout == "blog" %}
-      <section id="about-this-page" class="section page--description">
-          <h4>Page Contents</h4>
-      </section>
-      <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const headers = document.querySelectorAll("article h2, article h3, article h4, article h5, article h6");
-            const section = document.querySelector("#about-this-page"); // 确保正确选择section元素
-            const nav = document.createElement("nav");
-            section.appendChild(nav);
-
-            headers.forEach((header, index) => {
-                if (!header.id) {
-                    header.id = "header-" + index;
-                }
-                const link = document.createElement("a");
-                link.href = "#" + header.id;
-                link.textContent = header.textContent;
-                nav.appendChild(link);
-            });
-        });
-      </script>
-      <style>
-          html {
-              scroll-behavior: smooth;
-          }
-          .section.page--description nav {
-              background: #f9f9f9;
-              padding: 10px;
-              margin-top: 10px;
-              border: 1px solid #ccc;
-              border-radius: 5px; 
-          }
-          .section.page--description nav a {
-              display: block;
-              margin-bottom: 5px;
-          }
-      </style>
+        <section id="about-this-page" class="section page--description">
+            <h4>Page Contents</h4>
+        </section>
+        {% include nav-page-contents.html %}
 
 
   {% elsif page.layout == "categories" %}
