@@ -115,6 +115,48 @@ favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
 navigation_header:
 - title: Home
   url: /
+- title: Project
+  sub_navigation:
+    - title: Description
+      url: /description/
+    - title: Safety
+      url: /safety/
+    - title: Proposed Implementation
+      url: /proposed-implementation/
+- title: Wet Lab
+  sub_navigation:
+    - title: Design
+      url: /design/
+    - title: Engineering
+      url: /engineering/
+    - title: Protocols
+      url: /protocols/
+    - title: Results
+      url: /results/
+    - title: Notebook
+      url: /notebook/
+    - title: Parts
+      url: /parts/
+- title: Dry Lab
+  url: /dry-lab/
+- title: Hardware
+  url: /hardware/
+- title: HP
+  sub_navigation:
+    - title: Human Practices
+      url: /human-practices/
+    - title: Education & Communication
+      url: /education/
+- title: Team
+  sub_navigation:
+    - title: Members
+      url: /members/
+    - title: Contribution
+      url: /contribution/
+    - title: Attributions
+      url: /attributions/
+    - title: Prize
+      url: /prize/
 - title: Description
   url: /description/
 - title: Elements
