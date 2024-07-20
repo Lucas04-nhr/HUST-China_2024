@@ -11,14 +11,33 @@
       <p>{{ site.description }}</p>
       {% include nav-social.html %}
     </section>
+    
 
   {% elsif page.layout == "page" or page.layout == "blog" %}
     <section id="about-this-page" class="section  page--description">
       <!-- <h3>About this site</h3>
       <p>{{ site.description }}</p>
       {% include nav-social.html %} -->
-      {% include nav-pages.html %}
+      <!-- {% include nav-pages.html %} -->
     </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const headers = document.querySelectorAll("h2, h3, h4, h5, h6, section[id]");
+          const nav = document.createElement("nav");
+          document.body.appendChild(nav);
+
+          headers.forEach((header, index) => {
+              if (!header.id) {
+                  header.id = "header-" + index;
+              }
+              const link = document.createElement("a");
+              link.href = "#" + header.id;
+              link.textContent = header.textContent;
+              nav.appendChild(link);
+          });
+      });
+  </script>
+
 
   {% elsif page.layout == "categories" %}
     <section class="section  section--category-index">
