@@ -1,23 +1,45 @@
 <nav class="nav">
   <ul class="list list--nav">
-    {% for item in site.html_pages %}
+    {% for item in site.navigation_header %}
       {% unless item.title == false or item.url contains "/page" or item.url contains "/404.html" %}
         <li class="item  item--nav{% if item.url == page.url %}  item--current{% endif %}">
 
-          {% if item.url contains '://' %}
-            {% assign url = item.url %}
-          {% else %}
-            {% assign url = item.url | relative_url %}
+          {% if item.url %}
+            {% if item.url contains '://' %}
+              {% assign url = item.url %}
+            {% else %}
+              {% assign url = item.url | relative_url %}
+            {% endif %}
           {% endif %}
 
           {% if item.collectionpage %}
             {% assign collectiondata = site.collections | where: "label", item.collectionpage | first %}
             <a href="{{ url }}">{{ collectiondata.title }}</a>
           {% else %}
-            <a href="{{ url }}">{{ item.title }}</a>
+            {% if item.url %}
+              <a href="{{ url }}">{{ item.title }}</a>
+            {% else %}
+              <span>{{ item.title }}</span>
+            {% endif %}
+          {% endif %}
+
+          {% if item.sub_navigation %}
+            <ul class="list list--sub-nav">
+              {% for sub_item in item.sub_navigation %}
+                {% if sub_item.url contains '://' %}
+                  {% assign sub_url = sub_item.url %}
+                {% else %}
+                  {% assign sub_url = sub_item.url | relative_url %}
+                {% endif %}
+                <li class="item item--sub-nav">
+                  <a href="{{ sub_url }}">{{ sub_item.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
           {% endif %}
         </li>
       {% endunless %}
     {% endfor %}
   </ul>
 </nav>
+
