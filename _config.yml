@@ -69,6 +69,8 @@ defaults:
       path: ""
     values:
       image: "/assets/default-social-image.png" # Default image for sharing
+      layout: page # Set the default layout for pages
+      aside: true # Set the default aside for pages
   - scope:
       path: ""
       type: "posts"
@@ -80,6 +82,7 @@ defaults:
       type: "pages"
     values:
       layout: page # Set the default layout for pages
+      aside: true # Set the default aside for pages
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
