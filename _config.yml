@@ -154,19 +154,19 @@ navigation_header:
         url: /attributions/
       - title: Prize
         url: /prize/
-  - title: Description
-    url: /description/
-  - title: Elements
-    url: /elements/
-  - title: Blog
-    url: /blog/
-  - title: Categories
-    url: /categories/
+  # - title: Description
+  #   url: /description/
+  # - title: Elements
+  #   url: /elements/
+  # - title: Blog
+  #   url: /blog/
+  # - title: Categories
+  #   url: /categories/
   - title: Search
     url: /search/
 
 navigation_footer:
-  - title: iGEM HUST-China 2024
+  - title: iGEM HUST-China
     url: https://2024.igem.wiki/hust-china
 
 sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
