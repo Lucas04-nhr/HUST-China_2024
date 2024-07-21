@@ -8,24 +8,25 @@ excerpt: "Welcome to iGEM HUST-China 2024 wiki! It's still under construction. P
 aside: false
 ---
 
-## GitHub Status
+#### GitHub Status
 
 | Commits | Contributors | Pull Requests|
 |---------|--------------|--------------|
 | ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Lucas04-nhr/HUST-China_2024) | ![GitHub contributors](https://img.shields.io/github/contributors/Lucas04-nhr/HUST-China_2024) | ![GitHub pull requests](https://img.shields.io/github/issues-pr/Lucas04-nhr/HUST-China_2024) |
 
-## GitHub Actions
+#### GitHub Actions
 
 | Deployments(`develop`) | Deployments(`main`) | Synchronization |
 |------------------------|---------------------|-----------------|
 | ![Deployments on develop branch](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/jekyll_gh_pages.yaml?branch=develop) | ![Deployments on main branch](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/jekyll_gh_pages.yaml?branch=main) | ![Synchronization from Gitlab](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/sync_from_gitlab.yaml?label=Synchronization) |
 
-## Gitlab Pipeline
+#### Gitlab Pipeline
+
 | Deployments | Synchronization |
 |-------------|-----------------|
 | ![Deployments on Gitlab](https://gitlab.igem.org/2024/hust-china/badges/main/pipeline.svg) | ![Synchronization to GitHub](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/pull_to_gitlab.yaml?label=Synchronization) |
 
-## Direct links
+#### Direct links
 
 - <a href="https://gitlab.igem.org/2024/hust-china" target="_blank">Gitlab Repository</a>
 - <a href="https://github.com/Lucas04-nhr/HUST-China_2024" target="_blank">Mirrored GitHub Repository</a>
