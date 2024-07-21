@@ -24,3 +24,12 @@ aside: false
 | Deployments | Synchronization |
 |-------------|-----------------|
 | ![Deployments on Gitlab](https://gitlab.igem.org/2024/hust-china/badges/main/pipeline.svg) | ![Synchronization to GitHub](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/pull_to_gitlab.yaml?label=Synchronization) |
+
+## Direct links
+
+- <a href="https://gitlab.igem.org/2024/hust-china" target="_blank">Gitlab Repository</a>
+- <a href="https://github.com/Lucas04-nhr/HUST-China_2024" target="_blank">Mirrored GitHub Repository</a>
+- <a href="https://2024.igem.org/hust-china" target="_blank">Official Website</a>
+- <a href="https://igem.lucas04.xyz/" target="_blank">Mirrored Website</a>
+
+> To speed up the visit in mainland China and see the most recent update, please use the mirrored website hosted by GitHub Pages.
