@@ -14,11 +14,10 @@
     
 
   {% elsif page.layout == "page" or page.layout == "blog" %}
-        <section id="about-this-page" class="section page--description">
-            <h4>Page Contents</h4>
-        </section>
-        {% include nav-page-contents.html %}
-
+    <section id="about-this-page" class="section page--description">
+        <h4>Page Contents</h4>
+    </section>
+    {% include nav-page-contents.html %}
 
   {% elsif page.layout == "categories" %}
     <section class="section  section--category-index">
