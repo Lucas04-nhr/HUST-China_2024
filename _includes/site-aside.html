@@ -19,7 +19,7 @@
       </section>
       <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const headers = document.querySelectorAll("h2, h3, h4, h5, h6");
+            const headers = document.querySelectorAll("h2, h3, h4, h5, h6, section[id]");
             const section = document.querySelector("#about-this-page"); // 确保正确选择section元素
             const nav = document.createElement("nav");
             section.appendChild(nav);
