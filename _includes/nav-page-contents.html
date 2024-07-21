@@ -1,11 +1,6 @@
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     const section = document.querySelector("#about-this-page");
-
-    // Check if the section already contains a nav element
-    if (section.querySelector("nav")) {
-        return; // If a nav element already exists, do not create a new one
-    }
     
     const headers = document.querySelectorAll("article h2, article h3, article h4, article h5, article h6");
     const nav = document.createElement("nav");
@@ -21,6 +16,7 @@
         link.classList.add(header.tagName.toLowerCase());
         nav.appendChild(link);
     });
+
   });
 </script>
 
@@ -54,5 +50,12 @@
     }
     .section.page--description nav a.h6 {
         padding-left: 40px;
+    }
+
+    /* Media query to hide section when width is less than 500px */
+    @media (max-width: 500px) {
+        .section.page--description {
+            display: none;
+        }
     }
 </style>
