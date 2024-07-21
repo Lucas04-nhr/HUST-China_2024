@@ -17,9 +17,9 @@
       <a href="{{ url }}">{{ item.title }}</a>
       {% endif %}
       {% if item.sub_navigation %}
-      <ul class="sub_nav" style="display: none; position: absolute; z-index: 999;">
+      <ul class="sub_nav" style="display: none; position: absolute;">
         {% for sub_nav in item.sub_navigation %}
-        <li class="sub_nav item--nav" ; style="z-index: 1000;">
+        <li class="sub_nav item--nav">
           <a href="{{ site.baseurl }}{{ sub_nav.url }}" class="sub_nav">{{ sub_nav.title }}</a>
         </li>
         {% endfor %}
@@ -39,7 +39,7 @@
 <style>
   nav.nav--header a.no-hover {
     position: relative;
-    z-index: 1000;
+    z-index: 999;
   }
 
   nav.nav ul.list--nav li.item--nav {
@@ -60,7 +60,7 @@
   ul.sub_nav {
     background-color: #F9F9F9;
     flex-direction: column;
-    z-index: 999;
+    z-index: 1000;
     margin-top: 0.6rem;
     border-radius: 0.2rem;
   }
@@ -75,6 +75,7 @@
   }
 
   ul.sub_nav li.sub_nav a.sub_nav {
+    z-index: 999;
     /* 强制不换行 */
     white-space: nowrap;
     font-size: 1rem;
