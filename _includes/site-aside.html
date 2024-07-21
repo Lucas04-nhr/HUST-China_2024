@@ -15,11 +15,11 @@
 
   {% elsif page.layout == "page" or page.layout == "blog" %}
       <section id="about-this-page" class="section page--description">
-          <h3>Page Contents</h3>
       </section>
       <script>
         document.addEventListener("DOMContentLoaded", function() {
             const headers = document.querySelectorAll("h2, h3, h4, h5, h6, section[id]");
+            const section = document.querySelector("#about-this-page");
             const nav = document.createElement("nav");
             section.appendChild(nav);
   
@@ -38,12 +38,12 @@
           html {
               scroll-behavior: smooth;
           }
-          .section.page--description nav {
+          nav {
               background: #f9f9f9;
               padding: 10px;
               border: 1px solid #ccc;
           }
-          .section.page--description nav a {
+          nav a {
               display: block;
               margin-bottom: 5px;
           }
