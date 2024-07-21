@@ -1,5 +1,7 @@
 ---
-title: Description
+title: description
+indexing: false
+sitemap: false
 permalink: /description/
 feature_text: |
   ## Description
