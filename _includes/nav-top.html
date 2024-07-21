@@ -68,23 +68,25 @@
 	.section.page--description nav a.h6 {
 		padding-left: 40px;
 	}
-	#back-to-top {
-		display: none; /* 初始隐藏 */
-		position: fixed;
-		bottom: 20px;
-		right: 20px;
-		padding: 10px 15px;
-		font-size: 16px;
-		background-color: #f9f9f9;
-		color: #aaddc4; /* 未选中时的文字颜色 */
-		border: none;
-		border-radius: 5px;
-		cursor: pointer;
-		z-index: 1000;
-		border: 1px solid #ccc;
-	}
-	#back-to-top:hover,
-  #back-to-top:active {
-		background-color: #f9f9f9;
-	}
+  #back-to-top {
+    display: none; /* 初始隐藏 */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #aaddc4; /* 未选中时的文字颜色 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    border: 1px solid #ccc;
+}
+
+#back-to-top:hover,
+#back-to-top:active {
+    background-color: #3cb469;
+    color: #f9f9f9; /* 选中后（点击时）的文字颜色 */
+}
 </style>
