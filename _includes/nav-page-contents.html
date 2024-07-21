@@ -1,18 +1,7 @@
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-      const section = document.querySelector("#about-this-page");
-      
-      // 检查是否已经生成了导航
-      if (section.querySelector("nav")) {
-          return; // 如果已经存在导航，则不再生成
-      }
-
-      // 添加不可点击的首行，内容为页面标题，格式为h4
-      const pageTitle = document.createElement("h4");
-      pageTitle.textContent = "{{ page.title }}"; 
-      nav.appendChild(pageTitle);
-
       const headers = document.querySelectorAll("article h2, article h3, article h4, article h5, article h6");
+      const section = document.querySelector("#about-this-page");
       const nav = document.createElement("nav");
       section.appendChild(nav);
 
