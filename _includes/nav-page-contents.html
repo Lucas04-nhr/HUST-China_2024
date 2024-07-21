@@ -17,12 +17,6 @@
         nav.appendChild(link);
     });
 
-    // 检查是否已经生成了导航
-    if (section.querySelector("nav")) {
-          return; // 如果已经存在导航，则不再生成
-      }
-
-
   });
 </script>
 
@@ -30,7 +24,7 @@
     html {
         scroll-behavior: smooth;
     }
-    
+
     .section.page--description nav {
         background: #f9f9f9;
         padding: 10px;
@@ -56,5 +50,12 @@
     }
     .section.page--description nav a.h6 {
         padding-left: 40px;
+    }
+
+    /* Media query to hide section when width is less than 500px */
+    @media (max-width: 500px) {
+        .section.page--description {
+            display: none;
+        }
     }
 </style>
