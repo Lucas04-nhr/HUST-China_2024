@@ -1,30 +1,27 @@
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const section = document.querySelector("#about-this-page");
-  
-      // Check if the section contains multiple nav elements
-      const navElements = section.querySelectorAll("nav");
-      if (navElements.length > 1) {
-          // Remove the last nav element if multiple exist
-          navElements[navElements.length - 1].remove();
-      } else if (navElements.length === 0) {
-          // If no nav element exists, create one
-          const headers = document.querySelectorAll("article h2, article h3, article h4, article h5, article h6");
-          const nav = document.createElement("nav");
-          section.appendChild(nav);
-  
-          headers.forEach((header, index) => {
-              if (!header.id) {
-                  header.id = "header-" + index;
-              }
-              const link = document.createElement("a");
-              link.href = "#" + header.id;
-              link.textContent = header.textContent;
-              link.classList.add(header.tagName.toLowerCase());
-              nav.appendChild(link);
-          });
-      }
+  document.addEventListener("DOMContentLoaded", function() {
+    const section = document.querySelector("#about-this-page");
+
+    // Check if the section already contains a nav element
+    if (section.querySelector("nav")) {
+        return; // If a nav element already exists, do not create a new one
+    }
+    
+    const headers = document.querySelectorAll("article h2, article h3, article h4, article h5, article h6");
+    const nav = document.createElement("nav");
+    section.appendChild(nav);
+
+    headers.forEach((header, index) => {
+        if (!header.id) {
+            header.id = "header-" + index;
+        }
+        const link = document.createElement("a");
+        link.href = "#" + header.id;
+        link.textContent = header.textContent;
+        link.classList.add(header.tagName.toLowerCase());
+        nav.appendChild(link);
     });
+  });
 </script>
 
 <style>
