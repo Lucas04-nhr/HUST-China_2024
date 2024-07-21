@@ -17,9 +17,9 @@
       <a href="{{ url }}">{{ item.title }}</a>
       {% endif %}
       {% if item.sub_navigation %}
-      <ul class="sub_nav" style="display: none; position: absolute;">
+      <ul class="sub_nav" style="display: none; position: absolute; z-index: 999;">
         {% for sub_nav in item.sub_navigation %}
-        <li class="sub_nav item--nav">
+        <li class="sub_nav item--nav"; style="z-index: 1000;">
           <!-- I wonder the base url should be included. -->
           <a href="{{ sub_nav.url }}" class="sub_nav">{{ sub_nav.title }}</a>
         </li>
