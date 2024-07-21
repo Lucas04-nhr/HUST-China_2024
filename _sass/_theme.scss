@@ -10,7 +10,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -137,7 +137,7 @@ body {
 
 .content {
   @include breakpoint(break-1) {
-    width: 62%;
+    width: 80%;
   }
 }
 
@@ -147,7 +147,7 @@ body {
 
 .aside {
   @include breakpoint(break-1) {
-    max-width: 34%;
+    max-width: 20%;
     margin-left: 4%;
     @include flex(1, 0, auto);
     opacity: 0.5;
