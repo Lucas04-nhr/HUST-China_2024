@@ -88,4 +88,3 @@ pip install -r dependencies.txt
 ```bash
 python app.py
 ```
-Test pull request rules.
