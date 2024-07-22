@@ -66,20 +66,35 @@
       }
       const change_zindex_mouseon_func = () => change_zindex_mouseon($(dom), down_a, $(parent), parent_a); //鼠标进入父级li时改变z-index
       const change_zindex_mouseout_func = () => change_zindex_mouseout($(dom), down_a, $(parent), parent_a); //鼠标退出父级li时改变z-index
+      const change_zindex_mouseon1_func = () => change_zindex_mouseon1($(dom), down_a, $(parent), parent_a); //鼠标进入父级li时改变z-index
+      const change_zindex_mouseon2_func = () => change_zindex_mouseon2($(dom), down_a, $(parent), parent_a); //鼠标进入父级li时改变z-index
       const add_event = () => { //为下拉菜单初始化位置，并添加hover事件
         update_position_resize_func();
         $(parent).hover(() => { //鼠标移入就显示
-          change_zindex_mouseon_func();
-          down_point.css("transform", "rotate(0)");
-          $(dom).stop().slideDown("normal", "swing");
+          if ($("button.button--nav").css("display") === "none") {
+            change_zindex_mouseon1_func();
+            down_point.css("transform", "rotate(0)");
+            $(dom).stop().slideDown("normal", "swing", change_zindex_mouseon2_func);
+          }
+          else {
+            change_zindex_mouseon_func();
+            down_point.css("transform", "rotate(0)");
+            $(dom).stop().slideDown("normal", "swing");
+          }
         }, () => { //鼠标移出时隐藏
-          down_point.css("transform", "rotate(-90deg)");
-          $(dom).stop().slideUp("normal", "swing", change_zindex_mouseout_func);
+          if ($("button.button--nav").css("display") === "none") {
+            down_point.css("transform", "rotate(-90deg)");
+            change_zindex_mouseout_func();
+            $(dom).stop().slideUp("normal", "swing");
+          }
+          else {
+            down_point.css("transform", "rotate(-90deg)");
+            $(dom).stop().slideUp("normal", "swing", change_zindex_mouseout_func);
+          }
         });
       }
       setTimeout(add_event, 100); //待元素加载完毕后添加hover事件
       //页面尺寸变化时更新top/left
-      //window.addEventListener('resize', debounce(update_position_resize_func, 100));
       window.addEventListener('resize', debounce(update_resize_func, 100));
       //点击后更改样式
       down_a.on("click", function () {
@@ -93,11 +108,19 @@
       parent.css("z-index", "1002");
       parent_a.css("z-index", "1002");
     }
+    function change_zindex_mouseon2(ul, down_a, parent, parent_a) { //鼠标进入父级li时改变z-index
+      ul.css("z-index", "1001");
+      down_a.css("z-index", "1001");
+    }
+    function change_zindex_mouseon1(ul, down_a, parent, parent_a) { //鼠标进入父级li时改变z-index
+      parent.css("z-index", "1002");
+      parent_a.css("z-index", "1002");
+    }
     function change_zindex_mouseout(ul, down_a, parent, parent_a) { //鼠标退出父级li时改变z-index
-      ul.css("z-index", "1000");
-      down_a.css("z-index", "1000");
-      parent.css("z-index", "999");
-      parent_a.css("z-index", "999");
+      ul.css("z-index", "999");
+      down_a.css("z-index", "999");
+      parent.css("z-index", "1000");
+      parent_a.css("z-index", "1000");
     }
     function update_position(ul, parent) { //更新top/left
       const { top, left } = parent.offset();
