@@ -24,6 +24,15 @@
 </script>
 <!-- 引入jquery -->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<!-- 清除可能重复的左侧目录 -->
+<script>
+  $(document).ready(function () {
+    const nav_list = $("#about-this-page nav");
+    if (nav_list.length > 1)
+      for (let i = 1; i < nav_list.length; i++)
+        nav_list[i].remove();
+  });
+</script>
 <!-- 字体图标 -->
 <link rel="stylesheet" href="https://lwstkhyl.github.io/assets/css/iconfont.css">
 <link rel="stylesheet" href="https://lwstkhyl.github.io/assets/css/iconfont.woff2?t=1721477071944">
@@ -47,27 +56,72 @@
       $(dom).css("display", "flex"); //给ul设置默认display样式为flex
       $(dom).hide(); //ul默认隐藏
       const parent = $(dom).parent()[0];  //父级li
+      const parent_a = $(parent).children("a.no-hover");  //父级li中的a
       const down_point = $(parent).children("a.no-hover").children("span.icon-down-line-free"); //向下箭头
       const down_a = $(dom).children("li.sub_nav").children("a.sub_nav"); //子级li
       const update_position_resize_func = () => update_position($(dom), $(parent)); //更新ul位置
+      const update_resize_func = () => { //更新ul位置及宽度
+        down_ul.css("height", " fit-content");
+        update_position($(dom), $(parent));
+      }
+      const change_zindex_mouseon_func = () => change_zindex_mouseon($(dom), down_a, $(parent), parent_a); //鼠标进入父级li时改变z-index
+      const change_zindex_mouseout_func = () => change_zindex_mouseout($(dom), down_a, $(parent), parent_a); //鼠标退出父级li时改变z-index
+      const change_zindex_mouseon1_func = () => change_zindex_mouseon1($(dom), down_a, $(parent), parent_a); //鼠标进入父级li时改变z-index
+      const change_zindex_mouseon2_func = () => change_zindex_mouseon2($(dom), down_a, $(parent), parent_a); //鼠标进入父级li时改变z-index
       const add_event = () => { //为下拉菜单初始化位置，并添加hover事件
         update_position_resize_func();
         $(parent).hover(() => { //鼠标移入就显示
-          down_point.css("transform", "rotate(0)");
-          $(dom).stop().slideDown();
+          if ($("button.button--nav").css("display") === "none") {
+            change_zindex_mouseon1_func();
+            down_point.css("transform", "rotate(0)");
+            $(dom).stop().slideDown("normal", "swing", change_zindex_mouseon2_func);
+          }
+          else {
+            change_zindex_mouseon_func();
+            down_point.css("transform", "rotate(0)");
+            $(dom).stop().slideDown("normal", "swing");
+          }
         }, () => { //鼠标移出时隐藏
-          down_point.css("transform", "rotate(-90deg)");
-          $(dom).stop().slideUp();
+          if ($("button.button--nav").css("display") === "none") {
+            down_point.css("transform", "rotate(-90deg)");
+            change_zindex_mouseout_func();
+            $(dom).stop().slideUp("normal", "swing");
+          }
+          else {
+            down_point.css("transform", "rotate(-90deg)");
+            $(dom).stop().slideUp("normal", "swing", change_zindex_mouseout_func);
+          }
         });
       }
       setTimeout(add_event, 100); //待元素加载完毕后添加hover事件
       //页面尺寸变化时更新top/left
-      window.addEventListener('resize', debounce(update_position_resize_func, 100));
+      window.addEventListener('resize', debounce(update_resize_func, 100));
       //点击后更改样式
       down_a.on("click", function () {
         $(this).addClass("current").siblings().removeClass("current");
       });
     });
+    //解决z-index冲突：让展示出来的ul优先级比它对应的主菜单li小，比其它的li大
+    function change_zindex_mouseon(ul, down_a, parent, parent_a) { //鼠标进入父级li时改变z-index
+      ul.css("z-index", "1001");
+      down_a.css("z-index", "1001");
+      parent.css("z-index", "1002");
+      parent_a.css("z-index", "1002");
+    }
+    function change_zindex_mouseon2(ul, down_a, parent, parent_a) { //鼠标进入父级li时改变z-index
+      ul.css("z-index", "1001");
+      down_a.css("z-index", "1001");
+    }
+    function change_zindex_mouseon1(ul, down_a, parent, parent_a) { //鼠标进入父级li时改变z-index
+      parent.css("z-index", "1002");
+      parent_a.css("z-index", "1002");
+    }
+    function change_zindex_mouseout(ul, down_a, parent, parent_a) { //鼠标退出父级li时改变z-index
+      ul.css("z-index", "999");
+      down_a.css("z-index", "999");
+      parent.css("z-index", "1000");
+      parent_a.css("z-index", "1000");
+    }
     function update_position(ul, parent) { //更新top/left
       const { top, left } = parent.offset();
       const parent_height = parent.height();
@@ -89,12 +143,99 @@
     });
   });
 </script>
-<!-- 清除可能重复的左侧目录 -->
+<!-- 点击目录标签跳转、目录显示当前页面位置 -->
 <script>
   $(document).ready(function () {
-    const nav_list = $("#about-this-page nav");
-    if (nav_list.length > 1)
-      for (let i = 1; i < nav_list.length; i++)
-        nav_list[i].remove();
+    //初始配置
+    $("body,html").css("cssText", "scroll-behavior: auto !important;"); //禁用HTML平滑滚动
+    const h_list = $('article.article').find("h2, h3, h4, h5, h6"); //所有的标题
+    h_list.off("click"); //清除默认点击事件
+    h_list.on("dblclick", function () { //双击标题，滑到它的位置
+      $("html,body").animate({ scrollTop: $(this).offset().top });
+    });
+    const a_list = $('.section.page--description nav a'); //所有的目录a标签
+    if (a_list.length == 0) return; //如果没有目录就退出
+    a_list.prop('href', 'javascript:;'); //禁用a标签锚点跳转
+    a_list.off("click"); //清除默认点击事件
+
+    //点击目录a标签跳转到对应标题
+    let is_click = false; //添加判断条件--是否是因为点击了按钮而滚动
+    a_list.on("click", function () {
+      is_click = true; //点击了按钮，进行上锁的操作
+      const a_index = a_list.index(this); //点击的是第几个li
+      const scroll_distance = h_list.eq(a_index).offset().top; //它对应的h标签距页面顶端距离
+      $("body,html").stop().animate({ //进行滚动
+        scrollTop: scroll_distance
+      }, function () { //animate回调函数，当动画播放完执行
+        is_click = false; //滚动完了就把锁打开
+      });
+      a_list.removeClass("current");
+      $(this).addClass("current");
+    });
+
+    //回到顶部
+    const backtotop = $("#back-to-top"); //回到顶部按钮
+    backtotop.off("click");
+    backtotop.on('click', function () { //点击后滚动回顶部
+      is_click = true; //点击了按钮，进行上锁的操作
+      a_list.removeClass("current");
+      $("body,html").stop().animate({ //进行滚动
+        scrollTop: 0
+      }, function () { //animate回调函数，当动画播放完执行
+        is_click = false; //滚动完了就把锁打开
+      });
+    });
+
+    //根据页面滚动距离更改目录a标签
+    function update_classname() { //根据页面滚动距离更改目录a标签
+      const scroll_distance = $(document).scrollTop(); //当前页面滚动的距离
+      for (let i = h_list.length - 1; i >= 0; i--) {
+        if (scroll_distance + 1 >= h_list.eq(i).offset().top) { //找到滚动到了哪个h标签
+          a_list.removeClass("current");
+          a_list.eq(i).addClass('current'); //让对应的a标签改变
+          break;
+        }
+        if (i == 0) { //页面不在任何一个目录标签内，所有目录标签清空样式
+          a_list.removeClass("current");
+        }
+      }
+    }
+
+    //为页面添加滚动事件
+    $(window).scroll(function () {
+      if (!is_click) { //只有不是点击了目录标签而滚动时才触发
+        update_classname();
+      }
+    });
+    update_classname();
+  });
+</script>
+<!-- 代码框显示行数 -->
+<script>
+  $(document).ready(function () {
+    function get_count(code_text) { //计算代码行数
+      const regex = /\n/g;
+      const match = code_text.match(regex);
+      const count = match ? match.length : 0;
+      return count;
+    }
+    function create_ul(code_text) { //根据行数生成ul标签
+      const code_count = get_count(code_text);
+      const res_ul = $('<ul class="code-number"></ul>');
+      for (let i = 1; i <= code_count; i++) {
+        const li = $(`<li>${i}</li>`);
+        res_ul.append(li);
+      }
+      return res_ul;
+    }
+    const code_pre = $(".highlighter-rouge pre.highlight"); //代码框
+    code_pre.each(function (index, dom) {
+      if ($(dom).parents(".language-plaintext")[0]) { //如果是普通文本框
+        $(dom).css("cssText", "padding-left: 16px !important;");
+        return; //不显示行数
+      }
+      const code_text = $(dom).children('code').text(); //文本内容
+      $(dom).append(create_ul(code_text)); //循环添加
+    });
   });
 </script>
