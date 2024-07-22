@@ -8,15 +8,15 @@ excerpt: "Welcome to iGEM HUST-China 2024 wiki! It's still under construction. P
 ---
 
 # Heading 1
-
+我是Heading 1的内容
 ## Heading 2
-
+我是Heading 2的内容
 ### Heading 3
-
+我是Heading 3的内容
 #### Heading 4
-
+我是Heading 4的内容
 ##### Heading 5
-
+我是Heading 5的内容
 ###### Heading 6
 
 <small>A small element</small>
@@ -72,6 +72,15 @@ const bolden = (keyString, string) =>
   string.replace(new RegExp(keyString, 'g'), '<strong>'+keyString+'</strong>')
 
 blockquote.innerHTML = bolden("Mr. Sullivan", blockquote.innerHTML)
+```
+
+```
+我是普通代码框
+1
+2
+3
+4
+5
 ```
 
 `Single line of code`

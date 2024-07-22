@@ -24,6 +24,15 @@
 </script>
 <!-- 引入jquery -->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<!-- 清除可能重复的左侧目录 -->
+<script>
+  $(document).ready(function () {
+    const nav_list = $("#about-this-page nav");
+    if (nav_list.length > 1)
+      for (let i = 1; i < nav_list.length; i++)
+        nav_list[i].remove();
+  });
+</script>
 <!-- 字体图标 -->
 <link rel="stylesheet" href="https://lwstkhyl.github.io/assets/css/iconfont.css">
 <link rel="stylesheet" href="https://lwstkhyl.github.io/assets/css/iconfont.woff2?t=1721477071944">
@@ -109,14 +118,19 @@
 <!-- 点击目录标签跳转、目录显示当前页面位置 -->
 <script>
   $(document).ready(function () {
-    //禁用HTML平滑滚动
-    $("body,html").css("cssText", "scroll-behavior: auto !important;");
-    //点击目录a标签跳转到对应标题
+    //初始配置
+    $("body,html").css("cssText", "scroll-behavior: auto !important;"); //禁用HTML平滑滚动
     const h_list = $('article.article').find("h2, h3, h4, h5, h6"); //所有的标题
+    h_list.off("click"); //清除默认点击事件
+    h_list.on("dblclick", function () { //双击标题，滑到它的位置
+      $("html,body").animate({ scrollTop: $(this).offset().top });
+    });
     const a_list = $('.section.page--description nav a'); //所有的目录a标签
     if (a_list.length == 0) return; //如果没有目录就退出
     a_list.prop('href', 'javascript:;'); //禁用a标签锚点跳转
-    a_list.off("click");
+    a_list.off("click"); //清除默认点击事件
+
+    //点击目录a标签跳转到对应标题
     let is_click = false; //添加判断条件--是否是因为点击了按钮而滚动
     a_list.on("click", function () {
       is_click = true; //点击了按钮，进行上锁的操作
@@ -130,7 +144,8 @@
       a_list.removeClass("current");
       $(this).addClass("current");
     });
-    //回到顶部按钮
+
+    //回到顶部
     const backtotop = $("#back-to-top"); //回到顶部按钮
     backtotop.off("click");
     backtotop.on('click', function () { //点击后滚动回顶部
@@ -142,6 +157,7 @@
         is_click = false; //滚动完了就把锁打开
       });
     });
+
     //根据页面滚动距离更改目录a标签
     function update_classname() { //根据页面滚动距离更改目录a标签
       const scroll_distance = $(document).scrollTop(); //当前页面滚动的距离
@@ -156,7 +172,8 @@
         }
       }
     }
-    //滚动事件
+
+    //为页面添加滚动事件
     $(window).scroll(function () {
       if (!is_click) { //只有不是点击了目录标签而滚动时才触发
         update_classname();
@@ -165,12 +182,32 @@
     update_classname();
   });
 </script>
-<!-- 清除可能重复的左侧目录 -->
+<!-- 代码框显示行数 -->
 <script>
   $(document).ready(function () {
-    const nav_list = $("#about-this-page nav");
-    if (nav_list.length > 1)
-      for (let i = 1; i < nav_list.length; i++)
-        nav_list[i].remove();
+    function get_count(code_text) { //计算代码行数
+      const regex = /\n/g;
+      const match = code_text.match(regex);
+      const count = match ? match.length : 0;
+      return count;
+    }
+    function create_ul(code_text) { //根据行数生成ul标签
+      const code_count = get_count(code_text);
+      const res_ul = $('<ul class="code-number"></ul>');
+      for (let i = 1; i <= code_count; i++) {
+        const li = $(`<li>${i}</li>`);
+        res_ul.append(li);
+      }
+      return res_ul;
+    }
+    const code_pre = $(".highlighter-rouge pre.highlight"); //代码框
+    code_pre.each(function (index, dom) {
+      if ($(dom).parents(".language-plaintext")[0]) { //如果是普通文本框
+        $(dom).css("cssText", "padding-left: 16px !important;");
+        return; //不显示行数
+      }
+      const code_text = $(dom).children('code').text(); //文本内容
+      $(dom).append(create_ul(code_text)); //循环添加
+    });
   });
 </script>
