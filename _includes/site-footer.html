@@ -3,8 +3,10 @@
     <div class="copyright  typeset">
       <small class="small">&copy; {{ site.title }}</small>
     </div>
+  </div>
   <!-- {% include nav-footer.html %} -->
   <!-- Global footer -->
+  <div class="container">
     <div class="footer__global">
       {% include figure.html image="https://static.igem.wiki/teams/4595/wiki/home/qiming.png" caption="Qiming" position="left" width="300" height="300" %}
       {% include figure.html image="https://static.igem.wiki/teams/4595/wiki/home/school.png" caption="HUST" position="center" width="300" height="300" %}
@@ -13,4 +15,8 @@
   </div>
 </footer>
 
-
+<style>
+  footer.container div.footer__global {
+    /* To be continued */
+  }
+</style>
