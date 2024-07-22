@@ -3,14 +3,15 @@
     <div class="copyright  typeset">
       <small class="small">&copy; {{ site.title }}</small>
     </div>
+    {% include nav-footer.html %}
   </div>
-  {% include nav-footer.html %}
+  
   <!-- Global footer -->
   <div class="container">
-    <div class="footer__global">
-      {% include figure.html image="https://static.igem.wiki/teams/4595/wiki/home/qiming.png" caption="Qiming" position="left" width="50" height="50" %}
-      {% include figure.html image="https://static.igem.wiki/teams/4595/wiki/home/school.png" caption="HUST" position="center" width="50" height="50" %}
-      {% include figure.html image="https://static.igem.wiki/teams/4595/wiki/home/college.png" caption="LifeST" position="right" width="50" height="50" %}
+    <div class="footer_pic">
+      {% include figure.html image="https://static.igem.wiki/teams/4595/wiki/home/qiming.png" caption="Qiming" position="left" width="75%" height="75%" %}
+      {% include figure.html image="https://static.igem.wiki/teams/4595/wiki/home/school.png" caption="HUST" position="center" width="75%" height="75%" %}
+      {% include figure.html image="https://static.igem.wiki/teams/4595/wiki/home/college.png" caption="LifeST" position="right" width="75%" height="75%" %}
     </div>
   </div>
 </footer>
@@ -20,7 +21,8 @@
     background-color: #54e277;
     padding: 20px 0;
   }
-  footer.container div.footer__global {
-    /* To be continued */
+  footer.container div.footer__pic {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 </style>
