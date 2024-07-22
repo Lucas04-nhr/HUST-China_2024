@@ -1,11 +1,10 @@
 <footer class="footer">
-  <div class="container">
+  <!-- <div class="container">
     <div class="copyright  typeset">
       <small class="small">&copy; {{ site.title }}</small>
     </div>
     {% include nav-footer.html %}
-  </div>
-  
+  </div> -->
   <div class="container">
       <div class="footer_pic">
         <img src="https://static.igem.wiki/teams/4595/wiki/home/qiming.png" alt="Qiming">
@@ -18,11 +17,17 @@
     <div class="footer_text">
       <h5>Contact us</h5>
       <p>Address</p>
+      <small>Huazhong University oof Science and Technology</small>
       <small>1037 Luoyu Road, Hongshan District, Wuhan, Hubei Province, P.R. China 430074</small>
       <p>E-mail</p>
       <small>igemhustchina@163.com</small>
     </div>
   </div>
+
+  <div class="container">
+    <div class="footer_copyright">
+      <small>&copy; iGEM HUST-China 2024</small>
+    </div>
 </footer>
 
 <style>
@@ -30,6 +35,7 @@
     background-color: #aadec3 !important;
     padding: 20px 0;
   }
+
   footer div.container div.footer_pic {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -40,16 +46,24 @@
   footer div.container div.footer_pic img {
     width: 100%;
     height: auto;
-    margin: 0 auto;
-  }
-  footer div.container div.footer_text {
-    text-align: center;
-    margin: 20px;
-    width: 60%;
+    margin: 5px auto;
   }
 
+  footer div.container div.footer_text {
+    color: #0c0c0c;
+    text-align: center;
+    margin: auto;
+    width: 60%;
+  }
   footer div.container div.footer_text h5,
   footer div.container div.footer_text p {
     font-weight: bold;
+  }
+
+  footer div.container div.footer_copyright small {
+    margin: auto;
+    text-align: center;
+    display: block;
+    margin: 5px auto;
   }
 </style>
