@@ -28,10 +28,22 @@
     <div class="footer_copyright">
       <small>&copy; iGEM HUST-China 2024</small>
     </div>
+  </div>
+
+  <div class="container">
+    <div class="footer_status">
+      <small>
+        Check our website status page <a href="{{ site.url }}{{ site.baseurl }}/status" target="_blank">here</a>.
+      </small>
+    </div>
+  </div>
+  
+
 </footer>
 
 <style>
   footer{
+    color: #0c0c0c;
     background-color: #aadec3 !important;
     padding: 20px 0;
   }
@@ -50,7 +62,6 @@
   }
 
   footer div.container div.footer_text {
-    color: #0c0c0c;
     text-align: center;
     margin: auto;
     width: 60%;
@@ -60,10 +71,17 @@
     font-weight: bold;
   }
 
-  footer div.container div.footer_copyright small {
+  footer div.container div.footer_copyright{
     margin: auto;
     text-align: center;
     display: block;
     margin: 5px auto;
+  }
+
+  footer div.container div.footer_status{
+    margin: auto;
+    text-align: left;
+    display: block;
+    margin: 5% auto;
   }
 </style>
