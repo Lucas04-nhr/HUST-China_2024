@@ -11,7 +11,8 @@
 
     <li class="item  item--nav{% if item.url == page.url %}  item--current{% endif %}">
       {% if item.sub_navigation %}
-      <a href="javascript:;" class="no-hover">{{ item.title }} <span class="icon iconfont icon-down-line-free"></span></a>
+      <a href="javascript:;" class="no-hover">{{ item.title }} <span
+          class="icon iconfont icon-down-line-free"></span></a>
       {% else %}
       <a href="{{ url }}">{{ item.title }}</a>
       {% endif %}
@@ -57,7 +58,8 @@
   }
 
   ul.sub_nav {
-    background-color: #F9F9F9;
+    /* background-color: #F9F9F9; */
+    background-color: white;
     flex-direction: column;
     z-index: 1000;
     margin-top: 0.6rem;
@@ -74,7 +76,7 @@
   }
 
   ul.sub_nav li.sub_nav a.sub_nav {
-    z-index: 999;
+    z-index: 1000;
     /* 强制不换行 */
     white-space: nowrap;
     font-size: 1rem;
