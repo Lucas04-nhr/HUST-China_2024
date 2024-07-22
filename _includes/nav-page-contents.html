@@ -69,3 +69,28 @@
         padding-left: 40px;
     }
 </style>
+<style>
+    /* 去掉链接、按钮等点击后出现的边框以及下划线 */
+    a,
+    a:focus,
+    a:hover:focus,
+    button:focus,
+    button:hover:focus,
+    .button:focus,
+    .button:hover:focus,
+    input:focus,
+    input:hover:focus,
+    textarea:focus,
+    textarea:hover:focus,
+    select:focus,
+    select:hover:focus {
+        outline: none !important;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+        background-image: none !important;
+    }
+
+    /* 当前正处于的目录标签 */
+    .section.page--description nav a.current {
+        color: red;
+    }
+</style>
