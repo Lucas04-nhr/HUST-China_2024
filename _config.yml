@@ -92,7 +92,7 @@ title: "iGEM HUST-China 2024" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
 description: "Welcome to iGEM HUST-China 2024 wiki! It's still under construction. Please stay tuned for more information." # Site description and default description, also used in jekyll-seo-tag
 url: "https://2024.igem.wiki/" # Site url, also used in jekyll-seo-tag
-baseurl: "/hust-china"
+baseurl: "/hust-china/"
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 date_format: "%-d %B %Y" # Blog post date formatting using placeholder formatting
 # google_analytics: ""
