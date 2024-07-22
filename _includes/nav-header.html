@@ -37,9 +37,9 @@
 {% endif %}
 
 <style>
-  nav.nav--header a.no-hover {
+  nav.nav--header li.item a {
     position: relative;
-    z-index: 999;
+    z-index: 1000;
   }
 
   nav.nav ul.list--nav li.item--nav {
@@ -62,7 +62,7 @@
     background-color: white;
     flex-direction: column;
     height: fit-content;
-    z-index: 1000;
+    z-index: 999;
     margin-top: 0.6rem;
     border-radius: 0.2rem;
   }
@@ -77,7 +77,7 @@
   }
 
   ul.sub_nav li.sub_nav a.sub_nav {
-    z-index: 1000;
+    z-index: 999;
     /* 强制不换行 */
     white-space: nowrap;
     font-size: 1rem;
