@@ -6,14 +6,13 @@
     {% include nav-footer.html %}
   </div>
   
-  <!-- Global footer -->
   <div class="container">
-    <div class="footer_pic">
-      {% include figure.html image="https://static.igem.wiki/teams/4595/wiki/home/qiming.png" alt="Qiming" position="left" width="80%" height="80%" %}
-      {% include figure.html image="https://static.igem.wiki/teams/4595/wiki/home/school.png" alt="HUST" position="center" width="80%" height="80%" %}
-      {% include figure.html image="https://static.igem.wiki/teams/4595/wiki/home/college.png" alt="LifeST" position="right" width="80%" height="80%" %}
+      <div class="footer_pic">
+        <img src="https://static.igem.wiki/teams/4595/wiki/home/qiming.png" alt="Qiming" style="width: 80%; height: 80%;">
+        <img src="https://static.igem.wiki/teams/4595/wiki/home/school.png" alt="HUST" style="width: 80%; height: 80%;">
+        <img src="https://static.igem.wiki/teams/4595/wiki/home/college.png" alt="LifeST" style="width: 80%; height: 80%">
+      </div>
     </div>
-  </div>
 </footer>
 
 <style>
@@ -23,6 +22,9 @@
   }
   footer.container {
     color: #0c0c0c !important;
+  }
+  footer.container:hover {
+    color: #0000007a !important;
   }
   footer.container div.footer_pic {
     display: grid;
