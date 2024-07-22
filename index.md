@@ -1,61 +1,153 @@
 ---
 title: Home
 feature_text: |
-  ## Description
+  ## iGEM HUST-China 2024
   Welcome to iGEM HUST-China 2024 wiki! It's still under construction. Please stay tuned for more information.
 feature_image: "https://picsum.photos/1300/400?image=989"
 excerpt: "Welcome to iGEM HUST-China 2024 wiki! It's still under construction. Please stay tuned for more information."
 ---
 
-## Header 2
+# Heading 1
+我是Heading 1的内容
+## Heading 2
+我是Heading 2的内容
+### Heading 3
+我是Heading 3的内容
+#### Heading 4
+我是Heading 4的内容
+##### Heading 5
+我是Heading 5的内容
+###### Heading 6
 
-This is a paragraph of text.
+<small>A small element</small>
 
-### Header 3
+[A link](https://david.darn.es "A link")
 
-This is another paragraph of text.
+Lorem ipsum dolor sit amet, consectetur adip* isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.
 
-#### Header 4
+Duis aute irure dolor in [A link](https://david.darn.es "A link") reprehenderit in voluptate velit esse cillum **bold text** dolore eu fugiat nulla pariatur. Excepteur span element sint occaecat cupidatat non proident, sunt _italicised text_ in culpa qui officia deserunt mollit anim id `some code` est laborum.
 
-This is yet another paragraph of text.
+* An item
+* An item
+* An item
+* An item
+* An item
 
-##### Header 5
+1. Item one
+2. Item two
+3. Item three
+4. Item four
+5. Item five
 
-This is the last paragraph of text.
+> A simple blockquote
 
----
+Some HTML...
 
-Test code block:
-
-```python
-def test():
-    print("Hello, world!")
+``` html
+<blockquote cite="http://www.imdb.com/title/tt0284978/quotes/qt1375101">
+  <p>You planning a vacation, Mr. Sullivan?</p>
+  <footer>
+    <a href="http://www.imdb.com/title/tt0284978/quotes/qt1375101">Sunways Security Guard</a>
+  </footer>
+</blockquote>
 ```
 
-Test table:
+...CSS...
 
-| Header 1 | Header 2 | Header 3 |
-|----------|----------|----------|
-| Row 1    | Row 1    | Row 1    |
-| Row 2    | Row 2    | Row 2    |
-| Row 3    | Row 3    | Row 3    |
+``` css
+blockquote {
+  text-align: center;
+  font-weight: bold;
+}
+blockquote footer {
+  font-size: .8rem;
+}
+```
 
-Test list:
+...and JavaScript
 
-- Item 1
-- Item 2
-- Item 3
+``` js
+const blockquote = document.querySelector("blockquote")
+const bolden = (keyString, string) =>
+  string.replace(new RegExp(keyString, 'g'), '<strong>'+keyString+'</strong>')
 
-Test numbered list:
+blockquote.innerHTML = bolden("Mr. Sullivan", blockquote.innerHTML)
+```
 
-1. Item 1
-2. Item 2
-3. Item 3
+```
+我是普通代码框
+1
+2
+3
+4
+5
+```
 
-Test blockquote:
+`Single line of code`
 
-> This is a blockquote.
+## HTML Includes
 
-Test image:
+### Contact form
 
-![Image](https://picsum.photos/200/300?image=1062)
+{% include site-form.html %}
+
+``` html
+{% raw %}{% include site-form.html %}{% endraw %}
+```
+
+### Demo map embed
+
+{% include map.html id="1UT-2Z-Vg_MG_TrS5X2p8SthsJhc" title="Coffee shop map" %}
+
+``` html
+{% raw %}{% include map.html id="XXXXXX" title="Coffee shop map" %}{% endraw %}
+```
+
+### Button include
+
+{% include button.html text="A button" link="https://david.darn.es" %}
+
+{% include button.html text="A button with icon" link="https://twitter.com/daviddarnes" icon="twitter" %}
+
+``` html
+{% raw %}{% include button.html text="A button" link="https://david.darn.es" %}
+{% include button.html text="A button with icon" link="https://twitter.com/daviddarnes" icon="twitter" %}{% endraw %}
+```
+
+### Icon include
+
+{% include icon.html id="twitter" title="twitter" %} [{% include icon.html id="linkedin" title="twitter" %}](https://www.linkedin.com/in/daviddarnes)
+
+``` html
+{% raw %}{% include icon.html id="twitter" title="twitter" %}
+[{% include icon.html id="linkedin" title="twitter" %}](https://www.linkedin.com/in/daviddarnes){% endraw %}
+```
+
+### Video include
+
+{% include video.html id="zrkcGL5H3MU" title="Siteleaf tutorial video" %}
+
+``` html
+{% raw %}{% include video.html id="zrkcGL5H3MU" title="Siteleaf tutorial video" %}{% endraw %}
+```
+
+
+### Image includes
+
+{% include figure.html image="https://picsum.photos/600/800?image=894" caption="Image with caption" width="300" height="800" %}
+
+{% include figure.html image="https://picsum.photos/600/800?image=894" caption="Right aligned image" position="right" width="300" height="800" %}
+
+{% include figure.html image="https://picsum.photos/600/800?image=894" caption="Left aligned image" position="left" width="300" height="800" %}
+
+{% include figure.html image="https://picsum.photos/1600/800?image=894" alt="Image with just alt text" %}
+
+``` html
+{% raw %}{% include figure.html image="https://picsum.photos/600/800?image=894" caption="Image with caption" width="300" height="800" %}
+
+{% include figure.html image="https://picsum.photos/600/800?image=894" caption="Right aligned image" position="right" width="300" height="800" %}
+
+{% include figure.html image="https://picsum.photos/600/800?image=894" caption="Left aligned image" position="left" width="300" height="800" %}
+
+{% include figure.html image="https://picsum.photos/1600/800?image=894" alt="Image with just alt text" %}{% endraw %}
+```

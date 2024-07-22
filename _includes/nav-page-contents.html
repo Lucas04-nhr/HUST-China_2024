@@ -69,3 +69,129 @@
         padding-left: 40px;
     }
 </style>
+
+<!-- 点击目录标签跳转、目录显示当前页面位置 -->
+<style>
+    /* 去掉链接、按钮等点击后出现的边框以及下划线 */
+    a,
+    a:focus,
+    a:hover:focus,
+    button:focus,
+    button:hover:focus,
+    .button:focus,
+    .button:hover:focus,
+    input:focus,
+    input:hover:focus,
+    textarea:focus,
+    textarea:hover:focus,
+    select:focus,
+    select:hover:focus {
+        outline: none !important;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+        background-image: none !important;
+    }
+
+    /* 当前正处于的目录标签 */
+    .section.page--description nav a.current {
+        color: red;
+    }
+</style>
+
+<!-- 代码框显示行数--行数样式 -->
+<style>
+    article .highlighter-rouge pre .code-number {
+        position: absolute;
+        width: 48px;
+        background-color: #fafafa;
+        top: 0;
+        left: 0;
+        padding: 8px 0 6px 0;
+        margin: 0;
+        list-style: none;
+        text-align: right;
+        font-size: 16px;
+        overflow: hidden;
+        overflow-x: auto;
+        font-weight: normal;
+        line-height: 22px;
+        color: #000;
+    }
+
+    article .highlighter-rouge pre .code-number li {
+        color: #383a42;
+        border-right: 1px solid #c5c5c5;
+        padding: 0 8px;
+        list-style: none;
+        margin: 0;
+        font-weight: normal;
+        /* 字体 */
+        font-family: Source Code Pro, DejaVu Sans Mono, Ubuntu Mono, Anonymous Pro, Droid Sans Mono, Menlo, Monaco, Consolas, Inconsolata, Courier, monospace, PingFang SC, Microsoft YaHei, sans-serif;
+        font-feature-settings: normal;
+    }
+</style>
+
+<!-- 代码框样式 -->
+<style>
+    /* 初始配置 */
+    article .highlighter-rouge {
+        position: relative;
+    }
+
+    article .highlighter-rouge .highlight {
+        overflow-x: auto;
+    }
+
+    /* 代码框内文字 */
+    article .highlighter-rouge pre {
+        font-size: 14px;
+        line-height: 22px;
+        margin: 0 0 24px;
+        padding: 8px 16px 6px 56px;
+    }
+
+    article .highlighter-rouge code span {
+        font-size: 14px;
+    }
+
+    article .highlighter-rouge code,
+    article .highlighter-rouge code span {
+        line-height: 22px;
+        font-size: 14px;
+        /* 字体 */
+        font-family: Source Code Pro, DejaVu Sans Mono, Ubuntu Mono, Anonymous Pro, Droid Sans Mono, Menlo, Monaco, Consolas, Inconsolata, Courier, monospace, PingFang SC, Microsoft YaHei, sans-serif;
+        font-feature-settings: normal;
+    }
+
+    /* 设置代码框内滚动条在code框上 */
+    article .highlighter-rouge pre {
+        overflow-x: hidden;
+    }
+
+    article .highlighter-rouge pre code {
+        display: block;
+        overflow-x: auto;
+    }
+
+    /* 用单个`括起来的代码 */
+    article code.highlighter-rouge {
+        padding: 2px 4px;
+        font-size: 14px;
+        line-height: 22px;
+        color: #c7254e;
+        background-color: #f9f2f4;
+        border-radius: 2px;
+        font-family: Source Code Pro, DejaVu Sans Mono, Ubuntu Mono, Anonymous Pro, Droid Sans Mono, Menlo, Monaco, Consolas, Inconsolata, Courier, monospace, PingFang SC, Microsoft YaHei, sans-serif;
+        font-feature-settings: normal;
+    }
+
+    /* 滚动条样式 */
+    article .highlighter-rouge pre code::-webkit-scrollbar {
+        height: 8px;
+        width: 138px;
+    }
+
+    article .highlighter-rouge pre code::-webkit-scrollbar-thumb {
+        background: #C2C2C2;
+        border-radius: 4px;
+    }
+</style>
