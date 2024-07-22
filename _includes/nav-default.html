@@ -47,15 +47,16 @@
   /* 仅针对此导航栏的样式 */
   main.container ul.list--nav {
       display: grid;
-      grid-template-columns: 1fr 1fr; /* 定义两列布局 */
+      grid-template-columns: 1fr 1fr 1fr; /* 定义两列布局 */
       gap: 10px; /* 设置每个块之间的空隙 */
       background-color: #f9f9f9;
       padding: 20px;
-      border-radius: 5px;
+      border-radius: 10px;
   }
   
   main.container ul.list--nav li {
-      border-radius: 5px; /* 设置每个子块的圆角 */
+      border-radius: 10px; /* 设置每个子块的圆角 */
+      background-clip: padding-box; /* 设置背景颜色不会延伸到边框 */
   }
 
   main.container ul.list--nav {
