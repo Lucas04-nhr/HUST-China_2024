@@ -30,7 +30,7 @@ aside: false
 
 - <a href="https://gitlab.igem.org/2024/hust-china" target="_blank">Gitlab Repository</a>
 - <a href="https://github.com/Lucas04-nhr/HUST-China_2024" target="_blank">Mirrored GitHub Repository</a>
-- <a href="https://2024.igem.org/hust-china" target="_blank">Official Website</a>
+- <a href="https://2024.igem.wiki/hust-china" target="_blank">Official Website</a>
 - <a href="https://igem.lucas04.xyz/" target="_blank">Mirrored Website</a>
 
 > To speed up the visit in mainland China and see the most recent update, please use the mirrored website hosted by GitHub Pages.
