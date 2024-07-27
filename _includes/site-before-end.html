@@ -22,8 +22,10 @@
 
   });
 </script>
+
 <!-- 引入jquery -->
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://static.igem.wiki/teams/5175/static/jquery-3-1-1-min.js"></script>
+
 <!-- 清除可能重复的左侧目录 -->
 <script>
   $(document).ready(function () {
@@ -33,9 +35,19 @@
         nav_list[i].remove();
   });
 </script>
+
 <!-- 字体图标 -->
 <link rel="stylesheet" href="https://static.igem.wiki/teams/5175/static/iconfont.css">
-<link rel="stylesheet" href="https://static.igem.wiki/teams/5175/static/iconfont.woff2">
+
+<!-- 代码框字体 -->
+<style>
+  @font-face {
+    font-family: "cascadia code";
+    src: url(https://static.igem.wiki/teams/5175/static/cascadiacode.ttf) format('truetype'),
+      url(https://static.igem.wiki/teams/5175/static/cascadiacode.woff2) format('woff2');
+  }
+</style>
+
 <!-- 顶部导航中的下拉菜单 -->
 <script>
   const debounce = (fn, delay) => {
@@ -143,6 +155,7 @@
     });
   });
 </script>
+
 <!-- 点击目录标签跳转、目录显示当前页面位置 -->
 <script>
   $(document).ready(function () {
@@ -210,6 +223,7 @@
     update_classname();
   });
 </script>
+
 <!-- 代码框显示行数 -->
 <script>
   $(document).ready(function () {
