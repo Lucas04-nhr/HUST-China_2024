@@ -105,9 +105,9 @@ blockquote.innerHTML = bolden("Mr. Sullivan", blockquote.innerHTML)
 
 ### Button include
 
-<!-- {% include button.html text="A button" link="https://david.darn.es" %} -->
+{% include button.html text="A button" link="https://david.darn.es" %}
 
-<!-- {% include button.html text="A button with icon" link="https://twitter.com/daviddarnes" icon="twitter" %} -->
+{% include button.html text="A button with icon" link="https://twitter.com/daviddarnes" icon="twitter" %}
 
 ``` html
 {% raw %}{% include button.html text="A button" link="https://david.darn.es" %}
@@ -140,9 +140,7 @@ blockquote.innerHTML = bolden("Mr. Sullivan", blockquote.innerHTML)
 
 {% include figure.html image="https://picsum.photos/600/800?image=894" caption="Left aligned image" position="left" width="300" height="800" %}
 
-{% include figure.html image="https://picsum.photos/1600/800?image=894" alt="Image with just alt text" %} -->
-
-
+{% include figure.html image="https://picsum.photos/1600/800?image=894" alt="Image with just alt text" %}
 
 ``` html
 {% raw %}{% include figure.html image="https://picsum.photos/600/800?image=894" caption="Image with caption" width="300" height="800" %}
