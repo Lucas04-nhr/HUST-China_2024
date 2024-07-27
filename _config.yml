@@ -185,7 +185,4 @@ fonts:
   #   - https://fonts.gstatic.com
   font_urls:
     - https://static.igem.wiki/teams/5175/static/mainfont.css
-    - https://static.igem.wiki/teams/5175/static/merriweather-regular.woff2
-    - https://static.igem.wiki/teams/5175/static/merriweather-bold.woff2
-    - https://static.igem.wiki/teams/5175/static/cascadiacode.woff2
 
