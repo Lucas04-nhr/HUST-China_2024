@@ -13,14 +13,6 @@ $focusColour: #fa407a !default;
 $captionColour: #a8adac !default;
 $white: #ffffff !default;
 
-// Fonts
-@font-face {
-  font-family: 'Cascadia Code';
-  src: url('https://static.igem.wiki/teams/5175/static/cascadiacode.ttf') format('ttf');
-  font-weight: 400;
-  font-style: normal;
-}
-
 // Typography
 $bodytype: (
   font-family: "Georgia, serif",
@@ -31,7 +23,7 @@ $bodytype: (
 ) !default;
 
 $headingtype: (
-  font-family: '"Merriweather", serif',
+  font-family: '"Merriweather", "MiSans",serif',
   regular: 400,
   bold: 700,
   cap-height: 0.75
