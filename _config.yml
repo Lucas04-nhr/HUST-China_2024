@@ -181,7 +181,11 @@ sharing_links: # Appear at the bottom of single blog posts, add as desired. The 
 # TIP: Try to keep the number of urls as low to reduce the performance cost
 #      If multiple fonts can be requested in a single url opt for this
 fonts:
-  preconnect_urls:
-    - https://fonts.gstatic.com
+  # preconnect_urls:
+  #   - https://fonts.gstatic.com
   font_urls:
-    - https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap
+    - https://static.igem.wiki/teams/5175/static/mainfont.css
+    - https://static.igem.wiki/teams/5175/static/merriweather-regular.woff2
+    - https://static.igem.wiki/teams/5175/static/merriweather-bold.woff2
+    - https://static.igem.wiki/teams/5175/static/cascadiacode.woff2
+
