@@ -13,6 +13,28 @@ $focusColour: #fa407a !default;
 $captionColour: #a8adac !default;
 $white: #ffffff !default;
 
+// Fonts
+@font-face {
+  font-family: 'Merriweather';
+  src: url('https://static.igem.wiki/teams/5175/static/merriweather-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('https://static.igem.wiki/teams/5175/static/merriweather-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('https://static.igem.wiki/teams/5175/static/cascadiacode.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
 // Typography
 $bodytype: (
   font-family: "Georgia, serif",
@@ -36,24 +58,3 @@ $monospacetype: (
 ) !default;
 
 // TIP: Load custom fonts in _config.yaml
-
-@font-face {
-  font-family: 'Merriweather';
-  src: url('https://static.igem.wiki/teams/5175/static/merriweather-regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Merriweather';
-  src: url('https://static.igem.wiki/teams/5175/static/merriweather-bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Cascadia Code';
-  src: url('https://static.igem.wiki/teams/5175/static/cascadiacode.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
