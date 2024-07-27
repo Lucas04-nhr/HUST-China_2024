@@ -102,6 +102,10 @@ blockquote.innerHTML = bolden("Mr. Sullivan", blockquote.innerHTML)
 ### Button include
 
 
+<!-- {% include button.html text="A button" link="https://david.darn.es" %}
+
+{% include button.html text="A button with icon" link="https://twitter.com/daviddarnes" icon="twitter" %} -->
+
 ``` html
 {% raw %}{% include button.html text="A button" link="https://david.darn.es" %}
 {% include button.html text="A button with icon" link="https://twitter.com/daviddarnes" icon="twitter" %}{% endraw %}
