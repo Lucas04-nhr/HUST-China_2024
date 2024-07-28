@@ -6,11 +6,11 @@
     {% include nav-footer.html %}
   </div> -->
   <div class="container">
-      <div class="footer_pic">
-        <img src="https://static.igem.wiki/teams/4595/wiki/home/qiming.png" alt="Qiming">
-        <img src="https://static.igem.wiki/teams/4595/wiki/home/school.png" alt="HUST">
-        <img src="https://static.igem.wiki/teams/4595/wiki/home/college.png" alt="LifeST">
-      </div>
+    <div class="footer_pic">
+      <img src="https://static.igem.wiki/teams/4595/wiki/home/qiming.png" alt="Qiming">
+      <img src="https://static.igem.wiki/teams/4595/wiki/home/school.png" alt="HUST">
+      <img src="https://static.igem.wiki/teams/4595/wiki/home/college.png" alt="LifeST">
+    </div>
   </div>
 
   <div class="container">
@@ -31,11 +31,29 @@
     <div class="footer_copyright">
       <small>&copy; iGEM HUST-China 2024</small>
     </div>
-  </div>  
+  </div>
+
+  <div class="container">
+    <div class="footer_license">
+      <small>&copy; HUST-China_2024 - Content on this site is licensed under a </small>
+      <div class="license">
+        <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International
+          license.</a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer_gitlab">
+      <small>The repository used to create this website is available at</small>
+      <div class="gitlab">
+        <a href="http://gitlab.igem.org/2024/hust-china">gitlab.igem.org/2024/hust-china</a>
+      </div>
+    </div>
+  </div>
 </footer>
 
 <style>
-  footer{
+  footer {
     color: #0c0c0c !important;
     background-color: #aadec3 !important;
     padding: 20px 0;
@@ -48,6 +66,7 @@
     max-width: 600px;
     margin: auto;
   }
+
   footer div.container div.footer_pic img {
     width: 100%;
     height: auto;
@@ -59,15 +78,58 @@
     margin: auto;
     width: 60%;
   }
+
   footer div.container div.footer_text h5,
   footer div.container div.footer_text p {
     font-weight: bold;
   }
 
-  footer div.container div.footer_copyright{
+  footer div.container div.footer_copyright {
     margin: auto;
     text-align: center;
     display: block;
     margin: 5px auto;
+  }
+
+  footer div.container div.footer_license small {
+    display: inline-block;
+  }
+
+  footer div.container div.footer_license .license {
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  footer div.container div.footer_license .license a {
+    text-decoration: none;
+    color: #000067;
+    font-size: 13px;
+  }
+
+  footer div.container div.footer_license {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  footer div.container div.footer_gitlab small {
+    display: inline-block;
+    margin-top: 5px;
+  }
+
+  footer div.container div.footer_gitlab .gitlab {
+    display: inline-block;
+  }
+
+  footer div.container div.footer_gitlab .gitlab a {
+    text-decoration: none;
+    color: #000067;
+    font-size: 13px;
+  }
+
+  footer div.container div.footer_gitlab {
+    width: 100%;
+    margin: auto;
+    text-align: center;
   }
 </style>
