@@ -29,13 +29,13 @@
 
   <div class="container">
     <div class="footer_copyright">
-      <small>&copy; iGEM HUST-China 2024</small>
+      <p>&copy; iGEM HUST-China 2024</p>
       <br>
-      <small>Licenced under <a href="https://creativecommons.org/licenses/by/4.0/", target="_blank">CC BY 4.0</a></small>
+      <p>Licenced under <a href="https://creativecommons.org/licenses/by/4.0/", target="_blank">CC BY 4.0</a></p>
     </div>
   </div>
 
-  <div class="container">
+  <div class="container" id="gitlab">
     <div class="footer_gitlab">
       <p>You can find our project on <a href="https://gitlab.igem.org/2024/hust-china" target="_blank">iGEM GitLab</a>.</p>
       <br>
@@ -82,31 +82,37 @@
     display: block;
     margin: 5px auto;
   }
-  footer div.container div.footer_copyright small {
-    font-size: small;
-  }
   footer div.container div.footer_copyright a {
     text-decoration: none;
     color: #0c0c0c !important;
   }
+  footer div.container div.footer_copyright a:hover {
+    color: #498554 !important;
+  }
 
-  footer div.container div.footer_gitlab{
-    color: #559c62;
+  footer div.container#gitlab {
+    background-color: #559c62;
     display: inline-block;
     width: 100%;
     margin: auto;
-    text-align: left;
+    text-align: center;
   }
-  footer div.container div.footer_gitlab p {
-    margin: 5% 0;
+  footer div.container div.footer_gitlab{
+    display: inline-block;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
   }
   footer div.container div.footer_gitlab a {
     text-decoration: none;
-    color: #0c0c0c;
-    font-size: 13px;
+    color: #0c0c0c !important;
+  }
+  footer div.container div.footer_gitlab a:hover {
+    color: #498554 !important;
   }
   footer div.container div.footer_gitlab img {
-    margin: 5px 0;
+    display: block;
   }
 
 </style>
