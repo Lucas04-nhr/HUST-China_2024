@@ -105,6 +105,7 @@
           }
         });
       }
+      // setTimeout(add_event, 100); //待元素加载完毕后添加hover事件
       $(window).on("load", () => setTimeout(add_event, 0));  //待元素加载完毕后添加hover事件
       //页面尺寸变化时更新top/left
       window.addEventListener('resize', debounce(update_resize_func, 100));
