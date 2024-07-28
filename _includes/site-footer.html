@@ -30,24 +30,16 @@
   <div class="container">
     <div class="footer_copyright">
       <small>&copy; iGEM HUST-China 2024</small>
+      <br>
+      <small>Licenced under <a href="https://creativecommons.org/licenses/by/4.0/", target="_blank">CC BY 4.0</a></small>
     </div>
   </div>
 
   <div class="container">
-    <div class="footer_license">
-      <small>&copy; HUST-China_2024 - Content on this site is licensed under a </small>
-      <div class="license">
-        <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International
-          license.</a>
-      </div>
-    </div>
-  </div>
-  <div class="container">
     <div class="footer_gitlab">
-      <small>The repository used to create this website is available at</small>
-      <div class="gitlab">
-        <a href="http://gitlab.igem.org/2024/hust-china">gitlab.igem.org/2024/hust-china</a>
-      </div>
+      <p>You can find our project on <a href="https://gitlab.igem.org/2024/hust-china" target="_blank">iGEM GitLab</a>.</p>
+      <br>
+      <p>Pipeline status:<img src="https://gitlab.igem.org/2024/hust-china/badges/main/pipeline.svg"></p>
     </div>
   </div>
 </footer>
@@ -90,46 +82,31 @@
     display: block;
     margin: 5px auto;
   }
-
-  footer div.container div.footer_license small {
-    display: inline-block;
+  footer div.container div.footer_copyright small {
+    font-size: small;
   }
-
-  footer div.container div.footer_license .license {
-    display: inline-block;
-    margin-top: 20px;
-  }
-
-  footer div.container div.footer_license .license a {
+  footer div.container div.footer_copyright a {
     text-decoration: none;
-    color: #000067;
-    font-size: 13px;
+    color: #0c0c0c !important;
   }
 
-  footer div.container div.footer_license {
+  footer div.container div.footer_gitlab{
+    color: #559c62;
+    display: inline-block;
     width: 100%;
     margin: auto;
-    text-align: center;
+    text-align: left;
   }
-
-  footer div.container div.footer_gitlab small {
-    display: inline-block;
-    margin-top: 5px;
+  footer div.container div.footer_gitlab p {
+    margin: 5% 0;
   }
-
-  footer div.container div.footer_gitlab .gitlab {
-    display: inline-block;
-  }
-
-  footer div.container div.footer_gitlab .gitlab a {
+  footer div.container div.footer_gitlab a {
     text-decoration: none;
-    color: #000067;
+    color: #0c0c0c;
     font-size: 13px;
   }
-
-  footer div.container div.footer_gitlab {
-    width: 100%;
-    margin: auto;
-    text-align: center;
+  footer div.container div.footer_gitlab img {
+    margin: 5px 0;
   }
+
 </style>
