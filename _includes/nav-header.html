@@ -39,11 +39,19 @@
 <style>
   nav.nav--header li.item a {
     position: relative;
+  }
+
+  /*
+  nav.nav ul.list--nav li.item--nav {
+    cursor: pointer;
+  }
+  */
+  nav.nav ul.list--nav li.item--nav a {
     z-index: 1000;
   }
 
-  nav.nav ul.list--nav li.item--nav {
-    cursor: pointer;
+  nav.nav ul.list--nav li.item--nav a.no-hover {
+    font-size: 1.2rem;
   }
 
   nav.nav ul.list--nav li.item--nav span.icon-down-line-free {
@@ -68,6 +76,7 @@
   }
 
   ul.sub_nav li.sub_nav {
+    z-index: 999;
     /* 清除li左边默认的点 */
     list-style-type: none;
     /* 靠左对齐 */
@@ -84,6 +93,10 @@
     line-height: 1rem;
     padding: 0 0.2rem;
     margin: 0;
+  }
+
+  nav.nav a:hover {
+    color: green;
   }
 
   nav.nav a.current {
@@ -108,8 +121,22 @@
   const collapseNav = () => {
     if (document.body.clientWidth < 640) {
       navList.style.setProperty('--listHeight', `-${navList.offsetHeight}px`)
-    } else {
+      navList.style.marginRight = '1rem'
+      //修改窄屏时可能溢出屏幕的标签字体大小
+      document.querySelector("body > header > div > nav > ul > li:nth-child(6) > ul > li:nth-child(1) > a").style.fontSize = '1rem'
+      document.querySelector("body > header > div > nav > ul > li:nth-child(2) > ul > li:nth-child(3) > a").style.fontSize = '0.78rem'
+      document.querySelector("body > header > div > nav > ul > li:nth-child(6) > ul > li:nth-child(2) > a").style.fontSize = '0.7rem'
+    }
+    else if (document.body.clientWidth < 682) {
+      document.querySelector("body > header > div > nav > ul > li:nth-child(2) > ul > li:nth-child(3) > a").style.fontSize = '1rem'
+      document.querySelector("body > header > div > nav > ul > li:nth-child(6) > ul > li:nth-child(1) > a").style.fontSize = '0.75rem'
+      document.querySelector("body > header > div > nav > ul > li:nth-child(6) > ul > li:nth-child(2) > a").style.fontSize = '0.7rem'
+    }
+    else {
       navList.removeAttribute('style')
+      document.querySelector("body > header > div > nav > ul > li:nth-child(2) > ul > li:nth-child(3) > a").style.fontSize = '1rem'
+      document.querySelector("body > header > div > nav > ul > li:nth-child(6) > ul > li:nth-child(2) > a").style.fontSize = '1rem'
+      document.querySelector("body > header > div > nav > ul > li:nth-child(6) > ul > li:nth-child(1) > a").style.fontSize = '1rem'
     }
 
     button.onclick = () => {
