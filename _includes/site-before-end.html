@@ -84,11 +84,20 @@
       const other_ul_a = $(parent).siblings("li.item--nav").children("a.sub_nav"); //其它下拉子菜单中的a
       //计算ul应该在的位置↓
       function update_position(ul, parent) { //更新ul位置
-        // const { top, left } = parent.offset();
         const { top, left } = parent[0].getBoundingClientRect();
         const parent_height = parent.height();
+        const parent_width = parent.width();
         ul.css("top", top + parent_height * 2 / 3);
-        ul.css("left", left);
+        if ($("button.button--nav").css("display") === "none") { //宽屏--左对齐
+          ul.css("left", left);
+          ul[0].style.removeProperty('right');
+        }
+        else { //窄屏--右对齐
+          const body_width = document.body.clientWidth;
+          const right = body_width - left - parent_width;
+          ul.css("right", right);
+          ul[0].style.removeProperty('left');
+        }
       }
       const update_position_resize_func = () => update_position($(dom), $(parent)); //更新ul位置
       function update_resize_func() { //更新ul位置及宽度
