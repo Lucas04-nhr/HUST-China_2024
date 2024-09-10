@@ -37,13 +37,33 @@
 {% endif %}
 
 <style>
+  /* 小屏 */
+  button.button--nav {
+    display: inline-block;
+  }
+
+  /* 大屏 */
+  @media screen and (min-width: 640px) {
+    button.button--nav {
+      display: none;
+    }
+  }
+
   nav.nav--header li.item a {
     position: relative;
+  }
+
+  /*
+  nav.nav ul.list--nav li.item--nav {
+    cursor: pointer;
+  }
+  */
+  nav.nav ul.list--nav li.item--nav a {
     z-index: 1000;
   }
 
-  nav.nav ul.list--nav li.item--nav {
-    cursor: pointer;
+  nav.nav ul.list--nav li.item--nav a.no-hover {
+    font-size: 1.2rem;
   }
 
   nav.nav ul.list--nav li.item--nav span.icon-down-line-free {
@@ -68,12 +88,20 @@
   }
 
   ul.sub_nav li.sub_nav {
+    z-index: 999;
     /* 清除li左边默认的点 */
     list-style-type: none;
-    /* 靠左对齐 */
-    text-align: left !important;
+    /* 小屏靠右对齐 */
+    text-align: right !important;
     padding-top: 0.2rem;
     margin: 0;
+  }
+
+  /* 大屏靠左对齐 */
+  @media screen and (min-width: 40em) {
+    ul.sub_nav li.sub_nav {
+      text-align: left !important;
+    }
   }
 
   ul.sub_nav li.sub_nav a.sub_nav {
@@ -84,6 +112,10 @@
     line-height: 1rem;
     padding: 0 0.2rem;
     margin: 0;
+  }
+
+  nav.nav a:hover {
+    color: green;
   }
 
   nav.nav a.current {
@@ -106,10 +138,13 @@
 
   // Hide nav and apply toggle
   const collapseNav = () => {
-    if (document.body.clientWidth < 640) {
+    if (document.body.clientWidth < 625) {
       navList.style.setProperty('--listHeight', `-${navList.offsetHeight}px`)
-    } else {
+      button.style.display = 'inline-block'
+    }
+    else {
       navList.removeAttribute('style')
+      button.style.display = 'none'
     }
 
     button.onclick = () => {

@@ -30,14 +30,17 @@
   <div class="container">
     <div class="footer_copyright">
       <p>&copy; iGEM HUST-China 2024</p>
-      <p>Licenced under <a href="https://creativecommons.org/licenses/by/4.0/", target="_blank">CC BY 4.0</a></p>
+      <p>Licenced under <a href="https://creativecommons.org/licenses/by/4.0/" , target="_blank">CC BY 4.0</a></p>
     </div>
   </div>
-
-  <div class="container" id="gitlab">
-    <div class="footer_gitlab">
-      <p>You can find our project on <a href="https://gitlab.igem.org/2024/hust-china" target="_blank">iGEM GitLab</a>.</p>
-      <p>Pipeline status:<img src="https://gitlab.igem.org/2024/hust-china/badges/main/pipeline.svg"></p>
+  <div id="footer_gitlab_bg">
+    <div class="container" id="gitlab">
+      <div class="footer_gitlab">
+        <p>You can find our project on <a href="https://gitlab.igem.org/2024/hust-china" target="_blank">iGEM
+            GitLab</a>.
+        </p>
+        <p>Pipeline status:<img src="https://gitlab.igem.org/2024/hust-china/badges/main/pipeline.svg"></p>
+      </div>
     </div>
   </div>
 </footer>
@@ -81,37 +84,46 @@
     display: block;
     margin: 5px auto;
   }
+
   footer div.container div.footer_copyright a {
     text-decoration: none;
     color: #0c0c0c !important;
   }
+
   footer div.container div.footer_copyright a:hover {
     color: #498554 !important;
   }
 
   footer div.container#gitlab {
     background-color: #90bda6;
-    display: inline-block;
+    display: flex;
     width: 100%;
     margin: auto;
     text-align: center;
   }
-  footer div.container div.footer_gitlab{
+
+  footer div#footer_gitlab_bg {
+    background-color: #90bda6;
+  }
+
+  footer div.container div.footer_gitlab {
     display: inline-block;
     width: 90%;
     max-width: 1200px;
     margin: auto;
     text-align: left;
   }
+
   footer div.container div.footer_gitlab a {
     text-decoration: none;
     color: #0c0c0c !important;
   }
+
   footer div.container div.footer_gitlab a:hover {
     color: #498554 !important;
   }
+
   footer div.container div.footer_gitlab img {
     margin: 0 10px;
   }
-
 </style>
