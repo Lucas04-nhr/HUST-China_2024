@@ -8,4 +8,3 @@ excerpt: "Welcome to iGEM HUST-China 2024 wiki! It's still under construction. P
 ---
 
 {% include index.html %}
-### 中文字体测试
