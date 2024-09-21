@@ -45,3 +45,7 @@ images02:
 #### Left, Right
 
 {% include figure2.html images=page.images02 %}
+
+## Video
+
+{% include video.html src="https://video.igem.org/videos/embed/3977411a-9dfd-46a4-ae9f-c173d69040d4" caption="Test Video Caption" title="Test Video"%}
