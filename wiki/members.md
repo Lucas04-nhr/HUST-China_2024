@@ -13,6 +13,6 @@ permalink: /members/
 
 {% include members-people.html 
    name="Kinich" 
-   description="A saurian hunter who accompanies the one who calls himself \"Dragonlord.\" He often accepts commissions that no one else wants, and is equally skilled at appraising the price." 
+   description="A saurian hunter who accompanies the one who calls himself 'Dragonlord.' He often accepts commissions that no one else wants, and is equally skilled at appraising the price." 
    image="https://fastcdn.hoyoverse.com/content-v2/hk4e/125716/e0cfc13a904c1fc542924ae1e4d61da5_7486504169372511290.png" 
    image_position="right" %}
