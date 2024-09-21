@@ -14,7 +14,7 @@ images01:
     caption: Yunli
   - src: https://static.igem.wiki/teams/5175/test-resources/test-pic-middle.jpeg
     alt: High-Cloud Quintet
-    caption: March 7th
+    caption: High-Cloud Quintet
   - src: https://static.igem.wiki/teams/5175/test-resources/test-pic-right.jpeg
     alt: March 7th
     caption: March 7th
