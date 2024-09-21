@@ -20,9 +20,11 @@
   }
 </style>
 
+<div class="figure flex-container">
   {% for image in include.images %}
-  <figure class="figure flex-container">
+  <figure class="figure figure--auto-width">
       <img class="image" src="{{ image.src }}" alt="{{ image.alt | default: image.caption }}" style="width: auto;">
       {% if image.caption %}<figcaption class="caption">{{ image.caption }}</figcaption>{% endif %}
   </figure>
   {% endfor %}
+</div>
