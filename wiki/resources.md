@@ -127,7 +127,7 @@ blockquote.innerHTML = bolden("Mr. Sullivan", blockquote.innerHTML)
 
 Copy the video URL from the iGEM Universe and paste it in the `url` attribute.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/test-resources/video-upload-manual.png" caption="Image with caption" width="300" height="800" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/test-resources/video-upload-manual.png" caption="Manual of Uploading Videos" width="300" height="800" %}
 
 ### Image includes
 
