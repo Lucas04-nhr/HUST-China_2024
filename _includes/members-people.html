@@ -1,7 +1,7 @@
 <!-- _includes/members-people.html -->
-<div class="section {% if include.image_position == 'right' %}reverse{% endif %}">
+<div class="section {% if include.image_position == 'right' %}reverse{% endif %}" id="members">
   {% if include.image_position == 'left' %}
-      <img src="{{ include.image }}" alt="{{ include.name }}">
+      <img src="{{ include.image }}" alt="{{ include.name }}" id="members">
   {% endif %}
   <div class="info">
       <div class="name">{{ include.name }}</div>
