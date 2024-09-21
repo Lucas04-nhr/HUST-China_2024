@@ -4,7 +4,7 @@ permalink: /description/
 feature_text: |
   ## Description
   Welcome to iGEM HUST-China 2024 wiki! It's still under construction. Please stay tuned for more information.
-feature_image: "https://static.igem.wiki/teams/5175/test-resources/test-image-1300x400.jpg"
+feature_image: "https://static.igem.wiki/teams/5175/resources/background/bg-description.jpg"
 excerpt: "Welcome to iGEM HUST-China 2024 wiki! It's still under construction. Please stay tuned for more information."
 ---
 
