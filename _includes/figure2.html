@@ -13,7 +13,7 @@
     object-fit: contain;
     margin: 8px;
   }
-  .flex-container2 {
+  .flex-container {
   display: flex;
   margin: 10px;
   flex-wrap: wrap;
@@ -21,7 +21,7 @@
   }
 </style>
 
-<div class="figure flex-container2">
+<div class="figure flex-container">
   {% for image in include.images %}
   <figure class="figure figure--auto-width">
       <img class="image" src="{{ image.src }}" alt="{{ image.alt | default: image.caption }}" style="width: auto;">
