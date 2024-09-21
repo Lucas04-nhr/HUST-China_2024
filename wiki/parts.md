@@ -1,5 +1,5 @@
 ---
-title: parts
+title: Parts
 indexing: false
 sitemap: false
 permalink: /parts/

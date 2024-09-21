@@ -1,5 +1,5 @@
 ---
-title: education
+title: Education
 permalink: /education/
 feature_text: |
   ## Education

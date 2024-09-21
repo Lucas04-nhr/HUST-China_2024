@@ -1,5 +1,5 @@
 ---
-title: results
+title: Results
 indexing: false
 sitemap: false
 permalink: /results/
