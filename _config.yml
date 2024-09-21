@@ -130,8 +130,8 @@ navigation_header:
         url: /design/
       - title: Engineering
         url: /engineering/
-      - title: Protocols
-        url: /protocols/
+      - title: Protocol
+        url: /protocol/
       - title: Results
         url: /results/
       - title: Notebook
