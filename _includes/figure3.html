@@ -8,7 +8,7 @@
     justify-content: center;
   }
   .image {
-    max-width: 33%;
+    max-width: 30%;
     height: auto;
     margin: 8px;
   }
@@ -21,6 +21,7 @@
 
 {% for image in include.images %}
 <figure class="figure flex-container">
+  
     <img class="image" src="{{ image.src }}" alt="{{ image.alt | default: image.caption }}" style="width: auto;">
     {% if image.caption %}<figcaption class="caption">{{ image.caption }}</figcaption>{% endif %}
 </figure>
