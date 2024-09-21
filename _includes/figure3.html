@@ -1,5 +1,5 @@
 <style>
-  figure {
+  figure3 {
     max-width: 30%;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -22,9 +22,9 @@
 
 <div class="figure flex-container">
   {% for image in include.images %}
-  <figure class="figure figure--auto-width">
+  <figure3 class="figure figure--auto-width">
       <img class="image" src="{{ image.src }}" alt="{{ image.alt | default: image.caption }}" style="width: auto;">
       {% if image.caption %}<figcaption class="caption">{{ image.caption }}</figcaption>{% endif %}
-  </figure>
+  </figure3>
   {% endfor %}
 </div>
