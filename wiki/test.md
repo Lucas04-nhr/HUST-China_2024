@@ -38,6 +38,6 @@ images02:
 
 ### Multiple
 
-{% include figure_multiple.html images=page.images01 %}
+{% include figure3.html images=page.images01 %}
 
-{% include figure_multiple.html images=page.images02 %}
+{% include figure2.html images=page.images02 %}

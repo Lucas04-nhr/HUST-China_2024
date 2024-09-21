@@ -13,20 +13,6 @@
   }
 </style>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var figures = document.querySelectorAll('.figure--auto-width');
-    figures.forEach(function(figure) {
-      var images = figure.querySelectorAll('.image');
-      var totalWidth = figure.offsetWidth * 0.8;
-      var imageWidth = totalWidth / Math.min(images.length, 3);
-      images.forEach(function(image) {
-        image.style.width = imageWidth + 'px';
-      });
-    });
-  });
-</script>
-
 <figure class="figure figure--auto-width">
   {% for image in include.images %}
     <img class="image" src="{{ image.src }}" alt="{{ image.alt | default: image.caption }}" style="width: auto;">
