@@ -12,10 +12,15 @@
     height: auto;
     margin: 8px;
   }
+  .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  }
 </style>
 
 {% for image in include.images %}
-<figure class="figure figure--auto-width">
+<figure class="figure flex-container">
   
     <img class="image" src="{{ image.src }}" alt="{{ image.alt | default: image.caption }}" style="width: auto;">
     {% if image.caption %}<figcaption class="caption">{{ image.caption }}</figcaption>{% endif %}
