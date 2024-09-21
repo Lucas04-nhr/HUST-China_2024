@@ -14,9 +14,9 @@
   }
 </style>
 
+{% for image in include.images %}
 <figure class="figure figure--auto-width">
-  {% for image in include.images %}
     <img class="image" src="{{ image.src }}" alt="{{ image.alt | default: image.caption }}" style="width: auto;">
     {% if image.caption %}<figcaption class="caption">{{ image.caption }}</figcaption>{% endif %}
-  {% endfor %}
 </figure>
+{% endfor %}
