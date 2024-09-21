@@ -16,14 +16,14 @@ images01:
     alt: March 7th
     caption: March 7th
   - src: https://static.igem.wiki/teams/5175/test-resources/test-pic-right.jpeg
-    alt: March 7th - 2
-    caption: March 7th - 2
+    alt: March 7th
+    caption: March 7th
 
 images02:
   - src: https://static.igem.wiki/teams/5175/test-resources/test-pic-left.jpeg
     alt: Yunli
     caption: Yunli
-  - src: https://static.igem.wiki/teams/5175/test-resources/test-pic-center.jpeg
+  - src: https://static.igem.wiki/teams/5175/test-resources/test-pic-right.jpeg
     alt: March 7th
     caption: March 7th
 ---
