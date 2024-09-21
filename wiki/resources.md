@@ -122,7 +122,7 @@ blockquote.innerHTML = bolden("Mr. Sullivan", blockquote.innerHTML)
 ### Video include
 
 ``` html
-{% raw %}{% include video.html title="Your Video title" url="iGEM Universe Video URL" %}{% endraw %}
+{% raw %}{% include video.html title="Your Video title" url="iGEM Universe Video URL" caption="Your Video Caption" %}{% endraw %}
 ```
 
 Copy the video URL from the iGEM Universe and paste it in the `url` attribute.
