@@ -1,8 +1,6 @@
 ---
-title: attributions
-indexing: false
-sitemap: false
+title: Attributions
 permalink: /attributions/
 ---
 
-attributions
+{% include attribution-form.html %}
