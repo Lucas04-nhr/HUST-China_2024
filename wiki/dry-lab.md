@@ -1,5 +1,5 @@
 ---
-title: dry-lab
+title: Dry-Lab
 indexing: false
 sitemap: false
 permalink: /dry-lab/
