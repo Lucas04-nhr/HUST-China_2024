@@ -1,5 +1,5 @@
 ---
-title: safety
+title: Safety
 indexing: false
 sitemap: false
 permalink: /safety/

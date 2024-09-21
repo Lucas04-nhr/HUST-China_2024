@@ -1,5 +1,5 @@
 ---
-title: Resources of website
+title: Resources of Website
 feature_text: |
   ## iGEM HUST-China 2024
   Welcome to iGEM HUST-China 2024 wiki! It's still under construction. Please stay tuned for more information.
