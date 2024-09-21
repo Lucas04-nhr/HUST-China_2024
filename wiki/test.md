@@ -38,6 +38,10 @@ images02:
 
 ### Multiple
 
+#### Left, Middle, Right
+
 {% include figure3.html images=page.images01 %}
+
+#### Left, Right
 
 {% include figure2.html images=page.images02 %}

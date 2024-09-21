@@ -10,9 +10,16 @@
     border-radius: 8px;
     margin: 8px;
   }
+  .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  }
 </style>
 
-<figure class="figure  figure--{{ include.position | default: 'center' }}">
-  <img class="image" src="{{ include.image }}" alt="{{ include.alt | default: include.caption }}" {{ include.width ? include.width | prepend: 'width="' | append: '"' }} {{ include.height ? include.height | prepend: 'height="' | append: '"' }}>
-  {% if include.caption %}<figcaption class="caption">{{ include.caption }}</figcaption>{% endif %}
-</figure>
+<div class="flex-container">
+  <figure class="figure  figure--{{ include.position | default: 'center' }}">
+    <img class="image" src="{{ include.image }}" alt="{{ include.alt | default: include.caption }}" {{ include.width ? include.width | prepend: 'width="' | append: '"' }} {{ include.height ? include.height | prepend: 'height="' | append: '"' }}>
+    {% if include.caption %}<figcaption class="caption">{{ include.caption }}</figcaption>{% endif %}
+  </figure>
+</div>
