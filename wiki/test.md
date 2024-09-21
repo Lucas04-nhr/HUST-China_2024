@@ -9,21 +9,21 @@ permalink: /test/
 
 # Multiple Figures
 images01:
-  - image: https://static.igem.wiki/teams/5175/test-resources/test-pic-left.jpeg
+  - src: https://static.igem.wiki/teams/5175/test-resources/test-pic-left.jpeg
     alt: Yunli
     caption: Yunli
-  - image: https://static.igem.wiki/teams/5175/test-resources/test-pic-center.jpeg
+  - src: https://static.igem.wiki/teams/5175/test-resources/test-pic-center.jpeg
     alt: March 7th
     caption: March 7th
-  - image: https://static.igem.wiki/teams/5175/test-resources/test-pic-right.jpeg
+  - src: https://static.igem.wiki/teams/5175/test-resources/test-pic-right.jpeg
     alt: March 7th - 2
     caption: March 7th - 2
 
 images02:
-  - image: https://static.igem.wiki/teams/5175/test-resources/test-pic-left.jpeg
+  - src: https://static.igem.wiki/teams/5175/test-resources/test-pic-left.jpeg
     alt: Yunli
     caption: Yunli
-  - image: https://static.igem.wiki/teams/5175/test-resources/test-pic-center.jpeg
+  - src: https://static.igem.wiki/teams/5175/test-resources/test-pic-center.jpeg
     alt: March 7th
     caption: March 7th
 ---
