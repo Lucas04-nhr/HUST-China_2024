@@ -10,7 +10,7 @@
     border-radius: 8px;
     margin: 8px;
   }
-  .flex-container {
+  .flex-container1 {
   display: flex;
   margin: 10px;
   flex-wrap: wrap;
@@ -18,7 +18,7 @@
   }
 </style>
 
-<div class="flex-container">
+<div class="flex-container1">
   <figure class="figure  figure--{{ include.position | default: 'center' }}">
     <img class="image" src="{{ include.image }}" alt="{{ include.alt | default: include.caption }}" {{ include.width ? include.width | prepend: 'width="' | append: '"' }} {{ include.height ? include.height | prepend: 'height="' | append: '"' }}>
     {% if include.caption %}<figcaption class="caption">{{ include.caption }}</figcaption>{% endif %}
