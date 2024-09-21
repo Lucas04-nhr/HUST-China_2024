@@ -1,5 +1,5 @@
 ---
-title: notebook
+title: Notebook
 permalink: /notebook/
 feature_text: |
   ## Notebook

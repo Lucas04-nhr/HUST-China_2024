@@ -1,5 +1,5 @@
 ---
-title: design
+title: Design
 permalink: /design/
 feature_text: |
   ## Design

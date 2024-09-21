@@ -1,5 +1,5 @@
 ---
-title: human-practices
+title: Human Practices
 permalink: /human-practices/
 feature_text: |
   ## Human Practices

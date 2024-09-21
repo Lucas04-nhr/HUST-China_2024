@@ -1,5 +1,5 @@
 ---
-title: engineering
+title: Engineering
 permalink: /engineering/
 feature_text: |
   ## Engineering

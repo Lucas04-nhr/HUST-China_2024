@@ -1,5 +1,5 @@
 ---
-title: model
+title: Model
 permalink: /model/
 feature_text: |
   ## Model

@@ -1,5 +1,5 @@
 ---
-title: contribution
+title: Contribution
 indexing: false
 sitemap: false
 permalink: /contribution/
