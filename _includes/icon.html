@@ -1,26 +1,5 @@
-<div id="icon-container" class="icon icon--{{ include.id | default: 'link' }}" role="img" alt="{{ include.title | default: include.id }}"></div>
+<svg width="{{ include.width | default: '16' }}" height="{{ include.height | default: '16' }}" class="icon icon--{{ include.id | default: 'link' }}" role="img" alt="{{ include.title | default: include.id }}">
+  <title>{{ include.title | default: include.id }}</title>
+  <use xlink:href="{{ include.url | default: '#link' }}" fill="{{ include.color | default: 'currentColor' }}"></use>
+</svg>
 
-<script>
-    const svgUrl = "{{ include.url | default: '' }}"; // 获取 SVG URL
-    const iconContainer = document.getElementById('icon-container');
-    const iconWidth = "{{ include.width | default: '16' }}";
-    const iconHeight = "{{ include.height | default: '16' }}";
-    const iconColor = "{{ include.color | default: 'currentColor' }}";
-
-    if (svgUrl) {
-        fetch(svgUrl)
-            .then(response => response.text())
-            .then(svgContent => {
-                const parser = new DOMParser();
-                const svgDoc = parser.parseFromString(svgContent, 'image/svg+xml');
-                const svgElement = svgDoc.documentElement;
-                svgElement.setAttribute('width', iconWidth);
-                svgElement.setAttribute('height', iconHeight);
-                svgElement.setAttribute('fill', iconColor);
-                iconContainer.appendChild(svgElement);
-            })
-            .catch(error => console.error('Error loading SVG:', error));
-    } else {
-        console.error('No SVG URL provided');
-    }
-</script>
