@@ -139,9 +139,11 @@ navigation_header:
       - title: Parts
         url: /parts/
   - title: Dry Lab
-    url: /dry-lab/
-  - title: Hardware
-    url: /hardware/
+    sub_navigation:
+      - title: Model
+        url: /model/
+      - title: Hardware
+        url: /hardware/
   - title: HP
     sub_navigation:
       - title: Human Practices
