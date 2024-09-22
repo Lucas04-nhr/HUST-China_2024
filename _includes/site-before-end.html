@@ -338,13 +338,12 @@
     if (singleImage) {
       singleImage.addEventListener('click', function() {
         singleFullscreenImage.src = this.src; // 设置全屏图像的 src
-        singleFullscreenImage.classList.add('zoom-in'); // 添加放大类
         singleFullscreenContainer.style.display = 'flex'; // 显示全屏容器
 
-        // 使用 setTimeout 确保类添加后再显示
+        // 使用 setTimeout 确保容器显示后再添加放大类
         setTimeout(() => {
-          singleFullscreenImage.classList.remove('zoom-in');
-        }, 300); // 持续时间与 CSS 中的过渡时间相同
+          singleFullscreenImage.classList.add('zoom-in'); // 添加放大类
+        }, 10); // 使用小的延迟确保容器已经显示
       });
 
       // 点击全屏容器时隐藏
@@ -365,13 +364,12 @@
     images.forEach((image, index) => {
       image.addEventListener('click', function() {
         fullscreenImages[index].src = this.src; // 设置对应全屏图像的 src
-        fullscreenImages[index].classList.add('zoom-in'); // 添加放大类
         fullscreenContainers[index].style.display = 'flex'; // 显示对应全屏容器
 
-        // 使用 setTimeout 确保类添加后再显示
+        // 使用 setTimeout 确保容器显示后再添加放大类
         setTimeout(() => {
-          fullscreenImages[index].classList.remove('zoom-in');
-        }, 300); // 持续时间与 CSS 中的过渡时间相同
+          fullscreenImages[index].classList.add('zoom-in'); // 添加放大类
+        }, 50); // 使用小的延迟确保容器已经显示
       });
     });
 
