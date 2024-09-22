@@ -46,6 +46,23 @@ images02:
 
 {% include figure2.html images=page.images02 %}
 
+## Buttons
+
+{% include button.html link="../" text="Go back to Home Page" %}
+
+{% include button.html link="../resources/" text="Go to Resources Page" %}
+
+## MathJax
+
+### Inline Math
+
+The formula $E=mc^2$ is well-known.
+
+### Pseudo-Block Math
+
+<center>$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$</center>
+
+
 ## Video
 
 {% include video.html url="https://video.igem.org/videos/embed/3977411a-9dfd-46a4-ae9f-c173d69040d4" caption="Test Video Caption" title="Test Video"%}
