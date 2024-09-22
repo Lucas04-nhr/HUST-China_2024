@@ -1,29 +1,26 @@
-<svg width="{{ include.width | default: '16' }}" height="{{ include.height | default: '16' }}" class="icon icon--{{ include.id | default: 'link' }}" role="img" alt="{{ include.title | default: include.id }}">
-  <title>{{ include.title | default: include.id }}</title>
-  <use xlink:href="#{{ include.id | default: 'link' }}" fill="{{ include.color | default: 'currentColor' }}"></use>
-</svg>
-
-<!-- Container to hold the loaded SVG symbols -->
-<div id="svg-symbols-container" style="display: none;"></div>
+<div id="icon-container" class="icon icon--{{ include.id | default: 'link' }}" role="img" alt="{{ include.title | default: include.id }}"></div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const svgUrl = "{{ include.url }}"; // 获取 SVG URL
-    const svgId = "{{ include.id | default: 'link' }}"; // 获取 SVG ID
+    const svgUrl = "{{ include.url | default: '' }}"; // 获取 SVG URL
+    const iconContainer = document.getElementById('icon-container');
+    const iconWidth = "{{ include.width | default: '16' }}";
+    const iconHeight = "{{ include.height | default: '16' }}";
+    const iconColor = "{{ include.color | default: 'currentColor' }}";
 
-    fetch(svgUrl)
-      .then(response => response.text())
-      .then(svgContent => {
-        // Insert the SVG content into the container
-        const container = document.getElementById('svg-symbols-container');
-        container.innerHTML = svgContent;
-
-        // Ensure the loaded SVG content has the correct symbol ID
-        const symbol = container.querySelector('symbol');
-        if (symbol) {
-          symbol.setAttribute('id', svgId);
-        }
-      })
-      .catch(error => console.error('Error loading SVG:', error));
-  });
+    if (svgUrl) {
+        fetch(svgUrl)
+            .then(response => response.text())
+            .then(svgContent => {
+                const parser = new DOMParser();
+                const svgDoc = parser.parseFromString(svgContent, 'image/svg+xml');
+                const svgElement = svgDoc.documentElement;
+                svgElement.setAttribute('width', iconWidth);
+                svgElement.setAttribute('height', iconHeight);
+                svgElement.setAttribute('fill', iconColor);
+                iconContainer.appendChild(svgElement);
+            })
+            .catch(error => console.error('Error loading SVG:', error));
+    } else {
+        console.error('No SVG URL provided');
+    }
 </script>
