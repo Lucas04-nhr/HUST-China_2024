@@ -325,3 +325,26 @@
     });
   });
 </script>
+
+<!-- Fullscreen image -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('.image');
+    const fullscreenContainer = document.getElementById('fullscreen-container');
+    const fullscreenImage = document.getElementById('fullscreen-image');
+
+    images.forEach(image => {
+      image.addEventListener('click', function() {
+        const fullSrc = this.getAttribute('data-fullscreen');
+        fullscreenImage.src = fullSrc;
+        fullscreenContainer.style.display = 'flex'; // 显示全屏容器
+      });
+    });
+
+    fullscreenContainer.addEventListener('click', function() {
+      fullscreenContainer.style.display = 'none'; // 隐藏全屏容器
+    });
+  });
+</script>
+
