@@ -357,6 +357,22 @@
           singleFullscreenImage.classList.remove('zoom-out'); // 移除缩小类
         }, 300); // 持续时间与 CSS 中的过渡时间相同
       });
+
+      // 定义函数来隐藏全屏容器
+      function hideFullscreenContainerOnScroll() {
+        // 如果全屏容器是可见的（display 不为 'none'）
+        if (singleFullscreenContainer.style.display !== 'none') {
+          singleFullscreenImage.classList.add('zoom-out'); // 添加缩小类
+          setTimeout(() => {
+            //singleFullscreenContainer.style.display = 'none'; // 隐藏全屏容器
+            $(singleFullscreenContainer).fadeOut(300); // 隐藏全屏容器
+            singleFullscreenImage.classList.remove('zoom-out'); // 移除缩小类
+          }, 300); // 持续时间与 CSS 中的过渡时间相同
+        }
+      }
+
+      // 监听滚动事件
+      window.addEventListener('scroll', hideFullscreenContainerOnScroll);
     }
 
     // 处理多张图片的全屏显示
