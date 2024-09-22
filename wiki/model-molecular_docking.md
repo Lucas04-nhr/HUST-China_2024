@@ -19,7 +19,7 @@ excerpt: "The model is a means of assisting the overall completion and implement
 从PDB获取FAST -PETase与MHETase的序列信息。常用linker分为柔性linker与刚性linker，柔性linker能够提供更大的灵活性，允许连接的酶自由旋转和运动，使其能够适应动态的相互作用，而刚性linker可以防止两个酶之间的过度接近或旋转，保持适当的空间分离，减少相互干扰。选取了广泛使用的柔性linker（GGGGS，GSGSG与GGGGG）与刚性linker （EAAAK与 PAPAP）并采取不同的linker长度（分别为10,15,20,25,30,35个氨基酸）来构建PETase-Linker-MHETase双酶体系。
 双酶体系的立体结构通过AlphaFold Server[^1]获得，并使用AutoDockTools进行加极性氢处理，作为对接的受体。配体通过Avogadro来进行构建。Avogadro是an advanced semantic chemical editor, visualization, and analysis platform[^2], 我们用其构建并最小化4PET作为分子对接的配体。
 
-<center>{% include button.html link="../" text="Back to Model Introduction" %}</center>
+<center>{% include button.html link="../" text="Go back to Model Introduction" %}</center>
 
 ---
 

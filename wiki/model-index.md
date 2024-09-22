@@ -19,12 +19,17 @@ We attempt to delve into various components of the project from design to implem
 
 In project design, we aim to optimize the dual enzyme system of PETase-MHETase. We consider the impact of the types and lengths of linkers, with the order of PETase and MHETase in the peptide chain. With molecular docking, we use docking simulations and scoring function to obtain the optimal dual enzyme system.
 
-<center>{% include button.html link="./molecular-docking" text="Molecular Docking"  %}</center>
+<center>{% include button.html link="./molecular-docking" text="More about Molecular Docking"  %}</center>
 
 ## Genome-Scale Metabolic Modeling
 
 To support the results from Wet Lab, we have developed a genome-scale metabolic model for the engineered Pseudomonas putida KT2440. This model predicts its growth behavior, TPA absorption rate, and rhamnolipid product yield. We estimate that the engineered strain can efficiently absorb and degrade TPA while producing rhamnolipids in the process.
 
+<center>{% include button.html link="./genome-scale" text="More about Genome-scale Metabolic Modeling"  %}</center>
+
+
 ## Spatial Prediction Model for Microplastics
 
 Understanding the spatial distribution characteristics of microplastics is an important prerequisite for controlling soil pollution, which can assist the location selection of the fermentation tank for hardware. We plan to use machine learning to predict the spatial distribution with existing microplastic abundance data and environmental source-sink data.
+
+<center>{% include button.html link="./machine-learning" text="More about Machine Learning"  %}</center>
