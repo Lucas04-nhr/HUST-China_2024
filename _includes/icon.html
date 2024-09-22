@@ -5,25 +5,3 @@
 
 <!-- Container to hold the loaded SVG symbols -->
 <div id="svg-symbols-container" style="display: none;"></div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const svgUrl = "{{ include.url }}"; // 获取 SVG URL
-    const svgId = "{{ include.id | default: 'link' }}"; // 获取 SVG ID
-
-    fetch(svgUrl)
-      .then(response => response.text())
-      .then(svgContent => {
-        // Insert the SVG content into the container
-        const container = document.getElementById('svg-symbols-container');
-        container.innerHTML = svgContent;
-
-        // Ensure the loaded SVG content has the correct symbol ID
-        const symbol = container.querySelector('symbol');
-        if (symbol) {
-          symbol.setAttribute('id', svgId);
-        }
-      })
-      .catch(error => console.error('Error loading SVG:', error));
-  });
-</script>
