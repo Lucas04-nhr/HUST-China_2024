@@ -361,19 +361,7 @@
     const fullscreenContainers = document.querySelectorAll('.fullscreen-container'); // 选择所有全屏容器
     const fullscreenImages = Array.from(fullscreenContainers).map(container => container.querySelector('img')); // 获取每个全屏容器中的图片
 
-    images.forEach((image, index) => {
-      image.addEventListener('click', function() {
-        fullscreenImages[index].src = this.src; // 设置对应全屏图像的 src
-        fullscreenContainers[index].style.display = 'flex'; // 显示对应全屏容器
-
-        // 使用 setTimeout 确保容器显示后再添加放大类
-        setTimeout(() => {
-          fullscreenImages[index].classList.add('zoom-in'); // 添加放大类
-        }, 150); // 使用小的延迟确保容器已经显示
-      });
-    });
-
-    // 点击全屏容器时隐藏
+    // 处理点击全屏容器时隐藏
     fullscreenContainers.forEach((container, index) => {
       container.addEventListener('click', function() {
         fullscreenImages[index].classList.add('zoom-out'); // 添加缩小类
@@ -383,7 +371,24 @@
         }, 300); // 持续时间与 CSS 中的过渡时间相同
       });
     });
-  });
+
+    // 定义函数来隐藏全屏容器
+    function hideFullscreenContainersOnScroll() {
+      fullscreenContainers.forEach((container, index) => {
+        // 如果全屏容器是可见的（display 不为 'none'）
+        if (container.style.display !== 'none') {
+          fullscreenImages[index].classList.add('zoom-out'); // 添加缩小类
+          setTimeout(() => {
+            container.style.display = 'none'; // 隐藏对应全屏容器
+            fullscreenImages[index].classList.remove('zoom-out'); // 移除缩小类
+          }, 300); // 持续时间与 CSS 中的过渡时间相同
+        }
+    });
+  }
+
+  // 监听滚动事件
+  window.addEventListener('scroll', hideFullscreenContainersOnScroll);
+});
 </script>
 
 <!-- aside disappear when below 640px -->
