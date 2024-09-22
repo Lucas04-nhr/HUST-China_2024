@@ -47,7 +47,7 @@ AutoDock Vina的构象相关部分使用如下评分函数：
 从对接结果中可以看出，部分使用刚性linker的双酶体系中PETase对PET的亲和力较好，但考虑到柔性linker可以提供更大的灵活性，允许连接的酶自由旋转和运动，使其能够适应动态的相互作用，故倾向于选择柔性linker。柔性linker中PETase-gsgsg(35)-MHETase虽具有最大的亲和力，但通过对接结果可以看出其PET与两个酶同时发生了作用，故综合考虑下，采用了亲和力较好且对接结果中氢键较合理的PETase-ggggs(15)-MHETase（见图2）。
 
 {% include figure.html 
-  image="https://static.igem.wiki/teams/5175/resources/model/molecular-docking-scaled-02.gif" 
+  image="https://static.igem.wiki/teams/5175/resources/model/molecular-docking-02.png" 
   alt="Molecular Docking" 
   caption="图2.PETase-ggggs(15)-MHETase的对接结果图。其中红色部分为4PET，绿色部分为PETase，粉色部分是长为15个氨基酸，种类为ggggs的linker，黄色部分为MHETase"
 %}
