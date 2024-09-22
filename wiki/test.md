@@ -50,7 +50,7 @@ images02:
 
 {% include button.html link="./" text="Go back to Last Page" %}
 
-{% include button.html link="{{ site.baseurl }}/resources/" text="Go to Resources Page" %}
+{% include button.html link="\{\{ site.baseurl \}\}/resources/" text="Go to Resources Page" %}
 
 
 ## Video
