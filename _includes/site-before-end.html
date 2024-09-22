@@ -330,22 +330,21 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const images = document.querySelectorAll('.image'); // 选择所有图片
+    const images = document.querySelectorAll('.image');
     const fullscreenContainer = document.getElementById('fullscreen-container');
     const fullscreenImage = document.getElementById('fullscreen-image');
 
-    // 为每张图片添加点击事件
     images.forEach(image => {
       image.addEventListener('click', function() {
         const fullSrc = this.getAttribute('data-fullscreen');
-        fullscreenImage.src = fullSrc; // 设置全屏图像的 src
+        fullscreenImage.src = fullSrc;
         fullscreenContainer.style.display = 'flex'; // 显示全屏容器
       });
     });
 
-    // 点击全屏容器时隐藏
     fullscreenContainer.addEventListener('click', function() {
       fullscreenContainer.style.display = 'none'; // 隐藏全屏容器
     });
   });
 </script>
+
