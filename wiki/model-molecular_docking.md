@@ -38,6 +38,29 @@ AutoDock Vina的构象相关部分使用如下评分函数：
 
 通过改变linker种类，linker长度以及PETase与MHETase的前后顺序，探究这些因素对PET与PETase的亲和力影响。使用了5种linker、 6种不同的linker长度、2种顺序共计比较了60种组合，得到亲和力数据（见附件，图1）。
 
+{% include figure.html 
+  image="https://static.igem.wiki/teams/5175/resources/model/molecular-docking-01.png" 
+  alt="Molecular Docking" 
+  caption="图1.分子对接的部分结果，显示出对接完成后PET的构象以及形成的氢键，红色部分为4PET，蓝色部分为与PET形成氢键的氨基酸残基。蛋白名称中f代表FAST-PETase, eaaak等代表linker种类，括号中为linker的长度（氨基酸个数），m代表MHETase" 
+%}
+
+从对接结果中可以看出，部分使用刚性linker的双酶体系中PETase对PET的亲和力较好，但考虑到柔性linker可以提供更大的灵活性，允许连接的酶自由旋转和运动，使其能够适应动态的相互作用，故倾向于选择柔性linker。柔性linker中PETase-gsgsg(35)-MHETase虽具有最大的亲和力，但通过对接结果可以看出其PET与两个酶同时发生了作用，故综合考虑下，采用了亲和力较好且对接结果中氢键较合理的PETase-ggggs(15)-MHETase（见图2）。
+
+{% include figure.html 
+  image="https://static.igem.wiki/teams/5175/resources/model/molecular-docking-02.gif" 
+  alt="Molecular Docking" 
+  caption="图2.PETase-ggggs(15)-MHETase的对接结果图。其中红色部分为4PET，绿色部分为PETase，粉色部分是长为15个氨基酸，种类为ggggs的linker，黄色部分为MHETase"
+%}
+
+### Limitation
+
+分子对接探究了不同双酶体系中PETase对PET亲和力的影响，从亲和力的角度给与了选择不同双酶体系的依据。但4PET与单体FAST-PETase对接的结合能为-9.8 kcal/mol，这意味着双酶体系降解PET效率的提高并不能从亲和力的角度去解释，未来的团队可更多去考虑PETase反应产物的扩散带来的影响。
+  
+对接的过程中采用的是半柔性对接，将受体设置为了刚体，与实际情况有所差异，后续可以考虑将PETase的催化位点设置为柔性，以此可以得到更为准确的结合能。
+  
+计算方法本身具有局限性，AutoVock Vina采用的是迭代局部搜索全局优化，这意味着存在没找到最优构象的可能性，可以通过适当增加重复计算的次数以减少这一概率。
+
+
 
 <center>{% include button.html link="../" text="Go back to Model Introduction" %}</center>
 
