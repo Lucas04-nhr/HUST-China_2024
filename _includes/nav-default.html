@@ -46,17 +46,21 @@
 <style>
   /* 仅针对此导航栏的样式 */
   main.container ul.list--nav {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr; /* 定义两列布局 */
+      display: flex;
+      flex-direction: column; /* 垂直布局 */
       gap: 10px; /* 设置每个块之间的空隙 */
       background-color: #f9f9f9;
       padding: 20px;
       border-radius: 10px;
+      border: 1px solid #ccc; /* 添加边框 */
   }
   
   main.container ul.list--nav li {
+      padding: 10px; /* 设置每个子块的内边距 */
       border-radius: 10px; /* 设置每个子块的圆角 */
-      background-clip: padding-box; /* 设置背景颜色不会延伸到边框 */
+      background-color: #fff; /* 设置子块的背景颜色 */
+      border: 1px solid #ddd; /* 设置子块的边框 */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
   }
 
   main.container ul.list--nav {
@@ -67,5 +71,14 @@
 
   main.container li.item--nav {
     margin: auto;
+  }
+
+  main.container ul.list--nav li a {
+    text-decoration: none; /* 去掉链接的下划线 */
+    color: #007bff; /* 设置链接的颜色 */
+  }
+
+  main.container ul.list--nav li a:hover {
+    text-decoration: underline; /* 鼠标悬停时显示下划线 */
   }
 </style>
