@@ -48,9 +48,9 @@ images02:
 
 ## Buttons
 
-{% include button.html link="./" text="Go back to Last Page" %}
+{% include button.html link="../" text="Go back to Home Page" %}
 
-{% include button.html link="\{\{ site.baseurl \}\}/resources/" text="Go to Resources Page" %}
+{% include button.html link="../resources/" text="Go to Resources Page" %}
 
 
 ## Video
