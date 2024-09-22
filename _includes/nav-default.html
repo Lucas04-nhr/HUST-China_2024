@@ -56,13 +56,15 @@
   }
   
   main.container ul.list--nav li {
+      width: 100%; /* 设置每个子块的宽度相同 */
+      max-width: 200px; /* 设置一个最大宽度 */
       padding: 10px; /* 设置每个子块的内边距 */
       border-radius: 10px; /* 设置每个子块的圆角 */
       background-color: #fff; /* 设置子块的背景颜色 */
       border: 1px solid #ddd; /* 设置子块的边框 */
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+      margin: 0 auto; /* 子块自动居中 */
   }
-
   main.container ul.list--nav {
     list-style: none;
     padding: 0;
@@ -70,15 +72,37 @@
   }
 
   main.container li.item--nav {
+    text-decoration: none !important;
     margin: auto;
   }
 
   main.container ul.list--nav li a {
-    text-decoration: none; /* 去掉链接的下划线 */
-    color: #007bff; /* 设置链接的颜色 */
+    text-decoration: none !important; /* 去掉链接的下划线 */
   }
 
   main.container ul.list--nav li a:hover {
-    text-decoration: underline; /* 鼠标悬停时显示下划线 */
+    text-decoration: none !important; /* 鼠标悬停时去掉链接的下划线 */
+    cursor: pointer; /* 鼠标悬停时显示手型 */
+  }
+
+    /* 640px 以下分 1 栏 */
+  @media (max-width: 640px) {
+    main.container ul.list--nav {
+      grid-template-columns: 1fr; /* 定义一列布局 */
+    }
+  }
+
+  /* 960px 以下分 2 栏 */
+  @media (min-width: 641px) and (max-width: 960px) {
+    main.container ul.list--nav {
+      grid-template-columns: 1fr 1fr; /* 定义两列布局 */
+    }
+  }
+
+  /* 960px 以上分 3 栏 */
+  @media (min-width: 961px) {
+    main.container ul.list--nav {
+      grid-template-columns: 1fr 1fr 1fr; /* 定义三列布局 */
+    }
   }
 </style>
