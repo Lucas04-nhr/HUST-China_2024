@@ -3,9 +3,22 @@ title: Model
 permalink: /model/
 feature_text: |
   ## Model
-  Welcome to iGEM HUST-China 2024 wiki! It's still under construction. Please stay tuned for more information.
+  The model is a means of assisting the overall completion and implementation of a project through computational methods.
+  We attempt to delve into various components of the project from design to implementation for model construction and computation.
 feature_image: "https://static.igem.wiki/teams/5175/resources/background/bg-model.jpg"
-excerpt: "Welcome to iGEM HUST-China 2024 wiki! It's still under construction. Please stay tuned for more information."
+excerpt: "The model is a means of assisting the overall completion and implementation of a project through computational methods."
 ---
 
-members
+## Introduction
+
+The model is a means of assisting the overall completion and implementation of a project through computational methods.
+
+We attempt to delve into various components of the project from design to implementation for model construction and computation.
+
+### Optimization of Dual-Enzyme System
+
+In project design, we aim to optimize the dual enzyme system of PETase-MHETase. We consider the impact of the types and lengths of linkers, with the order of PETase and MHETase in the peptide chain. With molecular docking, we use docking simulations and scoring function to obtain the optimal dual enzyme system.
+
+### Molecular Docking
+
+
