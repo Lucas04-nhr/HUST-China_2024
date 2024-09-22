@@ -2,19 +2,13 @@
 <div class="figure flex-container">
   {% for image in include.images %}
   <figure2 class="figure figure--auto-width">
-      <img class="image" 
-           src="{{ image.src }}" 
-           alt="{{ image.alt | default: image.caption }}" 
-           data-fullscreen="{{ image.src }}"  <!-- 添加 data-fullscreen 属性 -->
-           style="width: auto;">
-      {% if image.caption %}
-        <figcaption class="caption">{{ image.caption }}</figcaption>
-      {% endif %}
+      <img class="image" src="{{ image.src }}" alt="{{ image.alt | default: image.caption }}" style="width: auto;">
+      {% if image.caption %}<figcaption class="caption">{{ image.caption }}</figcaption>{% endif %}
   </figure2>
   {% endfor %}
 </div>
 
 <!-- 全屏显示的容器 -->
 <div id="fullscreen-container" class="fullscreen-container">
-  <img id="fullscreen-image" src="" alt="" />
+  <img id="fullscreen-image" src="{{ include.image }}" alt="{{ include.alt | default: include.caption }}" />
 </div>
