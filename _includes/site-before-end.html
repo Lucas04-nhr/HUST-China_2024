@@ -385,3 +385,27 @@
     });
   });
 </script>
+
+<!-- aside disappear when below 640px -->
+<script>
+  // 定义函数来检查窗口宽度并显示或隐藏 aside
+  function toggleAside() {
+      const aside = document.querySelector('aside.aside'); // 选择 aside 元素
+      if (aside) {
+          if (window.innerWidth < 640) {
+              aside.style.display = 'none'; // 小于 640px 时隐藏
+          } else {
+              // 大于或等于 640px 时，检查当前状态
+              if (aside.style.display === 'none') {
+                  aside.style.display = ''; // 恢复到默认状态
+              }
+          }
+      }
+  }
+
+  // 初始检查
+  toggleAside();
+
+  // 监听窗口大小变化事件
+  window.addEventListener('resize', toggleAside);
+</script>
