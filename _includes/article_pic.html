@@ -17,6 +17,14 @@
   .fullscreen-container img {
     max-width: 90%;
     max-height: 90%;
-    }
+    transition: transform 0.3s ease-in-out; /* 添加过渡效果 */
+  }
 
+  .fullscreen-container img.zoom-in {
+    transform: scale(1); /* 放大 */
+  }
+
+  .fullscreen-container img.zoom-out {
+    transform: scale(0); /* 缩小 */
+  }
 </style>
