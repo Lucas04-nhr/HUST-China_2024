@@ -329,22 +329,41 @@
 <!-- Fullscreen image -->
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const images = document.querySelectorAll('.image');
-    const fullscreenContainer = document.getElementById('fullscreen-container');
-    const fullscreenImage = document.getElementById('fullscreen-image');
+document.addEventListener('DOMContentLoaded', function() {
+  // 处理单张图片的全屏显示
+  const singleImage = document.querySelector('.flex-container-single .image'); // 选择单张图片
+  const singleFullscreenContainer = document.getElementById('fullscreen-container');
+  const singleFullscreenImage = document.getElementById('fullscreen-image');
 
-    images.forEach(image => {
-      image.addEventListener('click', function() {
-        const fullSrc = this.getAttribute('data-fullscreen');
-        fullscreenImage.src = fullSrc;
-        fullscreenContainer.style.display = 'flex'; // 显示全屏容器
-      });
+  if (singleImage) {
+    singleImage.addEventListener('click', function() {
+      singleFullscreenImage.src = this.src; // 设置全屏图像的 src
+      singleFullscreenContainer.style.display = 'flex'; // 显示全屏容器
     });
 
-    fullscreenContainer.addEventListener('click', function() {
-      fullscreenContainer.style.display = 'none'; // 隐藏全屏容器
+    // 点击全屏容器时隐藏
+    singleFullscreenContainer.addEventListener('click', function() {
+      singleFullscreenContainer.style.display = 'none'; // 隐藏全屏容器
+    });
+  }
+
+  // 处理多张图片的全屏显示
+  const images = document.querySelectorAll('.flex-container .image'); // 选择所有多张图片
+  const fullscreenContainers = document.querySelectorAll('.fullscreen-container'); // 选择所有全屏容器
+  const fullscreenImages = Array.from(fullscreenContainers).map(container => container.querySelector('img')); // 获取每个全屏容器中的图片
+
+  images.forEach((image, index) => {
+    image.addEventListener('click', function() {
+      fullscreenImages[index].src = this.src; // 设置对应全屏图像的 src
+      fullscreenContainers[index].style.display = 'flex'; // 显示对应全屏容器
     });
   });
-</script>
 
+  // 点击全屏容器时隐藏
+  fullscreenContainers.forEach(container => {
+    container.addEventListener('click', function() {
+      this.style.display = 'none'; // 隐藏对应全屏容器
+    });
+  });
+});
+</script>
