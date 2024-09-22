@@ -46,6 +46,13 @@ images02:
 
 {% include figure2.html images=page.images02 %}
 
+## Buttons
+
+{% include button.html link="./" text="Go back to Last Page" %}
+
+{% include button.html link="{{ site.baseurl }}/resources/" text="Go to Resources Page" %}
+
+
 ## Video
 
 {% include video.html url="https://video.igem.org/videos/embed/3977411a-9dfd-46a4-ae9f-c173d69040d4" caption="Test Video Caption" title="Test Video"%}
