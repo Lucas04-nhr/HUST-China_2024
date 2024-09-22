@@ -1,3 +1,6 @@
 <div class="video">
-  <iframe src="https://www.youtube.com/embed/{{ include.id }}" frameborder="0" allowfullscreen title="{{ include.title | default: "Video" }}"></iframe>
+  <iframe title="{{ include.title }}" src="{{ include.url }}" frameborder="10px" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+  {% if include.caption %}<figcaption class="caption">{{ include.caption }}</figcaption>{% endif %}
+  <figcaption>Loading the video...</figcaption>
+  <figcaption>If the section doesn't response, try to refresh the page.</figcaption>
 </div>
