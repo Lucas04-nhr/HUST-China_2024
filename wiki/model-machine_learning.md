@@ -69,6 +69,10 @@ excerpt: "The model is a means of assisting the overall completion and implement
 
 尽管存在这些局限性，我们仍然相信本研究将为后续微生物降解微塑料实验提供数据和材料支持。并且，通过将研究对象从微塑料丰度改变为具体的微塑料种类、大小或者相关数据（如研究PET微塑料在不同区域的空间分布），该方法存在更多的扩展应用空间。
 
+### Attachment
+
+<a href="attachment">Click here</a> to see all the attachments in this page.
+
 
 <center>{% include button.html link="../" text="Go back to Model Introduction" %}</center>
 
