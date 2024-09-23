@@ -5,7 +5,8 @@
     <!-- General meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- 引入jquery -->
+    <script src="https://static.igem.wiki/teams/5175/static/jquery-3-1-1-min.js"></script>
     {% if page.indexing == false %}
       <meta name="robots" content="noindex">
     {% endif %}
@@ -47,6 +48,10 @@
   </head>
 
   <body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
+
+    <!-- Include lottie animation -->
+    <lottie-player id="lottie-animation" src="https://static.igem.wiki/teams/5175/static/lottie-seed.json" background="#B5DDC5" speed="1" direction="1" mode="bounce" loop autoplay></lottie-player>
+
     {% include site-icons.svg %}
 
     {{ content }}

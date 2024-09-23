@@ -36,6 +36,8 @@ images02:
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/test-resources/test-pic-center.jpeg" alt="March 7th" caption="March 7th" %}
 
+{% include figure.html image="https://static.igem.wiki/teams/5175/test-resources/test-pic-center.jpeg" alt="March 7th" caption="March 7th" %}
+
 ### Multiple
 
 #### Left, Middle, Right
@@ -62,7 +64,32 @@ The formula $E=mc^2$ is well-known.
 
 <center>$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$</center>
 
+## Table
 
-## Video
+其它文字112
 
-{% include video.html url="https://video.igem.org/videos/embed/3977411a-9dfd-46a4-ae9f-c173d69040d4" caption="Test Video Caption" title="Test Video"%}
+<figcaption class="caption table_caption">Test table1</figcaption>
+
+| 被代替/很少使用的标签 | 说明                             |
+| --------------------- | -------------------------------- |
+| dir                   | 定义目录列表，应用ul代替         |
+| acronym               | 定义首字母缩写，应用abbr代替     |
+| applet                | 定义嵌入的applet,应用object代替  |
+| isindex               | 定义与文档相关的可搜索索引       |
+| frame                 | 定义frameset中的一个特定的框架   |
+| frameset              | 定义一个框架集                   |
+| noframes              | 为那些不支持框架的浏览器显示文本 |
+
+其它文字123
+
+<figcaption class="caption table_caption">Test table2</figcaption>
+
+| 被代替/很少使用的标签 | 说明                             |
+| --------------------- | -------------------------------- |
+| dir                   | 定义目录列表，应用ul代替         |
+| acronym               | 定义首字母缩写，应用abbr代替     |
+| frame                 | 定义frameset中的一个特定的框架   |
+| frameset              | 定义一个框架集                   |
+| noframes              | 为那些不支持框架的浏览器显示文本 |
+
+其它文字234
