@@ -12,7 +12,7 @@ excerpt: "The model is a means of assisting the overall completion and implement
 
 ## Attachments
 
-### Supplementary Information includes Supplementary text S1-2, and Table S1.
+Supplementary Information includes Supplementary text S1-2, and Table S1.
 
 #### Text S1
 
@@ -38,8 +38,8 @@ POI data is the core data of location-based services. In GIS, POI data records t
 
 #### Table S1
 
-<figcaption class="caption table_caption">Comparison of simulation goodness and prediction accuracy of different
-machine learning models in predicting soil microplastics abundance</figcaption>
+<figcaption class="caption table_caption">Comparison of simulation goodness and prediction accuracy of<br> different
+machine learning models<br> in predicting soil microplastics abundance</figcaption>
 
 |                          | **BP-GAO** | **RF**   | **LSTM** | **XGBoost** | **RBF**  | **SVR-RBF** |
 | ------------------------ | ---------- | -------- | -------- | ----------- | -------- | ----------- |
