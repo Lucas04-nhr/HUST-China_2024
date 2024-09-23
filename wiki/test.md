@@ -36,6 +36,8 @@ images02:
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/test-resources/test-pic-center.jpeg" alt="March 7th" caption="March 7th" %}
 
+{% include figure.html image="https://static.igem.wiki/teams/5175/test-resources/test-pic-center.jpeg" alt="March 7th" caption="March 7th" %}
+
 ### Multiple
 
 #### Left, Middle, Right
