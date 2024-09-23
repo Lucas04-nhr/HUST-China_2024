@@ -62,7 +62,7 @@ images07:
   - src: https://static.igem.wiki/teams/5175/resources/hardware/hardware-15.png
     alt: 
     caption: 
-  - src: https://static.igem.wiki/teams/5175/resources/hardware/hardware-16.png
+  - src: https://static.igem.wiki/teams/5175/resources/hardware/hardware-16.jpeg
     alt: 
     caption: 
 
