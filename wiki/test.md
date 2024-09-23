@@ -67,7 +67,7 @@ The formula $E=mc^2$ is well-known.
 ## Table
 
 <div class="table-parent">
-  <div class="table-container">
+  <tb class="table-container">
     <figcaption class="caption">Test table</figcaption>
 
     <table>
@@ -91,5 +91,5 @@ The formula $E=mc^2$ is well-known.
             </tr>
         </tbody>
     </table>
-  </div>
+  </tb>
 </div>
