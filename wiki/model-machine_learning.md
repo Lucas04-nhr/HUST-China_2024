@@ -16,7 +16,11 @@ excerpt: "The model is a means of assisting the overall completion and implement
 
 ### Model data selection and processing
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/model/model-machine-learning-01.png" alt="Sampling data of microplastics abundance in Wuhan" caption="Figure 1. Sampling data of microplastics abundance in Wuhan"}
+{% include figure.html 
+    image="https://static.igem.wiki/teams/5175/resources/model/model-machine-learning-01.png" 
+    alt="Sampling data of microplastics abundance in Wuhan" 
+    caption="Figure 1. Sampling data of microplastics abundance in Wuhan" 
+%}
 
 参考已有文献中采用多元回归决策树（MRT）方法分离出影响MPs空间丰度和组成的源汇相关因子，我们选择5个源汇因子和7个汇因子（TXT S1），其中的土壤属性数据 [^1] 来自<a href="https://www.fao.org/soils-portal/data-hub/en/" target="_blank">世界土壤数据库（HWSD）</a>，空间分辨率为1km，地理坐标系为WGS_1984_Albers，人口密度数据来自<a href="https://www.geodata.cn" target="_blank">National Earth System Science Data Center</a>，耕地、路网、建筑物数据来自<a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>，POI数据选取8类不同POI，基于<a href="https://github.com/Civitasv/AMapPoi" target="_blank">AMapPOI</a>使用百度地图API SDK服务抓取了POI数据，通过ArcGIS 10.7（ESRI，USA）进行数据处理。
 
