@@ -34,11 +34,11 @@ excerpt: "The model is a means of assisting the overall completion and implement
 我们基于拟合优度 （R<sup>2</sup>）、均方根误差（RMSE）和平均绝对误差（MAE）三个标准考虑不同机器学习模型的模拟和预测精度。
 
 <center>
-  $R^2=1-\frac{\sum{_{i=1}^{N}\left( p_i-a_i \right)}^2}{\sum{_{i=1}^{N}\left( a_i-\bar{a} \right)}^2}\,\,
-  \\
-  RMSE=\sqrt{\frac{1}{N}\sum{_{i=1}^{N}\left( p_i-a_i \right) ^2}}
-  \\
-  MAE=\frac{1}{N}\sum{_{i=1}^{N}|p_i-a_i|}$
+  $R^2=1-\frac{\sum{_{i=1}^{N}\left( p_i-a_i \right)}^2}{\sum{_{i=1}^{N}\left( a_i-\bar{a} \right)}^2}$
+  <br>
+  $RMSE=\sqrt{\frac{1}{N}\sum{_{i=1}^{N}\left( p_i-a_i \right) ^2}}$
+  <br>
+  $MAE=\frac{1}{N}\sum{_{i=1}^{N}|p_i-a_i|}$
 </center>
 
 
