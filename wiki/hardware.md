@@ -128,11 +128,11 @@ images10:
 
 #### 搅拌棒部分
 
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hardware/hardware-08.png" alt="" caption="" %}
+
 {% include figure3.html images=page.images05 %}
 
 整体采用上下罐联动搅拌系统，由于上罐培养基更新口持续有培养液通入，我们在入口处设计了一款可单项旋转的搅拌装，下方有挂钩，可直接衔接下罐搅拌板；为防止在小流量时无法完成自驱动，我们额外加入了类似榫卯的结构，保证搅拌板可沿顺时针自由旋转的同时，也可以通过上方连杆逆时针手动转动。
-
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hardware/hardware-08.png" alt="" caption="" %}
 
 理想情况下，上罐内培养液经中层待处理样液降温后即适于恶臭假单胞菌培养，对此需要对垂直方向上的液体流量有所控制，我们利用隔板的螺旋上升或下降来控制流量，隔板又受到上方连杆和转轴控制，间接受到温度控制；
 
