@@ -36,7 +36,7 @@ AutoDock Vina的构象相关部分使用如下评分函数：
 
 ### Results
 
-通过改变linker种类，linker长度以及PETase与MHETase的前后顺序，探究这些因素对PET与PETase的亲和力影响。使用了5种linker、 6种不同的linker长度、2种顺序共计比较了60种组合，得到亲和力数据（见附件，图1）。
+通过改变linker种类，linker长度以及PETase与MHETase的前后顺序，探究这些因素对PET与PETase的亲和力影响。使用了5种linker、 6种不同的linker长度、2种顺序共计比较了60种组合，得到亲和力数据（见附件[^6]，图1）。
 
 {% include figure.html 
   image="https://static.igem.wiki/teams/5175/resources/model/molecular-docking-01.png" 
@@ -73,5 +73,6 @@ AutoDock Vina的构象相关部分使用如下评分函数：
 [^3]: Trott O, Olson AJ. AutoDock Vina: improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading. J Comput Chem. 2010 Jan 30;31(2):455-61. doi: 10.1002/jcc.21334. PMID: 19499576; PMCID: PMC3041641.
 [^4]: Eberhardt J, Santos-Martins D, Tillack AF, Forli S. AutoDock Vina 1.2.0: New Docking Methods, Expanded Force Field, and Python Bindings. J Chem Inf Model. 2021 Aug 23;61(8):3891-3898. doi: 10.1021/acs.jcim.1c00203. Epub 2021 Jul 19. PMID: 34278794; PMCID: PMC10683950.
 [^5]: García-Meseguer R, Ortí E, Tuñón I, Ruiz-Pernía JJ, Aragó J. Insights into the Enhancement of the Poly(ethylene terephthalate) Degradation by FAST-PETase from Computational Modeling. J Am Chem Soc. 2023 Sep 6;145(35):19243-19255. doi: 10.1021/jacs.3c04427. Epub 2023 Aug 16. PMID: 37585687; PMCID: PMC10851425.
+[^6]: <a href="https://static.igem.wiki/teams/5175/resources/model/molecular-docking-result.csv" target="_blank">Press here</a> to download the result CSV file.
 
 
