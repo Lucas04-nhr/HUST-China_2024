@@ -6,8 +6,6 @@ feature_text: |
   Welcome to iGEM HUST-China 2024 wiki! It's still under construction. Please stay tuned for more information.
 feature_image: "https://static.igem.wiki/teams/5175/resources/background/bg-hardware.jpg"
 excerpt: "Welcome to iGEM HUST-China 2024 wiki! It's still under construction. Please stay tuned for more information."
----
-
 # Multiple Figures
 images01:
   - src: https://static.igem.wiki/teams/5175/resources/hardware/hardware-01.png
@@ -91,6 +89,7 @@ images10:
   - src: https://static.igem.wiki/teams/5175/resources/hardware/hardware-24.png
     alt: 
     caption:
+---
 
 ## Background
 
