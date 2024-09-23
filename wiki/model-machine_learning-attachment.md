@@ -38,13 +38,13 @@ POI data is the core data of location-based services. In GIS, POI data records t
 
 Comparison of simulation goodness and prediction accuracy of different machine learning models in predicting soil microplastics abundance
 
-<figcaption class="caption table_caption">Comparison of simulation goodness and prediction accuracy of<br> different machine learning models in predicting soil microplastics abundance</figcaption>
+<figcaption class="caption table_caption">Comparison of simulation goodness and prediction accuracy of different machine learning models in predicting soil microplastics abundance</figcaption>
 
-|                          | **BP-GAO** | **RF**   | **LSTM** | **XGBoost** | **RBF**  | **SVR-RBF** |
-| ------------------------ | ---------- | -------- | -------- | ----------- | -------- | ----------- |
-| **Train_r<sup>2</sup>**  | 0.53891    | 0.920112 | 0.468024 | 0.999997    | 0.999728 | 0.935819    |
-|      **Train_RMSE**      | 0.140926   | 0.059283 | 0.138087 | 0.000374    | 0.003821 | 0.062681    |
-|      **Train_MAE**       | 0.120594   | 0.054773 | 0.09757  | 0.00026     | 0.002627 | 0.045125    |
-| **Test_r<sup>2</sup>**   | 0.482759   | 0.96512  | 0.963398 | 0.828356    | 0.410678 | 0.984548    |
-|      **Test_RMSE**       | 0.164101   | 0.038982 | 0.182309 | 0.085429    | 0.147808 | 0.015366    |
-|      **Test_MAE**        | 0.164101   | 0.038982 | 0.182309 | 0.085429    | 0.129603 | 0.015366    |
+|                         | **BP-GAO** | **RF**   | **LSTM** | **XGBoost** | **RBF**  | **SVR-RBF** |
+| ----------------------- | ---------- | -------- | -------- | ----------- | -------- | ----------- |
+| **Train_r<sup>2</sup>** | 0.53891    | 0.920112 | 0.468024 | 0.999997    | 0.999728 | 0.935819    |
+| **Train_RMSE**          | 0.140926   | 0.059283 | 0.138087 | 0.000374    | 0.003821 | 0.062681    |
+| **Train_MAE**           | 0.120594   | 0.054773 | 0.09757  | 0.00026     | 0.002627 | 0.045125    |
+| **Test_r<sup>2</sup>**  | 0.482759   | 0.96512  | 0.963398 | 0.828356    | 0.410678 | 0.984548    |
+| **Test_RMSE**           | 0.164101   | 0.038982 | 0.182309 | 0.085429    | 0.147808 | 0.015366    |
+| **Test_MAE**            | 0.164101   | 0.038982 | 0.182309 | 0.085429    | 0.129603 | 0.015366    |
