@@ -76,6 +76,23 @@
       return true;
     }
   }
+  //计算ul应该在的位置↓
+  function update_position(ul, parent) { //更新ul位置
+    const { top, left } = parent[0].getBoundingClientRect();
+    const parent_height = parent.height();
+    const parent_width = parent.width();
+    ul.css("top", top + parent_height * 2 / 3);
+    if ($("button.button--nav").css("display") === "none") { //宽屏--左对齐
+      ul.css("left", left);
+      ul[0].style.removeProperty('right');
+    }
+    else { //窄屏--右对齐
+      const body_width = document.body.clientWidth;
+      const right = body_width - left - parent_width;
+      ul.css("right", right);
+      ul[0].style.removeProperty('left');
+    }
+  }
   $(document).ready(function () {
     const down_ul = $("nav ul.sub_nav"); //全部的下拉菜单ul
     if (!down_ul) return; //如果没有下拉菜单就退出
@@ -92,23 +109,6 @@
       const other_ul = $(parent).siblings("li.item--nav").children("ul.sub_nav"); //其它下拉子菜单
       const other_ul_li = $(parent).siblings("li.item--nav").children("li.sub_nav"); //其它下拉子菜单中的li
       const other_ul_a = $(parent).siblings("li.item--nav").children("a.sub_nav"); //其它下拉子菜单中的a
-      //计算ul应该在的位置↓
-      function update_position(ul, parent) { //更新ul位置
-        const { top, left } = parent[0].getBoundingClientRect();
-        const parent_height = parent.height();
-        const parent_width = parent.width();
-        ul.css("top", top + parent_height * 2 / 3);
-        if ($("button.button--nav").css("display") === "none") { //宽屏--左对齐
-          ul.css("left", left);
-          ul[0].style.removeProperty('right');
-        }
-        else { //窄屏--右对齐
-          const body_width = document.body.clientWidth;
-          const right = body_width - left - parent_width;
-          ul.css("right", right);
-          ul[0].style.removeProperty('left');
-        }
-      }
       const update_position_resize_func = () => update_position($(dom), $(parent)); //更新ul位置
       function update_resize_func() { //更新ul位置及宽度
         down_ul.css("height", " fit-content");
@@ -153,6 +153,7 @@
         update_position_resize_func();
         if (!is_mobile()) { //pc端
           parent_a.mouseenter(() => { //鼠标移入就显示
+            update_position_resize_func();
             if ($("button.button--nav").css("display") === "none") { //宽屏
               mouse_on_pc();
               down_point.css("transform", "rotate(0)");
@@ -178,6 +179,7 @@
         }
         else { //移动端
           parent_a[0].addEventListener('touchstart', () => {
+            update_position_resize_func();
             if ($(dom).css('display') !== 'none') { //如果显示就隐藏
               down_point.css("transform", "rotate(-90deg)");
               $(dom).stop().slideUp("fast", "swing", reset_zindex);
@@ -207,6 +209,7 @@
       }
       //页面尺寸变化时更新top/left
       window.addEventListener('resize', debounce(update_resize_func, 100));
+      window.addEventListener('load', () => setTimeout(update_resize_func, 0));
       //点击后更改样式
       down_a.on("click", function () {
         $(this).addClass("current").siblings().removeClass("current");
@@ -328,7 +331,6 @@
 </script>
 
 <!-- Fullscreen image -->
-
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     // 处理单张图片的全屏显示
@@ -339,12 +341,10 @@
     $(singleFullscreenContainer).hide(); //先隐藏
     if (singleImages) {
       singleImages.forEach(singleImage => {
-
-        singleImage.addEventListener('click', function (e) {
+        singleImage.addEventListener('click', function () {
           singleFullscreenImage.src = this.src; // 设置全屏图像的 src
           //singleFullscreenContainer.style.display = 'flex'; // 显示全屏容器
           $(singleFullscreenContainer).fadeIn("fast"); // 显示全屏容器
-
           // 使用 setTimeout 确保容器显示后再添加放大类
           setTimeout(() => {
             singleFullscreenImage.classList.add('zoom-in'); // 添加放大类
@@ -354,7 +354,7 @@
         // 点击全屏容器时隐藏
         singleFullscreenContainer.addEventListener('click', function () {
           singleFullscreenImage.classList.add('zoom-out'); // 添加缩小类
-          $(singleFullscreenContainer).fadeOut(300); // 隐藏全屏容器
+          $(singleFullscreenContainer).fadeOut(300);
           setTimeout(() => {
             //singleFullscreenContainer.style.display = 'none'; // 隐藏全屏容器
             singleFullscreenImage.classList.remove('zoom-out'); // 移除缩小类
@@ -369,7 +369,7 @@
           singleFullscreenImage.classList.add('zoom-out'); // 添加缩小类
           setTimeout(() => {
             //singleFullscreenContainer.style.display = 'none'; // 隐藏全屏容器
-            $(singleFullscreenContainer).fadeOut(300); // 隐藏全屏容器
+            $(singleFullscreenContainer).fadeOut(300);
             singleFullscreenImage.classList.remove('zoom-out'); // 移除缩小类
           }, 300); // 持续时间与 CSS 中的过渡时间相同
         }
@@ -387,7 +387,6 @@
     $(fullscreenContainers).hide(); //先隐藏
     images.forEach((image, index) => {
       image.addEventListener('click', function () {
-
         fullscreenImages[index].src = this.src; // 设置对应全屏图像的 src
         //fullscreenContainers[index].style.display = 'flex'; // 显示对应全屏容器
         $(fullscreenContainers[index]).fadeIn("fast"); // 显示全屏容器
@@ -402,7 +401,7 @@
     fullscreenContainers.forEach((container, index) => {
       container.addEventListener('click', function () {
         fullscreenImages[index].classList.add('zoom-out'); // 添加缩小类
-        $(this).fadeOut(300); // 隐藏全屏容器
+        $(this).fadeOut(300);
         setTimeout(() => {
           //this.style.display = 'none'; // 隐藏对应全屏容器
           fullscreenImages[index].classList.remove('zoom-out'); // 移除缩小类
@@ -416,8 +415,9 @@
         // 如果全屏容器是可见的（display 不为 'none'）
         if (container.style.display !== 'none') {
           fullscreenImages[index].classList.add('zoom-out'); // 添加缩小类
+          $(container).fadeOut(300);
           setTimeout(() => {
-            container.style.display = 'none'; // 隐藏对应全屏容器
+            //container.style.display = 'none'; // 隐藏对应全屏容器
             fullscreenImages[index].classList.remove('zoom-out'); // 移除缩小类
           }, 300); // 持续时间与 CSS 中的过渡时间相同
         }
