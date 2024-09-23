@@ -66,30 +66,30 @@ The formula $E=mc^2$ is well-known.
 
 ## Table
 
-<div class="table-parent">
-  <tb class="table-container">
-    <figcaption class="caption">Test table</figcaption>
+其它文字112
 
-    <table>
-        <thead>
-            <tr>
-                <th>Header 1</th>
-                <th>Header 2</th>
-                <th>Header 3</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Cell 1</td>
-                <td>Cell 2</td>
-                <td>Cell 3</td>
-            </tr>
-            <tr>
-                <td>Cell 4</td>
-                <td>Cell 5</td>
-                <td>Cell 6</td>
-            </tr>
-        </tbody>
-    </table>
-  </tb>
-</div>
+<figcaption class="caption table_caption">Test table1</figcaption>
+
+| 被代替/很少使用的标签 | 说明                             |
+| --------------------- | -------------------------------- |
+| dir                   | 定义目录列表，应用ul代替         |
+| acronym               | 定义首字母缩写，应用abbr代替     |
+| applet                | 定义嵌入的applet,应用object代替  |
+| isindex               | 定义与文档相关的可搜索索引       |
+| frame                 | 定义frameset中的一个特定的框架   |
+| frameset              | 定义一个框架集                   |
+| noframes              | 为那些不支持框架的浏览器显示文本 |
+
+其它文字123
+
+<figcaption class="caption table_caption">Test table2</figcaption>
+
+| 被代替/很少使用的标签 | 说明                             |
+| --------------------- | -------------------------------- |
+| dir                   | 定义目录列表，应用ul代替         |
+| acronym               | 定义首字母缩写，应用abbr代替     |
+| frame                 | 定义frameset中的一个特定的框架   |
+| frameset              | 定义一个框架集                   |
+| noframes              | 为那些不支持框架的浏览器显示文本 |
+
+其它文字234
