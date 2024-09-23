@@ -1,5 +1,5 @@
 ---
-title: Model
+title: Molecular Docking
 permalink: /model/molecular-docking/
 feature_text: |
   ## Model
