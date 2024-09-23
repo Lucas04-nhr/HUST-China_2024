@@ -63,7 +63,7 @@ GSMM是一种表示、量化和比较特定生物新陈代谢的方法，将生�
 
 对于 dFBA 模拟，初始培养基成分设置为 200 mmol TPA作为碳源，令葡萄糖含量为0，以评估在富TPA环境下的生长状态。其他必要的非碳代谢物（例如氧气、二氧化碳、水等）设置为 1000 mmol，以确保生长模拟不受它们的限制。动态调整 TPA 的最大摄取速率，通过计算通量并乘以一个小的时间间隔常数，可以给出介质组成在时间框架上的近似变化。0.1小时的时间步长提供了良好的分辨率和适度的计算时间。将这一变化从初始介质组成中减去，得到一个新的初始介质组成。[^5] 重复该过程，直到dFBA求解函数到达计算极限。在每个时间步长，存储介质浓度向量用于绘图和分析。
 
-You can <a href="https://static.igem.wiki/teams/5175/resources/model/model-gssm-attachment-01.csv" target="_blank">press here</a> to download the original ingredient of the culture medium.
+You can <a href="https://static.igem.wiki/teams/5175/resources/model/model-gssm-attachment-01.csv" target="_blank">click here</a> to download the original ingredient of the culture medium.
 
 ### Results
 

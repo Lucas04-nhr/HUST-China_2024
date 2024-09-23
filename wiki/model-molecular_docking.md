@@ -36,7 +36,7 @@ AutoDock Vina的构象相关部分使用如下评分函数：
 
 ### Results
 
-通过改变linker种类，linker长度以及PETase与MHETase的前后顺序，探究这些因素对PET与PETase的亲和力影响。使用了5种linker、 6种不同的linker长度、2种顺序共计比较了60种组合，得到亲和力数据 (<a href="https://static.igem.wiki/teams/5175/resources/model/molecular-docking-result.csv" target="_blank">Press here</a> to download the attachment, find the result in Fig. 01).
+通过改变linker种类，linker长度以及PETase与MHETase的前后顺序，探究这些因素对PET与PETase的亲和力影响。使用了5种linker、 6种不同的linker长度、2种顺序共计比较了60种组合，得到亲和力数据 (<a href="https://static.igem.wiki/teams/5175/resources/model/molecular-docking-result.csv" target="_blank">Click here</a> to download the attachment, find the result in Fig. 01).
 
 {% include figure.html 
   image="https://static.igem.wiki/teams/5175/resources/model/molecular-docking-01.png" 
