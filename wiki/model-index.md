@@ -13,7 +13,7 @@ excerpt: "The model is a means of assisting the overall completion and implement
 The model is a means of assisting the overall completion and implementation of a project through computational methods.
 We attempt to delve into various components of the project from design to implementation for model construction and computation.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/model/model-01.jpg" alt="Introduction of Modeling" caption="Introduction of Modeling" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/model/model-workflow.jpg" alt="Introduction of Modeling" caption="Introduction of Modeling" %}
 
 ## Optimization of Dual-Enzyme System
 

@@ -64,6 +64,13 @@ The formula $E=mc^2$ is well-known.
 
 <center>$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$</center>
 
+## Table
+
+| Header 1 | Header 2 | Header 3 |
+|----------|----------|----------|
+| Cell 1   | Cell 2   | Cell 3   |
+| Cell 4   | Cell 5   | Cell 6   |
+
 
 ## Video
 
