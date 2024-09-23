@@ -17,7 +17,7 @@ excerpt: "The model is a means of assisting the overall completion and implement
 ### Model data selection and processing
 
 {% include figure.html 
-    image="https://static.igem.wiki/teams/5175/resources/model/model-machine-learning-01.png" 
+    image="https://static.igem.wiki/teams/5175/resources/model/model-machine-learning-01.jpg" 
     alt="Sampling data of microplastics abundance in Wuhan" 
     caption="Figure 1. Sampling data of microplastics abundance in Wuhan" 
 %}
@@ -41,6 +41,33 @@ excerpt: "The model is a means of assisting the overall completion and implement
   <br>
   $MAE=\frac{1}{N}\sum{_{i=1}^{N}|p_i-a_i|}$
 </center>
+
+### Results
+
+{% include figure.html 
+    image="https://static.igem.wiki/teams/5175/resources/model/model-machine-learning-02.jpg" 
+    alt="Different machine learning results for microplastics prediction" 
+    caption="Figure 2. Different machine learning results"
+%}
+
+从BP-GAO, LSTM, RF, XGBoost等多个机器学习模型中最终选取SVR-RBF模型。
+支持向量机可以实现全局优化，而BP神经网络通常只能实现局部优化(Jia et al, 2019)。支持向量机应用核函数展开定理，不需要非线性映射的显式表达;因此，可以使用已知的有效算法找到目标函数的全局最小值，与其他机器学习模型（图2,Table S1）相比，SVR-RBF模型（R<sup>2</sup> =0.9845481376179647, RMSE=0.01536591336885121, MAE=0.011207557068397008）对于微塑料数据集有更好的拟合和预测效果。
+
+向训练好的模型输入来自武汉市的12个源汇因子数据，得到预测研究范围内土壤MPs的空间分布，我们可以识别微塑料的潜在风险区域，并绘制研究区土壤MP污染空间图。从图中可知，武昌区、汉阳区、江汉区等市区中心，以及沿长江两岸区域微塑料丰度较高，可能需要更多的管制和治理。
+
+{% include figure.html 
+    image="https://static.igem.wiki/teams/5175/resources/model/model-machine-learning-03.jpg" 
+    alt="Predicted microplastics distribution in Wuhan"
+    caption="Figure 3. Predicted microplastics distribution in Wuhan"
+%}
+
+### Discussion
+
+我们完成了以上6种机器学习模型的训练和对比，最后选取SVR-RBF模型得到预测研究范围内武汉城市土壤的土壤性质和其中微塑料丰度的分布情况，R^2、RMSE、MAE三个标准参数验证了我们模型的准确可靠性。我们希望未来的团队可以通过进一步扩大定点采样数据样本量来提高其准确性和验证性。
+
+加入影响土壤MPs源-汇的环境因子完成了对适用于预测土壤MPs空间分布的机器学习模型的构建。然而，无法排除区域中存在其他未知的土壤污染源的可能性。如果在空间布局差异较大的区域，有必要重新考虑环境因子以保持模型较高的准确性。
+
+尽管存在这些局限性，我们仍然相信本研究将为后续微生物降解微塑料实验提供数据和材料支持。并且，通过将研究对象从微塑料丰度改变为具体的微塑料种类、大小或者相关数据（如研究PET微塑料在不同区域的空间分布），该方法存在更多的扩展应用空间。
 
 
 <center>{% include button.html link="../" text="Go back to Model Introduction" %}</center>
