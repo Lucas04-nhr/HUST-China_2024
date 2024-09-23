@@ -63,46 +63,7 @@ GSMM是一种表示、量化和比较特定生物新陈代谢的方法，将生�
 
 对于 dFBA 模拟，初始培养基成分设置为 200 mmol TPA作为碳源，令葡萄糖含量为0，以评估在富TPA环境下的生长状态。其他必要的非碳代谢物（例如氧气、二氧化碳、水等）设置为 1000 mmol，以确保生长模拟不受它们的限制。动态调整 TPA 的最大摄取速率，通过计算通量并乘以一个小的时间间隔常数，可以给出介质组成在时间框架上的近似变化。0.1小时的时间步长提供了良好的分辨率和适度的计算时间。将这一变化从初始介质组成中减去，得到一个新的初始介质组成。[^5] 重复该过程，直到dFBA求解函数到达计算极限。在每个时间步长，存储介质浓度向量用于绘图和分析。
 
-初始培养基成分见下图3。
-
-<figcaption class="caption table_caption">表3.培养基配方 </figcaption>
-
-| Compound ID    | Concentration (mM) |
-| -------------- | ------------------ |
-| EX_ca2_e       | 1000               |
-| EX_cl_e        | 1000               |
-| EX_co2_e       | 1000               |
-| EX_cobalt2_e   | 1000               |
-| EX_cu2_e       | 1000               |
-| EX_fe2_e       | 1000               |
-| EX_glc__D_e    | 0                  |
-| EX_h2o_e       | 1000               |
-| EX_h_e         | 1000               |
-| EX_hco3_e      | 1000               |
-| EX_k_e         | 1000               |
-| EX_mg2_e       | 1000               |
-| EX_mn2_e       | 1000               |
-| EX_mobd_e      | 1000               |
-| EX_na1_e       | 1000               |
-| EX_nh4_e       | 3000               |
-| EX_ni2_e       | 1000               |
-| EX_o2_e        | 1000               |
-| EX_pi_e        | 1000               |
-| EX_sel_e       | 1000               |
-| EX_so4_e       | 1000               |
-| EX_tungs_e     | 1000               |
-| EX_zn2_e       | 1000               |
-| EX_acmtsoxin_e | 1000               |
-| EX_acpptrn_e   | 1000               |
-| EX_d2one_e     | 1000               |
-| EX_d3one_e     | 1000               |
-| EX_d4one_e     | 1000               |
-| EX_mtsoxin_e   | 1000               |
-| EX_n2one_e     | 1000               |
-| EX_pptrn_e     | 1000               |
-| EX_und2one_e   | 1000               |
-| EX_tpa_e       | 200                |
-| EX_lrhh_e      | 0                  |
+You can <a href="https://static.igem.wiki/teams/5175/resources/model/model-gssm-attachment-01.csv" target="_blank">press here</a> to download the original ingredient of the culture medium.
 
 ### Results
 
