@@ -13,12 +13,6 @@
       processHtmlClass: 'tex2jax_process'
     },
     startup: {
-      pageReady: () => {
-        return MathJax.startup.defaultPageReady().then(() => {
-          const {HTMLCSS} = MathJax._.output.html;
-          HTMLCSS.fontInUse = 'TeX'; // Set the font to TeX
-        });
-      }
     },
     chtml: {
       scale: 1, // Change the scale here

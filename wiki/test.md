@@ -66,30 +66,30 @@ The formula $E=mc^2$ is well-known.
 
 ## Table
 
-<div class="table-container">
+<div class="table-parent">
+  <div class="table-container">
+    <figcaption class="caption">Test table</figcaption>
 
-<figcaption class="caption">Test table</figcaption>
-
-<table>
-    <thead>
-        <tr>
-            <th>Header 1</th>
-            <th>Header 2</th>
-            <th>Header 3</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Cell 1</td>
-            <td>Cell 2</td>
-            <td>Cell 3</td>
-        </tr>
-        <tr>
-            <td>Cell 4</td>
-            <td>Cell 5</td>
-            <td>Cell 6</td>
-        </tr>
-    </tbody>
-</table>
-
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+                <td>Cell 3</td>
+            </tr>
+            <tr>
+                <td>Cell 4</td>
+                <td>Cell 5</td>
+                <td>Cell 6</td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
 </div>
