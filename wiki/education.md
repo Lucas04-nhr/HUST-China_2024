@@ -12,7 +12,7 @@ excerpt: "As a new science, synthetic biology has complex technology and rapid d
 
 As a new science, synthetic biology has complex technology and rapid development and has great application potential in various aspects. But as our project progressed, we realized that many members of the public lacked sufficient understanding of its principles, applications, and potential societal implications, which was detrimental to the future development of synthetic biology. Therefore, we draw inspiration from Rousseau's "naturalistic" education concept, and start with the phenomena and problems in life, so that the public can better understand the scientific basis and practical application of synthetic biology, to achieve the role of "enlightening the mind".
 
-<figcaption class="caption"> Table 1. Education and Communication Plan </figcaption>
+<figcaption class="caption table_caption"> Table 1. Education and Communication Plan </figcaption>
 
 | Target                 | Purpose                                                      |
 | ---------------------- | ------------------------------------------------------------ |
@@ -30,5 +30,7 @@ As a new science, synthetic biology has complex technology and rapid development
 We introduce common problems in life such as environmental pollution and energy shortage, and ask "Can these problems be solved by science and technology?" These questions are close to children's daily life and quickly arouse their interest and thinking. We then introduce the concept of synthetic biology in an easy-to-understand way: it is the science of designing and modifying living organisms as "engineered systems." It is like a "designer of life", by rewriting the DNA sequence, you can design microorganisms with new functions to deal with problems in many fields such as agriculture, the environment, energy, health, such as designing microorganisms that can decompose plastic, helping to solve the global plastic pollution problem. The children listened with interest, asking themselves questions from time to time: "Can these microbes really eat plastic?" Are they bad for us?" We patiently answered their questions through humorous and life-friendly language.
 
 #### Interactive Session: Let's Protect the Earth with Synthetic Biology!
+
+
 
 
