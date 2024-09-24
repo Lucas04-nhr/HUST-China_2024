@@ -158,8 +158,8 @@ navigation_header:
         url: /contribution/
       - title: Attributions
         url: /attributions/
-      - title: Prize
-        url: /prize/
+      # - title: Prize
+      #   url: /prize/
   # - title: Description
   #   url: /description/
   # - title: Elements

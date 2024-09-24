@@ -37,9 +37,12 @@
     }
 
     .section.page--description nav {
+        overflow-y: auto;
+        overflow-x: hidden;
         background: #f9f9f9;
         padding: 10px;
         margin-top: 10px;
+        max-height: 60vh;
         border: 1px solid #ccc;
         border-radius: 5px;
     }
@@ -68,6 +71,28 @@
     .section.page--description nav a.h6 {
         padding-left: 40px;
     }
+
+    /* 滚动条样式 */
+    .section.page--description nav::-webkit-scrollbar {
+        /*滚动条整体样式*/
+        width: 7px;
+        /*高宽分别对应横竖滚动条的尺寸*/
+        height: 1px;
+    }
+
+    .section.page--description nav::-webkit-scrollbar-thumb {
+        /*滚动条里面小方块*/
+        border-radius: 10px;
+        box-shadow: inset 0 0 5px rgba(178, 176, 176, 0.1);
+        background: #535353;
+    }
+
+    .section.page--description nav::-webkit-scrollbar-track {
+        /*滚动条里面轨道*/
+        box-shadow: inset 0 0 5px rgba(228, 226, 226, 0.1);
+        border-radius: 10px;
+        background: #ededed;
+    }
 </style>
 
 <!-- 点击目录标签跳转、目录显示当前页面位置 -->
@@ -89,6 +114,15 @@
         outline: none !important;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
         background-image: none !important;
+    }
+
+    /* 去掉a标签点击的颜色残留 */
+    a:focus {
+        color: #05bf85;
+    }
+
+    a:focus:hover {
+        color: green;
     }
 
     /* 当前正处于的目录标签 */
