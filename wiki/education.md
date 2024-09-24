@@ -216,11 +216,3 @@ After the competition, we visited the relevant laboratories to deepen our unders
 The competition provides us with the opportunity to collaborate with outstanding synthetic biology teams across the country to discuss and share knowledge, contributing to the formation of a community of innovators who drive synthetic biology.
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-18.jpg" alt=" " caption="Figure 18. HUST-China's participation in the 2024 National Synthetic Biology Challenge" %}
-
-
-
-
-
-
-
-
