@@ -31,6 +31,24 @@ We introduce common problems in life such as environmental pollution and energy 
 
 #### Interactive Session: Let's Protect the Earth with Synthetic Biology!
 
+To help children better understand how synthetic biology can solve life's problems, we have designed an interactive mini game, as shown in Figure 1. In this session, the children are divided into teams, and each team faces a specific problem, such as "how to solve the power shortage in the city" or "how to reduce plastic pollution". Each team had to apply the basic thinking of synthetic biology, imagining that some kind of microbe or organism could be engineered to solve this problem. Through this interactive discussion and brainstorming, the children come to understand the concept of "design" in synthetic biology, realizing that by reprogramming the genes of organisms, they can be given new functions, like "programming" life.
+
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-01.jpg" alt="Game Poster" caption="Figure 1. "Let's Protect the Earth with Synthetic Biology!" Game Poster" %}
+
+#### Hands-on Session: Create Your Own "Synthetic Organism"
+
+We prepared stickers with images of plasmid components such as promoters, terminators and genes. In this small game, children are like little scientists, using a virtual platform to design the plasmid they want by "assembling" different gene fragments. Each plasmid has a different function, such as enabling cells to produce electricity, produce pigments, or absorb heavy metals. Through this game experience, children not only learn the basic principle of plasmids, but also have a preliminary understanding of the concept of gene editing and molecular biology.
+
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-02.jpg" alt="Game Sticker" caption="Figure 2. Part of the \"Synthetic Biology\" Game Sticker" %}
+
+#### Sharing the Harvest and Enlightening the Mind
+
+At the end of the lecture, children are encouraged to actively share what they have learned. The children said that they experienced the charm and creativity of science through participation and hands-on work. Many of the children were not satisfied, and many said: "I want to be a scientist!" Parents accompanying the children were also very impressed: "The children not only have fun, but also learn so much new knowledge, this kind of activity is really very meaningful."
+
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-03.jpg" alt="Children's Sharing their art work" caption="Figure 3. Figure 3. Members of HUST-China Take a Photo with Children" %}
+
+> The participating children have signed the relevant agreement accompanied by their parents, authorizing us to use the children's portraits.
+
 
 
 
