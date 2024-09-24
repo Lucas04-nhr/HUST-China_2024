@@ -33,7 +33,7 @@ We introduce common problems in life such as environmental pollution and energy 
 
 To help children better understand how synthetic biology can solve life's problems, we have designed an interactive mini game, as shown in Figure 1. In this session, the children are divided into teams, and each team faces a specific problem, such as "how to solve the power shortage in the city" or "how to reduce plastic pollution". Each team had to apply the basic thinking of synthetic biology, imagining that some kind of microbe or organism could be engineered to solve this problem. Through this interactive discussion and brainstorming, the children come to understand the concept of "design" in synthetic biology, realizing that by reprogramming the genes of organisms, they can be given new functions, like "programming" life.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-01.jpg" alt="Game Poster" caption="Figure 1. "Let's Protect the Earth with Synthetic Biology!" Game Poster" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-01.jpg" alt="Game Poster" caption="Figure 1. \"Let's Protect the Earth with Synthetic Biology!\" Game Poster" %}
 
 #### Hands-on Session: Create Your Own "Synthetic Organism"
 
@@ -49,6 +49,7 @@ At the end of the lecture, children are encouraged to actively share what they h
 
 > The participating children have signed the relevant agreement accompanied by their parents, authorizing us to use the children's portraits.
 
+### Life Farm Practice Activities
 
-
+On March 12, which coincides with the International Arbor Day, an important festival for advocating green environmental protection, we invited students from the primary School affiliated to Huazhong University of Science and Technology to help them learn the importance of ecological protection in practical actions. Through visiting the herbarium, learning about the farmland ecosystem, and planting trees by hand, the whole activity runs through the understanding and care of the natural world, and the spirit of Arbor Day takes root in the hearts of children.
 
