@@ -6,6 +6,14 @@ feature_text: |
   All discipline essence should begin from the mind's enlightenment. -- Rousseau
 feature_image: "https://static.igem.wiki/teams/5175/resources/background/bg-edu.jpg"
 excerpt: "As a new science, synthetic biology has complex technology and rapid development and has great application potential in various aspects."
+images06:
+  - src: https://static.igem.wiki/teams/5175/resources/education/education-06.jpg
+    alt: Microscope Experiment
+    caption: Figure 6. The students are experimenting
+  - src: https://static.igem.wiki/teams/5175/resources/education/education-07.jpg
+    alt: HUST-China members and students
+    caption: Figure 7. HUST-China members and students
+
 ---
 
 ## Education
@@ -45,11 +53,48 @@ We prepared stickers with images of plasmid components such as promoters, termin
 
 At the end of the lecture, children are encouraged to actively share what they have learned. The children said that they experienced the charm and creativity of science through participation and hands-on work. Many of the children were not satisfied, and many said: "I want to be a scientist!" Parents accompanying the children were also very impressed: "The children not only have fun, but also learn so much new knowledge, this kind of activity is really very meaningful."
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-03.jpg" alt="Children's Sharing their art work" caption="Figure 3. Figure 3. Members of HUST-China Take a Photo with Children" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-03.jpg" alt="Children's Sharing their art work" caption="Figure 3. Figure 3. Members of HUST-China take a photo with children" %}
 
 > The participating children have signed the relevant agreement accompanied by their parents, authorizing us to use the children's portraits.
 
 ### Life Farm Practice Activities
 
 On March 12, which coincides with the International Arbor Day, an important festival for advocating green environmental protection, we invited students from the primary School affiliated to Huazhong University of Science and Technology to help them learn the importance of ecological protection in practical actions. Through visiting the herbarium, learning about the farmland ecosystem, and planting trees by hand, the whole activity runs through the understanding and care of the natural world, and the spirit of Arbor Day takes root in the hearts of children.
+
+#### Visit the Herbarium
+
+From insects to birds, from plants to fish, the children watched with great interest a variety of biological specimens. With our detailed explanation, the children not only learn about the classification of these creatures, their living habits and their role in the ecosystem, but also learn how they are related to human life. The vivid display in the herbarium makes the children feel as if they are in a mini ecological world, which makes them full of curiosity and yearning for the wonder of nature.
+
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-04.jpg" alt="Children in the Herbarium" caption="Figure 4. The children visited the herbarium under the guidance of the docent" %}
+
+#### Laboring in Life Farm
+
+Our Life Farm mimics an ecosystem in a field, where children not only observe common crops, but also see many small animals living in the field. We introduced the children to the importance of these small creatures in the field, especially their unique role in maintaining ecological balance and helping crops grow. After that, the children worked in groups to plant saplings themselves. Each child picked up a shovel, carefully dug, buried, watered, and carefully completed each step.
+
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-05.jpg" alt="Children Planting Trees" caption="Figure 5. The child is digging a hole in earnest" %}
+
+## Communication
+
+### National Youth College Science Camp
+
+To enhance the basic knowledge of synthetic biology for middle school students, while improving their hands-on skills in the laboratory, on July 22, representatives of students from many middle schools across the country gathered to participate in a one-day synthetic biology and science camp. The event aims to give students a deeper understanding of cutting-edge biological technologies through the combination of theory and practice, while stimulating their interest in scientific research.
+
+#### The core of synthetic biology -- microorganism
+
+Our content revolves around synthetic biology, using examples of our exploration of synthetic biology to introduce students to the fundamental concepts, principles and applications of the discipline. Through easy-to-understand presentations, interactive Q&A sessions, and practical case studies, students learn about gene editing, which will help them better understand genetic engineering. During the presentation, the students actively participated in the discussion, showing a strong interest in the future of biotechnology.
+
+#### Basic microbiology experiment skills training
+
+After the explanation of theoretical knowledge, the students learned the basic operation methods of the microscope and further learned the use of oil mirrors. We also taught them bacterial and fungal techniques, including common Gram staining and water lenses. The observation session allows students to clearly see the structure of the stained microorganisms under the microscope, which brings them a new experimental experience.
+
+{% include figure2.html images=page.images06 %}
+
+> All students have signed the agreement before the event, authorizing us to use their portraits.
+
+
+
+
+
+
+
 
