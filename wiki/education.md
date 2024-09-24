@@ -131,6 +131,91 @@ Partners from HZAU-China crafted keyrings containing cartoon images of plasmid c
 
 ## Communication
 
+We are involved in national and cross-border exchanges, including close exchanges with a specific team, as well as active participation in opening meetings and national competitions with various iGEM teams.
+
+### Five universities jointly "Great Health" science popularization practice team
+
+On January 25, 2024, Huazhong University of Science and Technology, together with Zhejiang University, Xi 'an Jiaotong University, University of Electronic Science and Technology, and Capital Medical University, jointly carried out the launching meeting of the "Great Health" science popularization practice team. At the meeting, representatives from the HHST-China team talked about the impact of microplastics on farmland ecosystems and the impact on the human body after entering the food chain and food web. Other schools also have discussions and exchanges on health-related social phenomena.
+
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-13.jpg" alt=" " caption="Figure 13. Launching ceremony of the \"Big Health\" science Popularization practice team of the five universities" %}
+
+### Synthetic Biology Open Conference
+
+On April 27, 2024, we actively participated in the Open Conference on Synthetic Biology jointly organized by Hubei Synthetic Biology Society and Hubei University. This exchange provided us with an opportunity to ask questions and work together to find solutions to challenges in the early stages of the project.
+
+#### Project introduction and progress report
+
+The participants in turn gave an update on their recent activities and presented an overview of the project design. After an exchange of views, we openly discussed potential shortcomings and proposed specific measures to optimize our work.
+
+#### Synthetic Biology Round Table
+
+The participating teachers held a roundtable discussion around the theme of "Talent training and field crossing in synthetic biology" and shared their experiences in the synthetic biology industry. This sharing allows us to keep pace with developments in synthetic biology and better prepare for the challenges of the iGEM competition.
+
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-14.jpg" alt=" " caption="Figure 14. Participants taking photos" %}
+
+### Communication with Evry Paris-Saclay iGEM team
+
+On July 12, 2024, we communicated closely with the captain and core members of the Evry-Paris-Saclay team through the Sino-French Exchange Summer Camp wine tasting, sharing our ideas and discussing the details of the project.
+
+#### Importance of project target specificity
+
+Evry Paris-Saclay's team plans to induce targeted mutations in protein genes that bind to PHA to improve the specific recognition of plastic particles of PHA. This led us to realize that any iGEM project is designed to solve a real problem, so the project needs to be precise and adaptable in order to increase the social value of turning ideas into real outputs.
+
+#### Significance of visualized results
+
+Through the panels of the Evry Paris-Saclay team, we recognized the importance and appeal of "visualizing" project results within a limited time frame.
+
+### Actively participate in CCiC exchange meetings
+
+We attended the 11th iGEMer China Exchange Conference (CCiC) at Xi 'an Jiaotong-Liverpool University in Suzhou from July 12th to 14th. The event attracted nearly 1,000 participants, including 89 teams and 35 teams from high schools.
+
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-15.jpg" alt=" " caption="Figure 15. HUST-China members in CCiC" %}
+
+#### Project presentation and communication
+
+Projects were presented by iGEM teams across the country, and interactive Q&A sessions allowed us to gain insights from other teams and stimulate innovative thinking.
+
+#### Exhibition and open discussion
+
+The event includes a market presentation, where participants demonstrate team culture and participate in an open discussion of the latest advances in synthetic biology and related technologies.
+
+#### Topic Discussion
+
+At the meeting, we were pleasantly surprised by the number of teams working on PET degradation. Together with six other schools, we conducted discussions around PET topics. This gives us a deeper understanding of PET.
+
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-16.jpg" alt=" " caption="Figure 16. Discussion around the topic of PET" %}
+
+### Participate in exchanges in Central China
+
+On August 24, 2024, we were fortunate to participate in a unique event organized by Huazhong Agricultural University. The event aims to promote young students to understand the latest scientific research trends and technological developments, expand their vision and thinking, contact more opportunities and challenges, and promote the popularization and development of synthetic biology.
+
+#### Listen to the iGEM project presentation
+
+The participating iGEM teams presented their project presentations in turn. Through project presentations and interactive Q&A sessions, we have the opportunity to gain insights from other teams' projects.
+
+#### Open Discussion
+
+The teams presented each other with their team cultures and participated in open discussions about the latest advances in synthetic biology and related technologies.
+
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-17.jpg" alt=" " caption="Figure 16. Participants taking photos" %}
+
+### Participated in the National Synthetic Biology Challenge (3<sup>rd</sup>)
+
+Together with our team members at HUST-China 2023, we actively participated in the 2024 National Synthetic Biology Challenge (3<sup>rd</sup> edition). Synbio Challenges is a competition organized by the Chinese Society for Biotechnology (CSBT).
+
+#### Won the Gold Medal
+
+Our project last year, ElectriCO2 sister, co-cultured *Shewanella oneidensis* MR-1 with *Synechocystis* sp.PCC 6803, captures carbon dioxide and produces lactic acid, which is further broken down to produce electricity. Our project was awarded the Gold medal, and this successful experience will be of great help in upgrading the project this year.
+
+#### Visit the Laboratory
+
+After the competition, we visited the relevant laboratories to deepen our understanding of the importance of clean and organized laboratories and perfect hardware facilities for experimental results.
+
+#### Cooperation and communication with top teams
+
+The competition provides us with the opportunity to collaborate with outstanding synthetic biology teams across the country to discuss and share knowledge, contributing to the formation of a community of innovators who drive synthetic biology.
+
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-18.jpg" alt=" " caption="Figure 18. HUST-China's participation in the 2024 National Synthetic Biology Challenge" %}
 
 
 
