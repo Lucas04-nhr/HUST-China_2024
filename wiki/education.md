@@ -73,8 +73,6 @@ Our Life Farm mimics an ecosystem in a field, where children not only observe co
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-05.jpg" alt="Children Planting Trees" caption="Figure 5. The child is digging a hole in earnest" %}
 
-## Communication
-
 ### National Youth College Science Camp
 
 To enhance the basic knowledge of synthetic biology for middle school students, while improving their hands-on skills in the laboratory, on July 22, representatives of students from many middle schools across the country gathered to participate in a one-day synthetic biology and science camp. The event aims to give students a deeper understanding of cutting-edge biological technologies through the combination of theory and practice, while stimulating their interest in scientific research.
@@ -90,6 +88,49 @@ After the explanation of theoretical knowledge, the students learned the basic o
 {% include figure2.html images=page.images06 %}
 
 > All students have signed the agreement before the event, authorizing us to use their portraits.
+
+### Return Visit to High School
+
+With deep feelings for their Alma mater, members of the HUST-China team used the winter holiday to travel to different parts of the country and return to the campuses they once knew. Under the background of team project, we popularize the knowledge of synthetic biology and life science from junior students and junior students, aiming to enhance students' understanding and recognition of life science.
+
+The team members introduced the content of the competition project to the students in plain language, and deeply discussed the relevant knowledge in the field of synthetic biology. The detailed and popular explanation enhanced students' understanding and love of life science, made students feel the atmosphere of scientific research more deeply, and thus stimulated the motivation of learning. This kind and in-depth exchange not only narrowed the distance between students and science, but also laid a solid foundation for their future learning and exploration. 
+
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-08.jpg" alt=" " caption="Figure 8. HUST-China members' return visits to high schools" %}
+
+### When Cultural Heritage Meets Synthetic Biology
+
+On the evening of June 8th, coincident with the Chinese Cultural Heritage Day, we innovatively linked cultural heritage with synthetic biology for students of different majors in our university. While popularizing the knowledge related to synthetic biology for students, we also called on everyone to pay attention to the protection and inheritance of cultural heritage by the relevant role of synthetic biology in the protection of cultural heritage. And experience the cultural skills of innovation and development enabled by biotechnology. In this event, we also invited members from the HZAU-China team to feel the charm of intangible cultural heritage together.
+
+#### How can synthetic biology empower cultural heritage?
+
+We took the Dunhuang Mogao Grottoes, which may be submerged in yellow sand due to oxidation and other problems, as an example to draw students' attention to the protection of world cultural heritage. Then, the paper listed the relevant solutions and problems in the current protection of cultural heritage, and discussed with the students the possibility of better application of relevant technologies in the protection of cultural heritage based on the cutting-edge progress of synthetic biology. In addition, we also introduce the research and application of HUST-China in related technologies. The unconstrained nature of synthetic biology aroused great interest of the students.
+
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-09.jpg" alt=" " caption="Figure 9. Illustration of the application of HUST-China paint" %}
+
+#### Intangible cultural heritage experience
+
+We have selected two biologically related intangible cultural heritage for students to experience. Team members detailed their origins, links to biology, and methods of operation. The students give full play to their teamwork ability and aesthetic ability, cooperate with each other, color change and blend, with a great sense of life and randomness, half artificial, half natural, open different picture scrolls, the beauty is between the similar and the different.
+
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-10.jpg" alt=" " caption="Figure 10. Students taking photos with their works" %}
+
+### Synthetic Biology and Orienteering
+
+On April 4th, during the Qingming Festival, we had an in-depth exchange with our friends from HZAU-China and organized a unique science popularization activity of synthetic biology on the campus of Huazhong Agricultural University.
+
+#### The original of synthetic biology
+
+Considering that the students have a certain genetic engineering foundation in middle school, we explained to them a series of operational processes such as the extraction of target genes, the construction of gene expression vectors, the introduction of target genes into recipient cells and the subsequent detection and identification of these target genes and focused on the composition of the "machine" plasmid. To provide a concrete example of the application of synthetic biology, we presented the iGEM project to the audience.
+
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-11.jpg" alt=" " caption="Figure 11. Explaining the components of synthetic biology" %}
+
+#### Orienteering
+
+Partners from HZAU-China crafted keyrings containing cartoon images of plasmid components such as promoters and terminators and placed them in various corners of the campus in advance, waiting for students to explore. While roaming the campus in the bright spring light of April, the students thought about what other components belonging to the plasmid had not yet been obtained. This deepened the students' understanding of plasmids.
+
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-12.jpg" alt=" " caption="Figure 12. Group photo of students participating in the activity" %}
+
+## Communication
+
 
 
 
