@@ -236,14 +236,22 @@
     //初始配置
     $("body,html").css("cssText", "scroll-behavior: auto !important;"); //禁用HTML平滑滚动
     const h_list = $('article.article').find("h2, h3, h4, h5, h6"); //所有的标题
-    h_list.off("click"); //清除默认点击事件
-    h_list.on("dblclick", function () { //双击标题，滑到它的位置
-      $("html,body").animate({ scrollTop: $(this).offset().top });
-    });
-    const a_list = $('.section.page--description nav a'); //所有的目录a标签
+    const a_list = $('#about-this-page nav a'); //所有的目录a标签
     if (a_list.length == 0) return; //如果没有目录就退出
     a_list.prop('href', 'javascript:;'); //禁用a标签锚点跳转
     a_list.off("click"); //清除默认点击事件
+    const toc = $("#about-this-page nav"); //目录
+
+    //根据页面滚动距离更改目录div标签滚动距离
+    function update_div_scroll_distance(i) {
+      const top_distance = a_list.eq(i).position().top - a_list.eq(0).position().top; //指定a标签距顶端距离
+      const improve_distance = parseInt(a_list.eq(i).height()) / 2; //修正值，让标签更加居中
+      let scroll_height = top_distance - parseInt(toc.height()) / 2 + improve_distance; //应滚动的距离（让指定a标签居中）
+      if (scroll_height <= 0) scroll_height = 0;
+      toc.stop().animate({
+        scrollTop: scroll_height
+      });
+    }
 
     //点击目录a标签跳转到对应标题
     let is_click = false; //添加判断条件--是否是因为点击了按钮而滚动
@@ -258,6 +266,7 @@
       });
       a_list.removeClass("current");
       $(this).addClass("current");
+      update_div_scroll_distance(a_index);
     });
 
     //回到顶部
@@ -271,6 +280,9 @@
       }, function () { //animate回调函数，当动画播放完执行
         is_click = false; //滚动完了就把锁打开
       });
+      toc.stop().animate({
+        scrollTop: 0
+      });
     });
 
     //根据页面滚动距离更改目录a标签
@@ -280,6 +292,7 @@
         if (scroll_distance + 1 >= h_list.eq(i).offset().top) { //找到滚动到了哪个h标签
           a_list.removeClass("current");
           a_list.eq(i).addClass('current'); //让对应的a标签改变
+          update_div_scroll_distance(i);
           break;
         }
         if (i == 0) { //页面不在任何一个目录标签内，所有目录标签清空样式
@@ -295,6 +308,18 @@
       }
     });
     update_classname();
+    //页面尺寸变化时更新
+    $(window).resize(function () {
+      update_classname();
+    });
+
+    //双击标题事件
+    h_list.off("click"); //清除默认点击事件
+    h_list.on("dblclick", function () { //双击标题，滑到它的位置
+      //$("html,body").animate({ scrollTop: $(this).offset().top });
+      const h_index = h_list.index(this); //双击的是第几个标题
+      a_list.eq(h_index).click(); //调用目录a标签的点击事件，双击标题就相当于点击了目录中对应a标签
+    });
   });
 </script>
 
