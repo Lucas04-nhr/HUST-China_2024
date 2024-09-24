@@ -3,9 +3,7 @@ title: Machine Learning
 permalink: /model/machine-learning/
 feature_text: |
   ## Model
-  The model is a means of assisting the overall completion and implementation of a project through computational methods.
-  <br>
-  We attempt to delve into various components of the project from design to implementation for model construction and computation.
+  All models are wrong, but some are useful.——George E. P. Box
 feature_image: "https://static.igem.wiki/teams/5175/resources/background/bg-model.jpg"
 excerpt: "The model is a means of assisting the overall completion and implementation of a project through computational methods."
 ---
@@ -68,6 +66,10 @@ excerpt: "The model is a means of assisting the overall completion and implement
 加入影响土壤MPs源-汇的环境因子完成了对适用于预测土壤MPs空间分布的机器学习模型的构建。然而，无法排除区域中存在其他未知的土壤污染源的可能性。如果在空间布局差异较大的区域，有必要重新考虑环境因子以保持模型较高的准确性。
 
 尽管存在这些局限性，我们仍然相信本研究将为后续微生物降解微塑料实验提供数据和材料支持。并且，通过将研究对象从微塑料丰度改变为具体的微塑料种类、大小或者相关数据（如研究PET微塑料在不同区域的空间分布），该方法存在更多的扩展应用空间。
+
+### Attachment
+
+<a href="attachment">Click here</a> to see all the attachments in this page.
 
 
 <center>{% include button.html link="../" text="Go back to Model Introduction" %}</center>
