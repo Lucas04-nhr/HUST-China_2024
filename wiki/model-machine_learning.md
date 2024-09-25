@@ -33,11 +33,15 @@ The single model contains three neural networks, BP-GAO, LSTM, RBF, and the SVR-
 We consider the simulation and prediction accuracy of different machine learning models based on three criteria: goodness-of-fit （R<sup>2</sup>）, root mean square error (RMSE), and mean absolute error (MAE).
 
 <center>
-  $R^2=1-\frac{\sum{_{i=1}^{N}\left( p_i-a_i \right)}^2}{\sum{_{i=1}^{N}\left( a_i-\bar{a} \right)}^2}$
-  <br>
-  $RMSE=\sqrt{\frac{1}{N}\sum{_{i=1}^{N}\left( p_i-a_i \right) ^2}}$
-  <br>
-  $MAE=\frac{1}{N}\sum{_{i=1}^{N}|p_i-a_i|}$
+  $$
+  \left\{
+    \begin{aligned}
+      R^2=1-\frac{\sum{_{i=1}^{N}\left( p_i-a_i \right)}^2}{\sum{_{i=1}^{N}\left( a_i-\bar{a} \right)}^2} \\
+      RMSE=\sqrt{\frac{1}{N}\sum{_{i=1}^{N}\left( p_i-a_i \right) ^2}} \\
+      MAE=\frac{1}{N}\sum{_{i=1}^{N}|p_i-a_i|}
+    \end{aligned}
+  \right.
+  $$
 </center>
 
 ### Results
