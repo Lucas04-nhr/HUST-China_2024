@@ -47,7 +47,7 @@ We consider the simulation and prediction accuracy of different machine learning
 ### Results
 
 {% include figure.html 
-    image="https://static.igem.wiki/teams/5175/resources/model/model-machine-learning-02.jpg" 
+    image="https://static.igem.wiki/teams/5175/resources/model/model-machine-learning-02-changed.jpg" 
     alt="Different machine learning results for microplastics prediction" 
     caption="Figure 2. Different machine learning results"
 %}
