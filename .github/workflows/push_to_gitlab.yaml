@@ -3,7 +3,7 @@ name: Sync GitHub to GitLab
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15/30 * * * *'
+    - cron: '5/15 * * * *'
 
 jobs:
     
@@ -26,7 +26,10 @@ jobs:
             git config user.name "Lucas04"
             git config user.email "lucas04@foxmail.com"
             git config --global user.token $GITLAB_TOKEN
-
+            git config gpg.program gpg
+            git config commit.gpgSign true
+            git config user.signingkey ${{ secrets.GPG_PRIVATE_KEY }}
+  
       - name: Set up GitLab
         run: |
             git remote add gitlab https://gitlab.igem.org/2024/hust-china.git
@@ -45,7 +48,7 @@ jobs:
   Pull_from_GitLab:
     needs: Check_Git_Status
     runs-on: ubuntu-latest
-    if: needs.Check_Git_Status.outputs.repo_synced == 'false'
+    if: ${{ needs.Check_Git_Status.outputs.repo_synced == 'false' }}
     steps:
       - name: Checkout Code
         uses: actions/checkout@main
