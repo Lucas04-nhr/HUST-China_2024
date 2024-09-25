@@ -64,7 +64,7 @@ Inputting 12 source-sink factor data from Wuhan City to the trained model to get
 
 ### Discussion
 
-We completed the training and comparison of the above six machine learning models, and finally selected the SVR-RBF model to get the distribution of microplastic abundance within the study area, and the three standard parameters of R^2, RMSE, and MAE validated the accuracy and reliability of our model. We hope that future teams can improve its accuracy and validation by further expanding the sample size of the fixed-point sampling data.
+We completed the training and comparison of the above six machine learning models, and finally selected the SVR-RBF model to get the distribution of microplastic abundance within the study area, and the three standard parameters of $R^2$, RMSE, and MAE validated the accuracy and reliability of our model. We hope that future teams can improve its accuracy and validation by further expanding the sample size of the fixed-point sampling data.
 
 The inclusion of environmental factors affecting the source-sink of soil MPs completed the construction of a machine learning model suitable for predicting the spatial distribution of soil MPs. However, the possibility of other unknown sources of soil contamination in the region cannot be ruled out. If in regions with large differences in spatial layout, it is necessary to reconsider the environmental factors to maintain a high accuracy of the model.
 
