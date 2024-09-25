@@ -65,12 +65,27 @@ The formula $E=mc^2$ is well-known.
 <center>$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$</center>
 
 ### Block Math
-$$
-\begin{aligned}
-\int_{-\infty}^{\infty} e^{-x^2} dx &= \sqrt{\pi} \\
-\int_{-\infty}^{\infty} e^{-x^2} dx &= \sqrt{\pi} \\
-\end{aligned}
-$$
+<center>
+  $$
+  \begin{aligned}
+  \int_{-\infty}^{\infty} e^{-x^2} dx &= \sqrt{\pi} \\
+  \sum_{i=1}^{n} i &= \frac{n(n+1)}{2}
+  \end{aligned}
+  $$
+</center>
+
+---
+
+<center>
+   $$
+    \left\{
+      \begin{aligned}
+      \int_{-\infty}^{\infty} e^{-x^2} dx &= \sqrt{\pi} \\
+      \sum_{i=1}^{n} i &= \frac{n(n+1)}{2}
+      \end{aligned}
+    \right.
+    $$
+</center>
 
 ## Table
 
