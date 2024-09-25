@@ -25,8 +25,11 @@ jobs:
       
       - name: Pull the latest change
         run: |
-          git fetch origin ${{ github.ref }}
+          git fetch origin main
+          git fetch origin develop
+          git checkout develop
           git merge -X theirs --allow-unrelated-histories --no-ff origin/main
+          git push origin develop
 
       - name: Check Git Status
         id: check_git_status
