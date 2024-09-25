@@ -25,9 +25,6 @@ jobs:
         run: |
           git config user.name "Lucas04"
           git config user.email "lucas04@foxmail.com"
-          git config gpg.program gpg
-          git config commit.gpgSign true
-          git config user.signingkey ${{ secrets.GPG_PRIVATE_KEY }}
 
       - name: Pull from GitLab
         env:
