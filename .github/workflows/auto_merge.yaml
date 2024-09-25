@@ -3,7 +3,7 @@ name: Auto Create Merge Request
 on:
   workflow_dispatch:
   schedule:
-    - cron: '10/15 * * * *'
+    - cron: '0/15 * * * *'
 
 jobs:
   Checkout_Code:
