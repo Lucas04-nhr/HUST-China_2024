@@ -18,17 +18,17 @@ images01:
 
 ## Genome-scale Metabolic Modeling
 
-为了帮助湿实验代谢通路改造，并评估该项目在实际应用中的性能，我们构建了工程恶臭假单胞菌 KT2440的基因组规模代谢模型，能够动态模拟细胞代谢活动。与其他已发布GSSM相比，我们的模型得分达76%，超过已发表模型的平均水平。我们可以预测工程菌的生长行为、TPA吸收率和鼠李糖脂产品产量。我们估计工程恶臭假单胞菌可以高效吸收降解TPA，同时在此过程中生产鼠李糖脂。通过我们的GSSM，我们建立了一个基础，帮助未来的团队进一步进行恶臭假单胞菌的代谢工程，并进一步推动利用恶臭假单胞菌来降解塑料这一想法的前景。
+To aid wetlab metabolic pathway modification and to assess the performance of the project in real-world applications, we constructed a genome-scale metabolic model of engineered Pseudomonas malodorata KT2440 that is capable of dynamically simulating cellular metabolic activities. Compared with other published GSSMs, our model scores 76%, which exceeds the average of published models. We can predict the growth behavior, TPA uptake rate and rhamnolipid product yield of engineered bacteria. We estimated that engineered Pseudomonas malodorans could efficiently absorb and degrade TPA while producing rhamnolipids in the process. With our GSSM, we have established a foundation that will help future teams to further metabolic engineering of Pseudomonas malodorans and further the promise of the idea of using Pseudomonas malodorans to degrade plastics.
 
 ### Methods
 
-GSMM是一种表示、量化和比较特定生物新陈代谢的方法，将生物的代谢表示为一组包括关键基因表达、酶催化反应、运输机制和自发非催化反应的方程，主要使用磁通量平衡分析 （FBA） 或动态磁通量平衡分析 （dFBA） 进行分析[^1]。使用适用于 python 的 COBRA 包[^2]访问 MATLAB COBRA工具箱实现。
+GSMM is a method for representing, quantifying, and comparing the metabolism of a given organism as a set of equations that include key gene expression, enzyme-catalyzed reactions, transport mechanisms, and spontaneous non-catalyzed reactions, primarily using Flux Balance Analysis (FBA) or Dynamic Flux Balance Analysis (dFBA)[^1]. The MATLAB COBRA toolbox implementation was accessed using the COBRA package [^2]for python.
 
-#### 代谢反应列表构建
+#### Construction of metabolic reaction list
 
- 恶臭假单胞菌KT2440的初始代谢反应列表是从恶臭假单胞菌的最新高质量基因组规模代谢模型“iJN1463”中获得的[^3]。 以其为基础，加入TPA代谢通路和鼠李糖脂合成代谢通路，得到修改后的反应列表modified iJN1463。具体而言，TPA被代谢成乙酰辅酶 A和琥珀酰辅酶 A进入TCA 循环并与野生型的 β-酮己二酸通路联系起来，鼠李糖脂合成从脂肪酸合成通路中的底物β-hydroxyacyl-ACP起始并与dTDP-L-鼠李糖缩合。共加入7种代谢物和8个反应，并对其中phaZ调控的24个反应进行上限调整，以获得工程恶臭假单胞菌KT2440的生长行为。由于缺乏数据，假设在模拟过程中在铜绿假单胞菌代谢模型PAO1中设定的RHLA、RHLB通量上下限与工程恶臭假单胞菌相同。增加的反应列表如下（参见表 1 和 2）。
+The initial metabolic reaction list of Pseudomonas putida KT2440 was obtained from the latest high-quality genome-scale metabolic model of Pseudomonas putida “iJN1463”[^3]. Based on this, the TPA metabolic pathway and the rhamnolipid synthesis metabolic pathway were added to obtain the modified iJN1463. Specifically, TPA is metabolized into acetyl coenzyme A and succinyl coenzyme A into the TCA cycle and linked to the wild-type β-ketoadipic acid pathway, and rhamnolipid synthesis is linked to the fatty acid synthesis pathway from substrate β-hydroxyacyl-ACP, and the rhamnolipid synthesis from fatty acid synthesis pathway from substrate β-hydroxyacyl-ACP. hydroxyacyl-ACP initiation and condensation with dTDP-L-rhamnose. A total of seven metabolites and eight reactions were added, and 24 of the phaZ-regulated reactions were ceiling-adjusted to obtain the growth behavior of the engineered Pseudomonas malodorans KT2440. Due to the lack of data, it was assumed that the upper and lower limits of RHLA and RHLB fluxes set in the Pseudomonas aeruginosa metabolic model PAO1 were the same as those of the engineered Pseudomonas malodorosa during the simulation. The list of added reactions is given below (see Tables 1 and 2).
 
- <figcaption class="caption table_caption">表1.定义新加入的代谢物，ID后缀代表所在隔室<br>注：c:cytosol, e:extracellular space</figcaption>
+ <figcaption class="caption table_caption">Table 1.Definition of newly added metabolites with ID suffixes representing the compartments in which they are located<br>Note: c:cytosol, e:extracellular space</figcaption>
 
  | Metabolite ID | Formula  | Name                                                       | Charge | Compartment |
 | ------------- | -------- | ---------------------------------------------------------- | ------ | ----------- |
@@ -40,7 +40,7 @@ GSMM是一种表示、量化和比较特定生物新陈代谢的方法，将生�
 | lrhh_c        | $C_{26}H_{47}O_9$ | L-rhamnosyl-3-hydroxydecanoyl-3-hydroxydecanoate           | -1     | c           |
 | lrhh_e        | $C_{26}H_{47}O_9$ | L-rhamnosyl-3-hydroxydecanoyl-3-hydroxydecanoate           | -1     | e           |
 
-<figcaption class="caption table_caption">表2.定义新加入的反应，EX_前缀代表交换反应 </figcaption>
+<figcaption class="caption table_caption"> Table 2. definition of newly added reactions, EX_ prefix for exchange reactions </figcaption>
 
 | Reaction ID    | Name                         | Metabolites                                                  |
 | -------------- | ---------------------------- | ------------------------------------------------------------ |
@@ -53,38 +53,39 @@ GSMM是一种表示、量化和比较特定生物新陈代谢的方法，将生�
 | EX_lrhh_e      | lrhh exchange                | lrhh_e: 1                                                    |
 | lrhh_transport | lrhh_transport               | lrhh_c: -1, lrhh_e: 1                                        |
 
-#### 模型性能评估
+#### Model Performance Evaluation
 
-我们利用 Memote v0.14.0 [^4]软件中给出的指标来评估我们的GSMM的水平。Memote 提供了符合 GSMM 理想构建共识的质量控制和保证指标，分为四类：注释、基本测试、生物质反应和化学计量。注释测试确保 SBML 格式模型中的交叉引用完整且符合 MIRIAM 标准，这对于 GSMM 的扩展和使用至关重要 (Lieven at al. 2020)。基本测试确保模型的形式正确性，生物质测试评估不同介质中的一致生长，化学计量测试确保从模型中消除质量和能量的不一致。
+We assessed the level of performance of our GSMM using the metrics given in the Memote v0.14.0 [^4]software, which provides quality control and assurance metrics consistent with the consensus on the ideal construction of the GSMM, organized into four categories: annotations, basic tests, biomass reactions, and chemometrics. Annotation tests ensure that cross-references in SBML-formatted models are complete and MIRIAM-compliant, which is critical for the extension and use of GSMM . The basic test ensures that the model is formally correct, the biomass test evaluates consistent growth in different media, and the stoichiometry test ensures that mass and energy inconsistencies are removed from the model.
 
-#### dFBA 实现（时间分辨模拟）
+#### Implementation of dFBA (time-resolved simulation)
 
-对于 dFBA 模拟，初始培养基成分设置为 200 mmol TPA作为碳源，令葡萄糖含量为0，以评估在富TPA环境下的生长状态。其他必要的非碳代谢物（例如氧气、二氧化碳、水等）设置为 1000 mmol，以确保生长模拟不受它们的限制。动态调整 TPA 的最大摄取速率，通过计算通量并乘以一个小的时间间隔常数，可以给出介质组成在时间框架上的近似变化。0.1小时的时间步长提供了良好的分辨率和适度的计算时间。将这一变化从初始介质组成中减去，得到一个新的初始介质组成。[^5] 重复该过程，直到dFBA求解函数到达计算极限。在每个时间步长，存储介质浓度向量用于绘图和分析。
+For dFBA simulations, the initial medium composition was set to 200 mmol TPA as the carbon source, leaving the glucose content at 0 to assess growth in a TPA-rich environment. Other essential non-carbon metabolites (e.g., oxygen, carbon dioxide, water, etc.) were set to 1000 mmol to ensure that growth simulations were not limited by them. Dynamically adjusting the maximum rate of TPA uptake gives an approximate change in media composition over the time frame by calculating the flux and multiplying by a small time interval constant.A time step of 0.1 hr provides good resolution and modest computational time. This change is subtracted from the initial medium composition to obtain a new initial medium composition. [^5] The process is repeated until the dFBA solution function reaches the computational limit. At each time step, store the media concentration vector for plotting and analysis.
 
 You can <a href="https://static.igem.wiki/teams/5175/resources/model/model-gssm-attachment-01.csv" target="_blank">click here</a> to download the original ingredient of the culture medium.
 
 ### Results
 
-#### 模型性能评估
+#### Model performance evaluation
 
-Norsigian等人评估了在Bigg中发布的模型的Memote得分，发现JSON格式的模型的平均得分为58％，SBML格式的模型的平均得率为73％。[^5] 我们的模型为SBML格式，得分达76%，超过已发表模型的平均水平，有理由相信我们的模型能在一定程度上良好地反映实际情况。
+Norsigian et al. (2020) evaluated the Memote scores of models published in Bigg and found that models in JSON format had an average score of 58% and models in SBML format had an average score of 73%.[^5] Our model in SBML format scored 76%, which exceeds the average of published models and gives reason to believe that our model reflects reality somewhat well.
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/model/model-gssm-01.png" alt="Our Memote Score" caption="Figure 1. Our Memote Score" %}
 
-#### 动态磁通平衡分析 （dFBA）模拟
+#### Dynamic Flux Balance Analysis (dFBA) Modeling
 
-通过使用 dFBA 对工程恶臭假单胞菌在富TPA的培养环境下的代谢活动进行建模，分别定性评价工程菌的TPA处理能力和鼠李糖脂生产能力。
-模拟如预期的那样预测了工程菌的演变，在 TPA 作为主要碳源的环境中，恶臭假单胞菌能成功生长，表明该菌株具备有效的 TPA 代谢能力。TPA含量持续下降并在生物质积累到一定量后开始有少量鼠李糖脂生成。在初期，细胞可能集中资源用于生长，而一旦达到一定生物量，代谢途径逐渐转向次级代谢物的合成，如鼠李糖脂。通过 dFBA 预测其鼠李糖脂开始生成的时间和产量变化，将为优化生产条件提供思路。
+The metabolic activities of the engineered Pseudomonas malodorans in a TPA-rich culture environment were modeled by using dFBA to qualitatively evaluate the TPA-processing and rhamnolipid-producing capabilities of the engineered bacteria, respectively.
+The simulations predicted the evolution of the engineered bacteria as expected, with Pseudomonas malodorans successfully growing in an environment where TPA was the main carbon source, suggesting that the strain possesses an efficient TPA metabolism. the TPA content continued to decrease and a small amount of rhamnolipid production began after a certain amount of biomass accumulation. In the early stage, the cells may concentrate their resources on growth, and once a certain biomass is reached, the metabolic pathway gradually shifts to the synthesis of secondary metabolites, such as rhamnolipids. Predicting the timing of the onset of rhamnolipid production and yield changes by dFBA will provide ideas for optimizing production conditions.
 
 {% include figure2.html images=page.images01 %}
 
 ## Discussion
 
-我们完成了时间分辨的工程恶臭假单胞菌基因组规模代谢模型modified_iJN1463。memote证明了我们的模型的完整可靠。我们希望未来的团队可以通过进一步的生长和代谢组学数据来提高其准确性和验证性。
-使用时间依赖型 dFBA 生成的生长曲线显示了预期的总体趋势。然而，无法通过实验确定潜在的估计塑料降解率。对塑料解聚速率本身进行建模具有挑战性，因为该模型无法预测酶的表达强度，而酶的表达强度与降解速率直接相关。
-由于我们的模型未经进一步验证，就无法从该模型得出大型生物反应器中的生长行为，因为放大很可能不像将通量乘以特定因子那么简单。有必要在实验室中使用不同尺寸的生物反应器进行更多的生长实验，以微调模型并可能预测每个参数的函数。然后，可以将额外的数据集成到 dFBA 模型中，以优化参数以最好地描述代谢组学数据。
-通过允许代谢通量成为底物浓度依赖性，可以进一步改进 dFBA 模拟。Michaelis-Menten 动力学可用于解决此问题，但是，基因组规模代谢模型所需的 vmax 和 Km 值不存在。质量作用动力学可能是近似生长率的宝贵替代方法。包括底物浓度依赖性通量将允许更准确地预测从指数到稳定相的过渡。
-尽管存在这些限制，我们仍然相信代谢模型将对项目未来进展继续做出贡献，通过与 Wet Lab 团队的持续合作，我们可以改进模型，同时优化 Wet Lab 实验。
+We completed a time-resolved engineered Pseudomonas malodorata genome-scale metabolic model modified_iJN1463. memote demonstrates the completeness and reliability of our model. We hope that future teams can improve its accuracy and validation with further growth and metabolomics data.
+Growth curves generated using time-dependent dFBA showed the expected general trend. However, it was not possible to experimentally determine a potential estimated plastic degradation rate. Modeling the rate of plastic depolymerization itself was challenging because the model was unable to predict the intensity of enzyme expression, which is directly correlated with the rate of degradation.
+Without further validation of our model, it is not possible to derive growth behavior in large bioreactors from the model because scaling up is likely not as simple as multiplying the flux by a specific factor. It would be necessary to perform additional growth experiments in the laboratory using different sized bioreactors to fine-tune the model and potentially predict each parameter as a function of the other. Additional data can then be integrated into the dFBA model to optimize the parameters to best describe the metabolomics data.
+The dFBA simulation can be further improved by allowing metabolic fluxes to become substrate concentration-dependent. michaelis-Menten kinetics can be used to address this issue, however, the vmax and Km values required for genome-scale metabolic modeling do not exist. Mass action kinetics may be a valuable alternative to approximate growth rates. Including substrate concentration-dependent fluxes would allow more accurate prediction of the transition from exponential to stable phase.
+Despite these limitations, we remain confident that metabolic modeling will continue to contribute to the future progress of the project, and through continued collaboration with the wetlab team we can improve the models while optimizing the wetlab experiments.
+
 
 
 
