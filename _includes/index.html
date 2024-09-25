@@ -23,6 +23,10 @@
     margin-bottom: 0 !important;
   }
 
+  .box .img img {
+    cursor: default;
+  }
+
   /* 不显示目录 */
   aside.aside {
     display: none;
@@ -42,30 +46,48 @@
   .box {
     width: 100%;
     margin: 0;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     display: flex;
-    /* flex-wrap: wrap; */
-    /* 动画结束的CSS↓ */
-    /*justify-content: center;*/
-    /* 动画开始的CSS↓ */
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .box:last-child {
     margin-bottom: 0;
+    padding-bottom: 3rem;
+  }
+
+  .box .left,
+  .box .right {
+    flex: 1;
+  }
+
+  .box .left .img,
+  .box .left .text {
+    /* 要显示的CSS */
+    /* margin: 0 auto; */
+    /* 默认状态下（未显示时）的CSS */
+    margin-right: auto;
+  }
+
+  .box .right .img,
+  .box .right .text {
+    /* 要显示的CSS */
+    /* margin: 0 auto; */
+    /* 默认状态下（未显示时）的CSS */
+    margin-left: auto;
   }
 
   .box .img,
   .box .text {
     opacity: 0;
     margin: 0;
-    width: 30rem;
-    height: 30rem;
-    /*padding: 2rem 0;*/
+    width: 40rem;
+    height: 15rem;
+    max-width: 100vw;
   }
 
   .box .img img {
-    background-color: pink;
     width: 100%;
     height: 100%;
   }
@@ -75,110 +97,139 @@
     align-items: center;
   }
 
-  .box .text:nth-child(2n) {
-    padding-left: 2rem;
-  }
-
-  .box .text:nth-child(2n+1) {
-    padding-right: 2rem;
-  }
-
-  .box .img:nth-child(2n) {
-    padding-left: 2rem;
-  }
-
-  .box .img:nth-child(2n+1) {
-    padding-right: 2rem;
-  }
-
   .box .text p {
+    /* 字号 */
+    font-size: 1rem !important;
     padding: 0 !important;
     margin: 0 !important;
   }
 </style>
 <div class="wrapper">
   <div class="box">
-    <div class="text">
-      <p>From 1950 to 2015, approximately 83 billion tons of plastic were produced worldwide, among which 79% of the
-        discarded plastic accumulated in landfills or leaked into the environment. Over time, these large plastic
-        materials break down into microplastics—tiny particles ranging from 100 nm to 5 mm in diameter—that have now
-        infiltrated nearly every aspect of our daily lives.</p>
+    <div class="left">
+      <div class="text">
+        <p>From 1950 to 2015, approximately 83 billion tons of plastic were produced worldwide, among which 79% of the
+          discarded plastic accumulated in landfills or leaked into the environment. Over time, these large plastic
+          materials break down into microplastics—tiny particles ranging from 100 nm to 5 mm in diameter—that have now
+          infiltrated nearly every aspect of our daily lives.</p>
+      </div>
     </div>
-    <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/background/bg-01.png" alt=""></div>
-  </div>
-  <div class="box">
-    <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/background/bg-02.png" alt=""></div>
-    <div class="text">
-      <p>Once microplastics enter the human body through the food chain, they can penetrate critical biological barriers
-        such as cell membranes, the blood-brain barrier, and the placenta. The consequences are severe—DNA damage,
-        tissue necrosis, and potentially an increased risk of malignant tumors. These invisible threats lurk in the
-        crops we consume daily, entering our bodies with every bite. And the source of these microplastics? The
-        contaminated soils of the farmland where these crops are grown.</p>
+    <div class="right">
+      <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/background/bg-01.png" alt=""></div>
     </div>
   </div>
   <div class="box">
-    <div class="text">
-      <p>Organic fertilizers, plastic mulches, and irrigation water are the inevitable and primary culprits behind the
-        presence of microplastics in agricultural soils. Irrigation water, in particular, is often sourced from rivers,
-        lakes, and other surface water bodies, where the presence of microplastics is already widespread. The continued
-        use of microplastic-contaminated irrigation water only worsens the problem, increasing microplastic accumulation
-        in farmland, which in turn threatens crop yields and poses serious health risks to humans</p>
+    <div class="left">
+      <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/background/bg-02.png" alt=""></div>
     </div>
-    <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/background/bg-03.png" alt=""></div>
-  </div>
-  <div class="box">
-    <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/background/bg-04.png" alt=""></div>
-    <div class="text">
-      <p>In the face of this growing crisis, our team has focused on one of the most common plastics—polyethylene
-        terephthalate (PET)—and designed an innovative solution that not only degrades PET microplastics but also
-        improves soil health.</p>
+    <div class="right">
+      <div class="text">
+        <p>Once microplastics enter the human body through the food chain, they can penetrate critical biological
+          barriers
+          such as cell membranes, the blood-brain barrier, and the placenta. The consequences are severe—DNA damage,
+          tissue necrosis, and potentially an increased risk of malignant tumors. These invisible threats lurk in the
+          crops we consume daily, entering our bodies with every bite. And the source of these microplastics? The
+          contaminated soils of the farmland where these crops are grown.</p>
+      </div>
     </div>
   </div>
   <div class="box">
-    <div class="text">
-      <p>E.coli BL21 is capable of efficiently expressing proteins. We have genetically engineered it to express high
-        levels of PET-degrading dual-enzymes system for degrading PET and to break down ethylene glycol(EG), a byproduct
-        of PET degradation. This process helps reduce the amount of microplastics in irrigation water, ultimately
-        decreasing soil contamination and mitigating the potential health risks to humans.</p>
+    <div class="left">
+      <div class="text">
+        <p>Organic fertilizers, plastic mulches, and irrigation water are the inevitable and primary culprits behind the
+          presence of microplastics in agricultural soils. Irrigation water, in particular, is often sourced from
+          rivers,
+          lakes, and other surface water bodies, where the presence of microplastics is already widespread. The
+          continued
+          use of microplastic-contaminated irrigation water only worsens the problem, increasing microplastic
+          accumulation
+          in farmland, which in turn threatens crop yields and poses serious health risks to humans</p>
+      </div>
     </div>
-    <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/background/bg-safety.jpg" alt=""></div>
+    <div class="right">
+      <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/background/bg-03.png" alt=""></div>
+    </div>
   </div>
   <div class="box">
-    <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/background/bg-model.jpg" alt=""></div>
-    <div class="text">
-      <p>Pseudomonas putida KT2440 possesses a unique set of pathways for phenol and lipid metabolism. It has been
-        further modified by us to absorb and metabolize TPA, another byproduct of PET degradation, producing
-        rhamnolipids in the process. These biosurfactants not only help further eliminate microplastics from the soil
-        but also enhance the soil’s physical structure and chemical properties.</p>
+    <div class="left">
+      <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/background/bg-04.png" alt=""></div>
+    </div>
+    <div class="right">
+      <div class="text">
+        <p>In the face of this growing crisis, our team has focused on one of the most common plastics—polyethylene
+          terephthalate (PET)—and designed an innovative solution that not only degrades PET microplastics but also
+          improves soil health.</p>
+      </div>
     </div>
   </div>
   <div class="box">
-    <div class="text">
-      <p>By harnessing the synergistic power of these two strains, we aim to significantly reduce PET microplastic
-        accumulation in soils, restore soil health, and effectively tackle the growing threat of soil microplastic
-        pollution—a danger that looms large over our environment and human well-being.</p>
+    <div class="left">
+      <div class="text">
+        <p>E.coli BL21 is capable of efficiently expressing proteins. We have genetically engineered it to express high
+          levels of PET-degrading dual-enzymes system for degrading PET and to break down ethylene glycol(EG), a
+          byproduct
+          of PET degradation. This process helps reduce the amount of microplastics in irrigation water, ultimately
+          decreasing soil contamination and mitigating the potential health risks to humans.</p>
+      </div>
     </div>
-    <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/background/bg-hardware.jpg" alt=""></div>
+    <div class="right">
+      <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/background/bg-safety.jpg" alt=""></div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="left">
+      <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/background/bg-model.jpg" alt=""></div>
+    </div>
+    <div class="right">
+      <div class="text">
+        <p>Pseudomonas putida KT2440 possesses a unique set of pathways for phenol and lipid metabolism. It has been
+          further modified by us to absorb and metabolize TPA, another byproduct of PET degradation, producing
+          rhamnolipids in the process. These biosurfactants not only help further eliminate microplastics from the soil
+          but also enhance the soil’s physical structure and chemical properties.</p>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="left">
+      <div class="text">
+        <p>By harnessing the synergistic power of these two strains, we aim to significantly reduce PET microplastic
+          accumulation in soils, restore soil health, and effectively tackle the growing threat of soil microplastic
+          pollution—a danger that looms large over our environment and human well-being.</p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/background/bg-hardware.jpg" alt=""></div>
+    </div>
   </div>
 </div>
 <script>
   const imgs = $(".box .text, .box .img");
-  const boxs = $(".box");
+  const left_imgs = $(".box .left .img, .box .left .text");
+  const right_imgs = $(".box .right .img, .box .right .text");
   const imgs_position_start = new Array(imgs.length);
   const imgs_position = new Array(imgs.length);
-  function get_img_position() { //得到各元素移动前后的位置
-    imgs.css("opacity", 0);
+  function clear_imgs_style() { //清除imgs的css
     imgs.each((index, img) => {
       img.removeAttribute("style");
     });
-    boxs.css("justify-content", "space-around"); //要显示的CSS
+  }
+  function get_img_position() { //得到各元素移动前后的位置
+    imgs.css("opacity", 0);
+    clear_imgs_style();
+    //要显示的CSS
+    left_imgs.css("margin", "0 auto");
+    right_imgs.css("margin", "0 auto");
     imgs.each((index, img) => {
       imgs_position[index] = img.getBoundingClientRect().left;
     });
-    boxs.css("justify-content", "space-between"); //默认状态下（未显示时）的CSS
+    clear_imgs_style();
+    //默认状态下（未显示时）的CSS
+    left_imgs.css("margin-right", "auto");
+    right_imgs.css("margin-left", "auto");
     imgs.each((index, img) => {
       imgs_position_start[index] = img.getBoundingClientRect().left;
     });
+    clear_imgs_style();
     imgs.css("opacity", 1);
   }
   function get_opacity(pos_percent) { //计算透明度
