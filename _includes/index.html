@@ -1,4 +1,9 @@
 <style>
+  lottie-player {
+    display: none;
+  }
+</style>
+<style>
   /* 去除页面默认样式 */
   main.main {
     max-width: 100% !important;
@@ -23,7 +28,8 @@
     margin-bottom: 0 !important;
   }
 
-  .box .img img {
+  .box .img img,
+  .pet img {
     cursor: default;
   }
 
@@ -82,7 +88,7 @@
   .box .text {
     opacity: 0;
     margin: 0;
-    width: 40rem;
+    width: 35rem;
     height: 15rem;
     max-width: 100vw;
   }
@@ -103,7 +109,24 @@
     padding: 0 !important;
     margin: 0 !important;
   }
+
+  /* pet小图片 */
+  .pet {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .pet img {
+    width: 100%;
+    height: 100%;
+  }
 </style>
+<div class="pet">
+  <img src="https://static.igem.wiki/teams/5175/test-resources/test-pet.png" alt="">
+</div>
 <div class="wrapper">
   <div class="box">
     <div class="left">
@@ -302,4 +325,18 @@
   $(window).scrollTop(1);
   $(window).scrollTop(0); //解决：刷新页面第一张位置不变
   scroll_func();
+</script>
+<script>
+  const pet = $(".pet");
+  const ypos = 0.6; //pet图片距窗口顶部的距离
+  function update_pet() {
+    const clientHeight = document.documentElement.clientHeight;
+    const scrollTop = document.documentElement.scrollTop;
+    const scroll_distance = clientHeight * ypos + scrollTop;
+    pet.animate({
+      top: scroll_distance
+    }, 5);
+  }
+  update_pet();
+  $(window).on("scroll", () => update_pet());
 </script>
