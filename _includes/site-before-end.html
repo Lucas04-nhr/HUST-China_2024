@@ -387,6 +387,7 @@
 
       // 定义函数来隐藏全屏容器
       function hideFullscreenContainerOnScroll() {
+        if (!singleFullscreenContainer) return;
         // 如果全屏容器是可见的（display 不为 'none'）
         if (singleFullscreenContainer.style.display !== 'none') {
           singleFullscreenImage.classList.add('zoom-out'); // 添加缩小类
@@ -434,6 +435,7 @@
 
     // 定义函数来隐藏全屏容器
     function hideFullscreenContainersOnScroll() {
+      if (fullscreenContainers.length === 0) return;
       fullscreenContainers.forEach((container, index) => {
         // 如果全屏容器是可见的（display 不为 'none'）
         if (container.style.display !== 'none') {
