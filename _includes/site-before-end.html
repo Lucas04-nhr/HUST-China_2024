@@ -362,12 +362,17 @@
     const singleFullscreenImage = document.getElementById('fullscreen-image');
     $(singleFullscreenContainer).css("display", "flex"); //设置默认display样式为flex
     $(singleFullscreenContainer).hide(); //先隐藏
+    let is_first_click = true;
     if (singleImages) {
       singleImages.forEach(singleImage => {
         singleImage.addEventListener('click', function () {
           singleFullscreenImage.src = this.src; // 设置全屏图像的 src
-          //singleFullscreenContainer.style.display = 'flex'; // 显示全屏容器
-          $(singleFullscreenContainer).fadeIn("fast"); // 显示全屏容器
+          if (is_first_click) {
+            singleFullscreenContainer.style.display = 'flex'; // 显示全屏容器
+            is_first_click = false;
+          }
+          else
+            $(singleFullscreenContainer).stop().fadeIn(150); // 显示全屏容器
           // 使用 setTimeout 确保容器显示后再添加放大类
           setTimeout(() => {
             singleFullscreenImage.classList.add('zoom-in'); // 添加放大类
@@ -377,7 +382,7 @@
         // 点击全屏容器时隐藏
         singleFullscreenContainer.addEventListener('click', function () {
           singleFullscreenImage.classList.add('zoom-out'); // 添加缩小类
-          $(singleFullscreenContainer).fadeOut(300);
+          $(singleFullscreenContainer).stop().fadeOut(300);
           setTimeout(() => {
             //singleFullscreenContainer.style.display = 'none'; // 隐藏全屏容器
             singleFullscreenImage.classList.remove('zoom-out'); // 移除缩小类
@@ -393,7 +398,7 @@
           singleFullscreenImage.classList.add('zoom-out'); // 添加缩小类
           setTimeout(() => {
             //singleFullscreenContainer.style.display = 'none'; // 隐藏全屏容器
-            $(singleFullscreenContainer).fadeOut(300);
+            $(singleFullscreenContainer).stop().fadeOut(300);
             singleFullscreenImage.classList.remove('zoom-out'); // 移除缩小类
           }, 300); // 持续时间与 CSS 中的过渡时间相同
         }
@@ -412,8 +417,12 @@
     images.forEach((image, index) => {
       image.addEventListener('click', function () {
         fullscreenImages[index].src = this.src; // 设置对应全屏图像的 src
-        //fullscreenContainers[index].style.display = 'flex'; // 显示对应全屏容器
-        $(fullscreenContainers[index]).fadeIn("fast"); // 显示全屏容器
+        if (is_first_click) {
+          fullscreenContainers[index].style.display = 'flex'; // 显示全屏容器
+          is_first_click = false;
+        }
+        else
+          $(fullscreenContainers[index]).stop().fadeIn(150); // 显示全屏容器
         // 使用 setTimeout 确保容器显示后再添加放大类
         setTimeout(() => {
           fullscreenImages[index].classList.add('zoom-in'); // 添加放大类
