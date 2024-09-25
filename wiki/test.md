@@ -64,6 +64,14 @@ The formula $E=mc^2$ is well-known.
 
 <center>$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$</center>
 
+### Block Math
+$$
+\begin{aligned}
+\int_{-\infty}^{\infty} e^{-x^2} dx &= \sqrt{\pi} \\
+\int_{-\infty}^{\infty} e^{-x^2} dx &= \sqrt{\pi} \\
+\end{aligned}
+$$
+
 ## Table
 
 其它文字112
