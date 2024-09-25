@@ -63,3 +63,14 @@ jobs:
           assignees: Lucas04-nhr
           reviewers: Lucas04-nhr
           draft: false
+      
+      - name: Set up Git Configurations
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Push to GitHub
+        run: |
+          git fetch origin
+          git checkout main
+          git push
