@@ -48,3 +48,7 @@ Comparison of simulation goodness and prediction accuracy of different machine l
 | **Test_r<sup>2</sup>**  | 0.482759   | 0.96512  | 0.963398 | 0.828356    | 0.410678 | 0.984548    |
 | **Test_RMSE**           | 0.164101   | 0.038982 | 0.182309 | 0.085429    | 0.147808 | 0.015366    |
 | **Test_MAE**            | 0.164101   | 0.038982 | 0.182309 | 0.085429    | 0.129603 | 0.015366    |
+
+{% include button.html text="Download Table S1" link="https://static.igem.wiki/teams/5175/resources/model/machine-learning-attachment-table-s1.xlsx" %}
+
+<center>{% include button.html link="../" text="Go back to Model-Machine Learning" %}</center>
