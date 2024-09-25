@@ -10,53 +10,51 @@ excerpt: "The model is a means of assisting the overall completion and implement
 
 ## Molecular Docking
 
-分子对接（molecular docking）是指通过计算模拟小分子与靶标分子之间的相互作用，以预测它们的结合模式和结合位点的过程。在实验设计中，我们预期找到降解PET效率最高的PETase-MHETase双酶体系，预估双酶体系中Linker的种类以及长度，PETase与MHETase在肽段上的先后会对降解效率产生影响，因而采用分子对接来探究各因素对于PET与双酶体系中PETase的结合亲和力的影响，最终得到最高效的双酶体系搭配组合PETase-ggggs(15)-MHETase用于后续的实验设计和湿实验部分。
+Molecular docking refers to the computational simulation of interactions between small molecules and target molecules to predict their binding modes and sites. In our project design, we aim to identify the most efficient PETase-MHETase dual-enzyme system for PET degradation. We estimate the types and lengths of linkers in the dual-enzyme system, considering that the order of PETase and MHETase in the peptide sequence may influence degradation efficiency. Therefore, we employ molecular docking to explore how these factors affect the binding affinity of PETase within the dual-enzyme system. Ultimately, we aim to identify the most effective combination of PETase-ggggs(15)-MHETase for subsequent experimental design and wetlab studies.
 
 ### Materials
 
-从PDB获取FAST -PETase与MHETase的序列信息。常用linker分为柔性linker与刚性linker，柔性linker能够提供更大的灵活性，允许连接的酶自由旋转和运动，使其能够适应动态的相互作用，而刚性linker可以防止两个酶之间的过度接近或旋转，保持适当的空间分离，减少相互干扰。选取了广泛使用的柔性linker（GGGGS，GSGSG与GGGGG）与刚性linker （EAAAK与 PAPAP）并采取不同的linker长度（分别为10,15,20,25,30,35个氨基酸）来构建PETase-Linker-MHETase双酶体系。
+We obtained the sequence information for FAST-PETase and MHETase from the PDB. Commonly used linkers are classified into flexible and rigid linkers. Flexible linkers provide greater adaptability, allowing the connected enzymes to rotate and move freely, which is essential for dynamic interactions. In contrast, rigid linkers prevent excessive proximity or rotation between the two enzymes, maintaining appropriate spatial separation and reducing interference. We selected widely used flexible linkers (GGGGS, GSGSG, and GGGGG) and rigid linkers (EAAAK and PAPAP), incorporating varying linker lengths (10, 15, 20, 25, 30, and 35 amino acids) to construct the PETase-Linker-MHETase dual-enzyme system.
 
-双酶体系的立体结构通过AlphaFold Server[^1]获得，并使用AutoDockTools进行加极性氢处理，作为对接的受体。配体通过Avogadro来进行构建。Avogadro是an advanced semantic chemical editor, visualization, and analysis platform[^2], 我们用其构建并最小化4PET作为分子对接的配体。
+The three-dimensional structure of the dual-enzyme system was obtained from the AlphaFold Server[^1]and processed using AutoDockTools to add polar hydrogen atoms, serving as the receptor for docking. The ligands were constructed using Avogadro, an advanced semantic chemical editor, visualization, and analysis platform[^2]. We utilized Avogadro to build and minimize 4PET as the ligand for molecular docking.
 
 ### Methods
 
-使用AutoDock vina[^3] [^4]将配体受体对接，box参数通过参考PETase上的催化三联体（Ser133 Asp179 His210）以及氧阴离子空穴（Tyr60 Met134）[^5]位置来配置。对接采用半柔性对接，配体4PET被设为柔性分子，受体均被设为刚性分子。对接结束后，选取具有最低结合能的构象作为判断配体与受体亲和力的依据。
+We used AutoDock Vina[^3] [^4]to perform docking between the ligand and receptor. The box parameters were configured based on the positions of the catalytic triad (Ser133, Asp179, His210) and the oxyanion hole (Tyr60, Met134) on PETase.[^5]A semi-flexible docking approach was employed, with the ligand 4PET set as a flexible molecule and the receptor treated as a rigid molecule. After docking, the conformation with the lowest binding energy was selected as the basis for assessing the affinity between the ligand and receptor.
 
-AutoDock Vina的构象相关部分使用如下评分函数：
+The conformation-related scoring function used in AutoDock Vina is based on the following components:
 
 <center>$c = \sum f _ { t _ { i } t _ { j } } ( r _ { i j } )$</center>
 
-其中求和范围是所有可以相对运动的原子对，每个原子$i$被分配一个类型$t_i$，并定义了与原子间的距离有关的相互作用函数$f$。
+The summation range includes all pairs of atoms that can move relative to each other. Each atom $i$ is assigned a type $t_i$, and an interaction function $f$ is defined based on the distances between atoms.
 
-值$c$可以看作是分子间和分子内贡献的总和，即：
+$c$can be viewed as the sum of contributions from intermolecular and intramolecular interactions, namely:
 
 <center>$c = c _ { \mathrm{inter} } + c _ { \mathrm{intra} }$</center>
 
 ### Results
 
-通过改变linker种类，linker长度以及PETase与MHETase的前后顺序，探究这些因素对PET与PETase的亲和力影响。使用了5种linker、 6种不同的linker长度、2种顺序共计比较了60种组合，得到亲和力数据 (<a href="https://static.igem.wiki/teams/5175/resources/model/molecular-docking-result.csv" target="_blank">Click here</a> to download the attachment, find the result in Fig. 01).
+By varying the types of linkers, linker lengths, and the sequence of PETase and MHETase, we investigated how these factors influence the affinity between PET and PETase. A total of 60 combinations were compared using 5 types of linkers, 6 different linker lengths, and 2 sequences, resulting in affinity data (<a href="https://static.igem.wiki/teams/5175/resources/model/molecular-docking-result.csv" target="_blank">Click here</a> to download the attachment, find the result in Fig. 1).
 
 {% include figure.html 
   image="https://static.igem.wiki/teams/5175/resources/model/molecular-docking-01.png" 
   alt="Molecular Docking" 
-  caption="图1.分子对接的部分结果，显示出对接完成后PET的构象以及形成的氢键，红色部分为4PET，蓝色部分为与PET形成氢键的氨基酸残基。蛋白名称中f代表FAST-PETase, eaaak等代表linker种类，括号中为linker的长度（氨基酸个数），m代表MHETase" 
+  caption="Figure 1. Part of the results of molecular docking, Note:The conformation of PET after docking and the hydrogen bonds formed are shown, with the red portion representing 4PET and the blue portion indicating the amino acid residues that form hydrogen bonds with PET. In the protein names, "f" denotes FAST-PETase, while "eaaak" and others represent different types of linkers, with the length of the linker (number of amino acids) indicated in parentheses, and "m" representing MHETase." 
 %}
 
-从对接结果中可以看出，部分使用刚性linker的双酶体系中PETase对PET的亲和力较好，但考虑到柔性linker可以提供更大的灵活性，允许连接的酶自由旋转和运动，使其能够适应动态的相互作用，故倾向于选择柔性linker。柔性linker中PETase-gsgsg(35)-MHETase虽具有最大的亲和力，但通过对接结果可以看出其PET与两个酶同时发生了作用，故综合考虑下，采用了亲和力较好且对接结果中氢键较合理的PETase-ggggs(15)-MHETase（见图2）。
+From the docking results, it can be observed that some dual enzyme systems using rigid linkers exhibited good affinity of PETase for PET. However, considering that flexible linkers provide greater flexibility, allowing the connected enzymes to rotate and move freely to adapt to dynamic interactions, we prefer to choose flexible linkers. Although the PETase-gsgsg(35)-MHETase combination exhibited the highest affinity among flexible linkers, the docking results indicate that PET interacts with both enzymes simultaneously. Therefore, after comprehensive consideration, we selected the PETase-ggggs(15)-MHETase combination, which showed good affinity and reasonable hydrogen bonds in the docking results (see Figure 2).
 
 {% include figure.html 
   image="https://static.igem.wiki/teams/5175/resources/model/molecular-docking-02.png" 
   alt="Molecular Docking" 
-  caption="图2.PETase-ggggs(15)-MHETase的对接结果图。<br>其中红色部分为4PET，绿色部分为PETase，粉色部分是长为15个氨基酸，种类为ggggs的linker，黄色部分为MHETase"
+  caption="Figure 2: Docking results of PETase-ggggs(15)-MHETase<br>Note: The red portion represents 4PET, the green portion represents PETase, the pink portion is the 15 amino acid linker of type ggggs, and the yellow portion represents MHETase."
 %}
 
 ### Limitation
 
-分子对接探究了不同双酶体系中PETase对PET亲和力的影响，从亲和力的角度给与了选择不同双酶体系的依据。但4PET与单体FAST-PETase对接的结合能为-9.8 kcal/mol，这意味着双酶体系降解PET效率的提高并不能从亲和力的角度去解释，未来的团队可更多去考虑PETase反应产物的扩散带来的影响。
-  
-对接的过程中采用的是半柔性对接，将受体设置为了刚体，与实际情况有所差异，后续可以考虑将PETase的催化位点设置为柔性，以此可以得到更为准确的结合能。
-  
-计算方法本身具有局限性，AutoVock Vina采用的是迭代局部搜索全局优化，这意味着存在没找到最优构象的可能性，可以通过适当增加重复计算的次数以减少这一概率。
+Molecular docking investigated the influence of PETase on PET affinity in different dual enzyme systems, providing a basis for selecting various systems based on affinity. However, the binding energy of 4PET with monomer FAST-PETase is -9.8 kcal/mol, suggesting that the increased efficiency of PET degradation in dual enzyme systems cannot solely be explained by affinity. Future work should consider the impact of PETase reaction product diffusion.
+The docking used a semi-flexible approach, treating the receptor as a rigid body, which may differ from actual conditions. Future studies could set the catalytic site of PETase as flexible to obtain more accurate binding energies. The computational method has limitations; AutoDock Vina employs iterative local search for global optimization, which may miss the optimal conformation. Increasing the number of repetitions could reduce this likelihood.
+
 
 
 
