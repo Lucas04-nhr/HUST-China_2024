@@ -2,6 +2,9 @@ name: Auto Create Merge Request
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - develop
   schedule:
     - cron: '0/15 * * * *'
 
