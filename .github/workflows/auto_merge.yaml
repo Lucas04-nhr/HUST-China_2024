@@ -32,7 +32,7 @@ jobs:
         id: check_git_status
         run: |
           git diff --exit-code
-          echo "::set-output name=repo_synced::true"
+          echo "repo_synced=true" >> $GITHUB_OUTPUT
         continue-on-error: true
 
   Create_Pull_Request:

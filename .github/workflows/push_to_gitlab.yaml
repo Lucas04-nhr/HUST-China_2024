@@ -35,12 +35,12 @@ jobs:
       - name: Check Git Status
         id: check_git_status
         run: |
-            git fetch gitlab main
-            if git diff --quiet main gitlab/main; then
-                echo "::set-output name=repo_synced::true"
-            else
-                echo "::set-output name=repo_synced::false"
-            fi
+          git fetch gitlab main
+          if git diff --quiet main gitlab/main; then
+              echo "repo_synced=true" >> $GITHUB_OUTPUT
+          else
+              echo "repo_synced=false" >> $GITHUB_OUTPUT
+          fi
   
   Pull_from_GitLab:
     needs: Check_Git_Status
