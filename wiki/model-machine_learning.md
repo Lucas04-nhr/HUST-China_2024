@@ -34,13 +34,13 @@ We consider the simulation and prediction accuracy of different machine learning
 
 <center>
   $$
-  \left\{
-    \begin{aligned}
-      R^2=1-\frac{{\sum_{i=1}^{N}\left( p_i-a_i \right)}^2}{{\sum_{i=1}^{N}\left( a_i-\bar{a} \right)}^2} \\
-      RMSE=\sqrt{\frac{1}{N}\sum_{i=1}^{N}\left( p_i-a_i \right) ^2} \\
-      MAE=\frac{1}{N}\sum_{i=1}^{N}\abs{p_i-a_i}
-    \end{aligned}
-  \right.
+    \left\{
+      \begin{aligned}
+        R^2=1-\frac{{\sum_{i=1}^{N}\left( p_i-a_i \right)^2}}{{\sum_{i=1}^{N}\left( a_i-\bar{a} \right)^2}} \\
+        RMSE=\sqrt{\frac{1}{N}\sum_{i=1}^{N}\left( p_i-a_i \right)^2} \\
+        MAE=\frac{1}{N}\sum_{i=1}^{N}\left| p_i-a_i \right|
+      \end{aligned}
+    \right.
   $$
 </center>
 
