@@ -47,7 +47,7 @@ jobs:
       - name: Checkout "develop" branch
         if: needs.Checkout_Code.outputs['repo_synced'] == 'true'
         run: |
-          git checkout -b develop origin/develop
+          git checkout develop
 
       - name: Create pull request
         if: needs.Checkout_Code.outputs.repo_synced == 'true'
@@ -63,20 +63,3 @@ jobs:
           assignees: Lucas04-nhr
           reviewers: Lucas04-nhr
           draft: false
-
-  Push_To_GitHub:
-    runs-on: ubuntu-latest
-    needs: 
-      - Checkout_Code
-      - Create_Pull_Request
-    steps:
-      - name: Set up GitHub
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
-
-      - name: Push to GitHub
-        if: needs.Checkout_Code.outputs.repo_synced == 'true'
-        run: |
-          git fetch origin
-          git push origin main
