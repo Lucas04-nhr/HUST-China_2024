@@ -10,6 +10,12 @@ excerpt: "The model is a means of assisting the overall completion and implement
 
 ## Molecular Docking
 
+{% include figure.html 
+  image="https://static.igem.wiki/teams/5175/resources/model/molecular-docking-intro.gif" 
+  alt="Molecular Docking" 
+  caption="Introduction to Molecular Docking"
+%}
+
 Molecular docking refers to the computational simulation of interactions between small molecules and target molecules to predict their binding modes and sites. In our project design, we aim to identify the most efficient PETase-MHETase dual-enzyme system for PET degradation. We estimate the types and lengths of linkers in the dual-enzyme system, considering that the order of PETase and MHETase in the peptide sequence may influence degradation efficiency. Therefore, we employ molecular docking to explore how these factors affect the binding affinity of PETase within the dual-enzyme system. Ultimately, we aim to identify the most effective combination of PETase-ggggs(15)-MHETase for subsequent experimental design and wetlab studies.
 
 ### Materials
