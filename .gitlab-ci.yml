@@ -10,9 +10,8 @@ pages:
     - bundle install
     - bundle update
     - bundle exec jekyll build
-    - mv _site public
   artifacts:
     paths:
-      - public
+      - _site
   only:
     - main
