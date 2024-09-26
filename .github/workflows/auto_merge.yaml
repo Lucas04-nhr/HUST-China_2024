@@ -4,10 +4,12 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0/15 * * * *'
-  push:
-    branches:
-      - develop
-
+  workflow_run:
+    workflows:
+      - Deploy Jekyll site to Pages
+    types:
+      - completed
+  
 jobs:
   Checkout_Code:
     runs-on: ubuntu-latest
