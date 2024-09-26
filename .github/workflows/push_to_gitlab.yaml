@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   workflow_run:
     workflows:
-      - Auto Create Merge Request
+      - Sync GitLab to GitHub
     types:
       - completed
 
