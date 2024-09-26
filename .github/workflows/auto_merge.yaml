@@ -5,6 +5,8 @@ on:
   push:
     branches:
       - develop
+  schedule:
+    cron: '0/30 * * * *'
 
 jobs:
   Checkout_Code:
