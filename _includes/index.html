@@ -5,8 +5,8 @@
   }
 </style>
 -->
+<!-- 去除页面默认样式 -->
 <style>
-  /* 去除页面默认样式 */
   main.main {
     max-width: 100% !important;
     width: 100% !important;
@@ -30,6 +30,12 @@
     margin-bottom: 0 !important;
   }
 
+  .box .text p {
+
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
   .box .img img,
   .pet img {
     cursor: default;
@@ -39,10 +45,12 @@
   aside.aside {
     display: none;
   }
-
+</style>
+<!-- 展示盒子基本结构 -->
+<style>
   /* 背景色 */
   .wrapper {
-    background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+    background-image: linear-gradient(to top, #FFFFFF 0%, #394656 100%);
   }
 
   /* 展示图片和文字 */
@@ -68,6 +76,7 @@
   .box .left,
   .box .right {
     flex: 1;
+    margin-bottom: 2rem;
   }
 
   .box .left .img,
@@ -104,17 +113,12 @@
     display: flex;
     align-items: center;
   }
-
-  .box .text p {
-    /* 字号 */
-    font-size: 1rem !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-
-  /* 主页各box具体样式 */
-  .box .img {
-    padding: 8px;
+</style>
+<!-- 主页各box具体样式 -->
+<style>
+  .box .img,
+  .box .text {
+    padding: 8px !important;
   }
 
   .box .img img {
@@ -122,7 +126,18 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   }
 
-  /* pet小图片 */
+  .box .text p {
+    /* 字号 */
+    font-size: 1rem !important;
+    padding: 0.5rem !important;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 5px solid transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+</style>
+<!-- pet小图片 -->
+<style>
   .pet {
     display: none;
     /* 透明度 */
@@ -135,6 +150,61 @@
   .pet img {
     width: 100%;
     height: 100%;
+  }
+</style>
+<!-- 轮播图 -->
+<style>
+  .box .img .swiper {
+    /* 展示窗口 */
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+  }
+
+  .box .img .swiper-content {
+    /* 图片存放 */
+    display: flex;
+    width: 400%;
+    height: 100%;
+    /*有几张图片就是几百 */
+    background-color: transparent;
+    animation: swiper 10s infinite ease;
+  }
+
+  .box .img .swiper-content:hover {
+    animation-play-state: paused;
+  }
+
+  .box .img .swiper-content img {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  @keyframes swiper {
+
+    /* 动画 */
+    0%,
+    28% {
+      transform: translateX(0);
+    }
+
+    33.33%,
+    61.33% {
+      transform: translateX(-25%);
+    }
+
+    66.67%,
+    94.67% {
+      transform: translateX(-50%);
+    }
+
+
+    100% {
+      transform: translateX(-75%);
+    }
   }
 </style>
 <div class="pet">
@@ -151,7 +221,17 @@
       </div>
     </div>
     <div class="right">
-      <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/background/bg-01.png" alt=""></div>
+      <div class="img">
+        <div class="swiper">
+          <div class="swiper-content">
+            <img src="https://static.igem.wiki/teams/5175/resources/background/bg-01.png" alt="">
+            <img src="https://static.igem.wiki/teams/5175/resources/background/bg-02.png" alt="">
+            <img src="https://static.igem.wiki/teams/5175/resources/background/bg-03.png" alt="">
+            <!-- 最后一张图片同第一张图片 -->
+            <img src="https://static.igem.wiki/teams/5175/resources/background/bg-01.png" alt="">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="box">
@@ -179,7 +259,7 @@
           continued
           use of microplastic-contaminated irrigation water only worsens the problem, increasing microplastic
           accumulation
-          in farmland, which in turn threatens crop yields and poses serious health risks to humans</p>
+          in farmland, which in turn threatens crop yields and poses serious health risks to humans.</p>
       </div>
     </div>
     <div class="right">
@@ -238,6 +318,7 @@
     </div>
   </div>
 </div>
+<!-- 展示盒子 -->
 <script>
   const imgs = $(".box .text, .box .img");
   const left_imgs = $(".box .left .img, .box .left .text");
@@ -341,6 +422,7 @@
     scroll_func();
   });
 </script>
+<!-- pet小图标 -->
 <script>
   (function () {
     let pet = $(".pet");
