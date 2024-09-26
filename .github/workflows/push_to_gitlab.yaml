@@ -2,6 +2,8 @@ name: Sync GitHub to GitLab
 
 on:
   workflow_dispatch:
+  push:
+    - main
   schedule:
     - cron: '10/30 * * * *'
 
