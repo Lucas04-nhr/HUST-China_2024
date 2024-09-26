@@ -83,7 +83,8 @@ defaults:
     values:
       layout: page # Set the default layout for pages
       aside: true # Set the default aside for pages
-      indexing: true # Set the default indexing for pages
+      indexing: false # Set the default indexing for pages
+      sitemap: false # Set the default sitemap for pages
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
