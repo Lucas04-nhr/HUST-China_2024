@@ -56,16 +56,114 @@ After that, We use double enzyme digestion on the plasmids tphA2A3BA1-pUC57 and 
 
 We successfully constructed plasmids PETase-MHETase-fucO-aldA, phaZ-pVLT33, tphA2A3BA1-pBBR1-CS2 and tpak- pBBR1-CS2.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-01.png" alt="The results of PCR identification for PETase-MHETase-aldA-fucO and phaZ-pVLT33" caption="Fig 1. The results of PCR identification for PETase-MHETase-aldA-fucO (left) and phaZ-pVLT33 (right)" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-01.png" alt="The results of PCR identification for PETase-MHETase-aldA-fucO and phaZ-pVLT33" caption="Fig.1 The results of PCR identification for PETase-MHETase-aldA-fucO (left) and phaZ-pVLT33 (right)" %}
 
 In Fig.1, the left sub-figure is the result of PCR identification of PETase-MHETase-aldA-fucO plasmid, it shows that there is a bright band at about 2900 bp, and the length of the fragment we obtained by PCR using the primers we designed should be 2862 bp, which proves that we have successfully constructed the plasmid of PETase-MHETase -aldA-fucO system pathway.
 
 The right sub-figure of Fig.1 is the result of PCR identification of phaZ-pVLT33 plasmid. It shows that there is a bright band at about 800 bp, and the length of the fragment we obtained by PCR using the primers we designed should be 867 bp, which proves that we have successfully constructed the plasmid of phaZ-pVLT33 system pathway.
 
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-02.png" alt="The results of PCR identification for tphA2A3BA1-pBBR1CS-2 and tpaK-pBBR1CS-2" caption="Fig.2 The results of PCR identification for tphA2A3BA1-pBBR1CS-2 (left) and tpaK-pBBR1CS-2 (right)" %}
 
+In Fig.2, the left sub-figure is the result of PCR identification of tphA2A3BA1-pBBR1CS-2 plasmid. It shows that there is a bright band at about 4000 bp, and the length of the fragment we obtained by PCR using the primers we designed should be 4213 bp, which proves that we have successfully constructed the plasmid of tphA2A3BA1-pBBR1CS-2 system pathway.
 
+The right sub-figure of Fig.2 is the result of PCR identification of tpak- pBBR1-CS2 plasmid. It shows that there is a bright band at about 1500 bp, and the length of the fragment we obtained by PCR using the primers we designed should be 1634 bp, which proves that we have successfully constructed the plasmid of tpak- pBBR1-CS2 system pathway.
 
+### Experience
 
+After many attempts, in the process of double enzyme digestion, we found that directly conducting double enzyme digestion on the original plasmid or the original digestion system was not suitable for all pathways, and we could not successfully construct pathways rhlA-rhlB-pVLT33 and tphA2A3BA1-tpak. We have carefully analyzed and summarized the reasons for the failure.
 
+First, when constructing the pathway rhlA-rhlB-pVLT33, the length of rhlA-rhlB gene fragment was too close to the length of the pUC57 vector fragment, and it was difficult to obtain pure rhlA-rhlB fragments in the process of agarose gel extraction. Therefore, we tried to obtain the rhlA-rhlB fragment by PCR and then use double enzyme digestion to obtain the rhlA-rhlB fragment with sticky ends.
 
+Furthermore, the tpak-pBBR 1-CS2 fragment obtained by our double digestion was always too small and had multiple bands when constructing pathway tphA2A3BA1-tpak. We suggest that this is due to our error in designing the plasmid by designing excess restriction sites on the tpak gene fragment. Therefore, we attempted to replace the restriction endonuclease we used to solve this problem.
 
+## Cycle 2
+
+**Obtaining the target fragment through PCR technology and changing restriction endonucleases.**
+
+### Design
+
+After many failures and attempts, we analyzed the problems in the first cycle.
+
+During the construction of the plasmid rhlA-rhlB-pVLT33,we tried to obtain the linearized rhlA-rhlB fragment by PCR first, and then perform double enzyme digestion on the rhlA-rhlB fragment , so as to solve the problem that it is difficult to obtain the pure rhlA-rhlB fragment due to the similar length of the rhlA-rhlB gene fragment and the original pUC57 vector in plasmid rhlA-rhlB-pUC57.
+
+During the construction of the plasmid tphA2A3BA1-tpak, in the first phase of the process, we perfrmed double enzyme digested on plasmid tpak-pBBR1-CS2 to obtain the linearized target vector. However, after multiple attempts, we consistently observed that the size of the obtained tpak-pBBR1-CS2 fragment was smaller than expected. We concluded that this was due to an error in our plasmid design, specifically, the inclusion of redundant restriction enzyme sites within the tpak gene fragment. To address this issue, we attempted to select new restriction endonucleases for double enzyme digestion. By designing primers, we used PCR technology to add restriction enzyme sites for *Sal* I and *EcoR* I on both ends of the tphA2A3BA1 gene fragment. Following this, we performed double enzyme digestion reaction on both the tphA2A3BA1 fragment and plasmid tpak-pBBR1-CS2, and then ligated the two fragments together to obtain the tphA2A3BA1-tpak system.
+
+### Build
+
+#### rhlA-rhlB-pVLT33 pathway
+
+Initially, we separately cultured two strains of *E. coli* DH5$\alpha$(rhlA-rhlB-pUC57) and *E. coli* DH5$\alpha$ (pVLT33) and extracted the plasmids. Then, we obtained the linearized rhlA-rhlB gene fragment from the plasmid rhlA-rhlB-pUC57 by PCR. After that, We use double enzyme digestion on the rhlA-rhlB fragment and the vector pVLT33 with restriction endonucleases *Sac* I and *EcoR* I for 30 minutes, then verified and purified them through agarose gel extraction to obtain the target gene fragment and vector fragment with the identical sticky ends.  We have constructed the rhlA-rhlB-pVLT33 plasmid through enzyme ligation reaction. Next, we transferred the constructed plasmid into *E. coli* DH5$\alpha$and inoculated it onto an LB plate containing kanamycin. Then, the solid medium was placed in a 37℃ incubator for overnight incubation at a constant temperature. Subsequently, we selected individual colonies for PCR verification. After observing the correct bands, we mixed 800 μL of bacterial solution with 800 μL of 1:1 mixture of glycerol and double distilled water, and we stored the seeds at -20°C.
+
+#### tphA2A3BA1-tpak pathway
+
+To solve this problem, we attempted to select new restriction endonucleases for double enzyme digestion. First, we designed primers and used PCR to add restriction enzyme sites for *Sal* I and *EcoR* I at both ends of the tphA2A3BA1 gene fragment. Subsequently, we performed double enzyme digestion on both the tphA2A3BA1 fragment and the tpak-pBBR1-CS2 using the restriction endonucleases *Sal* I and *EcoR* I for 30 minutes. Following the digestion, we performed agarose gel recovery to purify and isolate the target gene fragment and vector fragment, ensuring they possessed identical cohesive ends. Then we constructed the tphA2A3BA1-tpaK plasmid through ligation. Next, we transferred the constructed plasmid into *E. coli* DH5$\alpha$ and inoculated it onto an LB plate containing kanamycin. Then, the solid medium was placed in a 37℃ incubator for overnight incubation at a constant temperature. Subsequently, we selected individual colonies for PCR verification. After observing the correct bands, we mixed 800 μL of bacterial solution with 800 μL of 1:1 mixture of glycerol and double distilled water, and we stored the seeds at -20°C.
+
+### Result
+
+After several attempts, we successfully constructed plasmids rhlA-rhlB-pVLT33 and tphA2A3BA1-tpak.
+
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-03.png" alt="The results of PCR identification for tphA2A3BA1-pBBR1CS-2 and tpaK-pBBR1CS-2" caption="Fig.3 The results of PCR identification for tphA2A3BA1-tpak (left) and rhlA-rhlB-pVLT33 (right)" %}
+
+In Fig.3, the left figure is the result of PCR identification of tphA2A3BA1-tpaK plasmid. It shows that there is a bright band at about 4000 bp, and the length of the fragment we obtained by PCR using the primers we designed should be 4213 bp, which proves that we have successfully constructed the plasmid of tphA2A3BA1-tpaK system pathway.
+
+The right figure of fig.3 is the result of PCR identification of rhlA-rhlB-pVLT33 plasmid. It shows that there is a bright band at about 2500 bp, and the length of the fragment we obtained by PCR using the primers we designed should be 2452 bp, which proves that we have successfully constructed the plasmid of rhlA-rhlB-pVLT33 system pathway.
+
+### Experience
+
+Initially, during the process of directly performing double digestion on the original plasmid to obtain at the linearized target vector, we encountered the problem that the size of the target vector we obtained was consistently too small. Upon examining the base sequence of the gene, we discovered that this was due to an error in our plasmid designing, specifically, the inclusion of redundant restriction enzyme sites within the tpak gene fragment. Consequently, we attempted to resolve this issue by selecting new restriction endonucleases for double digestion. Ultimately, our revised experimental protocol proved effective, and we successfully constructed the complete pathway tphA2A3BA1-tpak.
+
+In addition, due to the low activity and amplification efficiency of the vector pVLT33, the ligation efficiency between pVLT33 and phaZ and rhlA-rhlB is low. We spent a lot of time constructing plasmids phaZ-pVLT33 and rhlA-rhlB-pVLT33, and we were unable to construct the plasmid phaZ-rhlA-rhlB within the limited time. We hope to find a way to increase the activity of pVLT33 in the future.
+
+## Cycle 3
+
+**Expression Validation**
+
+### *E. coli* BL21
+
+#### Design
+
+We aimed to validate the efficiency of *E. coli* BL21 engineered bacteria in degrading PET and test the promotion efficiency provided by ethylene glycol on its growth and metabolic capacity. Therefore, we measured the enzymatic activity of PETase-MHETase expressed by engineered bacteria *E. coli* BL21. We also monitored the growth of *E. coli* BL21 engineered bacteria in M9 medium with ethylene glycol and glycerol as carbon sources and drew its growth curve.
+
+#### Build
+
+First, we cultured *E. coli* DH5$\alpha$ (PETase-MHETase-aldA-fucO) and extracted plasmids. Then, we transferred the extracted plasmids into *E. coli* BL21 and inoculated them onto LB plates containing kanamycin. We incubated the solid culture medium at 37 °C overnight, and then picked bacterial plaque for PCR verification. After observing the correct bands, we mixed 800 μL of bacterial solution with 800 μL of 1:1 mixture of glycerol and double distilled water, and we stored the seeds at -20°C.
+
+#### Testing
+
+Our plasmids were successfully transferred to *E. coli* BL21.
+
+After observing the correct and bright bands in the PCR verification of colonies, we cultured and expanded the bacteria plaque and stored the bacterial solution for future expansion and induction of expression.
+
+We cultured *E. coli* BL21 (PETase-MHETase-aldA-fucO) and *E. coli* BL21 (pUC19) in M9 culture medium containing ethylene glycol and glycerol as carbon sources.
+
+We first verified the efficiency of *E. coli* BL21 engineered bacteria in degrading PET, specifically by inoculating *E. coli* BL21 (PETase-MHETase-aldA-fucO) and *E. coli* BL21 (pUC19) into LB liquid culture medium containing kanamycin and added IPTG during the logarithmic growth phase (OD600=0.6-0.8). Compared to *E. coli* BL21 (pUC19), the concentration of *E. coli* BL21 (PETase-MHETase-aldA-fucO) was higher at all stages, and the growth rate was not significantly reduced. This indicates that fucO-aldA can promote *E. coli* BL21's utilization of ethylene glycol and improve its metabolic efficiency, thereby promoting cell growth better. This proves that the gene fucO-aldA has successfully transferred into *E. coli* BL21 and can be effectively expressed.
+
+### *P. putida* KT2440
+
+#### Design
+
+We wanted to verify the ability of the engineered *P. putida* KT2440 to degrade terephthalic acid, and we wanted to verify if the engineered *P. putida* KT2440 was consistent with our expectations to produce rhamnolipid by using ELIASA to detect the expression of rhamnolipid.
+
+#### Build
+
+First, we cultured *E. coli* DH5$\alpha$ (tphA2A3BA1-tpak) and *E. coli* DH5$\alpha$ (rhlA-rhlB-pVLT33) and extracted plasmids. Then, we transferred the 2 plasmids separately to *P. putida* KT2440 via electroporation and plated each of the strain on 1 LB plate containing kanamycin for selection. We then incubated the solid culture medium at 30 °C for overnight cultivation, and then picked bacterial plaque for PCR verification. After observing the correct bands, we mixed 800 μL of bacterial solution with 800 μL of 1:1 mixture of glycerol and double distilled water, and we stored the seeds at -20°C.
+
+#### Test
+
+Our plasmids were successfully transferred into *P. putida* KT2440.
+
+After the correct and bright bands showed on the results of PCR identification, we cultured and expanded the bacterial plaque and stored the bacterial solution for future expansion and induction of expression.
+
+We inoculated 1% of *P. putida* KT2440 (tphA2A3BA1-tpak) and 1% of *P. putida* KT2440 (pBBR1-CS2) in M9 medium with terephthalic acid as the carbon source.
+
+We detected the growth of *P. putida* KT2440 (tphA2A3BA1-tpak) and *P. putida* KT2440 (pBBR1-CS2) and drew the growth curves. The cell concentrations of both strains were almost constant at all stages and were close to zero. We suspected that tphA2A3BA1-tpak conferred limited ability to degrade terephthalic acid to *P. putida* KT2440, and it was difficult to observe significant differences in growth between *P. putida* KT2440 (tphA2A3BA1-tpak) and *P. putida* KT2440 (pBBR1-CS2) when inoculated at 1% concentration of *P. putida* KT2440.
+
+Therefore, we increased the inoculation concentration of *P. putida* KT2440 to 10% and cultured *P. putida* KT2440 (tphA2A3BA1-tpak) and *P. putida* KT2440 (pBBR1-CS2) in M9 medium with terephthalic acid as the carbon source. Then we measured the growth of *P. putida* KT2440 (tphA2A3BA1-tpak) and *P. putida* KT2440 (pBBR1-CS2) and drew the growth curves. Compared to *P. putida* KT2440 (pBBR1-CS2), the cell concentration of *P. putida* KT2440 (tphA2A3BA1-tpak) remained relatively constant at all stages, while the cell concentration of *P. putida* KT2440 (pBBR1-CS2) decreased gradually. This indicates that tphA2A3BA1-tpak can endow *P. putida* KT2440 with the ability to degrade terephthalic acid to enhance its metabolism, proving that the gene tphA2A3BA1-tpak transferred to *P. putida* KT2440 can be effectively expressed. Additionally, we collected the suspensions of *P. putida* KT2440 (tphA2A3BA1-tpak) and *P. putida* KT2440 (pBBR1-CS2) that we cultured and detected the remaining terephthalic acid content in the samples by HPLC.
+
+Based on the data, we believe that the efficiency of our engineered strain in degrading terephthalic acid is consistent with our expectation.
+
+---
+
+We also validated the efficiency of our engineered *P. putida* KT2440 (rhlA-rhlB-pVLT33) to produce rhamnolipid. We cultured *P. putida* KT2440 (rhlA-rhlB-pVLT33) and *P. putida* KT2440 (pVLT33) in M9 medium supplemented with soybean reconciled oil as the carbon source. 
+
+We sampled a certain amount of the cultured *P. putida* KT2440 (rhlA-rhlB-pVLT33) and *P. putida* KT2440 (pVLT33) for several days and added anthrone-sulfuric acid. We then used ELIASA to detect the concentration of rhamnolipid in the bacterial suspension at OD625. Based on the data, we believe that the amount of rhamnolipid produced by our engineered strain is consistent with the expected value.
