@@ -2,13 +2,14 @@ name: Auto Create Merge Request
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0/15 * * * *'
   workflow_run:
     workflows:
       - Deploy Jekyll site to Pages
     types:
       - completed
+  schedule:
+    - cron: '0/15 * * * *'
+    
   
 jobs:
   Checkout_Code:
