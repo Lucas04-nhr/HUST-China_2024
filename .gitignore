@@ -13,3 +13,4 @@ node_modules
 # Actions temp files
 gitlab_repo
 _site
+.jekyll-cache
