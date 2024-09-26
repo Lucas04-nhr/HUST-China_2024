@@ -2,10 +2,11 @@ name: Sync GitHub to GitLab
 
 on:
   workflow_dispatch:
-  push:
-    - main
-  schedule:
-    - cron: '10/30 * * * *'
+  workflow_run:
+    workflows:
+      - Auto Create Merge Request
+    types:
+      - completed
 
 jobs:
     
