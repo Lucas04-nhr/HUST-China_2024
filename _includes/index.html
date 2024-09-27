@@ -466,141 +466,143 @@
 </div>
 <!-- 展示盒子 -->
 <script>
-  const imgs = $(".box .left .img, .box .left .text, .box .right .img, .box .right .text");
-  const left_imgs = $(".box .left .img, .box .left .text");
-  const right_imgs = $(".box .right .img, .box .right .text");
-  const noslides = $(".noslide .img, .noslide .text");
-  const imgs_position_start = new Array(imgs.length);
-  const imgs_position = new Array(imgs.length);
-  function clear_imgs_style() { //清除imgs的css
-    imgs.each((index, img) => {
-      img.removeAttribute("style");
-    });
-  }
-  function get_img_position() { //得到各元素移动前后的位置
-    imgs.css("opacity", 0);
-    clear_imgs_style();
-    //要显示的CSS
-    left_imgs.css("margin", "0 auto");
-    right_imgs.css("margin", "0 auto");
-    imgs.each((index, img) => {
-      imgs_position[index] = img.getBoundingClientRect().left;
-    });
-    clear_imgs_style();
-    //默认状态下（未显示时）的CSS
-    left_imgs.css("margin-right", "auto");
-    right_imgs.css("margin-left", "auto");
-    imgs.each((index, img) => {
-      imgs_position_start[index] = img.getBoundingClientRect().left;
-    });
-    clear_imgs_style();
-    imgs.css("opacity", 1);
-  }
-  function get_opacity(pos_percent) { //计算透明度
-    const res = pos_percent;
-    return res;
-  }
-  function get_opacity2(pos_percent) { //计算透明度
-    const res = pos_percent ** 2;
-    return res;
-  }
-  function get_xpos(pos_percent, index) { //计算左/右边距
-    const start = imgs_position_start[index];
-    const end = imgs_position[index];
-    let res;
-    if (index % 2 == 0) { //在左面
-      res = pos_percent * (end - start);
-    } else { //在右面
-      res = pos_percent * (start - end);
-    }
-    return res;
-  }
-  function img_animate(index, pos_percent) { //改变左/右边距和透明度
-    const dom = imgs.eq(index);
-    const xpos = get_xpos(pos_percent, index);
-    const opacity = get_opacity(pos_percent);
-    if (index % 2 == 0) { //在左面
-      dom.animate({
-        marginLeft: xpos,
-        opacity: opacity
-      }, 0);
-    } else { //在右面
-      dom.animate({
-        marginRight: xpos,
-        opacity: opacity
-      }, 0);
-    }
-  }
-  function img_animate2(index, pos_percent) { //改变左/右边距和透明度（不滑动）
-    const dom = noslides.eq(index);
-    const opacity = get_opacity2(pos_percent);
-    dom.animate({
-      opacity: opacity
-    }, 0);
-  }
-  function find_img_toshow(scroll_distance_bottom, scroll_distance_top) { //遍历所有元素，计算现位置
-    imgs.each((index, img) => {
-      const img_height = img.clientHeight;
-      const img_distance = {
-        "top": img.offsetTop,
-        "bottom": img.offsetTop + img_height
-      };
-      //5种情况
-      if (img_distance.bottom < scroll_distance_top || img_distance.top > scroll_distance_bottom) {
-        //在屏幕上方/下方，不作处理
+  (function () {
+    const imgs = $(".box .left .img, .box .left .text, .box .right .img, .box .right .text");
+    const left_imgs = $(".box .left .img, .box .left .text");
+    const right_imgs = $(".box .right .img, .box .right .text");
+    const noslides = $(".noslide .img, .noslide .text");
+    const imgs_position_start = new Array(imgs.length);
+    const imgs_position = new Array(imgs.length);
+    function clear_imgs_style() { //清除imgs的css
+      imgs.each((index, img) => {
         img.removeAttribute("style");
+      });
+    }
+    function get_img_position() { //得到各元素移动前后的位置
+      imgs.css("opacity", 0);
+      clear_imgs_style();
+      //要显示的CSS
+      left_imgs.css("margin", "0 auto");
+      right_imgs.css("margin", "0 auto");
+      imgs.each((index, img) => {
+        imgs_position[index] = img.getBoundingClientRect().left;
+      });
+      clear_imgs_style();
+      //默认状态下（未显示时）的CSS
+      left_imgs.css("margin-right", "auto");
+      right_imgs.css("margin-left", "auto");
+      imgs.each((index, img) => {
+        imgs_position_start[index] = img.getBoundingClientRect().left;
+      });
+      clear_imgs_style();
+      imgs.css("opacity", 1);
+    }
+    function get_opacity(pos_percent) { //计算透明度
+      const res = pos_percent;
+      return res;
+    }
+    function get_opacity2(pos_percent) { //计算透明度
+      const res = pos_percent ** 2;
+      return res;
+    }
+    function get_xpos(pos_percent, index) { //计算左/右边距
+      const start = imgs_position_start[index];
+      const end = imgs_position[index];
+      let res;
+      if (index % 2 == 0) { //在左面
+        res = pos_percent * (end - start);
+      } else { //在右面
+        res = pos_percent * (start - end);
       }
-      else if (img_distance.top > scroll_distance_top && img_distance.bottom < scroll_distance_bottom) {
-        //在视口中，全部展示
-        img_animate(index, 1);
+      return res;
+    }
+    function img_animate(index, pos_percent) { //改变左/右边距和透明度
+      const dom = imgs.eq(index);
+      const xpos = get_xpos(pos_percent, index);
+      const opacity = get_opacity(pos_percent);
+      if (index % 2 == 0) { //在左面
+        dom.animate({
+          marginLeft: xpos,
+          opacity: opacity
+        }, 0);
+      } else { //在右面
+        dom.animate({
+          marginRight: xpos,
+          opacity: opacity
+        }, 0);
       }
-      else {
-        //即将进入/离开视口
-        const height = img_distance.bottom > scroll_distance_bottom ? scroll_distance_bottom - img_distance.top : img_distance.bottom - scroll_distance_top;
-        //在视口中的高度
-        img_animate(index, height / img_height);
-      }
+    }
+    function img_animate2(index, pos_percent) { //改变左/右边距和透明度（不滑动）
+      const dom = noslides.eq(index);
+      const opacity = get_opacity2(pos_percent);
+      dom.animate({
+        opacity: opacity
+      }, 0);
+    }
+    function find_img_toshow(scroll_distance_bottom, scroll_distance_top) { //遍历所有元素，计算现位置
+      imgs.each((index, img) => {
+        const img_height = img.clientHeight;
+        const img_distance = {
+          "top": img.offsetTop,
+          "bottom": img.offsetTop + img_height
+        };
+        //5种情况
+        if (img_distance.bottom < scroll_distance_top || img_distance.top > scroll_distance_bottom) {
+          //在屏幕上方/下方，不作处理
+          img.removeAttribute("style");
+        }
+        else if (img_distance.top > scroll_distance_top && img_distance.bottom < scroll_distance_bottom) {
+          //在视口中，全部展示
+          img_animate(index, 1);
+        }
+        else {
+          //即将进入/离开视口
+          const height = img_distance.bottom > scroll_distance_bottom ? scroll_distance_bottom - img_distance.top : img_distance.bottom - scroll_distance_top;
+          //在视口中的高度
+          img_animate(index, height / img_height);
+        }
+      });
+      noslides.each((index, noslide) => {
+        const img_height = noslide.clientHeight;
+        const img_distance = {
+          "top": noslide.offsetTop,
+          "bottom": noslide.offsetTop + img_height
+        };
+        //5种情况
+        if (img_distance.bottom < scroll_distance_top || img_distance.top > scroll_distance_bottom) {
+          //在屏幕上方/下方，不作处理
+          noslide.removeAttribute("style");
+        }
+        else if (img_distance.top > scroll_distance_top && img_distance.bottom < scroll_distance_bottom) {
+          //在视口中，全部展示
+          img_animate2(index, 1);
+        }
+        else {
+          //即将进入/离开视口
+          const height = img_distance.bottom > scroll_distance_bottom ? scroll_distance_bottom - img_distance.top : img_distance.bottom - scroll_distance_top;
+          //在视口中的高度
+          img_animate2(index, height / img_height);
+        }
+      });
+    }
+    function scroll_func() {
+      const clientHeight = document.documentElement.clientHeight;
+      const scrollTop = document.documentElement.scrollTop;
+      const scroll_distance = clientHeight + scrollTop;
+      find_img_toshow(scroll_distance, scrollTop);
+    }
+    $(window).resize(() => {
+      get_img_position();
+      scroll_func();
     });
-    noslides.each((index, noslide) => {
-      const img_height = noslide.clientHeight;
-      const img_distance = {
-        "top": noslide.offsetTop,
-        "bottom": noslide.offsetTop + img_height
-      };
-      //5种情况
-      if (img_distance.bottom < scroll_distance_top || img_distance.top > scroll_distance_bottom) {
-        //在屏幕上方/下方，不作处理
-        noslide.removeAttribute("style");
-      }
-      else if (img_distance.top > scroll_distance_top && img_distance.bottom < scroll_distance_bottom) {
-        //在视口中，全部展示
-        img_animate2(index, 1);
-      }
-      else {
-        //即将进入/离开视口
-        const height = img_distance.bottom > scroll_distance_bottom ? scroll_distance_bottom - img_distance.top : img_distance.bottom - scroll_distance_top;
-        //在视口中的高度
-        img_animate2(index, height / img_height);
-      }
+    $(window).on("scroll", () => scroll_func());
+    window.addEventListener('load', function () {
+      get_img_position();
+      $(window).scrollTop(1);
+      $(window).scrollTop(0); //解决：刷新页面第一张位置不变
+      scroll_func();
     });
-  }
-  function scroll_func() {
-    const clientHeight = document.documentElement.clientHeight;
-    const scrollTop = document.documentElement.scrollTop;
-    const scroll_distance = clientHeight + scrollTop;
-    find_img_toshow(scroll_distance, scrollTop);
-  }
-  $(window).resize(() => {
-    get_img_position();
-    scroll_func();
-  });
-  $(window).on("scroll", () => scroll_func());
-  window.addEventListener('load', function () {
-    get_img_position();
-    $(window).scrollTop(1);
-    $(window).scrollTop(0); //解决：刷新页面第一张位置不变
-    scroll_func();
-  });
+  })();
 </script>
 <!-- pet小图标 -->
 <script>
@@ -682,14 +684,61 @@
 </script>
 <!-- 顶部进度条 -->
 <script>
-  const scroll = $(".scroll");
-  function update_scroll() {
-    const all_height = document.body.scrollHeight - document.body.clientHeight;
-    const scrollTop = document.documentElement.scrollTop;
-    const percent = (1 - scrollTop / all_height) * 100;
-    scroll.css("transform", `translateX(-${percent}%)`);
-  }
-  window.addEventListener('load', () => update_scroll());
-  $(window).on("scroll", () => update_scroll());
-  $(window).on("resize", () => update_scroll());
+  (function () {
+    const scroll = $(".scroll");
+    function update_scroll() {
+      const all_height = document.body.scrollHeight - document.body.clientHeight;
+      const scrollTop = document.documentElement.scrollTop;
+      const percent = (1 - scrollTop / all_height) * 100;
+      scroll.css("transform", `translateX(-${percent}%)`);
+    }
+    window.addEventListener('load', () => update_scroll());
+    $(window).on("scroll", () => update_scroll());
+    $(window).on("resize", () => update_scroll());
+  })();
+</script>
+<!-- 底部按钮 -->
+<script>
+  (function () {
+    const btns = $(".below_index_title, .below_index");
+    const btn_box = $(".below_index");
+    btn_box.css("display", "flex");
+    btn_box.css("display", "none");
+    const wrapper = document.querySelector(".below_index_wrapper");
+    const distance = 50; //距页面顶部/底部多少px时显示/隐藏按钮
+    const animate_time = 150; //动画时长
+    function show_btn(btn) {
+      btn.stop().fadeIn(animate_time);
+    }
+    function hide_btn(btn) {
+      btn.stop().fadeOut(animate_time);
+    }
+    function update_btn(index, btn) {
+      const clientHeight = document.documentElement.clientHeight;
+      const scroll_distance_top = document.documentElement.scrollTop;
+      const scroll_distance_bottom = clientHeight + scroll_distance_top;
+      const btn_distance = {
+        "top": wrapper.offsetTop,
+        "bottom": wrapper.offsetTop + wrapper.clientHeight
+      };
+      if (btn_distance.bottom < scroll_distance_top || btn_distance.top > scroll_distance_bottom) {
+        return;
+      }
+      else if (btn_distance.top > scroll_distance_top + distance && btn_distance.bottom < scroll_distance_bottom - distance) {
+        show_btn($(btn));
+      }
+      else {
+        if ($(btn).css("display") === "none") show_btn($(btn));
+        else hide_btn($(btn));
+      }
+    }
+    function scroll_func() {
+      btns.each((index, btn) => {
+        update_btn(index, btn);
+      });
+    }
+    $(window).resize(() => scroll_func());
+    $(window).on("scroll", () => scroll_func());
+    window.addEventListener('load', () => scroll_func());
+  })();
 </script>
