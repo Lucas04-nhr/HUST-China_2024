@@ -37,7 +37,8 @@
   }
 
   .box .img img,
-  .pet img {
+  .pet img,
+  .bottom img {
     cursor: default;
   }
 
@@ -50,7 +51,7 @@
 <style>
   /* 背景色 */
   .wrapper {
-    background-image: linear-gradient(to top, #FFFFFF 0%, #394656 100%);
+    background-image: linear-gradient(to top, #83A6FF 0%, #394656 100%);
   }
 
   /* 展示图片和文字 */
@@ -99,7 +100,7 @@
   .box .text {
     opacity: 0;
     margin: 0;
-    width: 30rem;
+    width: 32rem;
     height: 20rem;
     max-width: 90vw;
   }
@@ -151,11 +152,9 @@
   }
 
   .wrapper .noslide .text p {
+    padding: 0.5rem 5rem !important;
     width: auto;
     height: auto;
-    background-color: #fff;
-    border: 5px solid transparent;
-    border-radius: 8px;
   }
 
   .wrapper .noslide .title p {
@@ -166,10 +165,6 @@
 <style>
   .box .text {
     padding: 0 !important;
-    background-color: #fff;
-    border: 5px solid transparent;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   }
 
   .box .img img {
@@ -185,21 +180,25 @@
   }
 
   .box .text p {
+    padding: 0.5rem 0 !important;
     width: 100%;
     height: 100%;
     /* 字号 */
     font-size: 1rem !important;
-    padding: 0.5rem !important;
-
+    color: #fff;
   }
 </style>
 <!-- pet小图片 -->
 <style>
+  :root {
+    --pet-opacity: 0.3;
+  }
+
   .pet {
     z-index: 900;
     display: none;
     /* 透明度 */
-    opacity: 0.3;
+    opacity: var(--pet-opacity);
     position: absolute;
     width: 5rem;
     height: 5rem;
@@ -249,20 +248,49 @@
 
     /* 动画 */
     0%,
-    40% {
+    43% {
       transform: translateX(0);
     }
 
     50%,
-    90% {
-      transform: translateX(-33.33%);
+    93% {
+      transform: translateX(-33.333333%);
     }
 
     100% {
-      transform: translateX(-66.67%);
+      transform: translateX(-66.666666%);
     }
   }
 </style>
+<!-- 底部图片 -->
+<style>
+  .bottom {
+    position: relative;
+    width: 100%;
+    height: 250px;
+  }
+
+  .bottom img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+  }
+</style>
+<!-- 顶部进度条 -->
+<style>
+  .scroll {
+    z-index: 8000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #97d2af;
+    transform: translateX(-100%);
+  }
+</style>
+<div class="scroll"></div>
 <div class="pet">
   <img src="https://static.igem.wiki/teams/5175/test-resources/test-pet.png" alt="">
 </div>
@@ -270,7 +298,8 @@
   <div class="box">
     <div class="left">
       <div class="text">
-        <p style="font-size: 1.2rem !important;">From 1950 to 2015, approximately 83 billion tons of plastic were
+        <p style="font-size: 1.2rem !important; padding-top:1.2rem !important;">From 1950 to 2015, approximately 83
+          billion tons of plastic were
           produced worldwide, among which 79% of the
           discarded plastic accumulated in landfills or leaked into the environment. These large plastic materials
           gradually break down into microplastics, tiny particles ranging from 100 nm to 5 mm in diameter. Microplastic
@@ -281,7 +310,9 @@
       <div class="img">
         <div>
           <img src="https://static.igem.wiki/teams/5175/resources/homepage/index1.jpg" alt="">
-          <figcaption class="caption">Cumulative plastic waste generation and disposal (in million metric tons)
+          <figcaption class="caption" style="width: 30rem; line-height:1.2rem;">
+            Cumulative plastic waste generation and disposal (in
+            million metric tons)
           </figcaption>
         </div>
       </div>
@@ -291,33 +322,43 @@
     <div class="left">
       <div class="img">
         <div>
-          <div style="max-width: 100%; max-height:100%; text-align:center;">
-            <img src="https://static.igem.wiki/teams/5175/resources/homepage/index2.png" alt="">
+          <div style="max-width: 100%; max-height:100%; text-align:center; margin-bottom:0.5rem;">
+            <img src="https://static.igem.wiki/teams/5175/resources/homepage/2.png" alt="">
           </div>
-          <figcaption class="caption">Articles combining chemical class exposures and health outcomes</figcaption>
+          <figcaption class="caption" style="line-height:1.1rem;">
+            Articles combining chemical class exposures and health outcomes
+          </figcaption>
         </div>
       </div>
     </div>
-    <div class="right">
+    <div class=" right">
       <div class="text">
-        <p style="font-size: 0.9rem !important;">Once microplastics enter the human body through the food chain, they
+        <p style="font-size: 1.2rem !important;">Once microplastics enter the human body through the food chain,
+          they
           can penetrate critical biological
           barriers such as cell membranes, the blood-brain barrier, and the placenta. This could lead to severe
-          consequences like DNA damage, tissue necrosis, and potentially an increased risk of malignant tumors. These
-          invisible threats lurk in the crops we consume, entering our bodies with every bite. And the source of these
+          consequences like DNA damage, tissue necrosis, and potentially an increased risk of malignant tumors.
+          These
+          invisible threats lurk in the crops we consume, entering our bodies with every bite. And the source of
+          these
           microplastics could be the contaminated soils of the farmland where these crops are grown.</p>
       </div>
     </div>
   </div>
-  <div class="box">
+  <div class="box" style="margin-bottom: 0 !important;">
     <div class="left">
       <div class="text">
-        <p style="font-size: 0.9rem !important;">Organic fertilizers, plastic mulches, and irrigation water are the
+        <p style="font-size: 1.1rem !important; padding-top:0.3rem !important;">Organic fertilizers, plastic
+          mulches,
+          and irrigation water are the
           inevitable and primary culprits behind the
           presence of microplastics in agricultural soils. Irrigation water, in particular, is often sourced from
-          rivers, lakes, and other surface water bodies, where the presence of microplastics is already widespread. The
-          continued use of microplastic-contaminated irrigation water only worsens the problem, increasing microplastic
-          accumulation in farmland, which in turn threatens crop yields and poses serious health risks to humans.</p>
+          rivers, lakes, and other surface water bodies, where the presence of microplastics is already widespread.
+          The
+          continued use of microplastic-contaminated irrigation water only worsens the problem, increasing
+          microplastic
+          accumulation in farmland, which in turn threatens crop yields and poses serious health risks to humans.
+        </p>
       </div>
     </div>
     <div class="right">
@@ -326,17 +367,25 @@
           <div class="swiper-content">
             <div>
               <img src="https://static.igem.wiki/teams/5175/resources/homepage/index3.jpg" alt="">
-              <figcaption class="caption">Occurrence of microplastics in global raw water, tap water, groundwater and
+              <figcaption class="caption" style="font-size: 0.7rem; line-height:1.5rem;">Occurrence of microplastics
+                in
+                global raw water,
+                tap water, groundwater and
                 bottled</figcaption>
             </div>
             <div>
               <img src="https://static.igem.wiki/teams/5175/resources/homepage/index4.jpg" alt="">
-              <figcaption class="caption">Geographic locations, sampling sites and microplastic abundance in surface
+              <figcaption class="caption" style="font-size: 0.8rem; line-height:1.1rem;">Geographic locations,
+                sampling
+                sites and microplastic abundance in surface
                 waters and sediments of parts of the Yangtze River</figcaption>
             </div>
             <div>
               <img src="https://static.igem.wiki/teams/5175/resources/homepage/index3.jpg" alt="">
-              <figcaption class="caption">Occurrence of microplastics in global raw water, tap water, groundwater and
+              <figcaption class="caption" style="font-size: 0.7rem; line-height:1.5rem;">Occurrence of microplastics
+                in
+                global raw water,
+                tap water, groundwater and
                 bottled</figcaption>
             </div>
           </div>
@@ -346,20 +395,23 @@
   </div>
   <div class="box noslide">
     <div class="text">
-      <p>In the face of this growing crisis, our team has focused on one of the most common plastics—polyethylene
+      <p style="font-size: 1.4rem !important;">In the face of this growing crisis, our team has focused on one of
+        the
+        most common plastics—polyethylene
         terephthalate (PET)—and designed an innovative solution that not only degrades PET microplastics but also
         improves soil health.</p>
     </div>
   </div>
   <div class="box noslide">
     <div class="text title">
-      <p>How It Works:</p>
+      <p style="font-size: 2rem !important;">How It Works:</p>
     </div>
   </div>
   <div class="box">
     <div class="left">
       <div class="text">
-        <p style="font-size: 1.2rem !important;">E.coli BL21 is capable of efficiently expressing proteins. We have
+        <p style="font-size: 1.2rem !important; padding-top:1rem !important;">E.coli BL21 is capable of efficiently
+          expressing proteins. We have
           genetically engineered it to express high
           levels of PET-degrading dual-enzymes system for degrading PET and to break down ethylene glycol(EG), a
           byproduct of PET degradation. This process helps reduce the amount of microplastics in irrigation water,
@@ -378,11 +430,14 @@
     </div>
     <div class="right">
       <div class="text">
-        <p style="font-size: 1.15rem !important;">Pseudomonas putida KT2440 possesses a unique set of pathways for
+        <p style="font-size: 1.2rem !important; padding-top:1.8rem !important;">Pseudomonas putida KT2440 possesses
+          a
+          unique set of pathways for
           phenol
           and lipid metabolism. It has been
           further modified by us to absorb and metabolize TPA, another byproduct of PET degradation, producing
-          rhamnolipids in the process. These biosurfactants not only help further eliminate microplastics from the soil
+          rhamnolipids in the process. These biosurfactants not only help further eliminate microplastics from the
+          soil
           but also enhance the soil’s physical structure and chemical properties.</p>
       </div>
     </div>
@@ -390,16 +445,21 @@
   <div class="box">
     <div class="left">
       <div class="text">
-        <p style="font-size: 1.4rem !important;">By harnessing the synergistic power of these two strains, we aim to
+        <p style="font-size: 1.3rem !important; padding-top:3rem !important;">By harnessing the synergistic power of
+          these two strains, we aim to
           significantly reduce PET microplastic
           accumulation in soils, restore soil health, and effectively tackle the growing threat of soil microplastic
           pollution—a danger that looms large over our environment and human well-being.</p>
       </div>
     </div>
     <div class="right">
-      <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/homepage/index7.png" alt="">
+      <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/homepage/index7.png" alt=""
+          style="background-color: white;">
       </div>
     </div>
+  </div>
+  <div class="bottom">
+    <img src="https://static.igem.wiki/teams/5175/resources/background/bottom.png" alt="">
   </div>
 </div>
 <!-- 展示盒子 -->
@@ -548,10 +608,13 @@
       pet.remove();
       return;
     }
+    const opacity = pet.eq(0).css("opacity");
+    const bottom = $(".bottom");
     const wrapper = $(".wrapper");
     const ypos = 0.6; //pet图片距窗口顶部的距离 占整个窗口的比例
     function update_pet() {
-      const bottom_distance = 10; //距展示区域底部多少px时停止下滑
+      const bottom_height = bottom.height();
+      const bottom_distance = bottom_height * 0.5; //距展示区域底部多少px时完全消失
       const wrapper_top = wrapper.offset().top;
       const wrapper_bottom = wrapper_top + wrapper.outerHeight();
       const clientHeight = document.documentElement.clientHeight;
@@ -561,14 +624,27 @@
         pet.fadeOut();
         return;
       }
-      pet.fadeIn();
       if (scroll_distance + pet[0].offsetHeight > wrapper_bottom - bottom_distance) { //超出下界
         pet.animate({
+          opacity: 0,
           top: wrapper_bottom - bottom_distance - pet[0].offsetHeight
         }, 0);
         return;
       }
+      if (scroll_distance + pet[0].offsetHeight > wrapper_bottom - bottom_height) { //进入底部图片区域
+        const enter_distance = pet.offset().top + pet[0].offsetHeight - bottom.offset().top;
+        const pos_percent = enter_distance / (bottom_height - bottom_distance);
+        const new_opacity = opacity * (1 - pos_percent);
+        pet.animate({
+          opacity: new_opacity,
+          top: scroll_distance
+        }, 0);
+        return;
+      }
+      //在页面中滑动
+      pet.fadeIn();
       pet.animate({
+        opacity: opacity,
         top: scroll_distance
       }, 5);
     }
@@ -601,4 +677,17 @@
       update_pet();
     });
   })();
+</script>
+<!-- 顶部进度条 -->
+<script>
+  const scroll = $(".scroll");
+  function update_scroll() {
+    const all_height = document.body.scrollHeight - document.body.clientHeight;
+    const scrollTop = document.documentElement.scrollTop;
+    const percent = (1 - scrollTop / all_height) * 100;
+    scroll.css("transform", `translateX(-${percent}%)`);
+  }
+  window.addEventListener('load', () => update_scroll());
+  $(window).on("scroll", () => update_scroll());
+  $(window).on("resize", () => update_scroll());
 </script>
