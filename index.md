@@ -2,7 +2,7 @@
 title: Home
 feature_text: |
   ## HUST-China 2024 -- "PETilizer"
-feature_image: "https://static.igem.wiki/teams/5175/resources/background/bg-03.png"
+feature_image: "https://static.igem.wiki/teams/5175/resources/background/bg-04.png"
 excerpt: "Welcome to iGEM HUST-China 2024 wiki!"
 ---
 
