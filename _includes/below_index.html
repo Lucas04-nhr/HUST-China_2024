@@ -1,0 +1,50 @@
+<style>
+  .below_index_wrapper {
+    padding: 0.5rem 0 !important;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /* 字号 */
+    font-size: 1.5rem !important;
+    color: #fff;
+  }
+  .below_index_wrapper .below_index_title {
+    margin: 10px;
+  }
+  .below_index_wrapper .below_index_title p {
+    margin: 30px;
+    height: fit-content !important;
+    font-size: 2rem !important;
+  }
+  .below_index_wrapper .below_index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+  }
+  .below_index_wrapper .below_index .button_wrapper {
+    margin: 20px;
+  }
+</style>
+
+<div class="below_index_wrapper">
+
+  <div class="below_index_title title">
+    <p>Want to know more? Click here!</p>
+  </div>
+
+  <div class="below_index">
+    <div class="button_wrapper">
+      {% include button.html text="Human Practices" link="./human_practices" %}
+    </div>
+    <div class="button_wrapper">
+      {% include button.html text="Wet Lab" link="./design" %}
+    </div>
+    <div class="button_wrapper">
+      {% include button.html text="Hardware" link="./hardware" %}
+    </div>
+    <div class="button_wrapper">
+      {% include button.html text="Team" link="./members" %}
+    </div>
+  </div>
+</div>
