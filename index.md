@@ -11,5 +11,3 @@ excerpt: "Welcome to iGEM HUST-China 2024 wiki!"
 
 
 {% include index.html %}
-
-
