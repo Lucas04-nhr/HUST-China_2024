@@ -32,17 +32,13 @@ PETase and MHETase are from the strain Ideonella sakaiensis 201-F6, and PET can 
 
 However, the main product of PETase degradation of PET is MHET, and the MHET intermediate tends to bind tightly to PET degrading enzyme in a non-catalytic pose, which leads to the inhibition of PET degrading enzyme. Therefore, an efficient MHET hydrolase is needed to degrade the intermediate product in time to further depolymerise MHET into its monomers TPA and EG[^5]. Multi-enzyme systems promote substrate channeling and proximity effects between enzymes. This greatly reduces the diffusion limitation between enzyme active centers, thus promoting enzyme synergy and improving catalytic efficiency[^6]. In the process of constructing a dual enzyme system, we used bioinformatics to simulate the molecular docking of the linker connecting the two enzymes, and after simulation prediction, we chose the G4S flexible peptide as the linker of FAST-PETase and MHETase, and constructed the two into a dual enzyme system. We hoped that E.coli could exocytosis the PETase-MHETase dual enzyme system to degrade PET microplastics in the environment. To this end, the pelB signal peptide was added to enhance the ability of BL21 to secrete PETase-MHETase [^7].
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design/design-01.png" alt="" caption="" %}
-
-～ Fig. 1. Schematic diagram of FAST-PETase-MHETase function ～ 
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design/design-01.png" alt="" caption="Fig. 1. Schematic diagram of FAST-PETase-MHETase function" %}
 
 The final products of PET degradation by the two-enzyme system are TPA and EG. However, wild-type E.coli cannot rapidly utilize these substances for various life activities. In order to increase the efficiency of E. coli in utilizing the PET degradation products and to improve its viability, we overexpressed L-1,2-propanediol oxidoreductase and aldehyde dehydrogenase A. This modification was able to increase E.coli 's ability to efficiently utilize EG.
 
 We chose fucO as the gene for L-1,2-propanediol oxidoreductase and aldA as the gene for aldehyde dehydrogenase A. L-1,2-propanediol oxidoreductase is an iron-dependent group III dehydrogenase [^8], and aldehyde dehydrogenase A is an enzyme with a relatively broad substrate specificity for small hydroxy aldehyde substrates [^9]. EG is first converted in E.coli to glycolaldehyde (GLA) by L-1,2 -propylene glycol oxidoreductase, which is subsequently converted to glycolic acid (GA) by aldehyde dehydrogenase A. GA can be metabolized by condensation with acetyl coenzyme A via the glyoxalate shunt to form malic acid. GA can also enter the metabolic pathway of H. coli by condensing with succinate via isocitrate lyase (encoded by the aceA gene), forming isocitrate [^10]. 
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design/design-02.png" alt="" caption="" %}
-
-~ Figure 2. Diagram of EG metabolic pathway in E. coli ~
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design/design-02.png" alt="" caption="Figure 2. Diagram of EG metabolic pathway in E. coli" %}
 
 #### Strategy 2: Utilization of TPA by Pseudomonas putida KT2440
 
@@ -50,25 +46,19 @@ Pseudomonas putida is a common soil microorganism with abundant metabolic pathwa
 
 However, wild-type P.putida is unable to directly take up and utilize TPA, which is naturally possessed in the β-ketoadipic acid pathway(PCA-4,5-cleavage-pathway) in which protocatechuic acid (PCA) is a metabolic intermediate [^12], and in certain strains that are able to degrade TPA based on this way, TPA can be converted to PCA. Therefore, one of the keys to the modification of KT2440 is the conversion of TPA to PCA.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design/design-03.png" alt="" caption="" %}
-
-~ Figure 3. β-ketoadipic acid pathway of P.putida ~
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design/design-03.png" alt="" caption="Figure 3. β-ketoadipic acid pathway of P.putida" %}
 
 P.putida KT2440 contains the introduced heterologous gene cluster (tphA2, tphA3, tphB, tphA1) from Comamonas sp.E6, which results in the conversion of P.putida intracellular TPA to PCA [^13], and each of the genes in the tph gene cluster collaborates in the conversion of TPA in P.putida.
 
 TPA 1,2-dioxygenase (TPADO) is a two-component oxygenase consisting of three parts, TphA1, TphA2, and TphA3, which together enable TPADO to effectively catalyze the oxidative reaction of TPA, converting TPA to the intermediate product 1,2-dihydroxy-3,5-cyclohexadiene-1,4-dicarboxylic acid (DCD). TphB is a dehydrogenase that oxidizes the diol moiety (two hydroxyl groups) of DCD to a keto group, resulting in the production of PCA.TphA2, TphA3 constitute the large and small subunits of the TPADO oxidase component responsible for binding to the TPA substrate and catalyzing the oxygenation reaction in the active site.TphA2 contains the active site in direct contact with the substrate, TPA, and contains the Cys-X1-His X17-Cys-X2-His pattern, binds to Rieske-type [2Fe-2S] iron-sulfur clusters and participates in electron transfer, which is a key part of the catalytic reaction of dioxygenases , TphA3 participates in the construction of the substrate channel or the appropriate positioning of the active site, and assists TphA2 in completing the oxidation reaction; TphA1 does not directly participate in the oxygenation reaction, but it contains a [2Fe -2S] iron-sulfur cluster and a flavin adenine dinucleotide (FAD) binding site that transfers electrons from an electron donor (e.g., NADPH) to the oxidized component of TPADO [^14].
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design/design-04.png" alt="" caption="" %}
-
-~ Figure 4. tph gene cluster core mechanism of converting TPA to PCA ~
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design/design-04.png" alt="" caption="Figure 4. tph gene cluster core mechanism of converting TPA to PCA" %}
 
 Due to the slow passive diffusion of aromatic carboxylates across the phospholipid bilayer of the bacterial inner membrane [^15], we believe that the introduction of TPA transporter proteins is necessary for the transformation of P.putida.
 
 In Comamonas sp. E6, the TPA transport system resembles a three-part tripartite tricarboxylate transporter (TTT), which consists of three components, TphC, TpiA, and TpiB, with TphC acting as a Substrate-Binding TphC specifically recognizes and binds TPA as a Substrate-Binding Protein (SBP); TpiA and TpiB are transmembrane proteins that form part of the transporter protein complex, whereas TphC delivers TPA from the periplasm (extracellular space) to these membrane proteins. Thus only when tphC and tpiA and tpiB genes are introduced simultaneously, our engineered bacteria can transport TPA [^16]. While TpaK, another TPA transporter protein encoded in Rhodococcus sp. RHA1, does not require the presence of tpiA or tpiB to function as a transporter, we chose TpaK as the TPA transporter protein to be applied in engineering P.putida[^17]. 
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design/design-05.png" alt="" caption="" %}
-
-~ Fig. 5. TPA transport pattern of TphC and TpaK ~
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design/design-05.png" alt="" caption="Fig. 5. TPA transport pattern of TphC and TpaK" %}
 
 #### Strategy 3: Synthesis of rhamnolipids and pathway optimization by Pseudomonas putida KT2440
 
@@ -80,18 +70,14 @@ Rhamnosyltransferase I is a key enzyme necessary for the synthesis of rhamnolipi
 	
 PHA are a class of biopolyesters with plastic-like properties produced by microorganisms under nutrient-limited conditions [^21]. P.putida synthesizes PHA via the fatty acid β-oxidation pathway and fatty acid de novo synthesis pathway, which serves as an intracellular storage material for energy and carbon sources. Whereas during PHA synthesis, it competes with rhamnolipid synthesis for the same substrate, β-hydroxyl-ACP. In order to increase the proportion of the carbon source utilized by P.putida that flows to the rhamnolipid synthesis pathway, we overexpressed the gene encoding the poly(3-hydroxyalkanoate) depolymerase gene phaZ [^22] Thus, inhibiting PHA anabolic bypass increases rhamnolipid production.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design/design-06.png" alt="" caption="" %}
-
-~ Figure 6.Engineered rhamnolipid synthesis pathway in P.putida ~
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design/design-06.png" alt="" caption="Figure 6.Engineered rhamnolipid synthesis pathway in P.putida" %}
 
 #### Strategy 4: Metabolic coupling of E.coli BL21 and P.putida KT2440 for degradation of microplastics in water and agricultural production
 
 Considering the difference in growth conditions and fermentation methods between E. coli and P.putida, we referenced the previous year's setup and separated the E.coli fermentation system from the P.putida fermentation system by using top and bottom tanks, with E.coli in the top tank being responsible for secretion of PET hydrolysis enzymes and utilizing a portion of the degradation product, EG, while P.putida was responsible for utilizing the other product of PET degradation, TPA, and the remaining EG in the bottom tank. Rhamnolipids are fermented to produce rhamnolipids, and the final rhamnolipids are sprayed into the soil to improve agricultural yields. For detailed hardware design, please refer to the 
-<a href="https://static.igem.wiki/teams/5175/resources/hardware" target="">hardware</a>.
+<a href="https://igem.lucas04.xyz/design/" target="">hardware</a>.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design/design-07.png" alt="" caption="" %}
-
-~Figure 7. Sample lab diagram of the application hardware~
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design/design-07.png" alt="" caption="Figure 7. Sample lab diagram of the application hardware" %}
 
 ### Pathway construction
 
@@ -103,9 +89,7 @@ pPeteg: pT7-lac operator-PETase-MHETase-T7-pT7-fucO-aldA-T7
 
 For FAST-PETase-MHETase, fucO, and aldA genes, we chose the T7 promoter to ensure their higher level of expression. And the lactose manipulator was added before FAST-PETase-MHETase to control gene expression. 
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design/design-08.png" alt="" caption="" %}
-
-~Figure 8. schematic diagram of pPeteg~
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design/design-08.png" alt="" caption="Figure 8. schematic diagram of pPeteg" %}
 
 **In P.putida KT2440:**
 
@@ -113,17 +97,13 @@ pTerephthalate: pT7- tphA2-tphA3-tphB-tphA1-T7-pT7- tpaK-T7
 
 For both the heterologous genes tphA23B1 and tpaK, the T7 promoter was chosen to ensure their efficient expression.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design/design-09.png" alt="" caption="" %}
-
-~Figure 9. Schematic representation of pTerephthalate~
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design/design-09.png" alt="" caption="Figure 9. Schematic representation of pTerephthalate" %}
 
 pRhamnolipid: pT7-lac operator-rhlA-rhlB-T7-pT7-lac operator-phaZ-T7
 
 Both use the T7 promoter and lac operator to express rhlAB and phaZ to control the production of rhamnolipids by P.putida. 
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design/design-10.png" alt="" caption="" %}
-
-~Figure 10. schematic representation of pRhamnolipid~
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design/design-10.png" alt="" caption="Figure 10. schematic representation of pRhamnolipid" %}
 
 ---
 
