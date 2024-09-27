@@ -30,13 +30,21 @@ We used AutoDock Vina[^3] [^4]to perform docking between the ligand and receptor
 
 The conformation-related scoring function used in AutoDock Vina is based on the following equations:
 
-<center>$c = \sum f _ { t _ { i } t _ { j } } ( r _ { i j } )$</center>
+<center>
+$$
+  c = \sum f _ { t _ { i } t _ { j } } ( r _ { i j } )
+$$
+</center>
 
 The summation range includes all pairs of atoms that can move relative to each other. Each atom $i$ is assigned a type $t_i$, and an interaction function $f$ is defined based on the distances between atoms.
 
 $c$can be viewed as the sum of contributions from intermolecular and intramolecular interactions, namely:
 
-<center>$c = c _ { \mathrm{inter} } + c _ { \mathrm{intra} }$</center>
+<center>
+$$
+  c = c _ { \mathrm{inter} } + c _ { \mathrm{intra} }
+$$
+</center>
 
 ### Results
 
