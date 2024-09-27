@@ -30,7 +30,7 @@ aside: false
 
 | Deployments | Synchronization |
 |-------------|-----------------|
-| ![Deployments on Gitlab](https://gitlab.igem.org/2024/hust-china/badges/main/pipeline.svg) | ![Synchronization to GitHub](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/pull_to_gitlab.yaml?label=Synchronization) |
+| ![Deployments on Gitlab](https://gitlab.igem.org/2024/hust-china/badges/main/pipeline.svg) | ![Synchronization to GitHub](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/push_to_gitlab.yaml?label=Synchronization) |
 
 #### Direct links
 
