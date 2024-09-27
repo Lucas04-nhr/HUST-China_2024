@@ -124,3 +124,7 @@ Both use the T7 promoter and lac operator to express rhlAB and phaZ to control t
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/design/design-10.png" alt="" caption="" %}
 
 ~Figure 10. schematic representation of pRhamnolipid~
+
+---
+
+## References
