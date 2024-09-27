@@ -105,7 +105,7 @@ In July, we met again with Professor Divya in Paris to report on our project pro
 
 Detailed designs can be found in the design section.
 
-<center>{% include button.html text="Design" link="../design/" %}</center>
+<center>{% include button.html text="Click to see Design Page" link="../design/" %}</center>
 
 ## Section 5
 
@@ -121,7 +121,7 @@ For future application scenarios, please refer to the Proposed Implementation se
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-10.webp" caption="Fig.10 HUST-China Member in the National Engineering Research Center for Biological Pesticides" %}
 
-<center>{% include button.html text="Proposed Implementation" link="../implementation/" %}</center>
+<center>{% include button.html text="Click to see Proposed Implementation Page" link="../proposed-implementation/" %}</center>
 
 After shifting the application direction of our product, we communicated with Researcher Han Huawen from Lanzhou University. She had previously conducted research on PET degradation in soil and was pleased to offer advice for our project. After listening to our design, she affirmed our goal of producing rhamnolipids. She also shared some unresolved issues from her past research, advising us to avoid similar pitfalls, which greatly aided our project advancement. Additionally, she informed us that due to the high complexity of soil environments, estimating the interactions between soil microbial communities and engineered bacteria is challenging. Groundwater, as a crucial part of the soil ecosystem, is closely related to the MP content in the soil. After a thorough literature review, we decided to incorporate their suggestions into our project. We are considering shifting the treatment environment from solid to aquatic to facilitate the enrichment of PET MPs.
 
@@ -187,4 +187,4 @@ During our field research journey, we discovered that the general public is larg
 
 For more details, refer to the Education Page.
 
-<center>{% include button.html text="Education" link="../education/" %}</center>
+<center>{% include button.html text="Click to see Education Page" link="../education/" %}</center>
