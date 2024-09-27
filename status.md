@@ -10,17 +10,23 @@ aside: false
 
 #### GitHub Status
 
+<figcaption class="caption table-caption">Status of GitHub Repository</figcaption>
+
 | Commits | Contributors | Pull Requests|
 |---------|--------------|--------------|
 | ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Lucas04-nhr/HUST-China_2024) | ![GitHub contributors](https://img.shields.io/github/contributors/Lucas04-nhr/HUST-China_2024) | ![GitHub pull requests](https://img.shields.io/github/issues-pr/Lucas04-nhr/HUST-China_2024) |
 
 #### GitHub Actions
 
+<figcaption class="caption table-caption">Status of GitHub Actions</figcaption>
+
 | Deployments(`develop`) | Deployments(`main`) | Synchronization |
 |------------------------|---------------------|-----------------|
 | ![Deployments on develop branch](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/jekyll_gh_pages.yaml?branch=develop) | ![Deployments on main branch](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/jekyll_gh_pages.yaml?branch=main) | ![Synchronization from Gitlab](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/sync_from_gitlab.yaml?label=Synchronization) |
 
 #### Gitlab Pipeline
+
+<figcaption class="caption table-caption">Status of Gitlab Repository</figcaption>
 
 | Deployments | Synchronization |
 |-------------|-----------------|
