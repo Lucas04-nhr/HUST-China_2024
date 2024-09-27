@@ -3,9 +3,8 @@ title: Safety
 permalink: /safety/
 feature_text: |
   ## Safety
-  Welcome to iGEM HUST-China 2024 wiki! It's still under construction. Please stay tuned for more information.
+  This page contains information about our project safety.
 feature_image: "https://static.igem.wiki/teams/5175/resources/background/bg-safety.jpg"
-excerpt: "Welcome to iGEM HUST-China 2024 wiki! It's still under construction. Please stay tuned for more information."
+excerpt: "This page contains information about our project safety."
 ---
 
-safety
