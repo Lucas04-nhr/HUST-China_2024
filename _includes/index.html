@@ -459,7 +459,7 @@
     </div>
   </div>
   <div class="bottom">
-    <img src="https://static.igem.wiki/teams/5175/resources/background/bottom.png" alt="">
+    <img src="https://static.igem.wiki/teams/5175/resources/homepage/bottom.png" alt="">
   </div>
 </div>
 <!-- 展示盒子 -->
@@ -614,7 +614,7 @@
     const ypos = 0.6; //pet图片距窗口顶部的距离 占整个窗口的比例
     function update_pet() {
       const bottom_height = bottom.height();
-      const bottom_distance = bottom_height * 0.5; //距展示区域底部多少px时完全消失
+      const bottom_distance = bottom_height * 0.1; //距展示区域底部多少px时完全消失
       const wrapper_top = wrapper.offset().top;
       const wrapper_bottom = wrapper_top + wrapper.outerHeight();
       const clientHeight = document.documentElement.clientHeight;
@@ -631,9 +631,9 @@
         }, 0);
         return;
       }
-      if (scroll_distance + pet[0].offsetHeight > wrapper_bottom - bottom_height) { //进入底部图片区域
-        const enter_distance = pet.offset().top + pet[0].offsetHeight - bottom.offset().top;
-        const pos_percent = enter_distance / (bottom_height - bottom_distance);
+      if (scroll_distance + pet[0].offsetHeight > wrapper_bottom - bottom_height * 0.5) { //进入底部图片区域
+        const enter_distance = pet.offset().top + pet[0].offsetHeight - (bottom.offset().top + bottom_height * 0.5);
+        const pos_percent = enter_distance / (bottom_height * 0.5 - bottom_distance);
         const new_opacity = opacity * (1 - pos_percent);
         pet.animate({
           opacity: new_opacity,
