@@ -20,9 +20,9 @@ aside: false
 
 <figcaption class="caption table-caption">Status of GitHub Actions</figcaption>
 
-| Deployments(`develop`) | Deployments(`main`) | Synchronization |
+| Deployments | Branch Merging | Synchronization |
 |------------------------|---------------------|-----------------|
-| ![Deployments on develop branch](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/jekyll_gh_pages.yaml?branch=develop) | ![Deployments on main branch](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/jekyll_gh_pages.yaml?branch=main) | ![Synchronization from Gitlab](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/sync_from_gitlab.yaml?label=Synchronization) |
+| ![Deployments on develop branch](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/jekyll_gh_pages.yaml?label=Deploy) | ![Deployments on main branch](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/auto_merge.yaml?label=Merge) | ![Synchronization from Gitlab](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/sync_from_gitlab.yaml?label=Synchronization) |
 
 #### Gitlab Pipeline
 
@@ -30,7 +30,7 @@ aside: false
 
 | Deployments | Synchronization |
 |-------------|-----------------|
-| ![Deployments on Gitlab](https://gitlab.igem.org/2024/hust-china/badges/main/pipeline.svg) | ![Synchronization to GitHub](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/pull_to_gitlab.yaml?label=Synchronization) |
+| ![Deployments on Gitlab](https://gitlab.igem.org/2024/hust-china/badges/main/pipeline.svg) | ![Synchronization to GitHub](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/push_to_gitlab.yaml?label=Synchronization) |
 
 #### Direct links
 
