@@ -128,3 +128,27 @@ Both use the T7 promoter and lac operator to express rhlAB and phaZ to control t
 ---
 
 ## References
+
+[^1]: LORENZO V D, PéREZ-PANTOJA D, NIKEL P I. <i>Pseudomonas putida</i> KT2440: the long journey of a soil-dweller to become a synthetic biology chassis [J]. Journal of Bacteriology, 2024, 206(7): e00136-24.
+[^2]: GU L F, HE J, HUANG X, et al. [Construction of a versatile degrading bacteria Pseudomonas putida KT2440-DOP and its degrading characteristics] [J]. Wei Sheng Wu Xue Bao, 2006, 46(5): 763-6.
+[^3]: YOSHIDA S, HIRAGA K, TAKEHANA T, et al. A bacterium that degrades and assimilates poly(ethylene terephthalate) [J]. Science, 2016, 351(6278): 1196-9.
+[^4]: LU H, DIAZ D J, CZARNECKI N J, et al. Machine learning-aided engineering of hydrolases for PET depolymerization [J]. Nature, 2022, 604(7907): 662-7.
+[^5]: ZHANG J, WANG H, LUO Z, et al. Computational design of highly efficient thermostable MHET hydrolases and dual enzyme system for PET recycling [J]. Communications Biology, 2023, 6(1): 1135.
+[^6]: ZHANG Y, HESS H. Toward Rational Design of High-efficiency Enzyme Cascades [J]. ACS Catalysis, 2017, 7(9): 6018-27.
+[^7]: CUI L, QIU Y, LIANG Y, et al. Excretory expression of IsPETase in E. coli by an enhancer of signal peptides and enhanced PET hydrolysis [J]. International Journal of Biological Macromolecules, 2021, 188: 568-75.
+[^8]: MONTELLA C, BELLSOLELL L, PéREZ-LUQUE R, et al. Crystal structure of an iron-dependent group III dehydrogenase that interconverts L-lactaldehyde and L-1,2-propanediol in Escherichia coli [J]. J Bacteriol, 2005, 187(14): 4957-66.
+[^9]: ZHU Y, LIN E C. Loss of aldehyde dehydrogenase in an Escherichia coli mutant selected for growth on the rare sugar L-galactose [J]. J Bacteriol, 1987, 169(2): 785-9.
+[^10]: PANDA S, FUNG V Y K, ZHOU J F J, et al. Improving ethylene glycol utilization in Escherichia coli fermentation [J]. Biochemical Engineering Journal, 2021, 168: 107957.
+[^11]: NIKEL P I, DE LORENZO V. Pseudomonas putida as a functional chassis for industrial biocatalysis: From native biochemistry to trans-metabolism [J]. Metab Eng, 2018, 50: 142-55.
+[^12]: HARWOOD C S, PARALES R E. THE β-KETOADIPATE PATHWAY AND THE BIOLOGY OF SELF-IDENTITY [J]. Annual Review of Microbiology, 1996, 50(Volume 50, 1996): 553-90.
+[^13]: SASOH M, MASAI E, ISHIBASHI S, et al. Characterization of the Terephthalate Degradation Genes of Comamonas sp. Strain E6 [J]. Applied and Environmental Microbiology, 2006, 72(3): 1825-32.
+[^14]: KINCANNON W M, ZAHN M, CLARE R, et al. Biochemical and structural characterization of an aromatic ring-hydroxylating dioxygenase for terephthalic acid catabolism [J]. Proc Natl Acad Sci U S A, 2022, 119(13): e2121426119.
+[^15]: VERMAAS J V, DIXON R A, CHEN F, et al. Passive membrane transport of lignin-related compounds [J]. Proc Natl Acad Sci U S A, 2019, 116(46): 23117-23.
+[^16]: HOSAKA M, KAMIMURA N, TORIBAMI S, et al. Novel tripartite aromatic acid transporter essential for terephthalate uptake in Comamonas sp. strain E6 [J]. Appl Environ Microbiol, 2013, 79(19): 6148-55.
+[^17]: PATRAUCHAN MARIANNA A, FLORIZONE C, DOSANJH M, et al. Catabolism of Benzoate and Phthalate in Rhodococcus sp. Strain RHA1: Redundancies and Convergence [J]. Journal of Bacteriology, 2005, 187(12): 4050-63.
+[^18]: JARVIS F G, JOHNSON M J. A Glyco-lipide Produced by Pseudomonas Aeruginosa [J]. Journal of the American Chemical Society, 1949, 71(12): 4124-6.
+[^19]: ZHU K, ROCK CHARLES O. RhlA Converts β-Hydroxyacyl-Acyl Carrier Protein Intermediates in Fatty Acid Synthesis to the β-Hydroxydecanoyl-β-Hydroxydecanoate Component of Rhamnolipids in Pseudomonas aeruginosa [J]. Journal of Bacteriology, 2008, 190(9): 3147-54.
+[^20]: WITTGENS A, TISO T, ARNDT T T, et al. Growth independent rhamnolipid production from glucose using the non-pathogenic Pseudomonas putida KT2440 [J]. Microb Cell Fact, 2011, 10: 80.
+[^21]: LIU H, CHEN Y, ZHANG Y, et al. Enhanced production of polyhydroxyalkanoates in Pseudomonas putida KT2440 by a combination of genome streamlining and promoter engineering [J]. International Journal of Biological Macromolecules, 2022, 209: 117-24.
+[^22]: 尹进, 车雪梅, 陈国强. 聚羟基脂肪酸酯的研究进展 [J]. 生物工程学报, 32(6): 726-37.
+
