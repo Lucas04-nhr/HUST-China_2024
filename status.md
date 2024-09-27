@@ -22,7 +22,7 @@ aside: false
 
 | Deployments | Branch Merging | Synchronization |
 |------------------------|---------------------|-----------------|
-| ![Deployments on develop branch](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/jekyll_gh_pages.yaml) | ![Deployments on main branch](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/auto_merge.yaml) | ![Synchronization from Gitlab](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/sync_from_gitlab.yaml?label=Synchronization) |
+| ![Deployments on develop branch](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/jekyll_gh_pages.yaml?label=Deploy) | ![Deployments on main branch](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/auto_merge.yaml?label=Merge) | ![Synchronization from Gitlab](https://img.shields.io/github/actions/workflow/status/Lucas04-nhr/HUST-China_2024/sync_from_gitlab.yaml?label=Synchronization) |
 
 #### Gitlab Pipeline
 
