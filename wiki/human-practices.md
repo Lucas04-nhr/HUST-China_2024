@@ -8,7 +8,8 @@ feature_image: "https://static.igem.wiki/teams/5175/resources/background/bg-hp.w
 excerpt: "Welcome to iGEM HUST-China 2024 wiki! It's still under construction. Please stay tuned for more information."
 ---
 
-## Section1 Topic Selection: Aware Microplastic Pollution in Agriculture
+## Section 1 
+**Topic Selection: Aware Microplastic Pollution in Agriculture**
 
 During the summer of 2023, while participating in our university's "Triple Services Activity into Rural Areas" social practice activities, we accidentally observed the alarming presence of black and transparent plastic bag waste piled up beside rice fields. This litter starkly contrasted with the beautiful natural environment and was in direct contact with the food destined for local households. Such a scene raised our concerns about whether plastic waste could contaminate and harm farmland. Motivated by these questions, we conducted a thorough literature review.
 
@@ -24,7 +25,9 @@ Numerous studies have highlighted the dangers of MPs to human health. For instan
 
 Furthermore, a study targeting pregnant women in Hawaii found MP particles in approximately 12% of placenta samples, suggesting that these particles may be transmitted from mother to fetus and could disrupt normal placental functions, affecting fetal development and increasing risks of preterm birth, miscarriage, and fetal malformations. Given these findings, it is evident that addressing the issue of MP pollution is critical. Therefore，our team aims to provide a synthetic biology solution to mitigate MP pollution in agricultural settings.
 
-## Section2 Background Investigation
+## Section2 
+
+**Background Investigation**
 
 ### Exploring Solutions for MP Pollution & Targeting the PET
 
@@ -52,7 +55,9 @@ We discussed the future trends in plastic development with the staff. They infor
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-04.webp" caption="Fig. 4 Public Open Day Discussion Session" %}
 
-## Section3 Project Initial Design
+## Section 3
+
+**Project Initial Design**
 
 ### Pathway Establishment & Component Enhancement
 
@@ -76,7 +81,9 @@ Professor Yan Yunjun has high attainments in multi-enzyme catalysis. After learn
 
 As our project progressed, we contacted Associate Professor Sheng Wang, who has been instrumental in the rational molecular design of structures and mechanisms. He confirmed our idea of building a two-enzyme system and suggested that we screen suitable linkers to optimize the two-enzyme system and improve the transport efficiency of intermediate products to enhance catalytic activity. After careful review of the literature, we decided to adopt Associate Professor Wang Sheng's suggestion. After consulting relevant data and screening part of linker for modeling, we used flexible linker G4S to connect PETase and MHETase together to construct a PET-MHET enzyme dual-enzyme system model, and conducted molecular docking experiments to simulate the efficiency of the dual-enzyme system.
 
-## Section4 Project Design Refinement
+## Section 4 
+
+**Project Design Refinement**
 
 ### Product Design and Design Optimisation
 
@@ -100,7 +107,9 @@ Detailed designs can be found in the design section.
 
 <center>{% include button.html text="Design" link="../design/" %}</center>
 
-## Section 5 Hardware Design:
+## Section 5
+
+**Hardware Design**
 
 After the research at Hubei Nitrogen Energy Biotechnology Co., we considered adding a suicide switch and designing the system as a microbial agent or microbial fertilizer. It could be applied to the soil to allow the system to autonomously degrade MPs, producing rhamnolipids.
 
@@ -128,7 +137,9 @@ We designed a fermentation tank as the main hardware facility. The overall idea 
 
 After completing our fermentation tank model, we had an online discussion with Zhendian (Suzhou) Medical Technology Co. regarding our hardware model. They expressed approval of our hardware design and suggested we continue to optimize the function of the adsorption module.
 
-## Section 6 On-site Research
+## Section 6
+
+**On-site Research**
 
 After our hardware design was mostly completed and experiments progressed, our team traveled to rural areas around Wuhan for field research. We conducted a comprehensive survey of the layout of agricultural land and groundwater used for irrigation, which played a crucial role in selecting the best locations for project implementation, improving hardware design, and determining future application possibilities.
 
@@ -138,7 +149,9 @@ Furthermore, we communicated with the village committee in the area. After intro
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-12.webp" caption="Fig.12 HUST-China Members exchange in rural areas" %}
 
-## Section 7 Public Evaluation :
+## Section 7 
+
+**Public Evaluation**
 
 To gain a deeper understanding of the progress, social awareness, and future prospects in the field of MP pollution remediation, we visited the Wuhan Ecological Environment Volunteer Service Team to better understand bioethics and comprehensively evaluate the prospects of our project in the remediation of MPs in agricultural fields. 
 
@@ -152,7 +165,9 @@ To gain a more comprehensive understanding of the public's awareness and attitud
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-14.webp" caption="Fig.14 HUST-China members conducting street interviews with the public" %} 
 
-## Section8 Positive Feedback
+## Section 8 
+
+**Positive Feedback**
 
 Our project is a soil purification system that transforms waste into fertilizer, featuring low costs and no pollution while degrading soil microplastics and increasing crop yields. After completing our project, we submitted a brief project report to Researcher Han Huawen, expressing our gratitude for her valuable suggestions, which significantly contributed to the refinement and improvement of our project. 
 
@@ -160,7 +175,9 @@ Throughout the project development process, Guangzhou Jinfa Technology Co., Ltd.
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-15.webp" caption="Fig.15 HUST-China members receiving feedback from Guangzhou Jinfa Technology Co., Ltd." %}
 
-## Section9 Leading Education/Integrating Human Practice with Synthetic Biology Education and Communication:
+## Section 9 
+
+**Leading Education/Integrating Human Practice with Synthetic Biology Education and Communication**
 
 During interactions with other students at the public open day of Guangzhou Jinfa Technology Co., Ltd., we found that students from other majors were not well-informed about synthetic biology and had certain misconceptions about genetically modified organisms. Therefore, we decided to use interesting themes to educate university students about synthetic biology in a way that integrates it with other cultures. 
 
