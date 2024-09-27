@@ -75,7 +75,7 @@ PHA are a class of biopolyesters with plastic-like properties produced by microo
 #### Strategy 4: Metabolic coupling of E.coli BL21 and P.putida KT2440 for degradation of microplastics in water and agricultural production
 
 Considering the difference in growth conditions and fermentation methods between E. coli and P.putida, we referenced the previous year's setup and separated the E.coli fermentation system from the P.putida fermentation system by using top and bottom tanks, with E.coli in the top tank being responsible for secretion of PET hydrolysis enzymes and utilizing a portion of the degradation product, EG, while P.putida was responsible for utilizing the other product of PET degradation, TPA, and the remaining EG in the bottom tank. Rhamnolipids are fermented to produce rhamnolipids, and the final rhamnolipids are sprayed into the soil to improve agricultural yields. For detailed hardware design, please refer to the 
-<a href="https://static.igem.wiki/teams/5175/resources/hardware" target="">hardware</a>.
+<a href="https://igem.lucas04.xyz/design/" target="">hardware</a>.
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/design/design-07.png" alt="" caption="Figure 7. Sample lab diagram of the application hardware" %}
 
