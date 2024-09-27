@@ -10,7 +10,7 @@ excerpt: "This page contains information about the engineering of HUST-China 202
 
 ## Introduction
 
-We want to alleviate the microplastic pollution problem by degrading PET in irrigation water and produce rhamnolipid which is beneficial to the soil fertility and improve the soil environment. To this end, we designed three system paths and chose two kinds of chassis bacteria, *E. coli* BL21 and *P. putida* KT2440. We hope to realize our goal by co-cultivating genetically modified *E. coli* BL21 and *P. putida* KT2440.  In the construction stage, we used homologous recombination and double enzyme digestion to construct the pathway. Although we encountered some problems, we finally achieved certain results through continuous attempts and summaries, which also provided some experience for the subsequent teams.
+We want to alleviate the microplastic pollution problem by degrading PET in irrigation water and produce rhamnolipid which is beneficial to the soil fertility and improve the soil environment. To this end, we designed three system paths and chose two kinds of chassis bacteria, *E. coli* BL21 and *P. putida* KT2440.  In the construction stage, we used homologous recombination and double enzyme digestion to construct the pathway. Although we encountered some problems, we finally achieved certain results through continuous attempts and summaries, which also provided some experience for the subsequent teams.
 
 ## Cycle 1
 
