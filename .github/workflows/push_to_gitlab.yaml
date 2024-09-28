@@ -82,6 +82,7 @@ jobs:
       - name: Push to GitHub
         run: |
           git fetch origin
+          git pull --rebase
           git push origin main
           
   
