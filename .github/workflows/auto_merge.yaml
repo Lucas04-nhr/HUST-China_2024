@@ -2,9 +2,6 @@ name: Auto Create Merge Request
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - develop
   workflow_run:
     workflows:
       - Deploy Jekyll site to Pages
