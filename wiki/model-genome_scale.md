@@ -32,13 +32,13 @@ The initial metabolic reaction list of *P.putida* KT2440 was obtained from the l
 
  | Metabolite ID | Formula  | Name                                                       | Charge | Compartment |
 | ------------- | -------- | ---------------------------------------------------------- | ------ | ----------- |
-| tpa_c         | $C_8H_4O_4$   | Terephthalate                                              | -2     | c           |
-| tpa_e         | $C_8H_4O_4$   | Terephthalate                                              | -2     | e           |
-| dhchdc_c      | $C_8H_6O_6$   | (3S,4R)-3,4-Dihydroxycyclohexa-1,5-diene-1,4-dicarboxylate | -2     | c           |
-| 3h3h_c        | $C_{20}H_{37}O_5$ | 3-hydroxydecanoyl-3-hydroxydecanoate                       | -1     | c           |
-| 3h3h_e        | $C_{20}H_{37}O_5$ | 3-hydroxydecanoyl-3-hydroxydecanoate                       | -1     | e           |
-| lrhh_c        | $C_{26}H_{47}O_9$ | L-rhamnosyl-3-hydroxydecanoyl-3-hydroxydecanoate           | -1     | c           |
-| lrhh_e        | $C_{26}H_{47}O_9$ | L-rhamnosyl-3-hydroxydecanoyl-3-hydroxydecanoate           | -1     | e           |
+| tpa_c         | $\mathrm{C_8H_4O_4}$   | Terephthalate                                              | -2     | c           |
+| tpa_e         | $\mathrm{C_8H_4O_4}$   | Terephthalate                                              | -2     | e           |
+| dhchdc_c      | $\mathrm{C_8H_6O_6}$   | (3S,4R)-3,4-Dihydroxycyclohexa-1,5-diene-1,4-dicarboxylate | -2     | c           |
+| 3h3h_c        | $\mathrm{C_{20}H_{37}O_5}$ | 3-hydroxydecanoyl-3-hydroxydecanoate                       | -1     | c           |
+| 3h3h_e        | $\mathrm{C_{20}H_{37}O_5}$ | 3-hydroxydecanoyl-3-hydroxydecanoate                       | -1     | e           |
+| lrhh_c        | $\mathrm{C_{26}H_{47}O_9}$ | L-rhamnosyl-3-hydroxydecanoyl-3-hydroxydecanoate           | -1     | c           |
+| lrhh_e        | $\mathrm{C_{26}H_{47}O_9}$ | L-rhamnosyl-3-hydroxydecanoyl-3-hydroxydecanoate           | -1     | e           |
 
 <figcaption class="caption table_caption"> Table 2. Definition of newly added reactions, EX_ prefix for exchange reactions </figcaption>
 
