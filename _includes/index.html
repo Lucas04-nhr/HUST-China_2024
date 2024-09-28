@@ -1,10 +1,3 @@
-<!-- 调试 
-<style>
-  lottie-player {
-    display: none;
-  }
-</style>
--->
 <!-- 去除页面默认样式 -->
 <style>
   main.main {
@@ -191,7 +184,7 @@
     color: #fff;
   }
 </style>
-<!-- pet小图片 -->
+<!-- pet/rha小图片 -->
 <style>
   :root {
     --pet-opacity: 0.3;
@@ -207,9 +200,22 @@
     height: 5rem;
   }
 
-  .pet img {
+  .bottom .rha {
+    z-index: 901;
+    opacity: 0;
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .pet img,
+  .bottom .rha img {
     width: 100%;
     height: 100%;
+  }
+
+  .bottom .rha img {
+    object-fit: contain;
   }
 </style>
 <!-- 轮播图 -->
@@ -464,7 +470,9 @@
   </div>
   {% include below_index.html %}
   <div class="bottom">
-    <img src="https://static.igem.wiki/teams/5175/resources/homepage/bottom.png" alt="">
+    <img src="https://static.igem.wiki/teams/5175/resources/homepage/bottom-start.png" alt="" class="start">
+    <img src="https://static.igem.wiki/teams/5175/resources/homepage/bottom.png" alt="" class="end"
+      style="display: none;">
   </div>
 </div>
 <!-- 展示盒子 -->
@@ -610,28 +618,74 @@
 <!-- pet小图标 -->
 <script>
   (function () {
+    const start = $(".bottom .start");
+    const end = $(".bottom .end");
+    function show_start() { //显示开始的背景图
+      //start.fadeIn("fast");
+      end.fadeOut("fast", () => start.fadeIn("fast"));
+    }
+    function show_end() { //显示结尾的背景图
+      start.fadeOut("fast", () => end.fadeIn("fast"));
+      //end.fadeIn("fast");
+    }
     let pet = $(".pet");
     if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) { //是移动设备，就不添加
       pet.remove();
+      show_end();
       return;
     }
     const opacity = pet.eq(0).css("opacity");
     const bottom = $(".bottom");
     const wrapper = $(".wrapper");
+    const rha_opacity = 1; //rha图片完全显示时的透明度（实际完全显示的透明度会略小于该设置值）
+    const difference_width = 5; //rha图片与pet图片的宽度差，单位rem
     const ypos = 0.6; //pet图片距窗口顶部的距离 占整个窗口的比例
-    function update_pet() {
+    const pet_hide = 0.1;  //pet图片距展示区域底部百分之多少时完全消失
+    function create_rha(pets) { //根据pet图片位置更改rha图片样式，如果没有rha图片就创建
+      pets.each((index, pet) => {
+        pet = $(pet);
+        const now_opacity = rha_opacity * (opacity - pet.css("opacity")) / opacity;
+        const x = pet.offset().left;
+        const y = bottom.height() * pet_hide;
+        let rha = $(`.rha[data-id="${index}"]`);
+        if (rha.length === 0) {
+          rha = $(`
+          <div class="rha" data-id="${index}">
+            <img src="https://static.igem.wiki/teams/5175/resources/homepage/rha.png" alt="">
+          </div>
+          `);
+          bottom.append(rha);
+        }
+        rha.animate({
+          opacity: now_opacity,
+          left: x,
+          bottom: y
+        }, 0);
+      });
+      if ($(".rha").length === 1) $(".rha").css("transform", `translateX(-${difference_width / 2}rem)`); //如果只有一个rha，使其居中
+      else $(".rha").eq(1).css("transform", `translateX(-${difference_width}rem)`); //如果有两个就让第二个向左移使完全显示
+    }
+    function hide_rha() { //隐藏rha图片
+      const rha = $(".rha");
+      rha.fadeOut(400, () => rha.remove()); //"fast"是200
+    }
+    function update_pet() { //更新pet/rha/背景图的样式和位置
       const bottom_height = bottom.height();
-      const bottom_distance = bottom_height * 0.1; //距展示区域底部多少px时完全消失
+      const bottom_distance = bottom_height * pet_hide;
       const wrapper_top = wrapper.offset().top;
       const wrapper_bottom = wrapper_top + wrapper.outerHeight();
       const clientHeight = document.documentElement.clientHeight;
       const scrollTop = document.documentElement.scrollTop;
       const scroll_distance = clientHeight * ypos + scrollTop;
       if (scroll_distance < wrapper_top + parseFloat(wrapper.css("padding-top"))) { //超出上界
+        show_start();
+        hide_rha();
         pet.fadeOut();
         return;
       }
       if (scroll_distance + pet[0].offsetHeight > wrapper_bottom - bottom_distance) { //超出下界
+        show_end();
+        hide_rha();
         pet.animate({
           opacity: 0,
           top: wrapper_bottom - bottom_distance - pet[0].offsetHeight
@@ -639,6 +693,8 @@
         return;
       }
       if (scroll_distance + pet[0].offsetHeight > wrapper_bottom - bottom_height * 0.5) { //进入底部图片区域
+        show_start();
+        create_rha(pet);
         const enter_distance = pet.offset().top + pet[0].offsetHeight - (bottom.offset().top + bottom_height * 0.5);
         const pos_percent = enter_distance / (bottom_height * 0.5 - bottom_distance);
         const new_opacity = opacity * (1 - pos_percent);
@@ -649,6 +705,8 @@
         return;
       }
       //在页面中滑动
+      show_start();
+      hide_rha();
       pet.fadeIn();
       pet.animate({
         opacity: opacity,
@@ -757,7 +815,7 @@
 
 <!-- Alert the user if the width of the page is too small -->
 <script>
-  if (window.innerWidth < 1000) {
+  if (window.innerWidth < 500) {
     alert("The home page is not optimized for small screens. Please view it on a larger screen for the best experience.");
     alert("However, you can still view the rest of the wiki on your device.");
   }
