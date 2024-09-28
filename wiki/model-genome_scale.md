@@ -9,16 +9,16 @@ excerpt: "The model is a means of assisting the overall completion and implement
 images01:
   - src: https://static.igem.wiki/teams/5175/resources/model/model-gssm-02.png
     alt: A Figure of dFBA Simulation Results
-    caption: 图1<br>生物质浓度以克干重 （gDW） 为单位，底物浓度以 mmol 为单位。<br>模拟开始时，菌株的初始生物量为 0.1 gDW，鼠李糖脂由于生成量过少难以辨别，补充见图2
+    caption: Figure 2.dFBA simulation:Biomass, TPA, and lrhh<br> Biomass concentration in grams of dry weight (gDW) and substrate concentration in mmol<br> At the beginning of the simulation, the initial biomass of the strain was 0.1 gDW. Due to the low production of rhamnolipids, it was difficult to distinguish them. Please refer to Figure 3 for additional information
   - src: https://static.igem.wiki/teams/5175/resources/model/model-gssm-03.png
     alt: A Figure of dFBA Simulation Results
-    caption: 图2.在图1模拟条件下鼠李糖脂生成的补充图像
+    caption: Figure 3. Supplementary image of rhamnolipids generation under simulated conditions in Figure 2
 
 ---
 
 ## Genome-scale Metabolic Modeling
 
-To aid wetlab metabolic pathway modification and to assess the performance of the project in real-world applications, we constructed a genome-scale metabolic model of engineered Pseudomonas malodorata KT2440 that is capable of dynamically simulating cellular metabolic activities. Compared with other published GSSMs, our model scores 76%, which exceeds the average of published models. We can predict the growth behavior, TPA uptake rate and rhamnolipid product yield of engineered bacteria. We estimated that engineered Pseudomonas malodorans could efficiently absorb and degrade TPA while producing rhamnolipids in the process. With our GSSM, we have established a foundation that will help future teams to further metabolic engineering of Pseudomonas malodorans and further the promise of the idea of using Pseudomonas malodorans to degrade plastics.
+To aid wetlab metabolic pathway modification and to assess the performance of the project in real-world applications, we constructed a genome-scale metabolic model of engineered *Pseudomonas putida* KT2440 (*P.putida* KT2440) that is capable of dynamically simulating cellular metabolic activities. Compared with other published GSSMs, our model scores is 76%, which exceeds the average of published models. We can predict the growth behavior, TPA uptake rate and rhamnolipid product yield of engineered bacteria. We estimated that engineered *P.putida* could efficiently absorb and degrade TPA while producing rhamnolipids in the process. With our GSSM, we have established a foundation that will help future teams to build metabolic model for *P.putida* and improve the idea of using *P.putida* to degrade microplastics.
 
 ### Methods
 
@@ -26,7 +26,7 @@ GSMM is a method for representing, quantifying, and comparing the metabolism of 
 
 #### Construction of metabolic reaction list
 
-The initial metabolic reaction list of Pseudomonas putida KT2440 was obtained from the latest high-quality genome-scale metabolic model of Pseudomonas putida “iJN1463”[^3]. Based on this, the TPA metabolic pathway and the rhamnolipid synthesis metabolic pathway were added to obtain the modified iJN1463. Specifically, TPA is metabolized into acetyl coenzyme A and succinyl coenzyme A into the TCA cycle and linked to the wild-type β-ketoadipic acid pathway, and rhamnolipid synthesis is linked to the fatty acid synthesis pathway from substrate β-hydroxyacyl-ACP, and the rhamnolipid synthesis from fatty acid synthesis pathway from substrate β-hydroxyacyl-ACP. hydroxyacyl-ACP initiation and condensation with dTDP-L-rhamnose. A total of seven metabolites and eight reactions were added, and 24 of the phaZ-regulated reactions were ceiling-adjusted to obtain the growth behavior of the engineered Pseudomonas malodorans KT2440. Due to the lack of data, it was assumed that the upper and lower limits of RHLA and RHLB fluxes set in the Pseudomonas aeruginosa metabolic model PAO1 were the same as those of the engineered Pseudomonas malodorosa during the simulation. The list of added reactions is given below (see Tables 1 and 2).
+The initial metabolic reaction list of *P.putida* KT2440 was obtained from the latest high-quality genome-scale metabolic model of *P.putida* “iJN1463”[^3]. Based on this, the TPA metabolic pathway and the rhamnolipid synthesis metabolic pathway were added to obtain the modified iJN1463. Specifically, TPA is metabolized into acetyl-CoA and succinyl-CoA then go into the TCA cycle and linked to the wild-type β-ketoadipic acid pathway, while the synthesis of rhamnolipids starts from the substrate β-hydroxyacyl-ACP in the fatty acid synthesis pathway and condenses with dTDP-L-Rhamnose. A total of seven metabolites and eight reactions were added, and 24 of the phaZ-regulated reactions were ceiling-adjusted to obtain the growth behavior of the engineered *P.putida* KT2440. Due to the lack of data, it was assumed that the upper and lower limits of RHLA and RHLB fluxes set in the *P.putida* KT2440 model PAO1 were the same as those of the engineered *P.putida* during the simulation. The list of added reactions is given below (see Tables 1 and 2).
 
  <figcaption class="caption table_caption">Table 1.Definition of newly added metabolites with ID suffixes representing the compartments in which they are located<br>Note: c:cytosol, e:extracellular space</figcaption>
 
@@ -59,7 +59,7 @@ We assessed the level of performance of our GSMM using the metrics given in the 
 
 #### Implementation of dFBA (time-resolved simulation)
 
-For dFBA simulations, the initial medium composition was set to 200 mmol TPA as the carbon source, leaving the glucose content at 0 to assess growth in a TPA-rich environment. Other essential non-carbon metabolites (e.g., oxygen, carbon dioxide, water, etc.) were set to 1000 mmol to ensure that growth simulations were not limited by them. Dynamically adjusting the maximum rate of TPA uptake gives an approximate change in media composition over the time frame by calculating the flux and multiplying by a small time interval constant.A time step of 0.1 hr provides good resolution and modest computational time. This change is subtracted from the initial medium composition to obtain a new initial medium composition. [^5] The process is repeated until the dFBA solution function reaches the computational limit. At each time step, store the media concentration vector for plotting and analysis.
+For dFBA simulations, the initial medium composition was set to 200 mmol TPA as the carbon source, leaving the glucose content at 0 to assess growth in a TPA-rich environment. Other essential non-carbon metabolites (e.g., oxygen, carbon dioxide, water, etc.) were set to 1000 mmol to ensure that growth simulations were not limited by them. The fluxes are calculated and multiplied by a small, constant time interval to give the approximate change in media composition over the time frame. A time step of 0.1 h was found to give good resolution with moderate calculation time. Subtracting this change from the initial medium composition gives a new initial medium composition. [^5] The process is repeated until the dFBA solution function reaches the computational limit. At each time step, store the media concentration vector for plotting and analysis.
 
 You can <a href="https://static.igem.wiki/teams/5175/resources/model/model-gssm-attachment-01.csv" target="_blank">click here</a> to download the original ingredient of the culture medium.
 
@@ -67,24 +67,29 @@ You can <a href="https://static.igem.wiki/teams/5175/resources/model/model-gssm-
 
 #### Model performance evaluation
 
-Norsigian et al. (2020) evaluated the Memote scores of models published in Bigg and found that models in JSON format had an average score of 58% and models in SBML format had an average score of 73%.[^5] Our model in SBML format scored 76%, which exceeds the average of published models and gives reason to believe that our model reflects reality somewhat well.
+Norsigian et al. (2020) evaluated the Memote scores of models published in Bigg and found that models in JSON format had an average score of 58% and models in SBML format had an average score of 73%.[^5] Our model is in SBML format with a score of 76% (Figure 1), exceeding the average level of published models. There is reason to believe that our model can reflect the actual situation to a certain extent.
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/model/model-gssm-01.png" alt="Our Memote Score" caption="Figure 1. Our Memote Score" %}
 
 #### Dynamic Flux Balance Analysis (dFBA) Modeling
 
-The metabolic activities of the engineered Pseudomonas malodorans in a TPA-rich culture environment were modeled by using dFBA to qualitatively evaluate the TPA-processing and rhamnolipid-producing capabilities of the engineered bacteria, respectively.
-The simulations predicted the evolution of the engineered bacteria as expected, with Pseudomonas malodorans successfully growing in an environment where TPA was the main carbon source, suggesting that the strain possesses an efficient TPA metabolism. the TPA content continued to decrease and a small amount of rhamnolipid production began after a certain amount of biomass accumulation. In the early stage, the cells may concentrate their resources on growth, and once a certain biomass is reached, the metabolic pathway gradually shifts to the synthesis of secondary metabolites, such as rhamnolipids. Predicting the timing of the onset of rhamnolipid production and yield changes by dFBA will provide ideas for optimizing production conditions.
+The metabolic activities of the engineered *P.putida* in a TPA-rich culture environment were modeled by using dFBA to qualitatively evaluate the TPA-processing and rhamnolipid-producing capabilities of the engineered bacteria, respectively.
+
+The simulations predicted the evolution of the engineered bacteria as expected, with *P.putida* successfully growing in an environment where TPA was the main carbon source, suggesting that the strain possesses an efficient TPA metabolism. The TPA content continued to decrease and a small amount of rhamnolipid production began after a certain amount of biomass accumulation. In the early stage, the cells may concentrate their resources on growth, and once a certain biomass is reached, the metabolic pathway gradually shifts to the synthesis of secondary metabolites, such as rhamnolipids. Predicting the timing of the onset of rhamnolipid production and yield changes by dFBA will provide ideas for optimizing production conditions.
 
 {% include figure2.html images=page.images01 %}
 
 ## Discussion
 
-We completed a time-resolved engineered Pseudomonas malodorata genome-scale metabolic model modified_iJN1463. memote demonstrates the completeness and reliability of our model. We hope that future teams can improve its accuracy and validation with further growth and metabolomics data.
-Growth curves generated using time-dependent dFBA showed the expected general trend. However, it was not possible to experimentally determine a potential estimated plastic degradation rate. Modeling the rate of plastic depolymerization itself was challenging because the model was unable to predict the intensity of enzyme expression, which is directly correlated with the rate of degradation.
-Without further validation of our model, it is not possible to derive growth behavior in large bioreactors from the model because scaling up is likely not as simple as multiplying the flux by a specific factor. It would be necessary to perform additional growth experiments in the laboratory using different sized bioreactors to fine-tune the model and potentially predict each parameter as a function of the other. Additional data can then be integrated into the dFBA model to optimize the parameters to best describe the metabolomics data.
-The dFBA simulation can be further improved by allowing metabolic fluxes to become substrate concentration-dependent. michaelis-Menten kinetics can be used to address this issue, however, the vmax and Km values required for genome-scale metabolic modeling do not exist. Mass action kinetics may be a valuable alternative to approximate growth rates. Including substrate concentration-dependent fluxes would allow more accurate prediction of the transition from exponential to stable phase.
-Despite these limitations, we remain confident that metabolic modeling will continue to contribute to the future progress of the project, and through continued collaboration with the wetlab team we can improve the models while optimizing the wetlab experiments.
+We completed a time-resolved engineered *P.putida* genome-scale metabolic model modified iJN1463. Memote demonstrates the completeness and reliability of our model. We hope that future teams can improve its accuracy and validation with further growth and metabolomics data.
+
+Growth curves generated using time-dependent dFBA showed the expected general trend. However, it was not possible to experimentally determine a potential estimated microplastic degradation rate. Modeling the rate of microplastic depolymerization itself was challenging because the model was unable to predict the intensity of enzyme expression, which is directly correlated with the rate of degradation.
+
+Without further validation of our model, it is not possible to derive growth behavior in large bioreactors from the model because scaling up is likely not as simple as multiplying the flux by a specific factor. It would be necessary to perform additional growth experiments in the laboratory using different sized bioreactors to fine-tune the model and potentially predict each parameter as a function of the other. Additional data can then be integrated into the dFBA model to optimize the parameters.
+
+The dFBA simulation can be further improved by allowing metabolic fluxes to become substrate concentration-dependent. Michaelis-Menten kinetics can be used to address this issue, however, the vmax and Km values required for genome-scale metabolic modeling do not exist. Mass action kinetics may be a valuable alternative to approximate growth rates. Including substrate concentration-dependent fluxes would allow more accurate prediction of the transition from exponential to stable phase.
+
+Despite of these limitations, we remain confident that metabolic modeling will continue to contribute to the future progress of the project, and through continued collaboration with the wetlab team we can improve the models while optimizing the wetlab experiments.
 
 
 
