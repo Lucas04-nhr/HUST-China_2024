@@ -700,6 +700,7 @@
     $(window).on("resize", () => update_scroll());
   })();
 </script>
+
 <!-- 底部按钮 -->
 <script>
   (function () {
@@ -708,7 +709,7 @@
     btn_box.css("display", "flex");
     btn_box.css("display", "none");
     const wrapper = document.querySelector(".below_index_wrapper");
-    const distance = 30; //距页面顶部/底部多少px时显示/隐藏按钮
+    const distance = 10; //距页面顶部/底部多少px时显示/隐藏按钮
     const animate_time = 150; //动画时长
     function show_btn(btn) {
       btn.stop().fadeIn(animate_time);
@@ -757,7 +758,7 @@
 <!-- Alert the user if the width of the page is too small -->
 <script>
   if (window.innerWidth < 1000) {
-    alert("This page is not optimized for small screens. Please view it on a larger screen for the best experience.");
+    alert("The home page is not optimized for small screens. Please view it on a larger screen for the best experience.");
     alert("However, you can still view the rest of the wiki on your device.");
   }
 </script>
