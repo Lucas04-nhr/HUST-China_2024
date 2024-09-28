@@ -47,7 +47,9 @@
 <style>
   /* 背景色 */
   .wrapper {
-    background-image: linear-gradient(to top, #83A6FF 0%, #5e4d38 100%);
+    background-image: linear-gradient(to top, #92B2BE 0%, #5e4d38 100%);
+    /* transition: background-image 0.4s; */
+    /* 渐变背景不支持渐变qwq */
   }
 
   /* 展示图片和文字 */
@@ -620,13 +622,18 @@
   (function () {
     const start = $(".bottom .start");
     const end = $(".bottom .end");
+    const wrapper = $(".wrapper");
     function show_start() { //显示开始的背景图
-      //start.fadeIn("fast");
-      end.fadeOut("fast", () => start.fadeIn("fast"));
+      end.fadeOut("fast", () => {
+        start.fadeIn("fast");
+        wrapper.css("background-image", "linear-gradient(to top, #92B2BE 0%, #5e4d38 100%)");
+      });
     }
     function show_end() { //显示结尾的背景图
-      start.fadeOut("fast", () => end.fadeIn("fast"));
-      //end.fadeIn("fast");
+      start.fadeOut("fast", () => {
+        end.fadeIn("fast");
+        wrapper.css("background-image", "linear-gradient(to top, #83A6FF 0%, #5e4d38 100%)");
+      });
     }
     let pet = $(".pet");
     if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) { //是移动设备，就不添加
@@ -636,7 +643,6 @@
     }
     const opacity = pet.eq(0).css("opacity");
     const bottom = $(".bottom");
-    const wrapper = $(".wrapper");
     const rha_opacity = 1; //rha图片完全显示时的透明度（实际完全显示的透明度会略小于该设置值）
     const difference_width = 5; //rha图片与pet图片的宽度差，单位rem
     const ypos = 0.6; //pet图片距窗口顶部的距离 占整个窗口的比例
@@ -713,24 +719,27 @@
         top: scroll_distance
       }, 5);
     }
-    function get_pet() { //pet显示在两侧还是中间
-      if ($(".box").height() >= $(".left").height() + $(".right").height()) { //box换行，显示在两侧
-        if (pet.length === 2) return;
-        const pet2 = pet.clone(true);
-        pet.after(pet2);
-        pet = $(".pet");
-        pet.css("transform", 'none');
-        pet.eq(0).css("left", "1%");
-        pet[1].style.removeProperty('left');
-        pet.eq(1).css("right", "1%");
-      } else { //box图文在一行，显示在中间
-        if (pet.length === 2) {
-          pet.eq(1).remove();
-          pet = pet.eq(0);
+    function get_pet() { //pet显示在两侧还是中间、rha数量是否与pet相同
+      (function () {
+        if ($(".box").height() >= $(".left").height() + $(".right").height()) { //box换行，显示在两侧
+          if (pet.length === 2) return;
+          const pet2 = pet.clone(true);
+          pet.after(pet2);
+          pet = $(".pet");
+          pet.css("transform", 'none');
+          pet.eq(0).css("left", "1%");
+          pet[1].style.removeProperty('left');
+          pet.eq(1).css("right", "1%");
+        } else { //box图文在一行，显示在中间
+          if (pet.length === 2) {
+            pet.eq(1).remove();
+            pet = pet.eq(0);
+          }
+          pet.css("left", "50%");
+          pet.css("transform", 'translateX(-50%)');
         }
-        pet.css("left", "50%");
-        pet.css("transform", 'translateX(-50%)');
-      }
+      })();
+      if ($(".rha").length !== $(".pet").length) hide_rha(); //如果rha与pet数量不同，就重新创建
     }
     window.addEventListener('load', function () {
       get_pet();
