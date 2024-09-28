@@ -30,8 +30,11 @@
     margin-bottom: 0 !important;
   }
 
-  .box .text p {
+  #back-to-top {
+    z-index: 9999 !important;
+  }
 
+  .box .text p {
     padding: 0 !important;
     margin: 0 !important;
   }
@@ -310,7 +313,7 @@
       <div class="img">
         <div>
           <img src="https://static.igem.wiki/teams/5175/resources/homepage/index1.jpg" alt="">
-          <figcaption class="caption" style="width: 30rem; line-height:1.2rem;">
+          <figcaption class="caption" style="width: 30rem; line-height:1.1rem;">
             Cumulative plastic waste generation and disposal (in
             million metric tons)
           </figcaption>
@@ -326,7 +329,7 @@
             <img src="https://static.igem.wiki/teams/5175/resources/homepage/2.png" alt="">
           </div>
           <figcaption class="caption" style="line-height:1.1rem;">
-            Articles combining chemical class exposures and health outcomes
+            The abundance and characteristics of MPs in human tissues and organs
           </figcaption>
         </div>
       </div>
@@ -705,7 +708,7 @@
     btn_box.css("display", "flex");
     btn_box.css("display", "none");
     const wrapper = document.querySelector(".below_index_wrapper");
-    const distance = 50; //距页面顶部/底部多少px时显示/隐藏按钮
+    const distance = 30; //距页面顶部/底部多少px时显示/隐藏按钮
     const animate_time = 150; //动画时长
     function show_btn(btn) {
       btn.stop().fadeIn(animate_time);
