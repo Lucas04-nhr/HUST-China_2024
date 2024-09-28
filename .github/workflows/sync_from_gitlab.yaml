@@ -18,6 +18,11 @@ jobs:
         with:
             token: ${{ secrets.GH_TOKEN }}
             fetch-depth: 0
+
+      - name: Set up GitHub
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
       
       - name: Pull the latest change
         run: |
