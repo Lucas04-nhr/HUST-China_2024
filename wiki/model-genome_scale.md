@@ -40,7 +40,7 @@ The initial metabolic reaction list of *P.putida* KT2440 was obtained from the l
 | lrhh_c        | $C_{26}H_{47}O_9$ | L-rhamnosyl-3-hydroxydecanoyl-3-hydroxydecanoate           | -1     | c           |
 | lrhh_e        | $C_{26}H_{47}O_9$ | L-rhamnosyl-3-hydroxydecanoyl-3-hydroxydecanoate           | -1     | e           |
 
-<figcaption class="caption table_caption"> Table 2. definition of newly added reactions, EX_ prefix for exchange reactions </figcaption>
+<figcaption class="caption table_caption"> Table 2. Definition of newly added reactions, EX_ prefix for exchange reactions </figcaption>
 
 | Reaction ID    | Name                         | Metabolites                                                  |
 | -------------- | ---------------------------- | ------------------------------------------------------------ |
