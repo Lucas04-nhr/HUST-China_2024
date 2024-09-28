@@ -9,7 +9,7 @@ excerpt: "The model is a means of assisting the overall completion and implement
 images01:
   - src: https://static.igem.wiki/teams/5175/resources/model/model-gssm-02.png
     alt: A Figure of dFBA Simulation Results
-    caption: Figure 2.dFBA simulation:Biomass, TPA, and lrhh<br> Biomass concentration in grams of dry weight (gDW) and substrate concentration in mmol<br> At the beginning of the simulation, the initial biomass of the strain was 0.1 gDW. Due to the low production of rhamnolipids, it was difficult to distinguish them. Please refer to Figure 3 for additional information
+    caption: Figure 2.dFBA simulation of Biomass, TPA, and lrhh<br> Biomass concentration in grams of dry weight (gDW) and substrate concentration in mmol<br> At the beginning of the simulation, the initial biomass of the strain was 0.1 gDW. Due to the low production of rhamnolipids, it was difficult to distinguish them. Please refer to Figure 3 for additional information
   - src: https://static.igem.wiki/teams/5175/resources/model/model-gssm-03.png
     alt: A Figure of dFBA Simulation Results
     caption: Figure 3. Supplementary image of rhamnolipids generation under simulated conditions in Figure 2
