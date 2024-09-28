@@ -10,7 +10,7 @@ excerpt: "This page contains information about the engineering of HUST-China 202
 
 ## Introduction
 
-We want to alleviate the microplastic pollution problem by degrading PET in irrigation water and produce rhamnolipid which is beneficial to the soil fertility and improve the soil environment. To this end, we designed three system paths and chose two kinds of chassis bacteria, *E. coli* BL21 and *P. putida* KT2440.  In the construction stage, we used homologous recombination and double enzyme digestion to construct the pathway. Although we encountered some problems, we finally achieved certain results through continuous attempts and summaries, which also provided some experience for the subsequent teams.
+We want to alleviate the problem of microplastic pollution by degrading PET hidden in the irrigation water. We also want to produce rhamnolipid which is beneficial to the soil fertility to improve the soil environment. To this end, we designed three system paths and chose two kinds of chassis bacteria, *E. coli* BL21 and *P. putida* KT2440. In the construction stage, we used homologous recombination and double enzyme digestion to construct the pathway. Although we encountered some problems, we finally achieved certain results by doing continuous attempts and summaries.
 
 ## Cycle 1
 
@@ -18,7 +18,7 @@ We want to alleviate the microplastic pollution problem by degrading PET in irri
 
 ### Design
 
-To construct a well-functioning systemic pathway, we hope that the three plasmids can enable *E. coli* BL21 to degrade PET and enhance its own metabolic capacity, while providing *P. putida* KT2440 the ability to degrade the PET-breakdown-product "terephthalate" and secret rhamnolipid. Based on existing parts with independent functions, we achieved our goal by connecting multiple components to complete plasmids to form a fully functional system pathway.
+To construct a well-functioning systemic pathway, we hope to use one plasmid to enable *E. coli* BL21 to degrade PET and enhance its own metabolic capacity. We also wish to use two plasmids to provide *P. putida* KT2440 the ability to degrade the PET-breakdown-product "terephthalate" and secret rhamnolipid. Based on the existing parts with independent functions, we achieved our goals by connecting multiple components to form a fully functional system pathway.
 
 #### *E. coli*
 
@@ -26,31 +26,31 @@ In order to realize the ideal function of *E. coli* BL21 which is to degrade PET
 
 In the first step, we inserted homologous arms at both ends of the target gene fragment as well as the linearized vector fragment. In the PETase-MHETase-fucO-aldA pathway, we begin by incorporating the first homologous arm downstream of the sPETase-MHETase vector fragment and upstream of fucO-aldA. Following that, a second homologous arm is introduced downstream of fucO-aldA and upstream of the PETase-MHETase vector fragment.
 
-The second step. We used the homologous recombinase to directly link the linearized vector PETase-MHETase with the fucO-aldA fragment to construct a complete plasmid.
+In the second step, we used the homologous recombinase to directly link the linearized vector PETase-MHETase with the fucO-aldA fragment to construct a complete plasmid.
 
 #### *P. putida*
 
-To achieve the ideal function of *P. putida* KT2440 in degrading the PET breakdown product "terephthalate" and produce rhamnolipids, we decided to use double enzyme digestion to construct our plasmids. We first perform double enzyme digestion to obtain multiple fragments and vectors with the same sticky ends, and then ligate the vectors and fragments containing the same sticky ends together through ligation.
+To achieve the ideal function of *P. putida* KT2440 in degrading the PET-breakdown-product "terephthalate" and produce rhamnolipid, we decided to use double enzyme digestion to construct our plasmids. We first perform double enzyme digestion to obtain multiple fragments and vectors with the same sticky ends, and then ligate the vectors and fragments containing the same sticky ends together by performing ligation.
 
-In the first step, we use the double enzyme digestion method to obtain the target gene fragments and the vector fragment with sticky ends. We first culture the basal plasmid-containing strain and extract the plasmid, then we obtain the target gene fragment and the vector fragment with the same sticky end by double enzyme digestion.
+In the first step, we use the double enzyme digestion to obtain the target gene fragments and the vector fragment with the same sticky ends. We first culture *E. coli* DH5$\alpha$ containing the basic component and extract the plasmid. Then we obtain the target gene fragment and the vector fragment with the same sticky ends by double enzyme digestion.
 
-In the second step, we use enzyme ligation to link the target gene fragment and its corresponding vector fragment with the same sticky end together, and finally construct a complete plasmid.
+In the second step, we use enzyme ligation to link the target gene fragment and its corresponding vector fragment with the same sticky ends together, then a complete plasmid would be constructed.
 
 ### Build
 
 #### *E. coli* BL21
 
-Based on the principle of seamless cloning, we tried to use homologous recombinase to attach multiple fragments directly into the vector to form a complete plasmid.
+Based on the principle of seamless cloning, we tried to use homologous recombinase to attach the target gene fragment directly into the vector to form a complete plasmid.
 
-In the pathway PETase-MHETase-fucO-aldA: First, the linearized vector fragment PETase-MHETase and the gene fragment fucO-aldA were obtained, respectively, by reverse PCR and PCR. They were then etracted and purified by gel extraction. Finally, homologous recombinase was used to connect PETase-MHETase with fucO-aldA to construct a complete system pathway. Next, we transferred the constructed plasmid into E. coli DH5αand inoculated it onto an LB plate containing kanamycin. Then, the solid medium was placed in a 37°C incubator for overnight incubation at a constant temperature. Subsequently, we picked bacterial plaque for PCR verification. After observing the correct bands, we mixed 800 $\mathrm{\mu L}$ of bacterial solution with 800 $\mathrm{\mu L}$ of 1:1 mixture of glycerol and double distilled water, and we stored the seeds at -20°C.
+In the pathway PETase-MHETase-fucO-aldA: First, the linearized vector fragment PETase-MHETase and the gene fragment fucO-aldA were obtained respectively by reverse PCR and PCR. They were then etracted and purified by agarose gel extraction. Finally, homologous recombinase was used to connect PETase-MHETase with fucO-aldA to construct a complete system pathway. Next, we transferred the constructed plasmid into E. coli DH5$\alpha$ and inoculated it onto an LB plate containing kanamycin. Then, the solid medium was placed in a 37 °C incubator for overnight incubation at a constant temperature. Subsequently, we picked bacterial plaque for PCR verification. After observing the correct bands, we mixed 800 $\mathrm{\mu L}$ of bacterial solution with 800 $\mathrm{\mu L}$ of 1:1 mixture of glycerol and double distilled water, and we stored the seeds at -20 °C.
 
 #### *P. putida* KT2440
 
-Our basic process of constructing a complete plasmid is: extract the plasmid, perform PCR to obtain the fragment containing the target gene, obtain the fragment of the target gene with sticky ends through double enzyme digestion, and use the ligation to link the target gene to the vector.
+Our basic process of constructing a complete plasmid is: extract the plasmid, obtain the fragment of the target gene with sticky ends through double enzyme digestion, and perform ligation to link the target gene to the vector.
 
-Take the tphA2A3BA1-tpak system pathway as an example.Initially, we separately cultured *E. coli* DH5$\alpha$(tphA2A3BA1-pUC57) , *E. coli* DH5$\alpha$ (tpaK-pUC57)  and *E. coli* DH5$\alpha$ (pBBR1-CS2)  and extracted the plasmids. After that, We use double enzyme digestion on the plasmids tphA2A3BA1-pUC57 and pBBR1-CS2 with restriction endonucleases *Xho* I and *EcoR* I for 30 minutes. Then we used double enzyme digestion on plasmids the tpaK-pUC57 and pBBR1-CS2 with restriction endonucleases *Spe* I and *EcoR* I for 30 minutes. Next we verified and purified them through agarose gel extraction to obtain the target gene fragment and vector fragment with the identical sticky ends. We have constructed the plasmids tphA2A3BA1-pBBR1-CS2 and tpaK-pBBR1-CS2 through ligation. Next, we transferred the constructed plasmid into *E. coli* DH5$\alpha$ and inoculated it onto an LB plate containing kanamycin. Then, the solid medium was placed in a 37°C incubator for overnight incubation at a constant temperature. Subsequently, we picked bacterial plaque for PCR verification. After observing the correct bands, we mixed 800 $\mathrm{\mu L}$ of bacterial solution with 800 $\mathrm{\mu L}$ of 1:1 mixture of glycerol and double distilled water, and we stored the seeds at -20°C.
+Take the tphA2A3BA1-tpak system pathway as an example. Initially, we separately cultured *E. coli* DH5$\alpha$(tphA2A3BA1-pUC57) , *E. coli* DH5$\alpha$ (tpaK-pUC57)  and *E. coli* DH5$\alpha$ (pBBR1-CS2)  and extracted the plasmids. After that, We used double enzyme digestion on the plasmids tphA2A3BA1-pUC57 and pBBR1-CS2 with restriction endonucleases *Xho* I and *EcoR* I for 30 minutes. Then we used double enzyme digestion on plasmids tpaK-pUC57 and pBBR1-CS2 with restriction endonucleases *Spe* I and *EcoR* I for 30 minutes. Next we verified and purified them through agarose gel extraction to obtain the target gene fragment and vector fragment with the same sticky ends. We have constructed the plasmids tphA2A3BA1-pBBR1-CS2 and tpaK-pBBR1-CS2 through ligation. Next, we transferred the constructed plasmid into *E. coli* DH5$\alpha$ and inoculated it onto an LB plate containing kanamycin. Then, the solid medium was placed in a 37 °C incubator for overnight incubation at a constant temperature. Subsequently, we picked bacterial plaque for PCR verification. After observing the correct bands, we mixed 800 $\mathrm{\mu L}$ of bacterial solution with 800 $\mathrm{\mu L}$ of 1:1 mixture of glycerol and double distilled water, and we stored the seeds at -20°C.
 
-After that, We use double enzyme digestion on the plasmids tphA2A3BA1-pUC57 and tpaK-pBBR1CS-2 with restriction endonucleases *Xho* I and *EcoR* I for 30 minutes. And we use double enzyme digestion on the plasmids tpaK-pUC57 and the tphA2A3BA1-pBBR1-CS2 with restriction endonucleases *Spe* I and *EcoR* I for 30 minutes. We then verified them through agarose gel extraction. Unfortunately, we did not find the target band.
+After that, We use double enzyme digestion on the plasmids tphA2A3BA1-pUC57 and tpaK-pBBR1CS-2 with restriction endonucleases *Xho* I and *EcoR* I for 30 minutes. And we use double enzyme digestion on the plasmids tpaK-pUC57 and the tphA2A3BA1-pBBR1-CS2 with restriction endonucleases *Spe* I and *EcoR* I for 30 minutes. We then verified and purified them through agarose gel extraction. Unfortunately, we did not find the target band.
 
 ### Result
 
@@ -58,23 +58,23 @@ We successfully constructed plasmids PETase-MHETase-fucO-aldA, phaZ-pVLT33, tphA
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-01.png" alt="The results of PCR identification for PETase-MHETase-aldA-fucO and phaZ-pVLT33" caption="Fig.1 The results of PCR identification for PETase-MHETase-aldA-fucO (left) and phaZ-pVLT33 (right)" %}
 
-In Fig.1, the left sub-figure is the result of PCR identification of PETase-MHETase-aldA-fucO plasmid, it shows that there is a bright band at about 2900 bp, and the length of the fragment we obtained by PCR using the primers we designed should be 2862 bp, which proves that we have successfully constructed the plasmid of PETase-MHETase -aldA-fucO system pathway.
+In Fig.1, the left sub-figure is the result of PCR identification of PETase-MHETase-aldA-fucO plasmid, it shows that there is a bright band at about 2900 bp, and the length of the fragment we obtained by PCR using the primers we designed should be 2862 bp, which proves that we have successfully constructed the plasmid PETase-MHETase -aldA-fucO.
 
 The right sub-figure of Fig.1 is the result of PCR identification of phaZ-pVLT33 plasmid. It shows that there is a bright band at about 800 bp, and the length of the fragment we obtained by PCR using the primers we designed should be 867 bp, which proves that we have successfully constructed the plasmid of phaZ-pVLT33 system pathway.
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-02.png" alt="The results of PCR identification for tphA2A3BA1-pBBR1CS-2 and tpaK-pBBR1CS-2" caption="Fig.2 The results of PCR identification for tphA2A3BA1-pBBR1CS-2 (left) and tpaK-pBBR1CS-2 (right)" %}
 
-In Fig.2, the left sub-figure is the result of PCR identification of tphA2A3BA1-pBBR1CS-2 plasmid. It shows that there is a bright band at about 4000 bp, and the length of the fragment we obtained by PCR using the primers we designed should be 4213 bp, which proves that we have successfully constructed the plasmid of tphA2A3BA1-pBBR1CS-2 system pathway.
+In Fig.2, the left sub-figure is the result of PCR identification of tphA2A3BA1-pBBR1CS-2 plasmid. It shows that there is a bright band at about 3000 bp, and the length of the fragment we obtained by PCR using the primers we designed should be 2971 bp, which proves that we have successfully constructed the plasmid of tphA2A3BA1-pBBR1CS-2 system pathway.
 
 The right sub-figure of Fig.2 is the result of PCR identification of tpak- pBBR1-CS2 plasmid. It shows that there is a bright band at about 1500 bp, and the length of the fragment we obtained by PCR using the primers we designed should be 1634 bp, which proves that we have successfully constructed the plasmid of tpak- pBBR1-CS2 system pathway.
 
 ### Experience
 
-After many attempts, in the process of double enzyme digestion, we found that directly conducting double enzyme digestion on the original plasmid or the original digestion system was not suitable for all pathways, and we could not successfully construct pathways rhlA-rhlB-pVLT33 and tphA2A3BA1-tpak. We have carefully analyzed and summarized the reasons for the failure.
+After many attempts, in the process of double enzyme digestion, we found that directly conducting double enzyme digestion on the original plasmid was not suitable for all pathways, and we could not successfully construct pathways rhlA-rhlB-pVLT33 and tphA2A3BA1-tpak. We have carefully analyzed and summarized the reasons for the failure.
 
 First, when constructing the pathway rhlA-rhlB-pVLT33, the length of rhlA-rhlB gene fragment was too close to the length of the pUC57 vector fragment, and it was difficult to obtain pure rhlA-rhlB fragments in the process of agarose gel extraction. Therefore, we tried to obtain the rhlA-rhlB fragment by PCR and then use double enzyme digestion to obtain the rhlA-rhlB fragment with sticky ends.
 
-Furthermore, the tpak-pBBR 1-CS2 fragment obtained by our double digestion was always too small and had multiple bands when constructing pathway tphA2A3BA1-tpak. We suggest that this is due to our error in designing the plasmid by designing excess restriction sites on the tpak gene fragment. Therefore, we attempted to replace the restriction endonuclease we used to solve this problem.
+Furthermore, the tpak-pBBR 1-CS2 fragment obtained by our double digestion was always too small and had multiple wrong bands. We suspect that it is due to an error while designing the plasmid tpak-pUC57. We might designed excess restriction sites on the tpak gene fragment. Therefore, we attempted to replace the restriction endonuclease we used to solve this problem.
 
 ## Cycle 2
 
