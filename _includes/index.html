@@ -807,16 +807,14 @@
 
 <!-- Alert the user if using mobile device -->
 <script>
-  if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
-    alert("The home page is not optimized for mobile devices. Please view it on a desktop for the best experience.");
-    alert("However, you can still view the rest of the wiki on your mobile device.");
-  }
-</script>
-
-<!-- Alert the user if the width of the page is too small -->
-<script>
-  if (window.innerWidth < 500) {
-    alert("The home page is not optimized for small screens. Please view it on a larger screen for the best experience.");
-    alert("However, you can still view the rest of the wiki on your device.");
+  if (window.innerWidth < 1300) {
+    if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+      alert("The home page is not optimized for mobile devices. Please view it on a desktop for the best experience.");
+      alert("However, you can still view the rest of the wiki on your mobile device.");
+    }
+    else {
+      alert("The home page is not optimized for small screens. Please view it on a larger screen for the best experience.");
+      alert("However, you can still view the rest of the wiki on your device.");
+    }
   }
 </script>
