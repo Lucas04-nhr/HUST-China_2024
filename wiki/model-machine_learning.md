@@ -30,15 +30,15 @@ Utilizing the previous measured data of MPs abundance sampled in Wuhan [^4]（Fi
 We chose six commonly used machine learning models for testing and comparison, which can be categorized into single and integrated models in terms of the number and nature of models.
 The single model contains three neural networks, BP-GAO, LSTM, RBF, and the SVR-RBF model. The integrated model, on the other hand, contains XGBoost, RF, which combines multiple single models into one powerful model that utilizes all the individual models to achieve superior performance. They each have their own advantages: BP-GAO optimizes the initial parameters of the neural network through a genetic algorithm, and then uses a back propagation algorithm to further adjust the network weights, which improves the learning efficiency and performance; the RBF hidden-layer neurons use a radial basis function as the activation function, usually with the Euclidean distance as the input, and the output layer is a linear combination of the outputs of the hidden layer, which has a local approximation property; LSTM introduces a gating mechanism to solve the problem of gradient vanishing in traditional RNNs, with the ability to maintain long-term dependent information; SVR-RBF predicts continuous numerical outputs by minimizing the regularization error while maintaining the model's generalization ability; XGBoost improves the model's performance by optimizing the first-order and second-order derivatives of the objective function, and has the ability to deal with large-scale datasets and automatic feature selection; RF has an excellent performance when handling high-dimensional data and is able to naturally handle classification and regression problems.
 
-We consider the simulation and prediction accuracy of different machine learning models based on three criteria: goodness-of-fit （R<sup>2</sup>）, root mean square error (RMSE), and mean absolute error (MAE).
+We consider the simulation and prediction accuracy of different machine learning models based on three criteria: goodness-of-fit （$\mathrm{R^2}$）, root mean square error ($\text{RMSE}$), and mean absolute error ($\text{MAE}$).
 
 <center>
   $$
   \left\{
     \begin{aligned}
-      \mathrm{R^2}=1-\frac{\sum_{i=1}^{N}{\left( p_i-a_i \right)}^2}{\sum_{i=1}^{N}{\left( a_i-\bar{a} \right)}^2} \\
-      \mathrm{RMSE}=\sqrt{\frac{1}{N}\sum_{i=1}^{N}\left( p_i-a_i \right) ^2} \\
-      \mathrm{MAE}=\frac{1}{N}\sum_{i=1}^{N}\left|p_i-a_i\right|
+      \mathrm{R^2} & =1-\frac{\sum_{i=1}^{N}{\left( p_i-a_i \right)}^2}{\sum_{i=1}^{N}{\left( a_i-\bar{a} \right)}^2} \\
+      \mathrm{RMSE} & =\sqrt{\frac{1}{N}\sum_{i=1}^{N}\left( p_i-a_i \right) ^2} \\
+      \mathrm{MAE} & =\frac{1}{N}\sum_{i=1}^{N}\left|p_i-a_i\right|
     \end{aligned}
   \right.
   $$
@@ -53,7 +53,7 @@ We consider the simulation and prediction accuracy of different machine learning
 %}
 
 The SVR-RBF model is finally selected from several machine learning models such as BP-GAO, LSTM, RF, and XGBoost.
-Support vector regression allows global optimization, while BP neural networks usually only allow local optimization[^5].BP neural networks have low quantization accuracy, too much data fitting, and over-reliance on hidden layer settings. Other neural network models (RBF and LSTM) also suffer from high accuracy in the training set but high fitting error in the test set. Support vector machines have the advantage of applying the kernel function expansion theorem, which does not require an explicit representation of the nonlinear mapping, and therefore can use known efficient algorithms to find the global minimum of the objective function. Compared with other machine learning models (Fig. 2,Table S1), the SVR-RBF model (R<sup>2</sup>=0.9845481376179647, RMSE=0.01536591336885121, MAE=0.011207557068397008) provides a better fitting and prediction for the microplastic dataset.
+Support vector regression allows global optimization, while BP neural networks usually only allow local optimization[^5].BP neural networks have low quantization accuracy, too much data fitting, and over-reliance on hidden layer settings. Other neural network models (RBF and LSTM) also suffer from high accuracy in the training set but high fitting error in the test set. Support vector machines have the advantage of applying the kernel function expansion theorem, which does not require an explicit representation of the nonlinear mapping, and therefore can use known efficient algorithms to find the global minimum of the objective function. Compared with other machine learning models (Fig. 2,Table S1), the SVR-RBF model ($\mathrm{R^2}$=0.9845481376179647, RMSE=0.01536591336885121, MAE=0.011207557068397008) provides a better fitting and prediction for the microplastic dataset.
 Inputting 12 source-sink factor data from Wuhan City to the trained model to get the spatial distribution of soil MPs within the predicted study area, we can identify the potential risk areas of microplastics and draw a spatial map of soil MP pollution in the study area. From the map, it can be seen that the urban centers of Wuchang, Hanyang, and Jianghan districts, as well as the areas along the banks of the Yangtze River have higher abundance of microplastics, which may require more control and management.
 
 {% include figure.html 
