@@ -183,9 +183,9 @@ excerpt: "Meet the team behind the project."
    image_position="left" %}
 
 {% include members-people.html
-   name="Shijie Lai"
-   description="Put up or shut up"
-   image="https://static.igem.wiki/teams/5175/resources/members/shijie-lai.webp"
+   name="Yifeng Xiong"
+   description="O gentlemen, the time of life is short; To spend that shortness basely were too long"
+   image="https://static.igem.wiki/teams/5175/resources/members/yifeng-xiong.webp"
    image_position="right" %}
 
 {% include members-people.html
@@ -231,15 +231,15 @@ excerpt: "Meet the team behind the project."
    image_position="left" %}
 
 {% include members-people.html
-   name="Yifeng Xiong"
-   description="O gentlemen, the time of life is short; To spend that shortness basely were too long"
-   image="https://static.igem.wiki/teams/5175/resources/members/yifeng-xiong.webp"
-   image_position="right" %}
-
-{% include members-people.html
    name="Yiting Yang"
    description="Baptized by pain, but with the team there will be a fearless strength. We learned a lot of skills, explored a lot of directions, and became more tacit partners."
    image="https://static.igem.wiki/teams/5175/resources/members/yiting-yang.webp"
+   image_position="right" %}
+
+{% include members-people.html
+   name="Shijie Lai"
+   description="Put up or shut up"
+   image="https://static.igem.wiki/teams/5175/resources/members/shijie-lai.webp"
    image_position="left" %}
 
 {% include members-people.html
