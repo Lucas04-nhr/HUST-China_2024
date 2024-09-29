@@ -24,7 +24,7 @@ To construct a well-functioning systemic pathway, we hope to use one plasmid to 
 
 In order to realize the ideal function of *E. coli* BL21 which is to degrade PET and enhance its own metabolic capacity, we wanted to use homologous recombination to build our fully functional plasmids. We first obtained fragments and vectors with homologous arms by PCR, and then used homologous recombination to connect the corresponding homologous vector and fragments together.
 
-In the first step, we inserted homologous arms at both ends of the target gene fragment as well as the linearized vector fragment. In the PETase-MHETase-fucO-aldA pathway, we begin by incorporating the first homologous arm downstream of the sPETase-MHETase vector fragment and upstream of fucO-aldA. Following that, a second homologous arm is introduced downstream of fucO-aldA and upstream of the PETase-MHETase vector fragment.
+In the first step, we inserted homologous arms at both ends of the target gene fragment as well as the linearized vector fragment. In the pPeteg pathway, we begin by incorporating the first homologous arm downstream of the sPETase-MHETase vector fragment and upstream of fucO-aldA. Following that, a second homologous arm is introduced downstream of fucO-aldA and upstream of the PETase-MHETase vector fragment.
 
 In the second step, we used the homologous recombinase to directly link the linearized vector PETase-MHETase with the fucO-aldA fragment to construct a complete plasmid.
 
@@ -42,7 +42,7 @@ In the second step, we use enzyme ligation to link the target gene fragment and 
 
 Based on the principle of seamless cloning, we tried to use homologous recombinase to attach the target gene fragment directly into the vector to form a complete plasmid.
 
-In the pathway PETase-MHETase-fucO-aldA: First, the linearized vector fragment PETase-MHETase and the gene fragment fucO-aldA were obtained respectively by reverse PCR and PCR. They were then etracted and purified by agarose gel extraction. Finally, homologous recombinase was used to connect PETase-MHETase with fucO-aldA to construct a complete system pathway. Next, we transferred the constructed plasmid into E. coli DH5$\alpha$ and inoculated it onto an LB plate containing kanamycin. Then, the solid medium was placed in a 37 °C incubator for overnight incubation at a constant temperature. Subsequently, we picked bacterial plaque for PCR verification. After observing the correct bands, we mixed 800 $\mathrm{\mu L}$ of bacterial solution with 800 $\mathrm{\mu L}$ of 1:1 mixture of glycerol and double distilled water, and we stored the seeds at -20 °C.
+In the pathway pPeteg: First, the linearized vector fragment PETase-MHETase and the gene fragment fucO-aldA were obtained respectively by reverse PCR and PCR. They were then etracted and purified by agarose gel extraction. Finally, homologous recombinase was used to connect PETase-MHETase with fucO-aldA to construct a complete system pathway. Next, we transferred the constructed plasmid into E. coli DH5$\alpha$ and inoculated it onto an LB plate containing kanamycin. Then, the solid medium was placed in a 37 °C incubator for overnight incubation at a constant temperature. Subsequently, we picked bacterial plaque for PCR verification. After observing the correct bands, we mixed 800 $\mathrm{\mu L}$ of bacterial solution with 800 $\mathrm{\mu L}$ of 1:1 mixture of glycerol and double distilled water, and we stored the seeds at -20 °C.
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-add-01.png" alt=" " caption="Fig 1. The diagram of constructing the plasmid inserted with pPeteg by homologous recombination" %}
 
@@ -58,7 +58,7 @@ After that, We use double enzyme digestion on the plasmids tphA2A3BA1-pUC57 and 
 
 ### Result
 
-We successfully constructed plasmids PETase-MHETase-fucO-aldA, phaZ-pVLT33, tphA2A3BA1-pBBR1-CS2 and tpak- pBBR1-CS2.
+We successfully constructed plasmids pPeteg, phaZ-pVLT33, tphA2A3BA1-pBBR1-CS2 and tpak- pBBR1-CS2.
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-01.png" alt="The results of PCR identification for PETase-MHETase-aldA-fucO and phaZ-pVLT33" caption="Fig.3 The results of PCR identification for PETase-MHETase-aldA-fucO (left) and phaZ-pVLT33 (right)" %}
 
@@ -144,17 +144,21 @@ After observing the correct and bright bands in the PCR verification of colonies
 
 We cultured *E. coli* BL21 (PETase-MHETase-aldA-fucO) and *E. coli* BL21 (pUC19) in M9 culture medium containing ethylene glycol and glycerol as carbon sources.
 
-We first verified the efficiency of *E. coli* BL21 engineered bacteria in degrading PET, specifically by inoculating *E. coli* BL21 (PETase-MHETase-aldA-fucO) and *E. coli* BL21 (pUC19) into LB liquid culture medium containing kanamycin and added IPTG during the logarithmic growth phase ($\mathrm{OD_{600}}$=0.6-0.8). Compared to *E. coli* BL21 (pUC19), the concentration of *E. coli* BL21 (PETase-MHETase-aldA-fucO) was higher at all stages, and the growth rate was not significantly reduced. This indicates that fucO-aldA can promote *E. coli* BL21's utilization of ethylene glycol and improve its metabolic efficiency, thereby promoting cell growth better. This proves that the gene fucO-aldA has successfully transferred into *E. coli* BL21 and can be effectively expressed.
+We first verified the efficiency of *E. coli* BL21 engineered bacteria in degrading PET, specifically by inoculating *E. coli* BL21 (PETase-MHETase-aldA-fucO) and *E. coli* BL21 (pUC19) into LB liquid culture medium containing kanamycin and added IPTG during the logarithmic growth phase ($\mathrm{OD_{600}}$=0.6-0.8).  We cultured the strains for 2 days at 16 °C and 200 rpm. Then, we performed nickel affinity chromatography and SDS-PAGE gel electrophoresis on the supernatant of the culture medium. We did not observe the correct bands. We repeated the nickel affinity chromatography and SDS-PAGE gel electrophoresis on the cell lysate and the precipitate, and finally observed the correct bands.
+
+We believe that the PETase-MHETase is not excreted, so we wanted to determine the efficiency of the enzyme in degrading PET by directly detecting the activity of the crude enzyme solution. We induced the growth of the engineered bacteria at low temperature, then lysed the cell suspension and concentrated the supernatant to prepare the crude enzyme solution. We incubated the crude enzyme solution with PET powder for several days and detected the degration of PET by using HPLC. We found that the PETase-MHETase expressed by our engineered bacteria has achieved the expected efficiency in degrading PET.
+
+We also investigated the promotion of growth and metabolic capacity of E. coli BL21 by ethylene glycol. We measured the growth and metabolic capacity of *E. coli* BL21 (pPeteg) and *E. coli* BL21 (pUC19) and drew the growth curves. Compared to *E. coli* BL21 (pUC19), the concentration of *E. coli* BL21 (PETase-MHETase-aldA-fucO) was higher at all stages, and the growth rate was not significantly reduced. This indicates that fucO-aldA can promote *E. coli* BL21's utilization of ethylene glycol and improve its metabolic efficiency, thereby promoting cell growth better. This proves that the gene fucO-aldA has successfully transferred into *E. coli* BL21 and can be effectively expressed.
 
 ### *P. putida* KT2440
 
 #### Design
 
-We wanted to verify the ability of the engineered *P. putida* KT2440 to degrade terephthalic acid, and we wanted to verify if the engineered *P. putida* KT2440 was consistent with our expectations to produce rhamnolipid by using ELIASA to detect the expression of rhamnolipid.
+We wanted to verify the ability of the engineered *P. putida* KT2440 to degrade terephthalic acid, and to test if the engineered *P. putida* KT2440 was consistent with our expectations to produce rhamnolipid by using TCL and anthrone-sulfuric acid method to detect the expression of rhamnolipid.
 
 #### Build
 
-First, we cultured *E. coli* DH5$\alpha$ (pTerephthalate) and *E. coli* DH5$\alpha$ (rhlA-rhlB-pVLT33) and extracted plasmids. Then, we transferred the 2 plasmids separately to *P. putida* KT2440 via electroporation and plated each of the strain on 1 LB plate containing kanamycin for selection. We then incubated the solid culture medium at 30 °C for overnight cultivation, and then picked bacterial plaque for PCR verification. After observing the correct bands, we mixed 800 $\mathrm{\mu L}$ of bacterial solution with 800 $\mathrm{\mu L}$ of 1:1 mixture of glycerol and double distilled water, and we stored the seeds at -20°C.
+First, we cultured *E. coli* DH5$\alpha$ (pTerephthalate) and *E. coli* DH5$\alpha$ (rhlA-rhlB-pVLT33) and extracted plasmids. Then, we transferred the 2 plasmids separately to *P. putida* KT2440 via electroporation and plated each of the strain on 1 LB plate containing kanamycin for selection. We then incubated the solid culture medium at 30 °C for overnight cultivation, and then picked bacterial plaque for PCR verification. After observing the correct bands, we mixed 800 $\mathrm{\mu L}$ of bacterial solution with 800 $\mathrm{\mu L}$ of 1:1 mixture of glycerol and double distilled water, and we stored the seeds at -20 °C.
 
 #### Test
 
@@ -174,4 +178,4 @@ Based on the data, we believe that the efficiency of our engineered strain in de
 
 We also validated the efficiency of our engineered *P. putida* KT2440 (rhlA-rhlB-pVLT33) to produce rhamnolipid. We cultured *P. putida* KT2440 (rhlA-rhlB-pVLT33) and *P. putida* KT2440 (pVLT33) in M9 medium supplemented with soybean reconciled oil as the carbon source. 
 
-We sampled a certain amount of the cultured *P. putida* KT2440 (rhlA-rhlB-pVLT33) and *P. putida* KT2440 (pVLT33) for several days and added anthrone-sulfuric acid. We then used ELIASA to detect the concentration of rhamnolipid in the bacterial suspension at $\mathrm{OD_{625}}$. Based on the data, we believe that the amount of rhamnolipid produced by our engineered strain is consistent with the expected value.
+We first used anthrone-sulfuric acid method to test the ability of our engineered cells to produce rahmnolipid. We sampled a certain amount of the cultured *P. putida* KT2440 (rhlA-rhlB-pVLT33) and *P. putida* KT2440 (pVLT33) for several days and added anthrone-sulfuric acid. We then used ELIASA to detect the concentration of rhamnolipid in the bacterial suspension at $\mathrm{OD_{625}}$.  To make our results more reliable,we also used TCL to test the ability of our engineered cells to produce rahmnolipid. Based on the data, we believe that the amount of rhamnolipid produced by our engineered strain is consistent with the expected value.
