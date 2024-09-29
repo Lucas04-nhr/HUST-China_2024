@@ -229,7 +229,7 @@ Validation of the degradation efficiency of terephthalic acid.
 
 **September 13th - September 14th**
 
-- Expand the culture of *Escherichia coli* BL21 PETase-MHETase-aldA-fucO, and add IPTG during the logarithmic growth phase (OD600=0.6-0.8).
+- Expand the culture of *Escherichia coli* BL21 PETase-MHETase-aldA-fucO, and add IPTG during the logarithmic growth phase ($\mathrm{OD_{600}}$=0.6-0.8).
 
 **September 15th**
 
@@ -237,7 +237,7 @@ Validation of the degradation efficiency of terephthalic acid.
 
 **September 16th - September 17th**
 
-- Inoculate and expand the culture of *Escherichia coli* BL21 PETase-MHETase-aldA-fucO, and add IPTG during the logarithmic growth phase (OD600=0.6-0.8).
+- Inoculate and expand the culture of *Escherichia coli* BL21 PETase-MHETase-aldA-fucO, and add IPTG during the logarithmic growth phase ($\mathrm{OD_{600}}$=0.6-0.8).
 
 **September 18th**
 

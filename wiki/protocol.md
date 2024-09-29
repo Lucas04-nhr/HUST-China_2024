@@ -222,7 +222,7 @@ Add 800 $\mathrm{\mu L}$ 50% glycerol aqueous solution to the seed preservation 
 ### Preparation of Pseudomonas putida KT2440 competent cells
 
 1. Put *P. putida* KT2440 into 3 mL LB liquid culture medium with chloramphenicol resistance and inoculate at 30°C for overnight cultivation shaking at 220 rpm.
-2. Take 1 mL of overnight cultured bacterial solution and inoculate it into 50 mL of LB liquid culture medium with chloramphenicol resistance at 30°C, shaking at 220 rpm, and cultivate until the OD600 reaches approximately 0.6.
+2. Take 1 mL of overnight cultured bacterial solution and inoculate it into 50 mL of LB liquid culture medium with chloramphenicol resistance at 30°C, shaking at 220 rpm, and cultivate until the $\mathrm{OD_{600}}$ reaches approximately 0.6.
 3. Centrifuge at 5000 rpm for 10 min. Discard the supernatant and resuspend the bacteria in 5 mL of buffer on ice.
 4. Repeat step 3) for 2-3 times and suspend the plaque with 100 $\mathrm{\mu L}$ of buffer solution. Transfer the resuspended cells into 1.5 mL sterile centrifuge tubes and store them in the -20°C for future use.
 
@@ -240,7 +240,7 @@ Add 800 $\mathrm{\mu L}$ 50% glycerol aqueous solution to the seed preservation 
 
 #### Sample preparation
 
-1. Inoculate activated bacterial strains into the corresponding resistant medium for expanded culture. Cultivate at 37°C and shaking at 160 rpm until the OD600 reaches 0.6-0.8, then induce the culture by adding IPTG (1 mol/L) at a ratio of 1/1000. Induce expression at 30°C for 6 hours or at 16°C for overnight.
+1. Inoculate activated bacterial strains into the corresponding resistant medium for expanded culture. Cultivate at 37°C and shaking at 160 rpm until the $\mathrm{OD_{600}}$ reaches 0.6-0.8, then induce the culture by adding IPTG (1 mol/L) at a ratio of 1/1000. Induce expression at 30°C for 6 hours or at 16°C for overnight.
 2. Centrifugate at 5000 rpm and 4 °C for 5 min. Collect the induced expression bacteria, discard the culture medium (collect the culture medium if it contains secreted proteins), add 30 mL of binding buffer to resuspend the cells, and sonicate the solution by using an ultrasonic cell disruptor at 800W for 10 minutes in an ice-water bath.
 3. Centrifugate at 9000 rpm for 5 min at 4 °C, and take the supernatant (be sure the balance is completely calibrated), collect the supernatant, resuspend the precipitate in 1 mL of binding buffer, and take samples of both the supernatant and the precipitate for SDS-PAGE gel electrophoresis detection.
 4. Protein purification is performed on ice. Add 2 mL of His purification gel to the purification column, equilibrate the column with 10 mL of binding buffer, slowly load the sample onto the column and collect the flow-through in a tube.
@@ -267,15 +267,15 @@ Add 800 $\mathrm{\mu L}$ 50% glycerol aqueous solution to the seed preservation 
 
 1. Inoculate *E. coli* BL21 in 100 mL of M9 medium with ethylene glycol as the carbon source and add 0.5 g/L of glycerol. Cultivate under the corresponding temperature.
 2. Transfer 3 mL of *E. coli* BL21 from the culture medium to an EP tube every 24 hours.
-3. Measure the absorbance at OD600.
+3. Measure the absorbance at $\mathrm{OD_{600}}$.
 4. Plot a standard curve with growth time on the x-axis and absorbance on the y-axis.
 
 #### Measurement of *P. putida* KT2440 growth curve
 
 1. Inoculate *P. putida* in 100 mL of M9 medium with terephthalic acid as the carbon source, Cultivate at 30°C.
 2. Transfer 3 mL of *E. coli* BL21 from the culture medium to an EP tube every 24 hours.
-3. Measure the absorbance at OD600.
-4. Measure the absorbance at OD600.
+3. Measure the absorbance at $\mathrm{OD_{600}}$.
+4. Measure the absorbance at $\mathrm{OD_{600}}$.
 
 #### Crude extraction of rhamnolipids
 
