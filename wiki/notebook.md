@@ -211,9 +211,13 @@ Validation of the degradation efficiency of terephthalic acid.
 
 - Configure M9 culture medium with soybean reconciled oil as the carbon source to culture *Pseudomonas putida* KT2440 rhlA-rhlB-pVLT33 and *Pseudomonas putida* KT2440 pVLT33.
 
+Prepare the plate for TCL of rhamnolipid.
+
 **September 6th**
 
 - Add anthrone-sulfuric acid to a certain amount of *Pseudomonas putida* KT2440 rhlA-rhlB-pVLT33 suspension and *Pseudomonas putida* KT2440 pVLT33 suspension, and detect the production of rhamnolipid through ELIASA.
+
+Conduct TCL to test the existance of rhamnolipid.
 
 ## PET Degradation Efficiency Validation
 
