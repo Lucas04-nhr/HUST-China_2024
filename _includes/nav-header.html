@@ -98,6 +98,8 @@
     z-index: 999;
     margin-top: 0.6rem;
     border-radius: 0.2rem;
+    padding: 0 10px;
+    padding-bottom: 5px;
   }
 
   ul.sub_nav li.sub_nav {
@@ -185,8 +187,7 @@
       }
     }
   }
-
-  collapseNav()
+  window.addEventListener("load", () => collapseNav()); //加载完成时更新nav_height
 
   // Check on resize if to collapse nav
   window.addEventListener('resize', () => {
