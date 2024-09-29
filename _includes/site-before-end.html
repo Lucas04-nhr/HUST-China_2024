@@ -74,29 +74,36 @@
       return true;
     }
   }
-  //计算ul应该在的位置↓
-  function update_position(ul, parent) { //更新ul位置
-    let { top, left } = parent[0].getBoundingClientRect();
-    ul.css("display", "flex");
-    const ul_width = ul.outerWidth();
-    ul.css("display", "none");
-    const parent_height = parent.height();
-    const parent_width = parent.width();
-    ul.css("top", top + parent_height * 2 / 3);
-    if ($("button.button--nav").css("display") === "none") { //宽屏--居中对齐
-      ul.css("left", left - (ul_width - parent_width) / 2);
-      ul[0].style.removeProperty('right');
-    }
-    else { //窄屏--右对齐
-      const body_width = document.body.clientWidth;
-      const right = body_width - left - parent_width;
-      ul.css("right", right);
-      ul[0].style.removeProperty('left');
-    }
-  }
+
   $(document).ready(function () {
     const down_ul = $("nav ul.sub_nav"); //全部的下拉菜单ul
     if (!down_ul) return; //如果没有下拉菜单就退出
+    //计算ul应该在的位置↓
+    const ul_widths = new Array(down_ul.length);
+    function update_ul_width() {
+      down_ul.each((index, ul) => {
+        $(ul).css("display", "flex");
+        ul_widths[index] = $(ul).outerWidth();
+        $(ul).css("display", "none");
+      });
+    }
+    function update_position(ul, parent) { //更新ul位置
+      let { top, left } = parent[0].getBoundingClientRect();
+      const ul_width = ul_widths[down_ul.index(ul)];
+      const parent_height = parent.height();
+      const parent_width = parent.width();
+      ul.css("top", top + parent_height * 2 / 3);
+      if ($("button.button--nav").css("display") === "none") { //宽屏--居中对齐
+        ul.css("left", left - (ul_width - parent_width) / 2);
+        ul[0].style.removeProperty('right');
+      }
+      else { //窄屏--右对齐
+        const body_width = document.body.clientWidth;
+        const right = body_width - left - parent_width;
+        ul.css("right", right);
+        ul[0].style.removeProperty('left');
+      }
+    }
     down_ul.each(function (index, dom) {
       $(dom).css("display", "flex"); //给ul设置默认display样式为flex
       $(dom).hide(); //ul默认隐藏
@@ -209,8 +216,14 @@
         setTimeout(add_event, 200);
       }
       //页面尺寸变化时更新top/left
-      window.addEventListener('resize', debounce(update_resize_func, 100));
-      window.addEventListener('load', () => setTimeout(update_resize_func, 0));
+      window.addEventListener('resize', () => {
+        update_ul_width();
+        update_resize_func();
+      });
+      window.addEventListener('load', () => {
+        update_ul_width();
+        update_resize_func();
+      });
       //点击后更改样式
       down_a.on("click", function () {
         $(this).addClass("current").siblings().removeClass("current");
