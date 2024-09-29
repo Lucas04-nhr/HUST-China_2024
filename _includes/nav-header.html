@@ -56,6 +56,9 @@
   }
 
   @media screen and (max-width: 640px) {
+    div.container-wrapper {
+      display: flex;
+    }
     nav.nav button.button--nav {
       box-shadow: none !important;
     }
@@ -242,6 +245,11 @@
     const navHeight = document.querySelector('.header .container-wrapper').offsetHeight
     document.querySelector('.header .feature').style.setProperty('margin-top', `${navHeight}px`)
   }
+
+  // Add event listener when the page loads successfully
+  window.addEventListener('load', () => {
+    setFeatureMarginTop()
+  })
 
   // Add event listener when click button.button--nav
   document.querySelector('.header .button--nav').addEventListener('click', () => {
