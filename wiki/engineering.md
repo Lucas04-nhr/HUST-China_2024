@@ -82,7 +82,7 @@ Furthermore, the tpak-pBBR 1-CS2 fragment obtained by our double digestion was a
 
 ### Design
 
-After many failures and attempts, we analyzed the problems in the first cycle.
+After encountered many failures and did several attempts, we concluded the problems in the first cycle and have came up with ideas to solue them.
 
 During the construction of the plasmid rhlA-rhlB-pVLT33,we tried to obtain the linearized rhlA-rhlB fragment by PCR first, and then perform double enzyme digestion on the rhlA-rhlB fragment , so as to solve the problem that it is difficult to obtain the pure rhlA-rhlB fragment due to the similar length of the rhlA-rhlB gene fragment and the original pUC57 vector in plasmid rhlA-rhlB-pUC57.
 
