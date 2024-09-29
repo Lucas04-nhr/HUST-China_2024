@@ -3,14 +3,14 @@ title: Hardware
 permalink: /hardware/
 feature_text: |
   ## Hardware
-  This page introduces the hardware design of our project, including the enrichment device for microplastics and the co-culture fermenter of **E. coli** and **P. Putida** aeruginosa.
+  This page introduces the hardware design of our project, including three parts: **enrichment**, **fermentation**, and **modular design**.
 feature_image: "https://static.igem.wiki/teams/5175/resources/background/bg-hardware.jpg"
-excerpt: "This page introduces the hardware design of our project, including the enrichment device for microplastics and the co-culture fermenter of **E. coli** and **P. Putida** aeruginosa."
+excerpt: "This page introduces the hardware design of our project, including three parts: **enrichment**, **fermentation**, and **modular design**."
 ---
 
 ## Background
 
-After confirming the change in the treatment environment from soil to water, it was urgent to design a controlled closed system for the collection and decomposition of microplastics at this stage, and this year's work on the hardware was carried out accordingly. In order to help our lab results to be industrialized as soon as possible, we designed a microplastic enrichment device; built a co-culture fermenter of E. coli and P. Putida aeruginosa based on last year's modular design, and further improved the modular fermenter design, which will continue to help synthetic biology technology to be presented in the hardware.
+After confirming the change in the treatment environment from soil to water, it was urgent to design a controlled closed system for the collection and decomposition of microplastics at this stage, and this year's work on the hardware was carried out accordingly. In order to help our laboratory results to move towards industrial application as soon as possible, we designed a microplastic enrichment device; built a set of E. coli and P. Putida co-culture fermenter based on the modular design proposed last year, and further improved the design of the modular fermenter, to ensure the convenience and replicability of our design, and continue to help synthetic biology technology in the presentation of hardware.
 
 ## Enrichment
 
@@ -110,7 +110,7 @@ In response to these two problems, we subsequently made adjustments.
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/hardware/hardware-3-6.webp" caption="Fig 3.6<br> (A) Schematic; (B) sectional views of fermenter 2.0" %}
 
-In order to solve the problem of different culture temperatures of two kinds of bacteria, we divided the tank into two and built in a stirring bar respectively (Fig 3.6). The part connecting the pipes in the middle incorporated a flow controller to control the flow rate, which largely solved the above problem. However, the temperature adjustment of the lateral flow is limited and there will be some delay, and the two stirring bars need to be driven separately, which will increase the energy loss of the instrument, and such a unidirectional flow device will also affect the fermentation efficiency and the rate of medium renewal. In this regard, we continue to improve the design.
+In order to solve the problem of different culture temperatures of two kinds of bacteria, we divided the tank into two and built in a stirring bar respectively (Fig 3.6). The part connecting the pipes in the middle incorporated a flow controller to control the flow rate, which largely solved the above problem. However, the temperature adjustment of the unidirectional flow is limited and there will be some delay, and the two stirring bars need to be driven separately, which will increase the energy loss of the instrument, and such a unidirectional flow device will also affect the fermentation efficiency and the rate of medium renewal. In this regard, we continue to improve the design.
 
 #### Fermenter 3.0
 
@@ -126,7 +126,7 @@ In the end, we came up with a final solution (Fig 3.8): we added a channel throu
 
 ## Modular design
 
-Our fermenter design continues last year's modular and "building block" design concept, which enhances the replaceability and portability of the tank, improves the environmental adaptability, and allows us to change different modules according to different scenarios and fermentation needs, in order to maximize the environmental benefits and efficiency, and to reduce costs. This year, we have supplemented this design with a number of modules, including: stirring module, fermenter module, flow rate control module, temperature control module, and irrigation module.
+Our fermenter design continues the modular and "building block" design concept of last year, which enhances the interchangeability and portability of the tanks, making it easy to change different modules according to different scenarios and fermentation needs, in order to achieve the maximum environmental benefits and efficiency, and reduce costs. This year, we have added some designs on this basis, which generally include: stirring module, fermenter module, flow rate control module, temperature control module, and irrigation module.
 
 ###  Stirring module
 
@@ -134,7 +134,7 @@ Our fermenter design continues last year's modular and "building block" design c
 
 During the fermentation process, in order to ensure the full utilization of the nutrients in the culture medium in the tank, it is necessary to increase the contact area by stirring to promote nutrient uptake and reaction. Due to the different viscosity and flow rate requirements of the liquids, the stirring bars have to be adapted to the specific application scenarios. We have designed three types of stir bars to meet different stirring needs and liquid conditions. The three types of stirring bars can be adapted to different stress levels in order to meet the needs of industrialization.  
 
-As shown in Fig 4.1A, we designed a stirring bar with a spiral ascending blade, which can mix the bacteria and culture liquid more evenly and promote the horizontal circulation of the fermentation liquid; Fig 4.1B shows a stirrer installed at the bottom of the fermentation tank similar to a "fan", which can promote the up and down flow of the liquid; Fig 4.1C shows a stirring bar with a spiral rising blade, which can promote the up and down flow of the liquid; Fig 4.1C shows a stirring bar with a spiral rising blade, which can promote the up and down flow of the liquid. Fig 4.1C shows a strip stirrer that connects the upper and lower tubes, and its slim tubular structure is suitable for stirring liquids with high viscosity, which can effectively reduce energy loss.
+As shown in Fig 4.1A, we designed a stirring bar with a spiral ascending blade, which can mix the bacteria and culture liquid more evenly and promote the horizontal circulation of the fermentation liquid; Fig 4.1B shows a stirrer installed at the bottom of the fermentation tank similar to a "fan", which can promote the up and down flow of the liquid; Fig 4.1C shows a strip stirrer that connects the upper and lower tubes, and its slim tubular structure is suitable for stirring liquids with high viscosity, which can effectively reduce energy loss.
 
 ###  Fermenter module
 
@@ -160,7 +160,7 @@ After P. Putida synthesizes rhamnolipids in the lower tank, we need to release t
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/hardware/hardware-4-5.webp" caption="Fig 4.5 Irrigation module<br> (A) sprinkler head<br> (B) pressurized sprinkler head:<br> (a) side top view of sprinkler head; (b) cross section view of sprinkler head;<br> (C) drip irrigation head" %}
 
-Spray cans utilize spray nozzles to achieve a greater atmosphere of watering and coverage, and we have designed two types of spray nozzles for sprinkler irrigation, inspired by the showerhead. The sprinkler head shown in Fig 4.5A is similar to a showerhead in that the number and size of the fine holes at the bottom can be controlled to meet different irrigation speeds and coverage. Based on this, we further propose the pressurized sprinkler head (Fig. 4.5B(i, ii)), which is internally supplemented with channels spreading from the center to the periphery, and the diameter of the channels ranges from large to small from the center to the periphery to achieve the acceleration of the liquid in order to expand the irrigation range and achieve higher irrigation efficiency.
+Spray cans utilize spray nozzles to achieve a greater atmosphere of watering and coverage, and we have designed two types of spray nozzles for sprinkler irrigation. The sprinkler head shown in Fig 4.5A is similar to a showerhead in that the number and size of the fine holes at the bottom can be controlled to meet different irrigation speeds and coverage. Based on this, we further propose the pressurized sprinkler head (Fig. 4.5B(a, b)), which is internally supplemented with channels spreading from the center to the periphery, and the diameter of the channels ranges from large to small from the center to the periphery to achieve the acceleration of the liquid in order to expand the irrigation range and achieve higher irrigation efficiency.
 
 Compared to sprinkler irrigation, drip irrigation can save water while inhibiting weed growth to a certain extent, and realize precise irrigation, so we also supplemented the drip irrigation head. The drip irrigation sprinkler head (Fig. 4.5C) is overall a long straight pipe with many small holes drilled into it to allow the liquid to flow out, and the length and bifurcation of the pipe can be adjusted according to irrigation needs. This type of irrigation meets the development needs of our green agriculture and also expands the scenarios that the system should be used for.
 
@@ -168,7 +168,7 @@ Compared to sprinkler irrigation, drip irrigation can save water while inhibitin
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/hardware/hardware-5-1.webp" caption="Fig 5.1 Bidirectional flow temperature control system" %}
 
-In order to ensure the optimal growth of the two bacteria in the fermenter, we designed a two-way flow temperature control system (Fig 5.1). However, due to time constraints, this part of the work still needs to be improved in order to realize automated control. We plan to add a level sensor in the upper tank to detect the height of the fermentation liquid level in the upper tank; supplement the temperature sensor in the lower tank to monitor the temperature TL in the tank in real time; and also add a valve to control Q0 at the medium entry port of the upper tank, and supplement the control element at the top cover of the upper tank to realize the automated rotation of the kit b. We designed the temperature control process as follows:
+In order to ensure the optimal growth of the two bacteria in the fermenter, we designed a two-way flow temperature control system (Fig 5.1). After completing the design and 3D printing the fermenter, we've conducted some initial testing, including testing for water resistance and verifying the key functions of agitation and flow control. However, due to time constraints, this part of the work still needs to be improved in order to realize automated control. We plan to add a level sensor in the upper tank to detect the height of the fermentation liquid level in the upper tank; supplement the temperature sensor in the lower tank to monitor the temperature TL in the tank in real time; and also add a valve to control Q0 at the medium entry port of the upper tank, and supplement the control element at the top cover of the upper tank to realize the automated rotation of the kit b. We designed the temperature control process as follows:
 
   1. First, we in the upper tank medium entry port, stable replenishment of 37 °C culture fluid, baffle c is in an open state, the middle layer of samples to be treated through, on the upper tank flow down the culture fluid cooling, and then jointly into the lower tank; 
   2. When the detection of the TL is lower than the minimum of the set temperature interval (25-30 °C), the top cover control element drives the baffle c up, Q1 increases, to help the TL effectively rise; conversely, when the When TL is detected to be higher than the set temperature range, the control element drives the baffle c down and TL down; 
