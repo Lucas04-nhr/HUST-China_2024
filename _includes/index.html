@@ -811,7 +811,7 @@
     btn_box.css("display", "none");
     const wrapper = document.querySelector(".below_index_wrapper");
     const distance = 10; //距页面顶部/底部多少px时显示/隐藏按钮
-    const animate_time = 150; //动画时长
+    const animate_time = 50; //动画时长
     function show_btn(btn) {
       btn.stop().fadeIn(animate_time);
     }
@@ -845,5 +845,14 @@
     $(window).resize(() => scroll_func());
     $(window).on("scroll", () => scroll_func());
     window.addEventListener('load', () => scroll_func());
+  })();
+</script>
+
+<!-- Alert the user if using mobile devices -->
+<script>
+  (function () {
+    if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+      alert("This page is not fully optimized for mobile devices. Some of the animations and effects may not work properly. For the best experience, please view this page on a desktop or laptop.");
+    }
   })();
 </script>
