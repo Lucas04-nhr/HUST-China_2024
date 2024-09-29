@@ -75,13 +75,16 @@
     }
   }
   //计算ul应该在的位置↓
+  const ul_padding = parseFloat($("nav ul.sub_nav").eq(0).css("padding-left"));
   function update_position(ul, parent) { //更新ul位置
-    const { top, left } = parent[0].getBoundingClientRect();
+    let { top, left } = parent[0].getBoundingClientRect();
+    //left -= ul_padding;
     const parent_height = parent.height();
     const parent_width = parent.width();
     ul.css("top", top + parent_height * 2 / 3);
     if ($("button.button--nav").css("display") === "none") { //宽屏--左对齐
-      ul.css("left", left);
+      //ul.css("left", left);
+      ul.css("left", left - ul_padding);
       ul[0].style.removeProperty('right');
     }
     else { //窄屏--右对齐
