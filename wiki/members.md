@@ -195,6 +195,18 @@ excerpt: "Meet the team behind the project."
    image_position="left" %}
 
 {% include members-people.html
+   name="Pinrong Qian"
+   description="Always be curious and be in awe of the universe."
+   image="https://static.igem.wiki/teams/5175/resources/members/pinrong-qian.webp"
+   image_position="right" %}
+
+{% include members-people.html
+   name="Jiarui Wu"
+   description="Do not go gentle into that good night."
+   image="https://static.igem.wiki/teams/5175/resources/members/jiarui-wu.webp"
+   image_position="left" %}
+
+{% include members-people.html
    name="Tianhao Wang"
    description="What hurts more, the pain of hard work, or the pain of regret? If you are still looking for that one person who will change your life, take a look in the mirror."
    image="https://static.igem.wiki/teams/5175/resources/members/tianhao-wang.webp"
