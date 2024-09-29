@@ -99,7 +99,7 @@ We suspect that due to the wrong designing of our plasmid, the tpaK gene fragmen
 - Transform the plasmid (ligation) into *E. coli* DH5$\alpha$ and culture overnight.
 - Pick bacterial plaque, PCR bacterial fluid, and verify by agarose gel electrophoresis. The plasmid pTerephthalate (tphA2A3BA1-tpaK-pBBR1-CS2) is successfully validated, and an 1:1 mixture of double distilled water and glycerol and keep it at -20°C.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/notebook/notebook-04.png" alt="The results of PCR identification for pTerephthalate caption="Fig 4. The PCR identification result of pTerephthalate" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/notebook/notebook-04.png" alt="The results of PCR identification for pTerephthalate" caption="Fig 4. The PCR identification result of pTerephthalate" %}
 
 **August 10th - August 11th**
 
