@@ -3,9 +3,9 @@ title: Contribution
 permalink: /contribution/
 feature_text: |
   ## Contribution
-  A brief introduction to our project.
+  This page contains the contribution of the project.
 feature_image: "https://static.igem.wiki/teams/5175/resources/background/bg-contribution.jpg"
-excerpt: "A brief introduction to our project."
+excerpt: "This page contains the contribution of the project."
 ---
 
 contribution
