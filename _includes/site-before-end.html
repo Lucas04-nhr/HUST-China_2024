@@ -241,6 +241,7 @@
     a_list.prop('href', 'javascript:;'); //禁用a标签锚点跳转
     a_list.off("click"); //清除默认点击事件
     const toc = $("#about-this-page nav"); //目录
+    let nav_height = $("header.header .container-wrapper").outerHeight() + 1; //顶部导航栏高度，用于调节滚动距离
 
     //根据页面滚动距离更改目录div标签滚动距离
     function update_div_scroll_distance(i) {
@@ -260,7 +261,7 @@
       const a_index = a_list.index(this); //点击的是第几个li
       const scroll_distance = h_list.eq(a_index).offset().top; //它对应的h标签距页面顶端距离
       $("body,html").stop().animate({ //进行滚动
-        scrollTop: scroll_distance
+        scrollTop: scroll_distance - nav_height
       }, function () { //animate回调函数，当动画播放完执行
         is_click = false; //滚动完了就把锁打开
       });
@@ -289,7 +290,7 @@
     function update_classname() { //根据页面滚动距离更改目录a标签
       const scroll_distance = $(document).scrollTop(); //当前页面滚动的距离
       for (let i = h_list.length - 1; i >= 0; i--) {
-        if (scroll_distance + 1 >= h_list.eq(i).offset().top) { //找到滚动到了哪个h标签
+        if (scroll_distance + nav_height + 1 >= h_list.eq(i).offset().top) { //找到滚动到了哪个h标签
           a_list.removeClass("current");
           a_list.eq(i).addClass('current'); //让对应的a标签改变
           update_div_scroll_distance(i);
@@ -310,8 +311,10 @@
     update_classname();
     //页面尺寸变化时更新
     $(window).resize(function () {
+      nav_height = $("header.header .container-wrapper").outerHeight() + 1;
       update_classname();
     });
+    window.addEventListener("load", () => nav_height = $("header.header .container-wrapper").outerHeight() + 1); //加载完成时更新nav_height
 
     //双击标题事件
     h_list.off("click"); //清除默认点击事件
@@ -319,6 +322,45 @@
       //$("html,body").animate({ scrollTop: $(this).offset().top });
       const h_index = h_list.index(this); //双击的是第几个标题
       a_list.eq(h_index).click(); //调用目录a标签的点击事件，双击标题就相当于点击了目录中对应a标签
+    });
+
+    //点击文章中引用文献链接跳转
+    const footnotes = $("a.footnote");
+    footnotes.each((index, footnote) => {
+      footnote = $(footnote);
+      const href_list = footnote.prop("href").split('/');
+      const des_href = href_list[href_list.length - 1];
+      footnote.attr("data-href", des_href.slice(4));
+      footnote.prop("href", "javascript:;");
+      const des = $(document.getElementById(des_href.slice(1)));
+      footnote.on('click', function () {
+        is_click = true;
+        $("body,html").stop().animate({
+          scrollTop: des.offset().top - nav_height
+        }, function () {
+          is_click = false;
+          update_classname();
+        });
+      });
+    });
+
+    //点击引用文献的back链接跳转
+    const reverse_footnotes = $("a.reversefootnote");
+    reverse_footnotes.each((index, reverse_footnote) => {
+      reverse_footnote = $(reverse_footnote);
+      const href_list = reverse_footnote.prop("href").split('/');
+      const des_href = href_list[href_list.length - 1].slice(7);
+      reverse_footnote.prop("href", "javascript:;");
+      const des = $(`a.footnote[data-href="${des_href}"]`);
+      reverse_footnote.on('click', function () {
+        is_click = true;
+        $("body,html").stop().animate({
+          scrollTop: des.offset().top - nav_height
+        }, function () {
+          is_click = false;
+          update_classname();
+        });
+      });
     });
   });
 </script>
