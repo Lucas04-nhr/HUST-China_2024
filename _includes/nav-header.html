@@ -37,6 +37,19 @@
 {% endif %}
 
 <style>
+  header.header {
+    width: 100%;
+  }
+
+  header.header .container-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9000;
+    width: 100%;
+    background-color: #fff;
+  }
+
   /* 小屏 */
   button.button--nav {
     display: inline-block;
@@ -131,6 +144,22 @@
     height: fit-content;
   }
 </style>
+<script>
+  $(document).ready(function () {
+    const nav = $(".header .container-wrapper");
+    const feature = $(".header .feature");
+    const aside = $("aside.aside section#about-this-page");
+    function update_feature() {
+      if (nav.css("position") !== "fixed") return;
+      const nav_height = nav.outerHeight();
+      feature.css("margin-top", `${nav_height}px`);
+      aside.css("cssText", `top: ${nav_height}px !important`);
+    }
+    update_feature();
+    //$(window).scrollTop(0);
+    $(window).on("resize", () => update_feature());
+  });
+</script>
 <script type="text/javascript">
   // Get list and button
   const navList = document.querySelector('.header .list--nav')
