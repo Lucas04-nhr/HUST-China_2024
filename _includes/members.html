@@ -54,26 +54,10 @@
     (function () {
         $(document).ready(function () {
             const right_members = $(".right");
-            /*function wrap_css() {
-                $(".section").css({
-                    "flex-direction": "column",
-                    "align-items": "flex-start"
-                });
-                $(".section#members img").css("width", "100%");
-                $(".info").css("width", "100%");
-            }
-            function no_wrap_css() {
-                $(".section,.section#members img,.info").each((index, dom) => {
-                    dom.removeAttribute("style");
-                });
-            }*/
             function update_members() {
                 const clientWidth = window.innerWidth;
-                //const is_wrap = right_members[0].clientHeight >= (right_members.eq(0).children()[0].clientHeight + right_members.eq(0).children()[1].clientHeight);
-                //if (is_wrap) {
                 if (clientWidth <= 960) {
                     if (right_members.eq(0).children().eq(0).hasClass("info")) {
-                        //wrap_css();
                         right_members.each((index, right_member) => {
                             right_member = $(right_member);
                             const info = right_member.children(".info");
@@ -83,7 +67,6 @@
                     }
                 } else {
                     if (!right_members.eq(0).children().eq(0).hasClass("info")) {
-                        //no_wrap_css();
                         right_members.each((index, right_member) => {
                             right_member = $(right_member);
                             const info = right_member.children(".info");
