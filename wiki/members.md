@@ -191,7 +191,7 @@ excerpt: "Meet the team behind the project."
 {% include members-people.html
    name="Sutong Fan"
    description="just do it"
-   image="https://static.igem.wiki/teams/5175/resources/members/sutong-fan.webp"
+   image="https://static.igem.wiki/teams/4595/wiki/members/33.jpg"
    image_position="left" %}
 
 {% include members-people.html
