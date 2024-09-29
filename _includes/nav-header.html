@@ -55,27 +55,51 @@
     display: inline-block;
   }
 
+  @media screen and (max-width: 640px) {
+    nav.nav button.button--nav {
+      box-shadow: none !important;
+    }
+    nav.nav--header {
+      width: 100%;
+      max-width: 100%;
+    }
+    nav.nav--header ul.list--nav {
+      align-items: center;
+      justify-content: center;
+    }
+    nav.nav ul.list {
+      margin-right: 40%;
+    }
+
+    nav.nav ul.list--nav li.item {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
   /* 大屏 */
+
   @media screen and (min-width: 640px) {
     button.button--nav {
       display: none;
     }
-    nav.nav {
-      align-items: center;
-    }
-
-    nav.nav ul {
-      align-items: center;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    }
-
   }
 
   header.header div.container-wrapper {
     border-radius: 0 0 8px 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   }
+
+  nav.nav {
+    align-items: center;
+  }
+
+  nav.nav ul.list--nav li ul.sub_nav {
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+
 
 
   nav.nav--header li.item a {
@@ -122,16 +146,16 @@
     z-index: 999;
     /* 清除li左边默认的点 */
     list-style-type: none;
-    /* 小屏靠右对齐 */
-    text-align: right !important;
+    /* 小屏居中对齐 */
+    text-align: center !important;
     padding-top: 0.2rem;
     margin: 0;
   }
 
-  /* 大屏靠左对齐 */
+  /* 大屏居中对齐 */
   @media screen and (min-width: 40em) {
     ul.sub_nav li.sub_nav {
-      text-align: left !important;
+      text-align: center !important;
     }
   }
 
@@ -208,5 +232,34 @@
   // Check on resize if to collapse nav
   window.addEventListener('resize', () => {
     collapseNav()
+  })
+</script>
+
+<script>
+  // Set the margin-top of div.feature to the height of div.container-wrapper
+  function setFeatureMarginTop() {
+    // Get height of div.container-wrapper
+    const navHeight = document.querySelector('.header .container-wrapper').offsetHeight
+    document.querySelector('.header .feature').style.setProperty('margin-top', `${navHeight}px`)
+  }
+
+  // Add event listener when click button.button--nav
+  document.querySelector('.header .button--nav').addEventListener('click', () => {
+    // Proceed after the animation to finish and the height of nav is set
+    setTimeout(() => {
+      setFeatureMarginTop()
+    }, 100)
+
+    // Double check after 0.2s, if not set to the correct height, set it again for 5 times
+    const recursiveSetFeatureMarginTop = (attempts) => {
+      if (attempts <= 0) return;
+      setTimeout(() => {
+      setFeatureMarginTop();
+      recursiveSetFeatureMarginTop(attempts - 1);
+      }, 200);
+    };
+
+    recursiveSetFeatureMarginTop(5);
+
   })
 </script>
