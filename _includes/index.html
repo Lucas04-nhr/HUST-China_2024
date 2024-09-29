@@ -59,6 +59,7 @@
   }
 
   .box {
+    z-index: 1000;
     width: 100%;
     margin: 0;
     margin-bottom: 3rem;
@@ -83,7 +84,7 @@
     /* 要显示的CSS */
     /* margin: 0 auto; */
     /* 默认状态下（未显示时）的CSS */
-    margin-right: auto;
+    /* margin-right: auto; */
   }
 
   .box .right .img,
@@ -91,13 +92,12 @@
     /* 要显示的CSS */
     /* margin: 0 auto; */
     /* 默认状态下（未显示时）的CSS */
-    margin-left: auto;
+    /* margin-left: auto; */
   }
 
   .box .img,
   .box .text {
     opacity: 0;
-    margin: 0;
     width: 32rem;
     height: 20rem;
     max-width: 90vw;
@@ -319,7 +319,7 @@
     </div>
     <div class="right">
       <div class="img">
-        <div>
+        <div style="z-index: 1000;">
           <img src="https://static.igem.wiki/teams/5175/resources/homepage/index1.jpg" alt="">
           <figcaption class="caption" style="width: 30rem; line-height:1.1rem;">
             Cumulative plastic waste generation and disposal (in
@@ -332,7 +332,7 @@
   <div class="box">
     <div class="left">
       <div class="img">
-        <div>
+        <div style="z-index: 1000;">
           <div style="max-width: 100%; max-height:100%; text-align:center; margin-bottom:0.5rem;">
             <img src="https://static.igem.wiki/teams/5175/resources/homepage/2.png" alt="">
           </div>
@@ -342,7 +342,7 @@
         </div>
       </div>
     </div>
-    <div class=" right">
+    <div class="right">
       <div class="text">
         <p style="font-size: 1.2rem !important;">Once microplastics enter the human body through the food chain,
           they
@@ -359,7 +359,7 @@
   <div class="box" style="margin-bottom: 0 !important;">
     <div class="left">
       <div class="text">
-        <p style="font-size: 1.1rem !important; padding-top:0.3rem !important;">Organic fertilizers, plastic
+        <p style="font-size: 1.1rem !important; padding-top:0rem !important;">Organic fertilizers, plastic
           mulches,
           and irrigation water are the
           inevitable and primary culprits behind the
@@ -374,7 +374,7 @@
     </div>
     <div class="right">
       <div class="img">
-        <div class="swiper">
+        <div class="swiper" style="z-index: 1000;">
           <div class="swiper-content">
             <div>
               <img src="https://static.igem.wiki/teams/5175/resources/homepage/index3.jpg" alt="">
@@ -406,7 +406,8 @@
   </div>
   <div class="box noslide" style="height: 15rem;">
     <div class="text">
-      <p style="font-size: 1.4rem !important;line-height: 2.7rem;">In the face of this growing crisis, our
+      <p style="font-size: 1.4rem !important;line-height: 2.7rem; padding-top:1rem !important;">In the face of this
+        growing crisis, our
         team has focused on one of
         the
         most common plastics—polyethylene
@@ -421,6 +422,10 @@
   </div>
   <div class="box">
     <div class="left">
+      <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/homepage/index5.gif" alt="">
+      </div>
+    </div>
+    <div class="right">
       <div class="text">
         <p style="font-size: 1.2rem !important; padding-top:1rem !important;">E.coli BL21 is capable of efficiently
           expressing proteins. We have
@@ -430,17 +435,9 @@
           ultimately decreasing soil contamination and mitigating the potential health risks to humans.</p>
       </div>
     </div>
-    <div class="right">
-      <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/homepage/index5.gif" alt="">
-      </div>
-    </div>
   </div>
   <div class="box">
     <div class="left">
-      <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/homepage/index6.gif" alt="">
-      </div>
-    </div>
-    <div class="right">
       <div class="text">
         <p style="font-size: 1.2rem !important; padding-top:1.8rem !important;">Pseudomonas putida KT2440 possesses
           a
@@ -453,20 +450,24 @@
           but also enhance the soil’s physical structure and chemical properties.</p>
       </div>
     </div>
+    <div class="right">
+      <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/homepage/index6.gif" alt="">
+      </div>
+    </div>
   </div>
   <div class="box">
     <div class="left">
+      <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/homepage/index7.png" alt=""
+          style="background-color: white;">
+      </div>
+    </div>
+    <div class="right">
       <div class="text">
         <p style="font-size: 1.3rem !important; padding-top:3rem !important;">By harnessing the synergistic power of
           these two strains, we aim to
           significantly reduce PET microplastic
           accumulation in soils, restore soil health, and effectively tackle the growing threat of soil microplastic
           pollution—a danger that looms large over our environment and human well-being.</p>
-      </div>
-    </div>
-    <div class="right">
-      <div class="img"><img src="https://static.igem.wiki/teams/5175/resources/homepage/index7.png" alt=""
-          style="background-color: white;">
       </div>
     </div>
   </div>
@@ -480,9 +481,9 @@
 <!-- 展示盒子 -->
 <script>
   (function () {
-    const imgs = $(".box .left .img, .box .left .text, .box .right .img, .box .right .text");
-    const left_imgs = $(".box .left .img, .box .left .text");
-    const right_imgs = $(".box .right .img, .box .right .text");
+    let imgs = $(".box .left .img, .box .left .text, .box .right .img, .box .right .text");
+    let left_imgs = $(".box .left .img, .box .left .text");
+    let right_imgs = $(".box .right .img, .box .right .text");
     const noslides = $(".noslide .img, .noslide .text");
     const imgs_position_start = new Array(imgs.length);
     const imgs_position = new Array(imgs.length);
@@ -494,6 +495,33 @@
     function get_img_position() { //得到各元素移动前后的位置
       imgs.css("opacity", 0);
       clear_imgs_style();
+      if ($(".box").height() >= $(".left").height() + $(".right").height()) { //box换行，上图下文字
+        if (!$(".box").eq(1).children().eq(0).hasClass("right")) { //调换偶数位置的box
+          $(".box").each((index, box) => {
+            if (index % 2 === 0) return;
+            box = $(box);
+            const left = box.children(".left");
+            const right = box.children(".right");
+            right.insertBefore(left);
+          });
+          right_imgs = $(".box:odd .left .img, .box:even .right .img, .box:odd .left .text, .box:even .right .text");
+          left_imgs = $(".box:even .left .img, .box:odd .right .img, .box:even .left .text, .box:odd .right .text");
+          imgs = $(".box .left .img, .box .left .text, .box .right .img, .box .right .text");
+        }
+      } else {
+        if ($(".box").eq(1).children().eq(0).hasClass("right")) {
+          $(".box").each((index, box) => {
+            if (index % 2 === 0) return;
+            box = $(box);
+            const left = box.children(".left");
+            const right = box.children(".right");
+            left.insertBefore(right);
+          });
+          imgs = $(".box .left .img, .box .left .text, .box .right .img, .box .right .text");
+          left_imgs = $(".box .left .img, .box .left .text");
+          right_imgs = $(".box .right .img, .box .right .text");
+        }
+      }
       //要显示的CSS
       left_imgs.css("margin", "0 auto");
       right_imgs.css("margin", "0 auto");
@@ -522,7 +550,7 @@
       const start = imgs_position_start[index];
       const end = imgs_position[index];
       let res;
-      if (index % 2 == 0) { //在左面
+      if (end > start) { //在左面
         res = pos_percent * (end - start);
       } else { //在右面
         res = pos_percent * (start - end);
@@ -533,7 +561,8 @@
       const dom = imgs.eq(index);
       const xpos = get_xpos(pos_percent, index);
       const opacity = get_opacity(pos_percent);
-      if (index % 2 == 0) { //在左面
+      dom.css("margin", "0 auto");
+      if (left_imgs.index(dom) !== -1) { //在左面
         dom.animate({
           marginLeft: xpos,
           opacity: opacity
