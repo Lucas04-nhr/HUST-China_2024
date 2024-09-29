@@ -161,16 +161,6 @@ navigation_header:
         url: /attributions/
       # - title: Prize
       #   url: /prize/
-  # - title: Description
-  #   url: /description/
-  # - title: Elements
-  #   url: /elements/
-  # - title: Blog
-  #   url: /blog/
-  # - title: Categories
-  #   url: /categories/
-  # - title: Search
-  #   url: /search/
 
 navigation_footer:
   - title: iGEM HUST-China
