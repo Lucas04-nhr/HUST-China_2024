@@ -3,9 +3,9 @@ title: Parts
 permalink: /parts/
 feature_text: |
   ## Parts
-  A brief introduction to our project.
+  This page contains the parts of the project.
 feature_image: "https://static.igem.wiki/teams/5175/resources/background/bg-parts.jpg"
-excerpt: "A brief introduction to our project."
+excerpt: "This page contains the parts of the project."
 ---
 
 parts
