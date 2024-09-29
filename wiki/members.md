@@ -61,19 +61,19 @@ excerpt: "Meet the team behind the project."
 {% include members-people.html 
    name="Yue Wu" 
    description="Per aspera, ad astra." 
-   image="https://static.igem.wiki/teams/5175/resources/members/yue-wu.webp" 
+   image="https://static.igem.wiki/teams/4595/wiki/members/7.jpg" 
    image_position="right" %}
 
 {% include members-people.html 
    name="Yundi Chen" 
    description="Dream big, stay focus." 
-   image="https://static.igem.wiki/teams/5175/resources/members/yundi-chen.webp" 
+   image="https://static.igem.wiki/teams/4595/wiki/members/10.jpg" 
    image_position="left" %}
 
 {% include members-people.html 
    name="Xingyi Wen" 
    description="Stay foolish." 
-   image="https://static.igem.wiki/teams/5175/resources/members/xingyi-wen.webp" 
+   image="https://static.igem.wiki/teams/4595/wiki/members/8.jpg" 
    image_position="right" %}
 
 {% include members-people.html 
