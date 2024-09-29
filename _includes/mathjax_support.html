@@ -1,3 +1,12 @@
+<style>
+  .MathJax {
+    align-self: center;
+    max-width: 90%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+</style>
+
 <script>
   MathJax = {
     tex: {
@@ -9,6 +18,10 @@
       }
     },
     svg: {
+      linebreaks: {
+        automatic: true,
+        width: "container"
+      },
       fontCache: 'global'
     },
     chtml: {
@@ -16,6 +29,7 @@
     },
   };
 </script>
-  <script type="text/javascript" id="MathJax-script" async
-    src="https://static.igem.wiki/teams/5175/static/tex-svg.js">
-  </script>
+
+<script type="text/javascript" id="MathJax-script" async
+  src="https://static.igem.wiki/teams/5175/static/tex-svg.js">
+</script>
