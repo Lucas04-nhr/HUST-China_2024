@@ -8,8 +8,8 @@ feature_image: "https://static.igem.wiki/teams/5175/resources/background/bg-hp.j
 excerpt: "Welcome to iGEM HUST-China 2024 wiki! It's still under construction. Please stay tuned for more information."
 ---
 
-## Section 1 
-**Topic Selection: Aware Microplastic Pollution in Agriculture**
+## Topic Selection 
+**Section 1: Topic Selection--Aware Microplastic Pollution in Agriculture**
 
 During the summer of 2023, while participating in our university's "Triple Services Activity into Rural Areas" social practice activities, we accidentally observed the alarming presence of black and transparent plastic bag waste piled up beside rice fields. This litter starkly contrasted with the beautiful natural environment and was in direct contact with the food destined for local households. Such a scene raised our concerns about whether plastic waste could contaminate and harm farmland. Motivated by these questions, we conducted a thorough literature review.
 
@@ -25,11 +25,9 @@ Numerous studies have highlighted the dangers of MPs to human health. For instan
 
 Furthermore, a study targeting pregnant women in Hawaii found MP particles in approximately 12% of placenta samples, suggesting that these particles may be transmitted from mother to fetus and could disrupt normal placental functions, affecting fetal development and increasing risks of preterm birth, miscarriage, and fetal malformations. Given these findings, it is evident that addressing the issue of MP pollution is critical. Therefore，our team aims to provide a synthetic biology solution to mitigate MP pollution in agricultural settings.
 
-## Section 2 
+## Background Investigation 
 
-**Background Investigation**
-
-### Exploring Solutions for MP Pollution & Targeting the PET
+**Section 2: Background Investigation--Exploring Solutions for MP Pollution & Targeting the PET**
 
 To gain deeper insights into the impact of MPs on agricultural ecosystems, we shared our ideas with Professor Yongming Luo from the Nanjing Institute of Soil Science, Chinese Academy of Sciences. Since Professor Luo was on a business trip, we had an in-depth communication online. He specializes in soil pollution processes and remediation, with significant achievements in the evolution and regulation of regional soil environmental quality, risk assessment and benchmark standards for soil environments, principles and techniques for the remediation of polluted soils, and the soil processes and food chain transmission of emerging pollutants like MPs.
 
