@@ -669,13 +669,14 @@
     const bottom = $(".bottom");
     const show_tpa_box = $(".box").eq(5); //从这个盒子下面开始变成tpa
     const show_rha_box = $(".box").eq(6); //从这个盒子下面开始变成rha
-    //const rha_opacity = 1; //rha图片完全显示时的透明度（实际完全显示的透明度会略小于该设置值）
+    const rha_opacity = 1; //rha图片完全显示时的透明度（实际完全显示的透明度会略小于该设置值）
     //const difference_width = 5; //rha图片与pet图片的宽度差，单位rem
     const ypos = 0.6; //pet/tpa/rha图片距窗口顶部的距离 占整个窗口的比例
     const pet_hide = 0.1;  //rha图片距展示区域底部百分之多少时完全消失
     const bg_animate_time = 200; //切换底部图片的动画时间（一张图消失/另一张图显示动画的时间）
     const show_animate_time = 400; //切换pet/tpa/rha图片的动画时间
     const pet_hide_animate_time = 200; //到达页面顶部后，pet图片消失的动画时间
+    const is_mobile = /Mobi|Android|iPhone/i.test(navigator.userAgent); //手机不添加除了底部之外的动画
     function show_start() { //显示开始的背景图
       end.fadeOut(bg_animate_time, () => {
         start.fadeIn(bg_animate_time);
@@ -743,12 +744,7 @@
       const rha = $(".rha");
       rha.fadeOut(400, () => rha.remove()); //"fast"是200
     }*/
-    if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) { //是移动设备，就不添加
-      pet.remove();
-      show_end();
-      return;
-    }
-    function update_pet() { //更新pet/rha/背景图的样式和位置
+    function update_pet() { //更新pet/背景图的样式和位置
       const bottom_height = bottom.height();
       const bottom_distance = bottom_height * pet_hide;
       const wrapper_top = wrapper.offset().top;
@@ -779,11 +775,22 @@
         //create_rha(pet);
         const enter_distance = pet.offset().top + pet[0].offsetHeight - (bottom.offset().top + bottom_height * 0.5);
         const pos_percent = enter_distance / (bottom_height * 0.5 - bottom_distance);
-        const new_opacity = opacity * (1 - pos_percent);
+        //const new_opacity = opacity * (1 - pos_percent); //越进入opacity越小
+        const new_opacity = rha_opacity * pos_percent; //越进入opacity越大
         pet.animate({
           opacity: new_opacity,
           top: scroll_distance
         }, 0);
+        return;
+      }
+      if (is_mobile && scroll_distance > wrapper_bottom - bottom_height) { //手机端进入底部图片区域就开始显示
+        show_start();
+        show_rha();
+        return;
+      }
+      if (is_mobile) {
+        show_start();
+        pet.hide();
         return;
       }
       if (scroll_distance + pet[0].offsetHeight > show_rha_distance) { //显示rha
