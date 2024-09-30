@@ -140,11 +140,11 @@ After completing our fermentation tank model, we had an online discussion with Z
 
 **Section 6: On-site Research**
 
-After our hardware design was mostly completed and experiments progressed, our team traveled to rural areas around Wuhan for field research. We conducted a comprehensive survey of the layout of agricultural land and groundwater used for irrigation, which played a crucial role in selecting the best locations for project implementation, improving hardware design, and determining future application possibilities.
+After our hardware design was mostly completed and experiments progressed, our team traveled to rural areas in five provinces, including Hubei and Heilongjiang, to conduct field research. We conducted a comprehensive survey of the layout of agricultural land and groundwater used for irrigation, which played a crucial role in selecting the best locations for project implementation, improving hardware design, and determining future application possibilities.
 
 We then engaged in on-site discussions with farmers working in the fields. They expressed ongoing concerns about waste buried in suburban areas, which not only detracts from the environment's aesthetics but also deteriorates water quality when it enters irrigation sources. However, they felt powerless to find suitable solutions. We introduced our project's purpose, and they were astonished. When asked about the hardware's use, they responded positively, stating that as long as it did not affect their normal farming or increase costs, they would be very willing to address soil MP issues.
 
-Furthermore, we communicated with the village committee in the area. After introducing our project, they also shared their suggestions and opinions. We learned that from the government's perspective, they are most concerned about the efficiency and extent of PET degradation by our product. Although they did raise some questions about the project's potential for widespread and rapid adoption in the short term, they acknowledged the innovative and practical design of our project. Importantly, they expressed confidence that our project would play a significant role in tackling soil MP pollution.
+Furthermore, we communicated with the staff at the grass-roots level in communes and townships in the area. After introducing our project, they also shared their suggestions and opinions. We learned that from the government's perspective, they are most concerned about the efficiency and extent of PET degradation by our product. Although they did raise some questions about the project's potential for widespread and rapid adoption in the short term, they acknowledged the innovative and practical design of our project. Importantly, they expressed confidence that our project would play a significant role in tackling soil MP pollution.
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-12.webp" caption="Fig.14 HUST-China Members exchange in rural areas" %}
 
@@ -160,9 +160,6 @@ The head of the volunteer service team indicated that in recent years, MP pollut
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-13.webp" caption="Fig.15 HUST-China members with the Wuhan Ecological Environment Volunteer Service Team" %}
 
-To gain a more comprehensive understanding of the public's awareness and attitudes toward microplastic pollution, during our earlier Integrated Human Practices and Education activities, we engaged with a variety of groups including students of all ages, teachers, corporate employees, government officials, and company executives. We aimed to assess the understanding and acceptance of genetically modified microorganisms in daily life and provided relevant knowledge. To further expand our sample size, we conducted random street interviews in several provinces including Hubei, Jiangsu, Guangdong, and Gansu. The interviewees included citizens of different ages, professions, and backgrounds, and their responses revealed diverse perspectives and focal points of concern regarding microplastic pollution and genetically modified organisms.
-
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-14.webp" caption="Fig.16 HUST-China members conducting street interviews with the public" %} 
 
 ## Positive Feedback
 
