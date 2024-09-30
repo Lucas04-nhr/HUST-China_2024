@@ -53,11 +53,9 @@ We discussed the future trends in plastic development with the staff. They infor
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-04.webp" caption="Fig. 4 Public Open Day Discussion Session" %}
 
-## Section 3
+## Project Initial Design
 
-**Project Initial Design**
-
-### Pathway Establishment & Component Enhancement
+**Section 3: Project Initial Design--Pathway Establishment & Component Enhancement**
 
 With a sufficient background gathered, we initiated the preliminary design of our project, aiming to provide a solution for the MP issue in soils.
 
@@ -82,11 +80,9 @@ As our project progressed, we contacted Associate Professor Sheng Wang, who has 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-16.webp" caption="Fig.8 HUST-China Members Prof. Sheng Wang" %}
 
 
-## Section 4 
+## project Design Refinement
 
-**Project Design Refinement**
-
-### Product Design and Design Optimisation
+**Section 5: Project Design Refinement--Product Design and Design Optimisation**
 
 After clarifying the significance and feasibility of our project, we visited Professor Divya Ail from Saclay University in Wuhan for further advice. After understanding our design, she suggested not using the adhesion module because it relies on strong hydrophobicity, which may not be specific enough in the complex agricultural environment. If the module adsorbs on bacteria, it could affect their growth by encapsulating them, potentially disrupting the microbial growth balance. After a thorough literature review and consideration, we decided to adopt Professor Ail's suggestion, removing the adhesion module and actively exploring other efficient ways to capture PET.
 
@@ -110,9 +106,9 @@ Detailed designs can be found in the design section.
 
 <center>{% include button.html text="Click to see Design Page" link="../design/" %}</center>
 
-## Section 5
+## Hardware Design
 
-**Hardware Design**
+**Section 5: Hardware Design**
 
 After the research at Hubei Nitrogen Energy Biotechnology Co., we considered adding a suicide switch and designing the system as a microbial agent or microbial fertilizer. It could be applied to the soil to allow the system to autonomously degrade MPs, producing rhamnolipids.
 
@@ -140,9 +136,9 @@ We designed a fermentation tank as the main hardware facility. The overall idea 
 
 After completing our fermentation tank model, we had an online discussion with Zhendian (Suzhou) Medical Technology Co. regarding our hardware model. They expressed approval of our hardware design and suggested we continue to optimize the function of the adsorption module.
 
-## Section 6
+## On-site Research
 
-**On-site Research**
+**Section 6: On-site Research**
 
 After our hardware design was mostly completed and experiments progressed, our team traveled to rural areas around Wuhan for field research. We conducted a comprehensive survey of the layout of agricultural land and groundwater used for irrigation, which played a crucial role in selecting the best locations for project implementation, improving hardware design, and determining future application possibilities.
 
@@ -152,9 +148,9 @@ Furthermore, we communicated with the village committee in the area. After intro
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-12.webp" caption="Fig.14 HUST-China Members exchange in rural areas" %}
 
-## Section 7 
+## Public Evaluation
 
-**Public Evaluation**
+**Section 7: Public Evaluation**
 
 To gain a deeper understanding of the progress, social awareness, and future prospects in the field of MP pollution remediation, we visited the Wuhan Ecological Environment Volunteer Service Team to better understand bioethics and comprehensively evaluate the prospects of our project in the remediation of MPs in agricultural fields. 
 
@@ -168,9 +164,9 @@ To gain a more comprehensive understanding of the public's awareness and attitud
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-14.webp" caption="Fig.16 HUST-China members conducting street interviews with the public" %} 
 
-## Section 8 
+## Positive Feedback
 
-**Positive Feedback**
+**Section 8: Positive Feedback**
 
 Our project is a soil purification system that transforms waste into fertilizer, featuring low costs and no pollution while degrading soil microplastics and increasing crop yields. After completing our project, we submitted a brief project report to Researcher Han Huawen, expressing our gratitude for her valuable suggestions, which significantly contributed to the refinement and improvement of our project. 
 
@@ -178,9 +174,9 @@ Throughout the project development process, Guangzhou Jinfa Technology Co., Ltd.
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-15.webp" caption="Fig.17 HUST-China members receiving feedback from Guangzhou Jinfa Technology Co., Ltd." %}
 
-## Section 9 
+## Integrating Human Practice
 
-**Leading Education/Integrating Human Practice with Synthetic Biology Education and Communication**
+**Section 9: Leading Education/Integrating Human Practice with Synthetic Biology Education and Communication**
 
 During interactions with other students at the public open day of Guangzhou Jinfa Technology Co., Ltd., we found that students from other majors were not well-informed about synthetic biology and had certain misconceptions about genetically modified organisms. Therefore, we decided to use interesting themes to educate university students about synthetic biology in a way that integrates it with other cultures. 
 
