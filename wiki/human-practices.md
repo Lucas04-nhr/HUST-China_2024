@@ -178,7 +178,7 @@ Throughout the project development process, Guangzhou Jinfa Technology Co., Ltd.
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-15.webp" caption="Fig.17 HUST-China members receiving feedback from Guangzhou Jinfa Technology Co., Ltd." %}
 
-## Integrating Human Practice
+## Integrating Human Practice with Synthetic Biology Education and Communication
 
 **Section 9: Leading Education/Integrating Human Practice with Synthetic Biology Education and Communication**
 
