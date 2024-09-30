@@ -497,6 +497,30 @@
     let left_imgs = $(".box .left .img, .box .left .text");
     let right_imgs = $(".box .right .img, .box .right .text");
     const noslides = $(".noslide .img, .noslide .text");
+    if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) { //手机不添加动画
+      imgs.css("opacity", 0);
+      if (!$(".box").eq(1).children().eq(0).hasClass("right")) { //调换偶数位置的box
+        $(".box").each((index, box) => {
+          if (index % 2 === 0) return;
+          box = $(box);
+          const left = box.children(".left");
+          const right = box.children(".right");
+          right.insertBefore(left);
+        });
+        right_imgs = $(".box:odd .left .img, .box:even .right .img, .box:odd .left .text, .box:even .right .text");
+        left_imgs = $(".box:even .left .img, .box:odd .right .img, .box:even .left .text, .box:odd .right .text");
+        imgs = $(".box .left .img, .box .left .text, .box .right .img, .box .right .text");
+      }
+      left_imgs.css("margin", "0 auto");
+      right_imgs.css("margin", "0 auto");
+      $(".box").eq(1).children(".left").css("margin-top", "4rem");
+      $(".box").eq(2).children(".right").css("margin-top", "3rem");
+      $(".box").eq(3).css("margin-top", "3rem");
+      $(".box").eq(4).css("margin-top", "8rem");
+      imgs.css("opacity", 1);
+      noslides.css("opacity", 1);
+      return;
+    }
     const imgs_position_start = new Array(imgs.length);
     const imgs_position = new Array(imgs.length);
     function clear_imgs_style() { //清除imgs的css
