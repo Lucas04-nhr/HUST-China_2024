@@ -140,7 +140,7 @@ After completing our fermentation tank model, we had an online discussion with Z
 
 **Section 6: On-site Research**
 
-After our hardware design was mostly completed and experiments progressed, our team traveled to rural areas around Wuhan for field research. We conducted a comprehensive survey of the layout of agricultural land and groundwater used for irrigation, which played a crucial role in selecting the best locations for project implementation, improving hardware design, and determining future application possibilities.
+After our hardware design was mostly completed and experiments progressed, our team traveled to rural areas in five provinces, including Hubei and Heilongjiang, to conduct field research. We conducted a comprehensive survey of the layout of agricultural land and groundwater used for irrigation, which played a crucial role in selecting the best locations for project implementation, improving hardware design, and determining future application possibilities.
 
 We then engaged in on-site discussions with farmers working in the fields. They expressed ongoing concerns about waste buried in suburban areas, which not only detracts from the environment's aesthetics but also deteriorates water quality when it enters irrigation sources. However, they felt powerless to find suitable solutions. We introduced our project's purpose, and they were astonished. When asked about the hardware's use, they responded positively, stating that as long as it did not affect their normal farming or increase costs, they would be very willing to address soil MP issues.
 
