@@ -9,7 +9,7 @@ excerpt: "Welcome to iGEM HUST-China 2024 wiki! It's still under construction. P
 ---
 
 ## Topic Selection 
-**Topic Selection: Aware Microplastic Pollution in Agriculture**
+**Section 1: Topic Selection--Aware Microplastic Pollution in Agriculture**
 
 During the summer of 2023, while participating in our university's "Triple Services Activity into Rural Areas" social practice activities, we accidentally observed the alarming presence of black and transparent plastic bag waste piled up beside rice fields. This litter starkly contrasted with the beautiful natural environment and was in direct contact with the food destined for local households. Such a scene raised our concerns about whether plastic waste could contaminate and harm farmland. Motivated by these questions, we conducted a thorough literature review.
 
