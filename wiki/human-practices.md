@@ -8,6 +8,13 @@ feature_image: "https://static.igem.wiki/teams/5175/resources/background/bg-hp.j
 excerpt: "Welcome to iGEM HUST-China 2024 wiki! It's still under construction. Please stay tuned for more information."
 ---
 
+## Overview
+
+An excellent humanistic practice is one of the pillars of a responsible and beneficial iGEM project for the world. Through humanistic practices, we hope that our project will be able to solve real-life problems in a more practical way and understand how society perceives our project.
+
+Our project aims to use engineered E.coli and engineered P.putida to degrade microplastics in agricultural fields in order to reduce the harmful effects of microplastics on agricultural fields and humans. To understand the extent of the microplastic problem, we integrated academic research and conducted field studies; we discussed our project with microplastic degradation experts and companies involved in environmental protection to gather their insights into finding more realistic, efficient and convenient solutions to microplastics; and we discussed bioethics with social organizations and gathered grassroots government views on biotechnology. We also discussed bioethics with social organizations and collected grassroots governments' views on biotechnology. By integrating a wide range of perspectives, from the people to the corporate government, we hope to provide a variety of suggestions and views that may be needed to inspire other iGEMers in all aspects of the project.
+
+
 ## Topic Selection 
 **Section 1: Topic Selection--Aware Microplastic Pollution in Agriculture**
 
@@ -171,7 +178,7 @@ Throughout the project development process, Guangzhou Jinfa Technology Co., Ltd.
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-15.webp" caption="Fig.17 HUST-China members receiving feedback from Guangzhou Jinfa Technology Co., Ltd." %}
 
-## Integrating Human Practice
+## Integrating Human Practice with Synthetic Biology Education and Communication
 
 **Section 9: Leading Education/Integrating Human Practice with Synthetic Biology Education and Communication**
 
