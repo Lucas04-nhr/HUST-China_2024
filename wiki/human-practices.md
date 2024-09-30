@@ -25,11 +25,9 @@ Numerous studies have highlighted the dangers of MPs to human health. For instan
 
 Furthermore, a study targeting pregnant women in Hawaii found MP particles in approximately 12% of placenta samples, suggesting that these particles may be transmitted from mother to fetus and could disrupt normal placental functions, affecting fetal development and increasing risks of preterm birth, miscarriage, and fetal malformations. Given these findings, it is evident that addressing the issue of MP pollution is critical. Therefore，our team aims to provide a synthetic biology solution to mitigate MP pollution in agricultural settings.
 
-## Section 2 
+## Background Investigation 
 
-**Background Investigation**
-
-### Exploring Solutions for MP Pollution & Targeting the PET
+**Section 2: Background Investigation--Exploring Solutions for MP Pollution & Targeting the PET**
 
 To gain deeper insights into the impact of MPs on agricultural ecosystems, we shared our ideas with Professor Yongming Luo from the Nanjing Institute of Soil Science, Chinese Academy of Sciences. Since Professor Luo was on a business trip, we had an in-depth communication online. He specializes in soil pollution processes and remediation, with significant achievements in the evolution and regulation of regional soil environmental quality, risk assessment and benchmark standards for soil environments, principles and techniques for the remediation of polluted soils, and the soil processes and food chain transmission of emerging pollutants like MPs.
 
