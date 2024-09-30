@@ -204,8 +204,7 @@
       feature.css("margin-top", `${nav_height}px`);
       aside.css("cssText", `top: ${nav_height}px !important`);
     }
-    update_feature();
-    //$(window).scrollTop(0);
+    window.addEventListener('load', () => update_feature());
     $(window).on("resize", () => update_feature());
   });
 </script>

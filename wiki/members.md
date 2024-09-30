@@ -208,7 +208,7 @@ excerpt: "Meet the team behind the project."
 
 {% include members-people.html
    name="Tianhao Wang"
-   description="What hurts more, the pain of hard work, or the pain of regret? If you are still looking for that one person who will change your life, take a look in the mirror."
+   description="Hello world!"
    image="https://static.igem.wiki/teams/5175/resources/members/tianhao-wang.webp"
    image_position="right" %}
 
