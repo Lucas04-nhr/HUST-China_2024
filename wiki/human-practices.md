@@ -25,7 +25,7 @@ Numerous studies have highlighted the dangers of MPs to human health. For instan
 
 Furthermore, a study targeting pregnant women in Hawaii found MP particles in approximately 12% of placenta samples, suggesting that these particles may be transmitted from mother to fetus and could disrupt normal placental functions, affecting fetal development and increasing risks of preterm birth, miscarriage, and fetal malformations. Given these findings, it is evident that addressing the issue of MP pollution is critical. Therefore，our team aims to provide a synthetic biology solution to mitigate MP pollution in agricultural settings.
 
-## Section2 
+## Section 2 
 
 **Background Investigation**
 
@@ -81,6 +81,9 @@ Professor Yan Yunjun has high attainments in multi-enzyme catalysis. After learn
 
 As our project progressed, we contacted Associate Professor Sheng Wang, who has been instrumental in the rational molecular design of structures and mechanisms. He confirmed our idea of building a two-enzyme system and suggested that we screen suitable linkers to optimize the two-enzyme system and improve the transport efficiency of intermediate products to enhance catalytic activity. After careful review of the literature, we decided to adopt Associate Professor Wang Sheng's suggestion. After consulting relevant data and screening part of linker for modeling, we used flexible linker G4S to connect PETase and MHETase together to construct a PET-MHET enzyme dual-enzyme system model, and conducted molecular docking experiments to simulate the efficiency of the dual-enzyme system.
 
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-16.webp" caption="Fig.8 HUST-China Members Prof. Sheng Wang" %}
+
+
 ## Section 4 
 
 **Project Design Refinement**
@@ -89,17 +92,19 @@ As our project progressed, we contacted Associate Professor Sheng Wang, who has 
 
 After clarifying the significance and feasibility of our project, we visited Professor Divya Ail from Saclay University in Wuhan for further advice. After understanding our design, she suggested not using the adhesion module because it relies on strong hydrophobicity, which may not be specific enough in the complex agricultural environment. If the module adsorbs on bacteria, it could affect their growth by encapsulating them, potentially disrupting the microbial growth balance. After a thorough literature review and consideration, we decided to adopt Professor Ail's suggestion, removing the adhesion module and actively exploring other efficient ways to capture PET.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-08.webp" caption="Fig.8 HUST-China Members with Prof. Divya Ail" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-08.webp" caption="Fig.9 HUST-China Members with Prof. Divya Ail" %}
 
 In the same month, we visited Hubei Nitrogen Energy Biotechnology Co., a leading soil improvement company in China, pioneering in biological nitrogen fixation, emission reduction, and efficiency enhancement. They have significant expertise in the post-application of agricultural products. We sought to learn from them about product application methods. During our discussion about the applications of PET degradation products, they suggested we further explore high-value degradation products from Pseudomonas putida that can be directly utilized for plant growth, making product application more flexible and straightforward. Following this, we identified β-ketoadipic acid (β-KA) and rhamnolipids as targets by researching the metabolic pathways of TPA in Pseudomonas putida KT2440.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-09.webp" caption="Fig.9 HUST-China Members with Hubei Nitrogen Energy Biotechnology Co." %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-09.webp" caption="Fig.10 HUST-China Members with Hubei Nitrogen Energy Biotechnology Co." %}
 
 We were pleasantly surprised to find that rhamnolipids have numerous benefits in agricultural production. They can act as biosurfactants, enhancing the adhesion of *E. coli* BL21 under surfactant conditions, thereby improving PET capture and degradation capabilities. Additionally, when added to fertilizers, rhamnolipids can enhance wetting, spreading, and penetration, increasing soil moisture retention and promoting plant growth, ultimately improving nutrient absorption efficiency. More importantly, rhamnolipids exhibit broad-spectrum effects against pathogens and have shown excellent control of certain fungal diseases, with widespread application in foreign agricultural production for crop disease prevention. Moreover, rhamnolipids possess chelation functions for trace and metal elements, helping to improve saline soil and reduce nutrient loss, ensuring fertilizer persistence, and alleviating soil compaction and heavy metal contamination. However, current fermentation production primarily relies on the pathogenic bacterium Pseudomonas aeruginosa, which poses certain safety risks.
 
 Ultimately, we abandoned the PHA synthesis pathway originally constructed in Pseudomonas putida KT2440, deleting the phaC1 gene; we chose rhamnolipid as our target product. To increase the carbon flux toward rhamnolipid synthesis during metabolism, we overexpressed phaZ to degrade PHA synthesized from β-hydroxyacyl-ACP, enhancing rhamnolipid synthesis. We also introduced the rhlAB genes into Pseudomonas putida to enable the synthesis of mono-rhamnolipids, replacing the original adhesion module function and enhancing PET capture capabilities while supplying plant growth and soil improvement needs. We re-established contact with Hubei Nitrogen Energy Biotechnology Co., and they expressed surprise at our findings.
 
 Next, we consulted Prof. Ning Kang from Huazhong University of Science and Technology regarding rhamnolipid production in Pseudomonas putida. Professor Ning focuses on biobig data and microbial community exploration and its applications in health and environmental fields. He suggested we utilize dry experiments to simulate metabolic flow, predict engineered bacteria's growth behavior, TPA absorption rates, and rhamnolipid product yields. By refining the genome-scale metabolic model of engineered Pseudomonas putida, we could assist future teams in further metabolic engineering of Pseudomonas putida while advancing the prospect of utilizing it for plastic degradation.
+
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-17.webp" caption="Fig.11 HUST-China Members Prof. Kang Ning" %}
 
 In July, we met again with Professor Divya in Paris to report on our project progress and received further feedback. 
 
@@ -119,7 +124,7 @@ The market scale of China's microbial agent industry has been growing year by ye
 
 For future application scenarios, please refer to the Proposed Implementation section.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-10.webp" caption="Fig.10 HUST-China Member in the National Engineering Research Center for Biological Pesticides" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-10.webp" caption="Fig.12 HUST-China Member in the National Engineering Research Center for Biological Pesticides" %}
 
 <center>{% include button.html text="Click to see Proposed Implementation Page" link="../proposed-implementation/" %}</center>
 
@@ -127,7 +132,7 @@ After shifting the application direction of our product, we communicated with Re
 
 After completing the main design of the hardware, we had an online feedback session with Researcher Han Huawen, showcasing our hardware ideas. She expressed approval and encouragement regarding our progress.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-11.webp" caption="Fig.11 Online meeting with Researcher Huawen Han" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-11.webp" caption="Fig.13 Online meeting with Researcher Huawen Han" %}
 
  
 
@@ -147,7 +152,7 @@ We then engaged in on-site discussions with farmers working in the fields. They 
 
 Furthermore, we communicated with the village committee in the area. After introducing our project, they also shared their suggestions and opinions. We learned that from the government's perspective, they are most concerned about the efficiency and extent of PET degradation by our product. Although they did raise some questions about the project's potential for widespread and rapid adoption in the short term, they acknowledged the innovative and practical design of our project. Importantly, they expressed confidence that our project would play a significant role in tackling soil MP pollution.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-12.webp" caption="Fig.12 HUST-China Members exchange in rural areas" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-12.webp" caption="Fig.14 HUST-China Members exchange in rural areas" %}
 
 ## Section 7 
 
@@ -159,11 +164,11 @@ The head of the volunteer service team indicated that in recent years, MP pollut
 
  During our research and interviews with the Wuhan Ecological Environment Volunteer Service Team, we specifically introduced the potential applications of synthetic biology in environmental remediation and emphasized the importance of addressing bioethical issues in this field. The team leader indicated that they believe that with advancements in technology and improvements in policy, the issue of microplastic pollution in agricultural fields is likely to be effectively controlled. In particular, the rapid development of synthetic biology provides new ideas and methods for environmental governance and is expected to play an important role in the future. However, they also stressed the necessity of fully considering bioethical issues in the process of promoting remediation efforts, ensuring the reasonable application of technology and the sustainable development of the ecological environment. Additionally, they recommended that we carefully review guidelines such as the "Environmental Safety Assessment Guidelines for Microbial Agents in Environmental Protection" to ensure the safety and controllability of the technology.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-13.webp" caption="Fig.13 HUST-China members with the Wuhan Ecological Environment Volunteer Service Team" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-13.webp" caption="Fig.15 HUST-China members with the Wuhan Ecological Environment Volunteer Service Team" %}
 
 To gain a more comprehensive understanding of the public's awareness and attitudes toward microplastic pollution, during our earlier Integrated Human Practices and Education activities, we engaged with a variety of groups including students of all ages, teachers, corporate employees, government officials, and company executives. We aimed to assess the understanding and acceptance of genetically modified microorganisms in daily life and provided relevant knowledge. To further expand our sample size, we conducted random street interviews in several provinces including Hubei, Jiangsu, Guangdong, and Gansu. The interviewees included citizens of different ages, professions, and backgrounds, and their responses revealed diverse perspectives and focal points of concern regarding microplastic pollution and genetically modified organisms.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-14.webp" caption="Fig.14 HUST-China members conducting street interviews with the public" %} 
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-14.webp" caption="Fig.16 HUST-China members conducting street interviews with the public" %} 
 
 ## Section 8 
 
@@ -173,7 +178,7 @@ Our project is a soil purification system that transforms waste into fertilizer,
 
 Throughout the project development process, Guangzhou Jinfa Technology Co., Ltd. expressed great curiosity about our ideas and followed our project progress. After completion, we reached out to them again to share our final hardware design. They emphasized the importance of achieving high PET concentration and low costs in future developments. They expressed strong confidence in our project and eagerly anticipated its performance in potential industrial applications.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-15.webp" caption="Fig.15 HUST-China members receiving feedback from Guangzhou Jinfa Technology Co., Ltd." %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-15.webp" caption="Fig.17 HUST-China members receiving feedback from Guangzhou Jinfa Technology Co., Ltd." %}
 
 ## Section 9 
 
