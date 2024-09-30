@@ -160,9 +160,6 @@ The head of the volunteer service team indicated that in recent years, MP pollut
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-13.webp" caption="Fig.15 HUST-China members with the Wuhan Ecological Environment Volunteer Service Team" %}
 
-To gain a more comprehensive understanding of the public's awareness and attitudes toward microplastic pollution, during our earlier Integrated Human Practices and Education activities, we engaged with a variety of groups including students of all ages, teachers, corporate employees, government officials, and company executives. We aimed to assess the understanding and acceptance of genetically modified microorganisms in daily life and provided relevant knowledge. To further expand our sample size, we conducted random street interviews in several provinces including Hubei, Jiangsu, Guangdong, and Gansu. The interviewees included citizens of different ages, professions, and backgrounds, and their responses revealed diverse perspectives and focal points of concern regarding microplastic pollution and genetically modified organisms.
-
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-14.webp" caption="Fig.16 HUST-China members conducting street interviews with the public" %} 
 
 ## Positive Feedback
 
