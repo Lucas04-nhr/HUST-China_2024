@@ -219,14 +219,14 @@ Add 800 $\mathrm{\mu L}$ 50% glycerol aqueous solution to the seed preservation 
 
 # Expression Validation
 
-### Preparation of Pseudomonas putida KT2440 competent cells
+### Preparation of *Pseudomonas putida* KT2440 competent cells
 
 1. Put *P. putida* KT2440 into 3 mL LB liquid culture medium with chloramphenicol resistance and inoculate at 30°C for overnight cultivation shaking at 220 rpm.
 2. Take 1 mL of overnight cultured bacterial solution and inoculate it into 50 mL of LB liquid culture medium with chloramphenicol resistance at 30°C, shaking at 220 rpm, and cultivate until the $\mathrm{OD_{600}}$ reaches approximately 0.6.
 3. Centrifuge at 5000 rpm for 10 min. Discard the supernatant and resuspend the bacteria in 5 mL of buffer on ice.
 4. Repeat step 3) for 2-3 times and suspend the plaque with 100 $\mathrm{\mu L}$ of buffer solution. Transfer the resuspended cells into 1.5 mL sterile centrifuge tubes and store them in the -20°C for future use.
 
-### Electroporation for Pseudomonas putida KT2440
+### Electroporation for *Pseudomonas putida* KT2440
 
 1. Set the electric field strength of the electroporator to 12 kV/cm and the pulse length to 2.5 ms.
 2. Add 2-5 $\mathrm{\mu L}$ (50 ng) of plasmid to 100 $\mathrm{\mu L}$ of bacterial suspension on ice. Gently blow and stir and place the tube on the ice. 
