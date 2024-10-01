@@ -51,6 +51,21 @@ In terms of regulations and policies, according to Article 5(1) of the Agreement
 
 ## Future design
 
+**1. Industrialization blueprint**
+In order to meet the application requirements of our project, we have carefully designed corresponding hardware components, including a microplastic enrichment device, a fermentation tank that achieves metabolic coupling between odor producing *P.putida* KT2440 and *E.coli* BL21, and various "building block" modules. However, in actual production and daily life scenarios, the equipment we currently design is relatively simple and insufficient to meet current industrial needs. Therefore, we hereby propose our comprehensive industrialization blueprint.
+
+We envision establishing a microplastic pollution treatment center near the agricultural water source based on our project technology. By placing a microplastic enrichment device in the direction of water flow to "cut off" the water flow, the enrichment of microplastics is ensured, and different types of microplastics are enriched by adjusting different voltage ranges.
+
+The core area of the center will serve as a designated area for the metabolic coupling fermentation tanks of *P.putida* KT2440 and *E.coli* BL21, and multiple reactors will be used to ensure optimal growth conditions for each strain, including flow control and temperature control. The center will also be equipped with storage systems around the fermentation tanks, and the rhamnolipids produced by these bacteria will be collected for agricultural irrigation. By equipping different irrigation modules, sprinkler or drip irrigation can be adapted to different application scenarios in agricultural regions.
+
+**2. Vision of the future**
+The use of fermentation tanks for the enrichment and treatment of microplastics in water is not the optimal scenario for our project. We hope to directly use bacterial agents to treat microplastics in situ in soil, which will greatly reduce costs and improve the feasibility of application.
+
+We are considering replacing the *E.coli* used in the project with the soil native bacterium, *Pseudomonas putida*. This soil native bacterium has stronger competitiveness and is more likely to survive when placed in the soil environment after modification, and is more in line with general requirements for microbial formulation development. After replacing the chassis bacteria, it is necessary to increase the expression of the PETase MHETase dual enzyme system by adding strong promoters, overexpression, and other methods to improve PET degradation efficiency. This will result in the production of microbial preparations of engineering odorous pseudomonas, which will greatly facilitate the treatment of agricultural microplastic pollution and the development of green agriculture as a portable and inexpensive product.
+
+In addition, our '*E.coli* BL21- *P.putida* KT2440' system can also be used for the recycling and treatment of PET plastics, considering the construction of fermentation tanks for PET degradation and utilization in garbage recycling stations or landfills. Due to the numerous utilization values of fermented rhamnolipids in industry, agriculture, and other fields, as well as their high economic value after further collection, this method has commercial profit margins and broad prospects, and can effectively solve the problem of plastic waste recycling.
+
+
 ## Challenges
 
 Our project faces the following challenges：
