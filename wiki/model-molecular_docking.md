@@ -13,7 +13,7 @@ excerpt: "The model is a means of assisting the overall completion and implement
 {% include figure.html 
   image="https://static.igem.wiki/teams/5175/resources/model/molecular-docking-intro.gif" 
   alt="Molecular Docking" 
-  caption="Figure 1. Introduction to Molecular Docking"
+  caption="Fig 1. Introduction to Molecular Docking"
 %}
 
 Molecular docking refers to the computational simulation of interactions between small molecules and target molecules to predict their binding modes and sites. In our project design, we aimed to identify the most efficient PETase-MHETase dual-enzyme system for PET degradation. We estimated the types and lengths of linkers, along with the order of PETase and MHETase in the peptide sequence may influence degradation efficiency. Therefore, we employed molecular docking to explore how these factors affect the binding affinity of PETase within the dual-enzyme system. Ultimately, we identified the most effective combination, PETase-ggggs(15)-MHETase, for subsequent project design and wetlab studies.
@@ -53,7 +53,7 @@ By varying the types of linkers, linker lengths, and the orders of PETase and MH
 {% include figure.html 
   image="https://static.igem.wiki/teams/5175/resources/model/molecular-docking-01.png" 
   alt="Molecular Docking" 
-  caption="Figure 2. Part of the results of molecular docking<br>Note:The conformation of PET after docking and the hydrogen bonds formed are shown, with the red portion representing 4PET and the blue portion indicating the amino acid residues that form hydrogen bonds with PET. In the protein names, \"f\" denotes FAST-PETase, while \"eaaak\" and others represent different types of linkers, with the length of the linker (number of amino acids) indicated in parentheses, and \"m\" representing MHETase." 
+  caption="Fig 2. Part of the results of molecular docking<br>Note:The conformation of PET after docking and the hydrogen bonds formed are shown, with the red portion representing 4PET and the blue portion indicating the amino acid residues that form hydrogen bonds with PET. In the protein names, \"f\" denotes FAST-PETase, while \"eaaak\" and others represent different types of linkers, with the length of the linker (number of amino acids) indicated in parentheses, and \"m\" representing MHETase." 
 %}
 
 From the docking results, it can be observed that some dual-enzyme systems using rigid linkers exhibited good affinity of PETase for PET. However, considering that flexible linkers provide better flexibility, allowing the connected enzymes to rotate and move freely to adapt to dynamic interactions, we prefered to choose flexible linkers. Although the PETase-gsgsg(35)-MHETase combination exhibited the highest affinity among flexible linkers, the docking results indicate that PET interacts with both enzymes simultaneously. Therefore, after comprehensive consideration, we selected the PETase-ggggs(15)-MHETase combination, which showed good affinity and reasonable hydrogen bonds in the docking results (see Figure 3).
@@ -61,7 +61,7 @@ From the docking results, it can be observed that some dual-enzyme systems using
 {% include figure.html 
   image="https://static.igem.wiki/teams/5175/resources/model/molecular-docking-02.png" 
   alt="Molecular Docking" 
-  caption="Figure 3. Docking results of PETase-ggggs(15)-MHETase<br>Note: The red portion represents 4PET, the green portion represents PETase, the pink portion is the 15 amino acid linker of type ggggs, and the yellow portion represents MHETase."
+  caption="Fig 3. Docking results of PETase-ggggs(15)-MHETase<br>Note: The red portion represents 4PET, the green portion represents PETase, the pink portion is the 15 amino acid linker of type ggggs, and the yellow portion represents MHETase."
 %}
 
 ### Limitation

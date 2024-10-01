@@ -20,7 +20,7 @@ Our project aims to use engineered E.coli and engineered P.putida to degrade mic
 
 During the summer of 2023, while participating in our university's "Triple Services Activity into Rural Areas" social practice activities, we accidentally observed the alarming presence of black and transparent plastic bag waste piled up beside rice fields. This litter starkly contrasted with the beautiful natural environment and was in direct contact with the food destined for local households. Such a scene raised our concerns about whether plastic waste could contaminate and harm farmland. Motivated by these questions, we conducted a thorough literature review.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-01.webp" caption="Fig.1 Plastic Waste in Agricultural Fields" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-01.webp" caption="Fig 1. Plastic Waste in Agricultural Fields" %}
 
 According to the Food and Agriculture Organization (FAO),  the agricultural industry chain consumes 12.5 million tons of plastic products every year, and the consumption of food packaging is as high as 37.3 million tons. Experts predict that the increased demand for greenhouse films, mulch films, and silage films will lead to a 50% or greater increase in plastic usage within the agricultural sector in the coming years. In Asia, around 30 million acres of land require 1.45 million tons of mulch plastic film each year, representing 75% of global plastic film consumption. And what is worse, the degradation of these materials in soil is exceedingly poor; for instance, polyethylene films may take 300 to 400 years to decompose completely in soil. In China, approximately 200,000 to 300,000 tons of residual film remain in agricultural fields each year, leading to high concentrations of microplastics(MP) accumulating in the soil.
 
@@ -42,7 +42,7 @@ During the conversation, Professor Luo introduced the current research status of
 
 Additionally, Professor Luo outlined the current methods for MP remediation, which can be categorized into three main approaches: physical separation, chemical degradation, and biological degradation. Physical separation involves techniques such as sieving and filtration to isolate MPs from other materials; however, these methods exhibit low efficiency and struggle to remove nanoparticles. Chemical degradation utilizes reagents under specific conditions to further break down MPs into smaller molecules, but the high cost of reagents and potential secondary pollution from improper use pose significant drawbacks. Biological degradation employs microorganisms to decompose MPs into gases, water, and non-toxic substances, making this method particularly applicable for MP remediation in soil and water. Although biological degradation has a lower environmental impact during the decomposition process, the degradation rate is relatively slow and significantly influenced by environmental factors, making precise control challenging. We considered whether we could immobilize enzymes to enhance transport efficiency and convert degradation products into high-value products, rather than solely focusing on MP degradation, thereby achieving a waste-to-resource effect. And in a subsequent literature review, we realised that enzymes cannot remain activity for long in soil or natural waters, and that the use of enzymes to remove microplastics from soil would incur high costs, so we considered applying our idea in the form of a bacteria agent for the treatment of microplastics in soil or water.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-02.webp" caption="Fig.2 Online Meeting with Professor Yongming Luo" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-02.webp" caption="Fig 2. Online Meeting with Professor Yongming Luo" %}
 
 To better understand the methods for plastic waste management and the challenges faced during the process, we visited the Wuhan Green Power Renewable Energy Co., Ltd., the garbage incineration plant in Qingshan District, Wuhan.
 
@@ -50,7 +50,7 @@ During the visit, we observed the waste treatment design of the facility and, th
 
 In our discussions with professionals from the company, we specifically inquired about the composition of MPs in the ash. We learned that nine types of MPs were identified, primarily including polyethylene (PE), polyethylene terephthalate (PET), polystyrene (PS), and polypropylene (PP). Among these, PE constituted the largest proportion, accounting for about 30% of the total; PET followed at approximately 25%. These plastics typically originate from everyday consumer products and packaging, with proportions varying based on regional consumption habits and waste management practices. We also learned that these non-biodegradable ash materials are uniformly landfilled in the suburbs. We speculated that the MPs within this ash could migrate with groundwater, directly influencing the MP composition in agricultural ecosystems. Furthermore, we considered that plastic films from industrial pipelines near the suburbs might also generate MPs through physical erosion, leading to contamination in leachate that could affect the quality of irrigation water. After this exchange, we decided to focus on the more prevalent PE and PET.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-03.webp" caption="Fig. 3 HUST-China Team Members Visit Plastic Waste Recycling Facility" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-03.webp" caption="Fig 3. HUST-China Team Members Visit Plastic Waste Recycling Facility" %}
 
 On another front, we visited Guangzhou Kingfa Technology Co., Ltd. during an open day to inquire about the market for plastics and the development of alternatives. As a leading enterprise in the field of new plastic manufacturing, their R&D encompasses nine categories, including modified plastics, environmentally friendly high-performance recycled plastics, and fully biodegradable plastics. Kinfa Technology has conducted extensive research on the composition of MPs and the utilization of plastic materials, providing them with a comprehensive understanding and judgment on the development situation and trend of plastics.
 
@@ -58,7 +58,7 @@ We presented our focus on the degradation of PET and PE to the company and inqui
 
 We discussed the future trends in plastic development with the staff. They informed us that the production technologies for new plastics are not yet fully mature and are more expensive; for instance, the unit cost of Poly (butyleneadipate-co-terephthalate)PBAT is 16% higher than that of PE, while Polylactic Acid(PLA)'s unit cost is approximately 50% higher than that of PET. Meanwhile, PET remains a significant component in the MPs used in the production of both existing and new plastics. After all these considerations, we decided to target PET, which is used more and has a smaller alternative possibility.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-04.webp" caption="Fig. 4 Public Open Day Discussion Session" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-04.webp" caption="Fig 4. Public Open Day Discussion Session" %}
 
 ## Project Initial Design
 
@@ -70,21 +70,21 @@ With a sufficient background gathered, we initiated the preliminary design of ou
 
 We focused on various soil microorganisms mentioned in the literature and screened for structural analogues that are similar to TPA in metabolic pathways and can be transformed through a short reaction chain，also without the toxic effects on plants. The most promising candidate was Pseudomonas putida. After discussing the project design and application background with Professor Abdelghani Sghir in France, he endorsed our decision to use Pseudomonas putida as the chassis bacteria.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-05.webp" caption="Fig.5 HUST-China Members with Prof. Abdelghani Sghir in France" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-05.webp" caption="Fig 5. HUST-China Members with Prof. Abdelghani Sghir in France" %}
 
 Ultimately, we selected *E. coli* BL21 and Pseudomonas putida KT2440 as our chassises. Through genetic engineering, we aim for *E. coli* BL21 to synthesize and secrete PETase to decompose PET and synthesize MHETase to further break down MHET produced from incomplete PET degradation, ensuring all products convert to EG and TPA, so we plan to construct a FAST-PETase~MHETase dual-enzyme system. Additionally, we will overexpress the fucO and aldA genes in *E. coli* BL21, channeling all EG into glycolic acid (GA). GA will then be converted into malate and acetyl-CoA via the ethanolamine pathway, subsequently entering the tricarboxylic acid cycle for metabolism by *E. coli* BL21. For TPA, we plan to introduce the tph gene cluster (tphA2A3A1, tphB) and tpaK into Pseudomonas putida KT2440. The TPA transporter protein encoded by tpaK will transport TPA into the cell, where it will be converted into the key metabolic intermediate Protocatechuic acid (PCA) under the action of the tph gene cluster. We will also introduce the PhaC1 gene to transform the metabolic products into polyhydroxyalkanoates (PHA). To strengthen our design, we discussed methods for efficiently adsorbing PET from the soil with Professor Xiaoman Jie, who suggested integrating an adhesion module into our design.
 
 After a thorough literature review and consideration, we decided to incorporate her recommendations into our project. We consider adding an adhesion module to the exoenzyme protein system to facilitate PET adsorption, or alternatively, directly using the enzyme system as membrane protein to adsorb PET. We finally selected an adhesion module that enhances the adhesion of *E. coli* BL21 to PET in the presence of TPA by expressing cp52k. When the plastic concentration is high, the water-soluble nature of PETase makes it difficult to adsorb to the PET surface. As a hydrophobic protein, cp52k can spontaneously polymerize to produce hydrophobic polymers and construct hydrophobic layers on the surface of biofilms. We reported the design to Ms. Xie and she was positive about our idea.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-06.webp" caption="Fig.6 HUST-China Members With Teacher Xiaoman Xie" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-06.webp" caption="Fig 6. HUST-China Members With Teacher Xiaoman Xie" %}
 
 Professor Yan Yunjun has high attainments in multi-enzyme catalysis. After learning about our project, he first confirmed our project design, but considering the application scenario and environmental conditions of our project, he suggested that we abandon PHA as the final product and consider fertilizers such as urea as additional products, so that our engineered microorganisms are no longer simply alleviating soil microplastic pollution, it's about reducing pollution while restoring soil and promoting plant growth. However, after reviewing the literature, we found that it was very difficult to construct the pathway between TPA, EG and urea in microorganisms, so we gave up urea, but retained the idea of seeking engineered microorganisms to repair soil quality while reducing pollution provided by teacher Yan, and continued to search for additional products according to this idea.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-07.webp" caption="Fig.7 HUST-China Members Prof. Yunjun Yan" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-07.webp" caption="Fig 7. HUST-China Members Prof. Yunjun Yan" %}
 
 As our project progressed, we contacted Associate Professor Sheng Wang, who has been instrumental in the rational molecular design of structures and mechanisms. He confirmed our idea of building a two-enzyme system and suggested that we screen suitable linkers to optimize the two-enzyme system and improve the transport efficiency of intermediate products to enhance catalytic activity. After careful review of the literature, we decided to adopt Associate Professor Wang Sheng's suggestion. After consulting relevant data and screening part of linker for modeling, we used flexible linker G4S to connect PETase and MHETase together to construct a PET-MHET enzyme dual-enzyme system model, and conducted molecular docking experiments to simulate the efficiency of the dual-enzyme system.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-16.webp" caption="Fig.8 HUST-China Members Prof. Sheng Wang" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-16.webp" caption="Fig 8. HUST-China Members Prof. Sheng Wang" %}
 
 
 ## project Design Refinement
@@ -93,11 +93,11 @@ As our project progressed, we contacted Associate Professor Sheng Wang, who has 
 
 After clarifying the significance and feasibility of our project, we visited Professor Divya Ail from Saclay University in Wuhan for further advice. After understanding our design, she suggested not using the adhesion module because it relies on strong hydrophobicity, which may not be specific enough in the complex agricultural environment. If the module adsorbs on bacteria, it could affect their growth by encapsulating them, potentially disrupting the microbial growth balance. After a thorough literature review and consideration, we decided to adopt Professor Ail's suggestion, removing the adhesion module and actively exploring other efficient ways to capture PET.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-08.webp" caption="Fig.9 HUST-China Members with Prof. Divya Ail" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-08.webp" caption="Fig 9. HUST-China Members with Prof. Divya Ail" %}
 
 In the same month, we visited Hubei Nitrogen Energy Biotechnology Co., a leading soil improvement company in China, pioneering in biological nitrogen fixation, emission reduction, and efficiency enhancement. They have significant expertise in the post-application of agricultural products. We sought to learn from them about product application methods. During our discussion about the applications of PET degradation products, they suggested we further explore high-value degradation products from Pseudomonas putida that can be directly utilized for plant growth, making product application more flexible and straightforward. Following this, we identified β-ketoadipic acid (β-KA) and rhamnolipids as targets by researching the metabolic pathways of TPA in Pseudomonas putida KT2440.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-09.webp" caption="Fig.10 HUST-China Members with Hubei Nitrogen Energy Biotechnology Co." %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-09.webp" caption="Fig 10. HUST-China Members with Hubei Nitrogen Energy Biotechnology Co." %}
 
 We were pleasantly surprised to find that rhamnolipids have numerous benefits in agricultural production. They can act as biosurfactants, enhancing the adhesion of *E. coli* BL21 under surfactant conditions, thereby improving PET capture and degradation capabilities. Additionally, when added to fertilizers, rhamnolipids can enhance wetting, spreading, and penetration, increasing soil moisture retention and promoting plant growth, ultimately improving nutrient absorption efficiency. More importantly, rhamnolipids exhibit broad-spectrum effects against pathogens and have shown excellent control of certain fungal diseases, with widespread application in foreign agricultural production for crop disease prevention. Moreover, rhamnolipids possess chelation functions for trace and metal elements, helping to improve saline soil and reduce nutrient loss, ensuring fertilizer persistence, and alleviating soil compaction and heavy metal contamination. However, current fermentation production primarily relies on the pathogenic bacterium Pseudomonas aeruginosa, which poses certain safety risks.
 
@@ -105,7 +105,7 @@ Ultimately, we abandoned the PHA synthesis pathway originally constructed in Pse
 
 Next, we consulted Prof. Ning Kang from Huazhong University of Science and Technology regarding rhamnolipid production in Pseudomonas putida. Professor Ning focuses on biobig data and microbial community exploration and its applications in health and environmental fields. He suggested we utilize dry experiments to simulate metabolic flow, predict engineered bacteria's growth behavior, TPA absorption rates, and rhamnolipid product yields. By refining the genome-scale metabolic model of engineered Pseudomonas putida, we could assist future teams in further metabolic engineering of Pseudomonas putida while advancing the prospect of utilizing it for plastic degradation.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-17.webp" caption="Fig.11 HUST-China Members Prof. Kang Ning" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-17.webp" caption="Fig 11. HUST-China Members Prof. Kang Ning" %}
 
 In July, we met again with Professor Divya in Paris to report on our project progress and received further feedback. 
 
@@ -125,7 +125,7 @@ The market scale of China's microbial agent industry has been growing year by ye
 
 For future application scenarios, please refer to the Proposed Implementation section.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-10.webp" caption="Fig.12 HUST-China Member in the National Engineering Research Center for Biological Pesticides" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-10.webp" caption="Fig 12. HUST-China Member in the National Engineering Research Center for Biological Pesticides" %}
 
 <center>{% include button.html text="Click to see Proposed Implementation Page" link="../proposed-implementation/" %}</center>
 
@@ -133,7 +133,7 @@ After shifting the application direction of our product, we communicated with Re
 
 After completing the main design of the hardware, we had an online feedback session with Researcher Han Huawen, showcasing our hardware ideas. She expressed approval and encouragement regarding our progress.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-11.webp" caption="Fig.13 Online meeting with Researcher Huawen Han" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-11.webp" caption="Fig 13. Online meeting with Researcher Huawen Han" %}
 
  
 
@@ -155,7 +155,7 @@ We then engaged in on-site discussions with farmers working in the fields. They 
 
 Furthermore, we communicated with the staff at the grass-roots level in communes and townships in the area. After introducing our project, they also shared their suggestions and opinions. We learned that from the government's perspective, they are most concerned about the efficiency and extent of PET degradation by our product. Although they did raise some questions about the project's potential for widespread and rapid adoption in the short term, they acknowledged the innovative and practical design of our project. Importantly, they expressed confidence that our project would play a significant role in tackling soil MP pollution.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-12.webp" caption="Fig.14 HUST-China Members exchange in rural areas" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-12.webp" caption="Fig 14. HUST-China Members exchange in rural areas" %}
 
 ## Public Evaluation
 
@@ -167,7 +167,7 @@ The head of the volunteer service team indicated that in recent years, MP pollut
 
  During our research and interviews with the Wuhan Ecological Environment Volunteer Service Team, we specifically introduced the potential applications of synthetic biology in environmental remediation and emphasized the importance of addressing bioethical issues in this field. The team leader indicated that they believe that with advancements in technology and improvements in policy, the issue of microplastic pollution in agricultural fields is likely to be effectively controlled. In particular, the rapid development of synthetic biology provides new ideas and methods for environmental governance and is expected to play an important role in the future. However, they also stressed the necessity of fully considering bioethical issues in the process of promoting remediation efforts, ensuring the reasonable application of technology and the sustainable development of the ecological environment. Additionally, they recommended that we carefully review guidelines such as the "Environmental Safety Assessment Guidelines for Microbial Agents in Environmental Protection" to ensure the safety and controllability of the technology.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-13.webp" caption="Fig.15 HUST-China members with the Wuhan Ecological Environment Volunteer Service Team" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-13.webp" caption="Fig 15. HUST-China members with the Wuhan Ecological Environment Volunteer Service Team" %}
 
 
 ## Positive Feedback
@@ -178,7 +178,7 @@ Our project is a soil purification system that transforms waste into fertilizer,
 
 Throughout the project development process, Guangzhou Jinfa Technology Co., Ltd. expressed great curiosity about our ideas and followed our project progress. After completion, we reached out to them again to share our final hardware design. They emphasized the importance of achieving high PET concentration and low costs in future developments. They expressed strong confidence in our project and eagerly anticipated its performance in potential industrial applications.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-15.webp" caption="Fig.17 HUST-China members receiving feedback from Guangzhou Jinfa Technology Co., Ltd." %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-15.webp" caption="Fig 16. HUST-China members receiving feedback from Guangzhou Jinfa Technology Co., Ltd." %}
 
 ## Integrating Human Practice with Synthetic Biology Education and Communication
 
