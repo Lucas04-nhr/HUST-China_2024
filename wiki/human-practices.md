@@ -50,7 +50,7 @@ During the visit, we observed the waste treatment design of the facility and, th
 
 In our discussions with professionals from the company, we specifically inquired about the composition of MPs in the ash. We learned that nine types of MPs were identified, primarily including polyethylene (PE), polyethylene terephthalate (PET), polystyrene (PS), and polypropylene (PP). Among these, PE constituted the largest proportion, accounting for about 30% of the total; PET followed at approximately 25%. These plastics typically originate from everyday consumer products and packaging, with proportions varying based on regional consumption habits and waste management practices. We also learned that these non-biodegradable ash materials are uniformly landfilled in the suburbs. We speculated that the MPs within this ash could migrate with groundwater, directly influencing the MP composition in agricultural ecosystems. Furthermore, we considered that plastic films from industrial pipelines near the suburbs might also generate MPs through physical erosion, leading to contamination in leachate that could affect the quality of irrigation water. After this exchange, we decided to focus on the more prevalent PE and PET.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-03.webp" caption="Fig 3. HUST-China Team Members Visit Plastic Waste Recycling Facility" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-03.webp" caption="Fig 3. HUST-China Members Visit Plastic Waste Recycling Facility" %}
 
 On another front, we visited Guangzhou Kingfa Technology Co., Ltd. during an open day to inquire about the market for plastics and the development of alternatives. As a leading enterprise in the field of new plastic manufacturing, their R&D encompasses nine categories, including modified plastics, environmentally friendly high-performance recycled plastics, and fully biodegradable plastics. Kinfa Technology has conducted extensive research on the composition of MPs and the utilization of plastic materials, providing them with a comprehensive understanding and judgment on the development situation and trend of plastics.
 
@@ -58,7 +58,7 @@ We presented our focus on the degradation of PET and PE to the company and inqui
 
 We discussed the future trends in plastic development with the staff. They informed us that the production technologies for new plastics are not yet fully mature and are more expensive; for instance, the unit cost of Poly (butyleneadipate-co-terephthalate)PBAT is 16% higher than that of PE, while Polylactic Acid(PLA)'s unit cost is approximately 50% higher than that of PET. Meanwhile, PET remains a significant component in the MPs used in the production of both existing and new plastics. After all these considerations, we decided to target PET, which is used more and has a smaller alternative possibility.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-04.webp" caption="Fig 4. Public Open Day Discussion Session" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-04.webp" caption="Fig 4. Public Open Day Discussion Session in Guangzhou Kingfa Technology Co., Ltd." %}
 
 ## Project Initial Design
 
@@ -72,7 +72,7 @@ We focused on various soil microorganisms mentioned in the literature and screen
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-05.webp" caption="Fig 5. HUST-China Members with Prof. Abdelghani Sghir in France" %}
 
-Ultimately, we selected *E. coli* BL21 and *Pseudomonas putida* KT2440 as our chassises. Through genetic engineering, we aim for *E. coli* BL21 to synthesize and secrete PETase to decompose PET and synthesize MHETase to further break down MHET produced from incomplete PET degradation, ensuring all products convert to EG and TPA, so we plan to construct a FAST-PETase~MHETase dual-enzyme system. Additionally, we will overexpress the fucO and aldA genes in *E. coli* BL21, channeling all EG into glycolic acid (GA). GA will then be converted into malate and acetyl-CoA via the ethanolamine pathway, subsequently entering the tricarboxylic acid cycle for metabolism by *E. coli* BL21. For TPA, we plan to introduce the tph gene cluster (tphA2A3A1, tphB) and tpaK into *Pseudomonas putida* KT2440. The TPA transporter protein encoded by tpaK will transport TPA into the cell, where it will be converted into the key metabolic intermediate Protocatechuic acid (PCA) under the action of the tph gene cluster. We will also introduce the PhaC1 gene to transform the metabolic products into polyhydroxyalkanoates (PHA). To strengthen our design, we discussed methods for efficiently adsorbing PET from the soil with Professor Xiaoman Jie, who suggested integrating an adhesion module into our design.
+Ultimately, we selected *E. coli* BL21 and *Pseudomonas putida* KT2440 as our chassises. Through genetic engineering, we aim for *E. coli* BL21 to synthesize and secrete PETase to decompose PET and synthesize MHETase to further break down MHET produced from incomplete PET degradation, ensuring all products convert to EG and TPA, so we plan to construct a FAST-PETase~MHETase dual-enzyme system. Additionally, we will overexpress the fucO and aldA genes in *E. coli* BL21, channeling all EG into glycolic acid (GA). GA will then be converted into malate and acetyl-CoA via the ethanolamine pathway, subsequently entering the tricarboxylic acid cycle for metabolism by *E. coli* BL21. For TPA, we plan to introduce the tph gene cluster (tphA2A3A1, tphB) and tpaK into *Pseudomonas putida* KT2440. The TPA transporter protein encoded by tpaK will transport TPA into the cell, where it will be converted into the key metabolic intermediate Protocatechuic acid (PCA) under the action of the tph gene cluster. We will also introduce the PhaC1 gene to transform the metabolic products into polyhydroxyalkanoates (PHA). To strengthen our design, we discussed methods for efficiently adsorbing PET from the soil with Professor Xiaoman Xie, who suggested integrating an adhesion module into our design.
 
 After a thorough literature review and consideration, we decided to incorporate her recommendations into our project. We consider adding an adhesion module to the exoenzyme protein system to facilitate PET adsorption, or alternatively, directly using the enzyme system as membrane protein to adsorb PET. We finally selected an adhesion module that enhances the adhesion of *E. coli* BL21 to PET in the presence of TPA by expressing cp52k. When the plastic concentration is high, the water-soluble nature of PETase makes it difficult to adsorb to the PET surface. As a hydrophobic protein, cp52k can spontaneously polymerize to produce hydrophobic polymers and construct hydrophobic layers on the surface of biofilms. We reported the design to Ms. Xie and she was positive about our idea.
 
@@ -84,12 +84,12 @@ Professor Yan Yunjun has high attainments in multi-enzyme catalysis. After learn
 
 As our project progressed, we contacted Associate Professor Sheng Wang, who has been instrumental in the rational molecular design of structures and mechanisms. He confirmed our idea of building a two-enzyme system and suggested that we screen suitable linkers to optimize the two-enzyme system and improve the transport efficiency of intermediate products to enhance catalytic activity. After careful review of the literature, we decided to adopt Associate Professor Wang Sheng's suggestion. After consulting relevant data and screening part of linker for modeling, we used flexible linker G4S to connect PETase and MHETase together to construct a PET-MHET enzyme dual-enzyme system model, and conducted molecular docking experiments to simulate the efficiency of the dual-enzyme system.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-16.webp" caption="Fig 8. HUST-China Members Prof. Sheng Wang" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-16.webp" caption="Fig 8. HUST-China Members With Prof. Sheng Wang" %}
 
 
 ## project Design Refinement
 
-**Section 5: Project Design Refinement--Product Design and Design Optimisation**
+**Section 4: Project Design Refinement--Product Design and Design Optimisation**
 
 After clarifying the significance and feasibility of our project, we visited Professor Divya Ail from Saclay University in Wuhan for further advice. After understanding our design, she suggested not using the adhesion module because it relies on strong hydrophobicity, which may not be specific enough in the complex agricultural environment. If the module adsorbs on bacteria, it could affect their growth by encapsulating them, potentially disrupting the microbial growth balance. After a thorough literature review and consideration, we decided to adopt Professor Ail's suggestion, removing the adhesion module and actively exploring other efficient ways to capture PET.
 
@@ -105,7 +105,7 @@ Ultimately, we abandoned the PHA synthesis pathway originally constructed in *Ps
 
 Next, we consulted Prof. Ning Kang from Huazhong University of Science and Technology regarding rhamnolipid production in *Pseudomonas putida*. Professor Ning focuses on biobig data and microbial community exploration and its applications in health and environmental fields. He suggested we utilize dry experiments to simulate metabolic flow, predict engineered bacteria's growth behavior, TPA absorption rates, and rhamnolipid product yields. By refining the genome-scale metabolic model of engineered *Pseudomonas putida*, we could assist future teams in further metabolic engineering of *Pseudomonas putida* while advancing the prospect of utilizing it for plastic degradation.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-17.webp" caption="Fig 11. HUST-China Members Prof. Kang Ning" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-17.webp" caption="Fig 11. HUST-China Members With Prof. Kang Ning" %}
 
 In July, we met again with Professor Divya in Paris to report on our project progress and received further feedback. 
 
@@ -125,7 +125,7 @@ The market scale of China's microbial agent industry has been growing year by ye
 
 For future application scenarios, please refer to the Proposed Implementation section.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-10.webp" caption="Fig 12. HUST-China Member in the National Engineering Research Center for Biological Pesticides" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-10.webp" caption="Fig 12. HUST-China Members in the National Engineering Research Center for Biological Pesticides" %}
 
 <center>{% include button.html text="Click to see Proposed Implementation Page" link="../proposed-implementation/" %}</center>
 
@@ -167,7 +167,7 @@ The head of the volunteer service team indicated that in recent years, MP pollut
 
  During our research and interviews with the Wuhan Ecological Environment Volunteer Service Team, we specifically introduced the potential applications of synthetic biology in environmental remediation and emphasized the importance of addressing bioethical issues in this field. The team leader indicated that they believe that with advancements in technology and improvements in policy, the issue of microplastic pollution in agricultural fields is likely to be effectively controlled. In particular, the rapid development of synthetic biology provides new ideas and methods for environmental governance and is expected to play an important role in the future. However, they also stressed the necessity of fully considering bioethical issues in the process of promoting remediation efforts, ensuring the reasonable application of technology and the sustainable development of the ecological environment. Additionally, they recommended that we carefully review guidelines such as the "Environmental Safety Assessment Guidelines for Microbial Agents in Environmental Protection" to ensure the safety and controllability of the technology.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-13.webp" caption="Fig 15. HUST-China members with the Wuhan Ecological Environment Volunteer Service Team" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-13.webp" caption="Fig 15. HUST-China Members with the Wuhan Ecological Environment Volunteer Service Team" %}
 
 
 ## Positive Feedback
@@ -178,7 +178,7 @@ Our project is a soil purification system that transforms waste into fertilizer,
 
 Throughout the project development process, Guangzhou Jinfa Technology Co., Ltd. expressed great curiosity about our ideas and followed our project progress. After completion, we reached out to them again to share our final hardware design. They emphasized the importance of achieving high PET concentration and low costs in future developments. They expressed strong confidence in our project and eagerly anticipated its performance in potential industrial applications.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-15.webp" caption="Fig 16. HUST-China members receiving feedback from Guangzhou Jinfa Technology Co., Ltd." %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-15.webp" caption="Fig 16. HUST-China Members receiving feedback from Guangzhou Jinfa Technology Co., Ltd." %}
 
 ## Integrating Human Practice with Synthetic Biology Education and Communication
 
