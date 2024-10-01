@@ -257,7 +257,8 @@
     a_list.prop('href', 'javascript:;'); //禁用a标签锚点跳转
     a_list.off("click"); //清除默认点击事件
     const toc = $("#about-this-page nav"); //目录
-    let nav_height = $("header.header .container-wrapper").outerHeight() + 1; //顶部导航栏高度，用于调节滚动距离
+    //let nav_height = $("header.header .container-wrapper").outerHeight() + 1; //顶部导航栏高度，用于调节滚动距离
+    let nav_height = $("header.header .container-wrapper").outerHeight(); //顶部导航栏高度，用于调节滚动距离
 
     //根据页面滚动距离更改目录div标签滚动距离
     function update_div_scroll_distance(i) {
@@ -327,10 +328,12 @@
     update_classname();
     //页面尺寸变化时更新
     $(window).resize(function () {
-      nav_height = $("header.header .container-wrapper").outerHeight() + 1;
+      //nav_height = $("header.header .container-wrapper").outerHeight() + 1;
+      nav_height = $("header.header .container-wrapper").outerHeight();
       update_classname();
     });
-    window.addEventListener("load", () => nav_height = $("header.header .container-wrapper").outerHeight() + 1); //加载完成时更新nav_height
+    //window.addEventListener("load", () => nav_height = $("header.header .container-wrapper").outerHeight() + 1); //加载完成时更新nav_height
+    window.addEventListener("load", () => nav_height = $("header.header .container-wrapper").outerHeight()); //加载完成时更新nav_height
 
     //双击标题事件
     h_list.off("click"); //清除默认点击事件
@@ -371,7 +374,7 @@
       reverse_footnote.on('click', function () {
         is_click = true;
         $("body,html").stop().animate({
-          scrollTop: des.offset().top - nav_height
+          scrollTop: des.offset().top - nav_height + 2
         }, function () {
           is_click = false;
           update_classname();
