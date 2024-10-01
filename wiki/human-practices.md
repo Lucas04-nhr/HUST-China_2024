@@ -3,7 +3,7 @@ title: Human Practices
 permalink: /human-practices/
 feature_text: |
   ## Human Practices
-  Welcome to iGEM HUST-China 2024 wiki! It's still under construction. Please stay tuned for more information.
+  An excellent humanistic practice is one of the pillars of a responsible and beneficial iGEM project for the world.
 feature_image: "https://static.igem.wiki/teams/5175/resources/background/bg-hp.jpg"
 excerpt: "Welcome to iGEM HUST-China 2024 wiki! It's still under construction. Please stay tuned for more information."
 ---
@@ -140,6 +140,8 @@ After completing the main design of the hardware, we had an online feedback sess
 We designed a fermentation tank as the main hardware facility. The overall idea is to collect groundwater used for irrigation, enrich PET using strong current and the electronegativity of PET, then mix it with bacterial liquid in the fermentation tank. Through the cooperation of *E. coli* BL21 and KT2440, we can convert PET into rhamnolipids. Finally, we designed a drip irrigation device to apply the liquid rich in rhamnolipids to crops.
 
  For specific hardware design details, please refer to the Hardware section.
+
+<center>{% include button.html text="Click to see Hardware Page" link="../hardware/" %}</center>
 
 After completing our fermentation tank model, we had an online discussion with Zhendian (Suzhou) Medical Technology Co. regarding our hardware model. They expressed approval of our hardware design and suggested we continue to optimize the function of the adsorption module.
 
