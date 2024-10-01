@@ -16,7 +16,7 @@ Safety has always been the most critical part of our project. Our team consisten
 
 ### Microbiological Safety
 
-a) According to ATCC, the chassis organisms we have selected, such as Escherichia coli BL21 and *Pseudomonas putida* KT2440, can be used in a BSL 1 laboratory. The general principles of microbiological and biomedical laboratory biosafety specify that BSL 1 is appropriate for microorganisms known to have no pathogenic effects on healthy adults.
+a) According to ATCC, the chassis organisms we have selected, such as *Escherichia coli* BL21 and *Pseudomonas putida* KT2440, can be used in a BSL 1 laboratory. The general principles of microbiological and biomedical laboratory biosafety specify that BSL 1 is appropriate for microorganisms known to have no pathogenic effects on healthy adults.
 
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/safety/safety-01.png" alt="" caption="Fig 1. Microbiological Safety(BL21), Microbiological Safety(DH5α)and Microbiological Safety(KT2440)" %}
