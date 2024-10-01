@@ -32,7 +32,7 @@ To address these issues, we designed a metabolically coupled system for simultan
                                                
 ​    However, the main product of PETase degradation of PET is MHET, and the MHET intermediate tends to bind tightly to PET degrading enzyme in a non-catalytic pose, which leads to the inhibition of PET degrading enzyme. Therefore, an efficient MHET hydrolase is needed to degrade the intermediate product in time to further depolymerise MHET into its monomers TPA and EG[^5]. Multi-enzyme systems promote substrate channeling and proximity effects between enzymes. This greatly reduces the diffusion limitation between enzyme active centers, thus promoting enzyme synergy and improving catalytic efficiency[^6]. In the process of constructing a dual enzyme system, we used bioinformatics to simulate the molecular docking of the linker connecting the two enzymes, and after simulation prediction, we chose the G4S flexible peptide as the linker of FAST-PETase and MHETase, and constructed the two into a dual enzyme system. Moreover, considering the process of constructing the dual enzyme system, the N/C-terminal arrangement of PETase/MHETase may have an impact on its overall conformation, which in turn affects its physiological activity in degrading PET. Therefore, we constructed different systems and hoped to demonstrate the difference in their activities. We hoped that *E.coli* could exocytosis the PETase-MHETase dual enzyme system to degrade PET microplastics in the environment. To this end, the pelB signal peptide was added to enhance the ability of BL21 to secrete PETase-MHETase [^7].
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design-2/design-01.png" alt=" " caption="Fig. 1. Schematic diagram of FAST-PETase, MHETase dual enzyme system function" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design-2/design-01.png" alt=" " caption="Fig 1. Schematic diagram of FAST-PETase, MHETase dual enzyme system function" %}
 
 ​    The final products of PET degradation by the two-enzyme system are TPA and EG. However, wild-type *E.coli* cannot rapidly utilize these substances for various life activities. In order to increase the efficiency of E. coli in utilizing the PET degradation products and to improve its viability, we overexpressed L-1,2-propanediol oxidoreductase and aldehyde dehydrogenase A. This modification was able to increase *E.coli* 's ability to efficiently utilize EG.
 
@@ -58,7 +58,7 @@ To address these issues, we designed a metabolically coupled system for simultan
 ​     
 ​    In *Comamonas sp.* E6, the TPA transport system resembles a three-part tripartite tricarboxylate transporter (TTT), which consists of three components, TphC, TpiA, and TpiB, with TphC acting as a Substrate-Binding TphC specifically recognizes and binds TPA as a Substrate-Binding Protein (SBP); TpiA and TpiB are transmembrane proteins that form part of the transporter protein complex, whereas TphC delivers TPA from the periplasm (extracellular space) to these membrane proteins. Thus only when tphC and tpiA and tpiB genes are introduced simultaneously, our engineered bacteria can transport TPA [^16]. While TpaK, another TPA transporter protein encoded in *Rhodococcus sp.* RHA1, does not require the presence of tpiA or tpiB to function as a transporter, we chose TpaK as the TPA transporter protein to be applied in engineering *P.putida*[^17]. 
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design-2/design-05.png" alt=" " caption="Fig. 5. TPA transport pattern of TphC and TpaK" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design-2/design-05.png" alt=" " caption="Fig 5. TPA transport pattern of TphC and TpaK" %}
 ​            
 ### Strategy 3: Synthesis of rhamnolipids and pathway optimization by *Pseudomonas putida* KT2440
 
@@ -115,26 +115,26 @@ To address these issues, we designed a metabolically coupled system for simultan
 ## References
 
 [^1]   LORENZO V D, PéREZ-PANTOJA D, NIKEL P I. <i>Pseudomonas putida</i> KT2440: the long journey of a soil-dweller to become a synthetic biology chassis [J]. Journal of Bacteriology, 2024, 206(7): e00136-24.
-[^2]    GU L F, HE J, HUANG X, et al. [Construction of a versatile degrading bacteria Pseudomonas putida KT2440-DOP and its degrading characteristics] [J]. Wei Sheng Wu Xue Bao, 2006, 46(5): 763-6.
+[^2]    GU L F, HE J, HUANG X, et al. [Construction of a versatile degrading bacteria <i>Pseudomonas putida</i> KT2440-DOP and its degrading characteristics] [J]. Wei Sheng Wu Xue Bao, 2006, 46(5): 763-6.
 [^3]    YOSHIDA S, HIRAGA K, TAKEHANA T, et al. A bacterium that degrades and assimilates poly(ethylene terephthalate) [J]. Science, 2016, 351(6278): 1196-9.
 [^4]    LU H, DIAZ D J, CZARNECKI N J, et al. Machine learning-aided engineering of hydrolases for PET depolymerization [J]. Nature, 2022, 604(7907): 662-7.
 [^5]    ZHANG J, WANG H, LUO Z, et al. Computational design of highly efficient thermostable MHET hydrolases and dual enzyme system for PET recycling [J]. Communications Biology, 2023, 6(1): 1135.
 [^6]    ZHANG Y, HESS H. Toward Rational Design of High-efficiency Enzyme Cascades [J]. ACS Catalysis, 2017, 7(9): 6018-27.
-[^7]    CUI L, QIU Y, LIANG Y, et al. Excretory expression of IsPETase in E. coli by an enhancer of signal peptides and enhanced PET hydrolysis [J]. International Journal of Biological Macromolecules, 2021, 188: 568-75.
-[^8]    MONTELLA C, BELLSOLELL L, PéREZ-LUQUE R, et al. Crystal structure of an iron-dependent group III dehydrogenase that interconverts L-lactaldehyde and L-1,2-propanediol in Escherichia coli [J]. J Bacteriol, 2005, 187(14): 4957-66.
-[^9]    ZHU Y, LIN E C. Loss of aldehyde dehydrogenase in an Escherichia coli mutant selected for growth on the rare sugar L-galactose [J]. J Bacteriol, 1987, 169(2): 785-9.
-[^10]    PANDA S, FUNG V Y K, ZHOU J F J, et al. Improving ethylene glycol utilization in Escherichia coli fermentation [J]. Biochemical Engineering Journal, 2021, 168: 107957.
-[^11]    NIKEL P I, DE LORENZO V. Pseudomonas putida as a functional chassis for industrial biocatalysis: From native biochemistry to trans-metabolism [J]. Metab Eng, 2018, 50: 142-55.
+[^7]    CUI L, QIU Y, LIANG Y, et al. Excretory expression of IsPETase in <i>E. coli</i> by an enhancer of signal peptides and enhanced PET hydrolysis [J]. International Journal of Biological Macromolecules, 2021, 188: 568-75.
+[^8]    MONTELLA C, BELLSOLELL L, PéREZ-LUQUE R, et al. Crystal structure of an iron-dependent group III dehydrogenase that interconverts L-lactaldehyde and L-1,2-propanediol in <i>Escherichia coli</i> [J]. J Bacteriol, 2005, 187(14): 4957-66.
+[^9]    ZHU Y, LIN E C. Loss of aldehyde dehydrogenase in an <i>Escherichia coli</i> mutant selected for growth on the rare sugar L-galactose [J]. J Bacteriol, 1987, 169(2): 785-9.
+[^10]    PANDA S, FUNG V Y K, ZHOU J F J, et al. Improving ethylene glycol utilization in <i>Escherichia coli</i> fermentation [J]. Biochemical Engineering Journal, 2021, 168: 107957.
+[^11]    NIKEL P I, DE LORENZO V. <i>Pseudomonas putida</i> as a functional chassis for industrial biocatalysis: From native biochemistry to trans-metabolism [J]. Metab Eng, 2018, 50: 142-55.
 [^12]    HARWOOD C S, PARALES R E. THE β-KETOADIPATE PATHWAY AND THE BIOLOGY OF SELF-IDENTITY [J]. Annual Review of Microbiology, 1996, 50(Volume 50, 1996): 553-90.
 [^13]    SASOH M, MASAI E, ISHIBASHI S, et al. Characterization of the Terephthalate Degradation Genes of Comamonas sp. Strain E6 [J]. Applied and Environmental Microbiology, 2006, 72(3): 1825-32.
 [^14]    KINCANNON W M, ZAHN M, CLARE R, et al. Biochemical and structural characterization of an aromatic ring-hydroxylating dioxygenase for terephthalic acid catabolism [J]. Proc Natl Acad Sci U S A, 2022, 119(13): e2121426119.
 [^15]    VERMAAS J V, DIXON R A, CHEN F, et al. Passive membrane transport of lignin-related compounds [J]. Proc Natl Acad Sci U S A, 2019, 116(46): 23117-23.
 [^16]    HOSAKA M, KAMIMURA N, TORIBAMI S, et al. Novel tripartite aromatic acid transporter essential for terephthalate uptake in Comamonas sp. strain E6 [J]. Appl Environ Microbiol, 2013, 79(19): 6148-55.
 [^17]    PATRAUCHAN MARIANNA A, FLORIZONE C, DOSANJH M, et al. Catabolism of Benzoate and Phthalate in Rhodococcus sp. Strain RHA1: Redundancies and Convergence [J]. Journal of Bacteriology, 2005, 187(12): 4050-63.
-[^18]    JARVIS F G, JOHNSON M J. A Glyco-lipide Produced by Pseudomonas Aeruginosa [J]. Journal of the American Chemical Society, 1949, 71(12): 4124-6.
-[^19]    ZHU K, ROCK CHARLES O. RhlA Converts β-Hydroxyacyl-Acyl Carrier Protein Intermediates in Fatty Acid Synthesis to the β-Hydroxydecanoyl-β-Hydroxydecanoate Component of Rhamnolipids in Pseudomonas aeruginosa [J]. Journal of Bacteriology, 2008, 190(9): 3147-54.
-[^20]    WITTGENS A, TISO T, ARNDT T T, et al. Growth independent rhamnolipid production from glucose using the non-pathogenic Pseudomonas putida KT2440 [J]. Microb Cell Fact, 2011, 10: 80.
-[^21]    LIU H, CHEN Y, ZHANG Y, et al. Enhanced production of polyhydroxyalkanoates in Pseudomonas putida KT2440 by a combination of genome streamlining and promoter engineering [J]. International Journal of Biological Macromolecules, 2022, 209: 117-24.
+[^18]    JARVIS F G, JOHNSON M J. A Glyco-lipide Produced by <i>Pseudomonas Aeruginosa</i> [J]. Journal of the American Chemical Society, 1949, 71(12): 4124-6.
+[^19]    ZHU K, ROCK CHARLES O. RhlA Converts β-Hydroxyacyl-Acyl Carrier Protein Intermediates in Fatty Acid Synthesis to the β-Hydroxydecanoyl-β-Hydroxydecanoate Component of Rhamnolipids in <i>Pseudomonas aeruginosa</i> [J]. Journal of Bacteriology, 2008, 190(9): 3147-54.
+[^20]    WITTGENS A, TISO T, ARNDT T T, et al. Growth independent rhamnolipid production from glucose using the non-pathogenic <i>Pseudomonas putida</i> KT2440 [J]. Microb Cell Fact, 2011, 10: 80.
+[^21]    LIU H, CHEN Y, ZHANG Y, et al. Enhanced production of polyhydroxyalkanoates in <i>Pseudomonas putida</i> KT2440 by a combination of genome streamlining and promoter engineering [J]. International Journal of Biological Macromolecules, 2022, 209: 117-24.
 [^22]    尹进, 车雪梅, 陈国强. 聚羟基脂肪酸酯的研究进展 [J]. 生物工程学报, 32(6): 726-37.
 
  
