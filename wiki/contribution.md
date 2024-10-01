@@ -28,7 +28,7 @@ Consisting of PETase-MHETase and aldA-fucO, it is used to introduce the PET degr
 
 We designed this plasmid to enable *P. putida* KT2440 to autonomously transport TPA into the cell and participate in metabolic pathways. TPA 1,2-dioxygenase (TPADO) can effectively catalyze the oxidation of TPA through the synergistic action of TphA1, TphA2 and TphA3, transforming TPA into the intermediate product 1,2-dihydroxy-3,5-cyclohexadiene-1,4-dicarboxylic acid (DCD). TphB can further oxidize DCD to produce PCA. Given the slow passive diffusion of aromatic carboxylates across the phospholipid bilayer of bacterial endomembrane, we introduced TpaK as a TPA transporter for application in engineered *P. putida* KT2440.
 
-#### ** pT7-lac operator- Rrhla-Rlb-T7-PT7-lac operator-phaZ-T7** 
+#### **pT7-lac operator- Rrhla-Rlb-T7-PT7-lac operator-phaZ-T7** 
 
 The synergistic effect of rhlA and rhlB enables *P. putida* KT2440 to accumulate rhamnolipids during metabolism. In order to increase the proportion of carbon sources used by *P. putida* KT2440 for rhamnolipid synthesis, we overexpressed the gene phaZ, which encodes poly(3-hydroxyalkanoate) depolymerase. Consequently, the anabolic pathway of PHA was inhibited, leading an increased production of rhamnolipids.
 
