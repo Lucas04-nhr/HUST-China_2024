@@ -53,6 +53,13 @@ In terms of regulations and policies, according to Article 5(1) of the Agreement
 
 ## Challenges
 
+Our project faces the following challenges：
+
+1. More efficient and convenient production of ascending products (e.g., rhamnolipids, etc.), as the current production efficiency is slightly lower than expected; 
+2. Fermentation methods suitable for different environments, such as integrated fermentation tanks that can be used for water, and targeted placement of bacteriophages for heavily contaminated areas of soil; 
+3. Lower costs, such as the use of a more efficient culture solution as well as low-cost materials, which is convenient for popularization; 
+4. A more precise and larger model, which can be achieved through the enriched detection of more samples, which helps our model to be more accurate in order to determine the high microplastic contamination area in the region.
+
 ## References
 
 [^1]:Assessment of agricultural plastics and their sustainability: A call for action[J].
