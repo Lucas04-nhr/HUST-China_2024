@@ -69,7 +69,7 @@ You can <a href="https://static.igem.wiki/teams/5175/resources/model/model-gssm-
 
 Norsigian et al. (2020) evaluated the Memote scores of models published in Bigg and found that models in JSON format had an average score of 58% and models in SBML format had an average score of 73%.[^5] Our model is in SBML format with a score of 76% (Figure 1), exceeding the average level of published models. There is reason to believe that our model can reflect the actual situation to a certain extent.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/model/model-gssm-01.png" alt="Our Memote Score" caption="Figure 1. Our Memote Score" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/model/model-gssm-01.png" alt="Our Memote Score" caption="Fig 1. Our Memote Score" %}
 
 #### Dynamic Flux Balance Analysis (dFBA) Modeling
 
