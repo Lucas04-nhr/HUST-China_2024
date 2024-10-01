@@ -18,7 +18,7 @@ Microplastic pollution has become a global environmental problem, widely found i
 {% include figure.html 
     image="https://static.igem.wiki/teams/5175/resources/model/model-machine-learning-01.jpg" 
     alt="Sampling data of microplastics abundance in Wuhan" 
-    caption="Figure 1. Sampling data of microplastics abundance in Wuhan" 
+    caption="Fig 1. Sampling data of microplastics abundance in Wuhan" 
 %}
 
 Soil MP pollution is influenced by source-sink factors, which exhibit spatial variability, dynamic changes and uncertainty[^1][^2].Referring to the existing literature, the multiple regression decision tree (MRT) method was used to isolate the source-sink correlation factors with good interpretations for the spatial abundance of MPs, and we chose five source factors and seven sink factors (TXT S1), in which the soil attribute data  [^3]  were obtained from<a href="https://www.fao.org/soils-portal/data-hub/en/" target="_blank">the World Soil Database (HWSD)</a>with a spatial resolution of 1km and a geographic coordinate system of WGS_1984_Albers. Population density data are from <a href="https://www.geodata.cn" target="_blank">the National Earth System Science Data Center </a>. Cultivated land, road network, and building data are from <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>. Point of interest (POI) data can identify different point sources of pollutant emissions and can easily and accurately correlate pollutants to build relevant quantitative models. Eight different types of POIs were selected, and the POI data were grabbed based on <a href="https://github.com/Civitasv/AMapPoi" target="_blank">AMapPOI</a>. POI data were gained from Baidu map API SDK service. The data were processed by ArcGIS 10.7 (ESRI, USA).
@@ -49,7 +49,7 @@ We consider the simulation and prediction accuracy of different machine learning
 {% include figure.html 
     image="https://static.igem.wiki/teams/5175/resources/model/model-machine-learning-02-changed.jpg" 
     alt="Different machine learning results for microplastics prediction" 
-    caption="Figure 2. Different machine learning results"
+    caption="Fig 2. Different machine learning results"
 %}
 
 The SVR-RBF model was finally selected from several machine learning models such as BP-GAO, LSTM, RF, and XGBoost.
@@ -59,7 +59,7 @@ Inputting 12 source-sink factor data from Wuhan City to the trained model to get
 {% include figure.html 
     image="https://static.igem.wiki/teams/5175/resources/model/model-machine-learning-03.jpg" 
     alt="Predicted microplastics distribution in Wuhan"
-    caption="Figure 3. Predicted microplastics distribution in Wuhan"
+    caption="Fig 3. Predicted microplastics distribution in Wuhan"
 %}
 
 ### Discussion
