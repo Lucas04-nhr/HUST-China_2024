@@ -141,6 +141,8 @@ We designed a fermentation tank as the main hardware facility. The overall idea 
 
  For specific hardware design details, please refer to the Hardware section.
 
+<center>{% include button.html text="Click to see Hardware Page" link="../hardware/" %}</center>
+
 After completing our fermentation tank model, we had an online discussion with Zhendian (Suzhou) Medical Technology Co. regarding our hardware model. They expressed approval of our hardware design and suggested we continue to optimize the function of the adsorption module.
 
 ## On-site Research
