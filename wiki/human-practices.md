@@ -12,7 +12,7 @@ excerpt: "Welcome to iGEM HUST-China 2024 wiki! It's still under construction. P
 
 An excellent humanistic practice is one of the pillars of a responsible and beneficial iGEM project for the world. Through humanistic practices, we hope that our project will be able to solve real-life problems in a more practical way and understand how society perceives our project.
 
-Our project aims to use engineered E.coli and engineered *P.putida to degrade microplastics in agricultural fields in order to reduce the harmful effects of microplastics on agricultural fields and humans. To understand the extent of the microplastic problem, we integrated academic research and conducted field studies; we discussed our project with microplastic degradation experts and companies involved in environmental protection to gather their insights into finding more realistic, efficient and convenient solutions to microplastics; and we discussed bioethics with social organizations and gathered grassroots government views on biotechnology. We also discussed bioethics with social organizations and collected grassroots governments' views on biotechnology. By integrating a wide range of perspectives, from the people to the corporate government, we hope to provide a variety of suggestions and views that may be needed to inspire other iGEMers in all aspects of the project.
+Our project aims to use engineered *E.coli* and engineered *P.putida* to degrade microplastics in agricultural fields in order to reduce the harmful effects of microplastics on agricultural fields and humans. To understand the extent of the microplastic problem, we integrated academic research and conducted field studies; we discussed our project with microplastic degradation experts and companies involved in environmental protection to gather their insights into finding more realistic, efficient and convenient solutions to microplastics; and we discussed bioethics with social organizations and gathered grassroots government views on biotechnology. By integrating a wide range of perspectives, from the people to the corporate government, we hope to provide a variety of suggestions and views that may be needed to inspire other iGEMers in all aspects of the project.
 
 
 ## Topic Selection 
@@ -193,3 +193,13 @@ During our field research journey, we discovered that the general public is larg
 For more details, refer to the Education Page.
 
 <center>{% include button.html text="Click to see Education Page" link="../education/" %}</center>
+
+## References
+
+
+[^1]:Assessment of agricultural plastics and their sustainability: A call for action[J].
+[^2]:WAN Y, WU C, XUE Q, at el. Effects of plastic contamination on water evaporation and desiccation cracking in soil[J/OL]. Science of The Total Environment, 2019, 654: 576-582[2024-10-02]. 
+[^3]:吕一涵, 周杰, 杨亚东, 等. 微塑料对农田生态系统的影响:研究现状与展望[J/OL]. 中国生态农业学报(中英文), 2022, 30(1): 1-14. 
+[^4]:李连祯, 周倩, 尹娜, 等. 食用蔬菜能吸收和积累微塑料[J/OL]. 科学通报, 2019, 64(9): 928-934. 
+[^5]:O’CONNOR D. Microplastics undergo accelerated vertical migration in sand soil due to small size and wet-dry cycles[J]. Environmental Pollution, 2019.
+[^6]:邢芳芳, 孟祥坤, 徐文凤, 等. 鼠李糖脂在农业上的应用研究[J/OL]. 农业工程技术, 2023, 43(16): 109-111[2024-08-12]. 
