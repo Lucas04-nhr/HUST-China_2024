@@ -76,15 +76,15 @@ Ultimately, we selected *E. coli* BL21 and *Pseudomonas putida* KT2440 as our ch
 
 After a thorough literature review and consideration, we decided to incorporate her recommendations into our project. We consider adding an adhesion module to the exoenzyme protein system to facilitate PET adsorption, or alternatively, directly using the enzyme system as membrane protein to adsorb PET. We finally selected an adhesion module that enhances the adhesion of *E. coli* BL21 to PET in the presence of TPA by expressing cp52k. When the plastic concentration is high, the water-soluble nature of PETase makes it difficult to adsorb to the PET surface. As a hydrophobic protein, cp52k can spontaneously polymerize to produce hydrophobic polymers and construct hydrophobic layers on the surface of biofilms. We reported the design to Ms. Xie and she was positive about our idea.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-06.webp" caption="Fig 6. HUST-China Members With Teacher Xiaoman Xie" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-06.webp" caption="Fig 6. HUST-China Members with Teacher Xiaoman Xie" %}
 
 Professor Yan Yunjun has high attainments in multi-enzyme catalysis. After learning about our project, he first confirmed our project design, but considering the application scenario and environmental conditions of our project, he suggested that we abandon PHA as the final product and consider fertilizers such as urea as additional products, so that our engineered microorganisms are no longer simply alleviating soil microplastic pollution, it's about reducing pollution while restoring soil and promoting plant growth. However, after reviewing the literature, we found that it was very difficult to construct the pathway between TPA, EG and urea in microorganisms, so we gave up urea, but retained the idea of seeking engineered microorganisms to repair soil quality while reducing pollution provided by teacher Yan, and continued to search for additional products according to this idea.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-07.webp" caption="Fig 7. HUST-China Members Prof. Yunjun Yan" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-07.webp" caption="Fig 7. HUST-China Members with Prof. Yunjun Yan" %}
 
 As our project progressed, we contacted Associate Professor Sheng Wang, who has been instrumental in the rational molecular design of structures and mechanisms. He confirmed our idea of building a two-enzyme system and suggested that we screen suitable linkers to optimize the two-enzyme system and improve the transport efficiency of intermediate products to enhance catalytic activity. After careful review of the literature, we decided to adopt Associate Professor Wang Sheng's suggestion. After consulting relevant data and screening part of linker for modeling, we used flexible linker G4S to connect PETase and MHETase together to construct a PET-MHET enzyme dual-enzyme system model, and conducted molecular docking experiments to simulate the efficiency of the dual-enzyme system.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-16.webp" caption="Fig 8. HUST-China Members With Prof. Sheng Wang" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-16.webp" caption="Fig 8. HUST-China Members with Prof. Sheng Wang" %}
 
 
 ## project Design Refinement
@@ -105,7 +105,7 @@ Ultimately, we abandoned the PHA synthesis pathway originally constructed in *Ps
 
 Next, we consulted Prof. Ning Kang from Huazhong University of Science and Technology regarding rhamnolipid production in *Pseudomonas putida*. Professor Ning focuses on biobig data and microbial community exploration and its applications in health and environmental fields. He suggested we utilize dry experiments to simulate metabolic flow, predict engineered bacteria's growth behavior, TPA absorption rates, and rhamnolipid product yields. By refining the genome-scale metabolic model of engineered *Pseudomonas putida*, we could assist future teams in further metabolic engineering of *Pseudomonas putida* while advancing the prospect of utilizing it for plastic degradation.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-17.webp" caption="Fig 11. HUST-China Members With Prof. Kang Ning" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-17.webp" caption="Fig 11. HUST-China Members with Prof. Kang Ning" %}
 
 In July, we met again with Professor Divya in Paris to report on our project progress and received further feedback. 
 
@@ -133,7 +133,7 @@ After shifting the application direction of our product, we communicated with Re
 
 After completing the main design of the hardware, we had an online feedback session with Researcher Han Huawen, showcasing our hardware ideas. She expressed approval and encouragement regarding our progress.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-11.webp" caption="Fig 13. Online meeting with Researcher Huawen Han" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-11.webp" caption="Fig 13. Online Meeting with Researcher Huawen Han" %}
 
  
 
@@ -155,7 +155,7 @@ We then engaged in on-site discussions with farmers working in the fields. They 
 
 Furthermore, we communicated with the staff at the grass-roots level in communes and townships in the area. After introducing our project, they also shared their suggestions and opinions. We learned that from the government's perspective, they are most concerned about the efficiency and extent of PET degradation by our product. Although they did raise some questions about the project's potential for widespread and rapid adoption in the short term, they acknowledged the innovative and practical design of our project. Importantly, they expressed confidence that our project would play a significant role in tackling soil MP pollution.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-12.webp" caption="Fig 14. HUST-China Members exchange in rural areas" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-12.webp" caption="Fig 14. HUST-China Members Exchange in Rural Areas" %}
 
 ## Public Evaluation
 
@@ -176,15 +176,15 @@ The head of the volunteer service team indicated that in recent years, MP pollut
 
 Our project is a soil purification system that transforms waste into fertilizer, featuring low costs and no pollution while degrading soil microplastics and increasing crop yields. After completing our project, we submitted a brief project report to Researcher Han Huawen, expressing our gratitude for her valuable suggestions, which significantly contributed to the refinement and improvement of our project. 
 
-Throughout the project development process, Guangzhou Jinfa Technology Co., Ltd. expressed great curiosity about our ideas and followed our project progress. After completion, we reached out to them again to share our final hardware design. They emphasized the importance of achieving high PET concentration and low costs in future developments. They expressed strong confidence in our project and eagerly anticipated its performance in potential industrial applications.
+Throughout the project development process, Guangzhou Kinfa Technology Co., Ltd. expressed great curiosity about our ideas and followed our project progress. After completion, we reached out to them again to share our final hardware design. They emphasized the importance of achieving high PET concentration and low costs in future developments. They expressed strong confidence in our project and eagerly anticipated its performance in potential industrial applications.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-15.webp" caption="Fig 16. HUST-China Members receiving feedback from Guangzhou Jinfa Technology Co., Ltd." %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/hp/hp-15.webp" caption="Fig 16. HUST-China Members Receiving Feedback from Guangzhou Kinfa Technology Co., Ltd." %}
 
 ## Integrating Human Practice with Synthetic Biology Education and Communication
 
 **Section 9: Leading Education/Integrating Human Practice with Synthetic Biology Education and Communication**
 
-During interactions with other students at the public open day of Guangzhou Jinfa Technology Co., Ltd., we found that students from other majors were not well-informed about synthetic biology and had certain misconceptions about genetically modified organisms. Therefore, we decided to use interesting themes to educate university students about synthetic biology in a way that integrates it with other cultures. 
+During interactions with other students at the public open day of Guangzhou Kinfa Technology Co., Ltd., we found that students from other majors were not well-informed about synthetic biology and had certain misconceptions about genetically modified organisms. Therefore, we decided to use interesting themes to educate university students about synthetic biology in a way that integrates it with other cultures. 
 
 While engaging with French professors, we also established friendly communication with French teams. 
 
