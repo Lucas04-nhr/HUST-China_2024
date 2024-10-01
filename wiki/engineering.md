@@ -18,7 +18,7 @@ We want to alleviate the problem of microplastic pollution by degrading PET hidd
 
 ### Design
 
-To construct a well-functioning systemic pathway, we hope to use one plasmid to enable *E. coli* BL21 to degrade PET and enhance its own metabolic capacity. We also wish to use two plasmids to provide *P. putida* KT2440 the ability to degrade the PET-breakdown-product "terephthalic acid" and secret rhamnolipid. Based on the existing parts with independent functions, we achieved our goals by connecting multiple components to form a fully functional system pathway.
+To construct a well-functioning systemic pathway, we hope to use one plasmid to enable *E. coli* BL21 to degrade PET and enhance its own metabolic capacity. We also wish to use two plasmids to provide *P. putida* KT2440 the ability to degrade the PET-breakdown-product "terephthalic acid" and secrete rhamnolipid. Based on the existing parts with independent functions, we achieved our goals by connecting multiple components to form a fully functional system pathway.
 
 #### *E. coli*
 
