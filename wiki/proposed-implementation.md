@@ -78,9 +78,9 @@ Our project faces the following challenges：
 ## References
 
 [^1]:Assessment of agricultural plastics and their sustainability: A call for action[J].
-[^2]:WAN Y, WU C, XUE Q, 等. Effects of plastic contamination on water evaporation and desiccation cracking in soil[J/OL]. Science of The Total Environment, 2019, 654: 576-582[2024-10-02]. 
-[^3]:吕一涵, 周杰, 杨亚东, 等. 微塑料对农田生态系统的影响:研究现状与展望[J/OL]. 中国生态农业学报, 2022, 30(1): 1-14. 
-[^4]:李连祯, 周倩, 尹娜, 等. 食用蔬菜能吸收和积累微塑料[J/OL]. 科学通报, 2019, 64(9): 928-934. 
+[^2]:WAN Y, WU C, XUE Q, 等. Effects of plastic contamination on water evaporation and desiccation cracking in soil[J\OL]. Science of The Total Environment, 2019, 654: 576-582. 
+[^3]:吕一涵, 周杰, 杨亚东, 等. 微塑料对农田生态系统的影响:研究现状与展望[J\OL]. 中国生态农业学报, 2022, 30(1): 1-14. 
+[^4]:李连祯, 周倩, 尹娜, 等. 食用蔬菜能吸收和积累微塑料[J\OL]. 科学通报, 2019, 64(9): 928-934. 
 [^5]:Nikel, P. I., Martínez-García, E., & de Lorenzo, V. (2014). Biotechnological domestication of pseudomonads using synthetic biology. Nature Reviews Microbiology, 12(5), 368-379. 
 [^6]:Sanitary and Phytosanitary Measures (SPS) by the World Trade Organization (WTO)
 [^7]:"Regulations on the Safety Management of Agricultural Genetically Modified Organisms" -State Council of the People's Republic of China
