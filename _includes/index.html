@@ -689,14 +689,14 @@
     const start = $(".bottom .start");
     const end = $(".bottom .end");
     const wrapper = $(".wrapper");
-    const opacity = pet.eq(0).css("opacity");
+    const opacity = +pet.eq(0).css("opacity");
     const bottom = $(".bottom");
     const show_tpa_box = $(".box").eq(5); //从这个盒子下面开始变成tpa
     const show_rha_box = $(".box").eq(6); //从这个盒子下面开始变成rha
     const rha_opacity = 1; //rha图片完全显示时的透明度（实际完全显示的透明度会略小于该设置值）
     //const difference_width = 5; //rha图片与pet图片的宽度差，单位rem
     const ypos = 0.6; //pet/tpa/rha图片距窗口顶部的距离 占整个窗口的比例
-    const pet_hide = 0.1;  //rha图片距展示区域底部百分之多少时完全消失
+    const pet_hide = 0.1; //rha图片距展示区域底部百分之多少时完全消失
     const bg_animate_time = 200; //切换底部图片的动画时间（一张图消失/另一张图显示动画的时间）
     const show_animate_time = 400; //切换pet/tpa/rha图片的动画时间
     const pet_hide_animate_time = 200; //到达页面顶部后，pet图片消失的动画时间
@@ -800,7 +800,7 @@
         const enter_distance = pet.offset().top + pet[0].offsetHeight - (bottom.offset().top + bottom_height * 0.5);
         const pos_percent = enter_distance / (bottom_height * 0.5 - bottom_distance);
         //const new_opacity = opacity * (1 - pos_percent); //越进入opacity越小
-        const new_opacity = rha_opacity * pos_percent; //越进入opacity越大
+        const new_opacity = opacity + (rha_opacity - opacity) * pos_percent; //越进入opacity越大
         pet.animate({
           opacity: new_opacity,
           top: scroll_distance
