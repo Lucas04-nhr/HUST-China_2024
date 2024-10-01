@@ -136,7 +136,7 @@ We believe that the similar lengths of the rhlA-rhlB fragment and the pUC57 frag
 
 - Perform double enzyme digestion on the purified rhlA-rhlB fragment and the plasmid pVLT33 (vector), and purify the double-digested rhlA-rhlB and pVLT33 (vector) fragments.
 - Ligate the rhlA-rhlB and pVLT33 (vector).
-- Transform the plasmid (ligation) into E. coli DH5α and culture overnight.
+- Transform the plasmid (ligation) into *E. coli* DH5α and culture overnight.
 - Pick bacterial plaque , PCR bacterial fluid , and verify by agarose gel electrophoresis. The rhlA-rhlB-pVLT33 plasmid is successfully validated. The strain is stored in an 1:1 mixture of double distilled water and glycerol and keep it at -20 °C.
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/notebook/notebook-05.png" alt="The results of PCR identification for rhlA-rhlB-pVLT33" caption="Fig 5. The PCR identification result of rhlA-rhlB-pVLT33" %}

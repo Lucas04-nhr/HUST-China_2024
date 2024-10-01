@@ -21,7 +21,7 @@ In project design, we aim to optimize the dual enzyme system of PETase-MHETase. 
 
 ## Genome-scale Metabolic Modeling
 
-To support the results from Wet Lab, we have developed a genome-scale metabolic model for the engineered Pseudomonas putida KT2440. This model predicts its growth behavior, TPA absorption rate, and rhamnolipid product yield. We estimate that the engineered strain can efficiently absorb and degrade TPA while producing rhamnolipids in the process.
+To support the results from Wet Lab, we have developed a genome-scale metabolic model for the engineered *Pseudomonas putida* KT2440. This model predicts its growth behavior, TPA absorption rate, and rhamnolipid product yield. We estimate that the engineered strain can efficiently absorb and degrade TPA while producing rhamnolipids in the process.
 
 <center>{% include button.html link="./genome-scale" text="More about Genome-scale Metabolic Modeling"  %}</center>
 
