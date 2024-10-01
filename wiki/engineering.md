@@ -60,13 +60,13 @@ After that, We used double enzyme digestion on the plasmids tphA2A3BA1-pUC57 and
 
 We successfully constructed plasmids pPeteg, phaZ-pVLT33, tphA2A3BA1-pBBR1-CS2 and tpak- pBBR1-CS2.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-01.png" alt="The results of PCR identification for PETase-MHETase-aldA-fucO and phaZ-pVLT33" caption="Fig.3 The results of PCR identification for PETase-MHETase-aldA-fucO (left) and phaZ-pVLT33 (right)" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-01.png" alt="The results of PCR identification for PETase-MHETase-aldA-fucO and phaZ-pVLT33" caption="Fig 3. The results of PCR identification for PETase-MHETase-aldA-fucO (left) and phaZ-pVLT33 (right)" %}
 
 In Fig.3, the left sub-figure is the result of PCR identification of PETase-MHETase-aldA-fucO plasmid, it shows that there is a bright band at about 2900 bp, and the length of the fragment we obtained by PCR using the primers we designed should be 2862 bp, which proves that we have successfully constructed the plasmid PETase-MHETase -aldA-fucO.
 
 The right sub-figure of Fig.3 is the result of PCR identification of phaZ-pVLT33 plasmid. It shows that there is a bright band at about 800 bp, and the length of the fragment we obtained by PCR using the primers we designed should be 867 bp, which proves that we have successfully constructed the plasmid of phaZ-pVLT33 system pathway.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-02.png" alt="The results of PCR identification for tphA2A3BA1-pBBR1CS-2 and tpaK-pBBR1CS-2" caption="Fig.4 The results of PCR identification for tphA2A3BA1-pBBR1CS-2 (left) and tpaK-pBBR1CS-2 (right)" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-02.png" alt="The results of PCR identification for tphA2A3BA1-pBBR1CS-2 and tpaK-pBBR1CS-2" caption="Fig 4. The results of PCR identification for tphA2A3BA1-pBBR1CS-2 (left) and tpaK-pBBR1CS-2 (right)" %}
 
 In Fig.4, the left sub-figure is the result of PCR identification of tphA2A3BA1-pBBR1CS-2 plasmid. It shows that there is a bright band at about 4000 bp, and the length of the fragment we obtained by PCR using the primers we designed should be 4213 bp, which proves that we have successfully constructed the plasmid of tphA2A3BA1-pBBR1CS-2 system pathway.
 
