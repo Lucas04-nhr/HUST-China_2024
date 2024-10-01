@@ -3,7 +3,7 @@ title: Human Practices
 permalink: /human-practices/
 feature_text: |
   ## Human Practices
-  Welcome to iGEM HUST-China 2024 wiki! It's still under construction. Please stay tuned for more information.
+  An excellent humanistic practice is one of the pillars of a responsible and beneficial iGEM project for the world.
 feature_image: "https://static.igem.wiki/teams/5175/resources/background/bg-hp.jpg"
 excerpt: "Welcome to iGEM HUST-China 2024 wiki! It's still under construction. Please stay tuned for more information."
 ---
