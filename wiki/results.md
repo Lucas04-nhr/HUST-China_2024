@@ -136,3 +136,46 @@ The results above could demonstrate that these plasmids are correctly constructe
 
 We have successfully constructed all the target plasmids needed in the three loops, and this step really facilitates our subsequent experiments. At the same time, in order to facilitate the measurement of the function of some elements, we separately constructed plasmids (phaZ，rhlA-rhlB，pPM，pMP，pEG) for some essential elements.
 
+
+
+Fig 12.Colony PCR results of target fragments in plasmid PETase-EG24 
+
+All the bands are identical to the theoretical sizes, demonstrating that these plasimds had been successfully transformed and verified.The results are as follows: pPM about 2500 bp, pMP about 2500 bp, pEG about 3000 bp.
+
+The theoretical length of 2682bp、2682bp and 2862bp estimated by the design primers location (promoter to terminator) was the same, indicating that we successfully obtained the plasmid we needed.
+
+The successful plasmids transformed into *E.coli* BL21 was verified by colony PCR.
+
+The plasmids were successfully introduced into *Pseudomonas putida* through electroporation. Given that our wild-type *Pseudomonas putida* exhibits resistance to chloramphenicol, the plasmids incorporated a kanamycin resistance marker. Consequently, we employed dual antibiotic selection plates to effectively screen for successfully transformed engineered strains.
+
+## **Expression Validation**
+
+### *E.coli* BL21
+
+#### Characterization of PETase and Degradation Performance in *E. coli* BL21
+
+Initially, we aimed to evaluate the expression capacity and secretion efficiency of the engineered *Escherichia coli* BL21 strains expressing the dual enzyme system (FAST-PETase-MHETase and MHETase-FAST-PETase). The strains were cultivated in LB medium at 37°C, including both engineered strains (PM and MP) and a control strain with an empty vector. When the optical density (OD600) reached 0.6-0.8, IPTG was added to induce protein expression, and the cultures were subsequently incubated at 16°C on a shaker for 1 day. After incubation, we collected both the supernatant and the pellet, followed by protein affinity chromatography and SDS-PAGE gel electrophoresis to assess protein expression.
+
+
+
+Fig 13.FAST-PETase-MHETase，MHETase-FAST-PETase PAGE-SDS cell lysate (post-purification), cell pellet (left), and purified culture medium (right)
+
+As illustrated in Figure 12, our protein was successfully expressed in *E. coli*; however, no secretion was observed. Furthermore, a substantial amount of the target protein appeared to be present in the cell pellet. Consequently, we utilized the crude enzyme solution to analyze its PET degradation activity. A total of 3 mL of the crude enzyme solution was mixed with 5 mg of 100 μm PET powder and incubated at 37°C for 72 hours. After incubation, 1.5 mL of the reaction mixture was withdrawn and combined with 4.5 mL of methanol to terminate the reaction. The degradation products, specifically TPA, were quantitatively analyzed using HPLC-MS to assess the extent of PET degradation by the enzyme.
+
+The mass spectrometry analysis revealed a peak with a retention time of 8.96 minutes, which closely matches that of the TPA standard, thereby confirming that the previously purified enzymes correspond to the introduced constructs PM and MP. By comparing the peak areas with the standard curve, we quantified the production levels, finding that PM yielded 223.12 ng/mL and MP yielded 310.20 ng/mL. These results indicate that the introduced genes can stably degrade PET.
+
+
+
+Fig 14.the HPLC-MS results for FAST-PETase-MHETase, MHETase-FAST-PETase, and the control group
+
+A growth curve was established using standard samples, and the TPA concentrations were measured before incubation and after three days of incubation. A distinct peak was detected at 8.96 minutes, indicating that our designed dual-enzyme system effectively degrades PET. Furthermore, the activity of MHETase-FAST-PETase (MP) was found to be significantly higher than that of FAST-PETase-MHETase (PM).
+
+#### Growth curve of *E. coli* BL21
+
+We cultivated engineered *E. coli* BL21 (pEG) and wild-type strains by adding varying concentrations of ethylene glycol (EG) along with 0.5 g/L glycerol. The optical density at 600 nm (OD600) was measured every 12 hours to monitor growth. The methodology for obtaining the growth curves is described as follows.
+
+
+
+Fig 15.Growth curves for wild-type (WT) *E. coli* and engineered *E. coli* (EG) utilizing ethylene glycol (EG) as the sole carbon source.
+
+The results indicate that, compared to the control group, the cell concentration of *Escherichia coli* BL21 (EG) improved under various temperatures and concentrations of ethylene glycol (EG), with an observed increase in growth rate, particularly at higher EG concentrations. This suggests that our engineered T7-fucO-aldA construct significantly enhances the utilization of ethylene glycol through the glycolate shunt, thereby promoting better cellular growth.
