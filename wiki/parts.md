@@ -36,11 +36,11 @@ Biology is different from other engineering fields due to a lack of modular natu
 | BBa_K5175013                                            | Coding     | phaZ                | 870        |
 | BBa_K5175014                                            | RBS        | RBS for T7 promoter | 12         |
 | BBa_K731721                                             | Terminator | T7 terminator       | 48         |
-| <a href=http://parts.igem.org/Part:BBa_K4701231 target="_blank">BBa_K4701231</a> | RBS        | RBS for *tphA2*     | 25         |
-| <a href=http://parts.igem.org/Part:BBa_K4701232 target="_blank">BBa_K4701232</a> | RBS        | RBS for *tphA3*     | 25         |
-| <a href=http://parts.igem.org/Part:BBa_K4701234 target="_blank">BBa_K4701234</a> | RBS        | RBS for *tphA1*     | 25         |
-| <a href=http://parts.igem.org/Part:BBa_K4701233 target="_blank">BBa_K4701233</a> | RBS        | RBS for *tphB*      | 25         |
-| <a href=http://parts.igem.org/Part:BBa_K4701230 target="_blank">BBa_K4701230</a> | RBS        | RBS for *tpaK*      | 25         |
+| BBa_K4701231                                            | RBS        | RBS for *tphA2*     | 25         |
+| BBa_K4701232                                            | RBS        | RBS for *tphA3*     | 25         |
+| BBa_K4701234                                            | RBS        | RBS for *tphA1*     | 25         |
+| BBa_K4701233                                            | RBS        | RBS for *tphB*      | 25         |
+| BBa_K4701230                                            | RBS        | RBS for *tpaK*      | 25         |
 
 ## Improvement
 
