@@ -44,9 +44,9 @@ Based on the principle of seamless cloning, we tried to use homologous recombina
 
 In the pathway pPeteg: First, the linearized vector fragment PETase-MHETase and the gene fragment aldA-fucO were obtained respectively by reverse PCR and PCR. They were then etracted and purified by agarose gel extraction. Finally, homologous recombinase was used to connect PETase-MHETase with aldA-fucO to construct a complete system pathway. Next, we transferred the constructed plasmid into E. coli DH5$\alpha$ and inoculated it onto an LB plate containing kanamycin. Then, the solid medium was placed in a 37 °C incubator for overnight incubation at a constant temperature. Subsequently, we picked bacterial plaque for PCR verification. After observing the correct bands, we mixed 800 $\mathrm{\mu L}$ of bacterial solution with 800 $\mathrm{\mu L}$ of 1:1 mixture of glycerol and double distilled water, and we stored the seeds at -20 °C.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-add-01.png" alt=" " caption="Fig 1. The diagram of constructing the plasmid inserted with pPeteg by homologous recombination" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-01-new.png" alt=" " caption="Fig 1. The diagram of constructing the plasmid inserted with pPeteg by homologous recombination" %}
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-add-02.png" alt=" " caption="Fig 2. The diagram of constructing the plasmid inserted with phaZ-pVLT33 by double enzyme digestion and enzyme ligation" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-02-new.png" alt=" " caption="Fig 2. The diagram of constructing the plasmid inserted with phaZ-pVLT33 by double enzyme digestion and enzyme ligation" %}
 
 #### *P. putida* KT2440
 
@@ -92,9 +92,9 @@ When constructing the plasmid rhlA-rhlB-pVLT33,we tried to obtain the linearized
 
 When constructing the plasmid pTerephthalate, in the first phase of the process, we perfrmed double enzyme digested on plasmid tpak-pBBR1-CS2 to obtain the linearized target vector. However, after multiple attempts, we consistently observed that the size of the obtained tpak-pBBR1-CS2 fragment was smaller than expected. We suspect that this was due to an error while we were designing our the plasmid, specifically, an inclusion of redundant restriction enzyme sites within the tpak gene fragment. To address this issue, we attempted to select new restriction endonucleases for double enzyme digestion. By designing primers, we used PCR technology to add restriction enzyme sites for *Sal* I and *EcoR* I on both ends of the tphA2A3BA1 gene fragment. Following this, we performed double enzyme digestion reaction on both the tphA2A3BA1 fragment and plasmid tpak-pBBR1-CS2, and then ligated the two fragments together to obtain the pTerephthalate system.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-add-03.png" alt=" " caption="Fig 5. The diagram of constructing the plasmid inserted with pTerephthalate by double enzyme digestion and enzyme ligation" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-03-new.png" alt=" " caption="Fig 5. The diagram of constructing the plasmid inserted with pTerephthalate by double enzyme digestion and enzyme ligation" %}
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-add-04.png" alt=" " caption="Fig 6. The diagram of constructing the plasmid inserted with rhlA-rhlB-pVLT33 by double enzyme digestion and enzyme ligation" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-04-new.png" alt=" " caption="Fig 6. The diagram of constructing the plasmid inserted with rhlA-rhlB-pVLT33 by double enzyme digestion and enzyme ligation" %}
 
 ### Build
 
