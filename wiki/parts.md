@@ -49,7 +49,6 @@ This year, we tried to introduce new genes and optimize gene expression to enabl
 We introduced the PETase-MHETase double enzyme expression system into *E. coli* BL21, and optimized the flexible peptide linking PETase and MHETase through molecular docking simulation, so that the double enzyme system showed high PET affinity while maintaining flexibility. We also optimized the gene expression of *E. coli* BL21, overexpressing fucO and aldA genes to enhance its ability to utilize EG.
 
 For *P. putida* KT2440, we introduced tpaK gene to enable it to transport TPA. At the same time, phaZ gene was overexpressed, which inhibited PHA anabolic bypass and increased rhamnoolipid production. We also optimized the codon of several genes of tph gene cluster (tphA2, tphA3, tphA1, tphB), which provides a reliable basis for experimental research and development. 
- 
 
 ## Composite parts
 
