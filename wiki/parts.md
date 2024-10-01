@@ -36,11 +36,11 @@ Biology is different from other engineering fields due to a lack of modular natu
 | BBa_K5175013                                            | Coding     | phaZ                | 870        |
 | BBa_K5175014                                            | RBS        | RBS for T7 promoter | 12         |
 | BBa_K731721                                             | Terminator | T7 terminator       | 48         |
-| <a href=http://parts.igem.org/Part:BBa_K4701231 target="_blank">BBa_K4701231</a> | RBS        | RBS for *tphA2*     | 25         |
-| <a href=http://parts.igem.org/Part:BBa_K4701232 target="_blank">BBa_K4701232</a> | RBS        | RBS for *tphA3*     | 25         |
-| <a href=http://parts.igem.org/Part:BBa_K4701234 target="_blank">BBa_K4701234</a> | RBS        | RBS for *tphA1*     | 25         |
-| <a href=http://parts.igem.org/Part:BBa_K4701233 target="_blank">BBa_K4701233</a> | RBS        | RBS for *tphB*      | 25         |
-| <a href=http://parts.igem.org/Part:BBa_K4701230 target="_blank">BBa_K4701230</a> | RBS        | RBS for *tpaK*      | 25         |
+| BBa_K4701231                                            | RBS        | RBS for *tphA2*     | 25         |
+| BBa_K4701232                                            | RBS        | RBS for *tphA3*     | 25         |
+| BBa_K4701234                                            | RBS        | RBS for *tphA1*     | 25         |
+| BBa_K4701233                                            | RBS        | RBS for *tphB*      | 25         |
+| BBa_K4701230                                            | RBS        | RBS for *tpaK*      | 25         |
 
 ## Improvement
 
@@ -53,4 +53,19 @@ For *P. putida* KT2440, we introduced tpaK gene to enable it to transport TPA. A
 
 ## Composite parts
 
- 
+| **Part Number** | **Type**  | **Part Name**                                                | **Length** |
+| --------------- | --------- | ------------------------------------------------------------ | ---------- |
+| BBa_K5175030    | Composite | T7 promoter-lac operator-pelB-FAST-PETase-G4S-MHETase-T7 terminator | 2848       |
+| BBa_K5175031    | Composite | T7 promoter-lac operator-pelB-G4S-MHETase-FAST-PETase-T7 terminator | 2848       |
+| BBa_K5175032    | Composite | T7 promoter-fucO-aldA-T7 terminator                          | 2768       |
+| BBa_K5175033    | Composite | T7 promoter-lac operator-pelB-FAST-PETase-G4S-MHETase-T7 terminator-T7  promoter-fucO-aldA-T7 termina | 5624       |
+| BBa_K5175034    | Composite | T7 promoter-lac operator-pelB -G4S-MHETase-FAST-PETase-T7 terminator-T7  promoter-fucO-aldA-T7 terminator | 5624       |
+| BBa_K5175035    | Composite | T7 promoter-tphA2-tphA3 -tphA1-T7 terminator                 | 2840       |
+| BBa_K5175036    | Composite | T7 promoter-tphB-tpaK-T7 terminator                          | 2444       |
+| BBa_K5175037    | Composite | T7 promoter-tphA2-tphA3 -tphA1-T7 terminator- T7 promoter - tphB-tpaK-T7  terminator | 5292       |
+| BBa_K5175038    | Composite | T7 promoter- tphA2-tphA3-tphB -tphA1-T7 terminator           | 3794       |
+| BBa_K5175039    | Composite | T7 promoter-tpaK-T7 terminator                               | 1490       |
+| BBa_K5175040    | Composite | T7 promoter-tphA2-tphA3-tphB-tphA1-T7 terminator-T7 promoter-tpaK-T7  terminator | 5292       |
+| BBa_K5175041    | Composite | T7 promoter-rhlA-rhlB-T7 terminator                          | 2285       |
+| BBa_K5175042    | Composite | T7 promoter-phaZ-T7 terminator                               | 980        |
+| BBa_K5175043    | Composite | T7 promoter-rhlA-rhlB-T7 terminator-T7 promoter-phaZ-T7 terminator | 3273       |
