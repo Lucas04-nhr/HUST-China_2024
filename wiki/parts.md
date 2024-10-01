@@ -66,4 +66,6 @@ For *P. putida* KT2440, we introduced tpaK gene to enable it to transport TPA. A
 | BBa_K5175038    | Composite | T7 promoter- tphA2-tphA3-tphB -tphA1-T7 terminator           | 3794       |
 | BBa_K5175039    | Composite | T7 promoter-tpaK-T7 terminator                               | 1490       |
 | BBa_K5175040    | Composite | T7 promoter-tphA2-tphA3-tphB-tphA1-T7 terminator-T7 promoter-tpaK-T7  terminator | 5292       |
-| BBa_K5175041    | Composite | T7 promoter-rhlA-rhlB-T7  
+| BBa_K5175041    | Composite | T7 promoter-rhlA-rhlB-T7 terminator                          | 2285       |
+| BBa_K5175042    | Composite | T7 promoter-phaZ-T7 terminator                               | 980        |
+| BBa_K5175043    | Composite | T7 promoter-rhlA-rhlB-T7 terminator-T7 promoter-phaZ-T7 terminator | 3273       |
