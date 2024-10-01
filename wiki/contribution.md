@@ -34,13 +34,13 @@ The synergistic effect of rhlA and rhlB enables *P. putida* KT2440 to accumulate
 
 ## Wet lab experience
 
-### **Genetic Engineering**
+### Genetic Engineering
 
 Initially,to enable *E. coli* BL21 to degrade PET and enhance its own metabolic capacity, we hope to construct the plasmid we need through homologous recombination. We first obtained multiple pairs of homologous arms via PCR, and then connected the corresponding vectors and fragments through homologous recombination. To harness the capabilities of *P. putida* KT2440 in degrading the PET-breakdown product "terephthalic acid" and producing rhamnolipid, we planned to construct our plasmids using double enzyme digestion. We began by performing double enzyme digestion to obtain multiple pairs of fragments and vectors with compatible sticky ends, followed by ligating the vectors and fragments with the same sticky ends together.
 
 However, after numerous attempts during the process of double enzyme digestion, we discovered that directly performing double enzyme digestion on the original plasmid was not suitable for all pathways, and we were unable to successfully construct rhlA-rhlB-pVLT33 and pTerephthalate pathways. Considering that there were redundant restriction sites on the target gene fragment while we were constructing pTerephthalate and the lengths of the two fragments obtained from the double enzyme digestion of the original plasmid during the construction of rhlA-rhlB-pVLT33 were too close, we could not successfully construct the plasmids pTerephthalate and pRhamnolipid. Soon, for the first case, we changed the restriction endonuclease we used. For the second case, we obtained the linearized target fragment from the original plasmid by PCR, and then performed double enzyme digestion and digestion to solve the above two problems, and finally, we successfully obtained plasmid pPeteg, pTerephthalate, phaZ-pVLT33 and rhl-pVLT33.
 
-### **Engineered Bacteria**
+### Engineered Bacteria
 
 This year, we selected two chassis organisms, *E. coli* BL21 and *P. putida* KT2440. *E. coli* BL21 is a commonly used chassis for the secretion of heterologous proteins, while *P. putida* KT2440 is widely utilized in scientific research and environmental management. Although both strains have been studied to some extent, we continue to explore their biological modification methods and the construction of co-culture systems.
 

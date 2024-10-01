@@ -133,8 +133,8 @@ The correspondent carbon source should be added before the culture medium being 
 | ------------- | ------------------------------ |
 | Exnase II     | 2$\mathrm{\mu L}$                            |
 | 5× CE buffer  | 4$\mathrm{\mu L}$                            |
-| Fragment      | 200 ng（approximately 4$\mathrm{\mu L}$）    |
-| Vector        | 50-200 ng（approximately 1$\mathrm{\mu L}$） |
+| Fragment      | 200 ng(approximately 4$\mathrm{\mu L}$)    |
+| Vector        | 50-200 ng(approximately 1$\mathrm{\mu L}$) |
 | $\mathrm{ddH_2O}$         | To 20$\mathrm{\mu L}$                        |
 
 <center>
