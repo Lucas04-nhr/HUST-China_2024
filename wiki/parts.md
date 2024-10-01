@@ -53,4 +53,17 @@ For *P. putida* KT2440, we introduced tpaK gene to enable it to transport TPA. A
 
 ## Composite parts
 
- 
+| **Part Number** | **Type**  | **Part Name**                                                | **Length** |
+| --------------- | --------- | ------------------------------------------------------------ | ---------- |
+| BBa_K5175030    | Composite | T7 promoter-lac operator-pelB-FAST-PETase-G4S-MHETase-T7 terminator | 2848       |
+| BBa_K5175031    | Composite | T7 promoter-lac operator-pelB-G4S-MHETase-FAST-PETase-T7 terminator | 2848       |
+| BBa_K5175032    | Composite | T7 promoter-fucO-aldA-T7 terminator                          | 2768       |
+| BBa_K5175033    | Composite | T7 promoter-lac operator-pelB-FAST-PETase-G4S-MHETase-T7 terminator-T7  promoter-fucO-aldA-T7 termina | 5624       |
+| BBa_K5175034    | Composite | T7 promoter-lac operator-pelB -G4S-MHETase-FAST-PETase-T7 terminator-T7  promoter-fucO-aldA-T7 terminator | 5624       |
+| BBa_K5175035    | Composite | T7 promoter-tphA2-tphA3 -tphA1-T7 terminator                 | 2840       |
+| BBa_K5175036    | Composite | T7 promoter-tphB-tpaK-T7 terminator                          | 2444       |
+| BBa_K5175037    | Composite | T7 promoter-tphA2-tphA3 -tphA1-T7 terminator- T7 promoter - tphB-tpaK-T7  terminator | 5292       |
+| BBa_K5175038    | Composite | T7 promoter- tphA2-tphA3-tphB -tphA1-T7 terminator           | 3794       |
+| BBa_K5175039    | Composite | T7 promoter-tpaK-T7 terminator                               | 1490       |
+| BBa_K5175040    | Composite | T7 promoter-tphA2-tphA3-tphB-tphA1-T7 terminator-T7 promoter-tpaK-T7  terminator | 5292       |
+| BBa_K5175041    | Composite | T7 promoter-rhlA-rhlB-T7  
