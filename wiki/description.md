@@ -12,7 +12,7 @@ excerpt: "A brief introduction to our project."
 
 During the summer of 2023, while completing our school's "Three Rural Areas" summer social practice activity, we stumbled upon piles of black and transparent plastic bags strewn along the edges of rice fields. These unsightly heaps of waste stood in stark contrast to the natural beauty of the landscape, in direct contact with the crops destined for people's tables. This disturbing sight raised an unsettling question: could plastic waste be contaminating farmland and posing a threat to agriculture? Motivated by this concern, we conducted an extensive literature review. Our findings revealed that plastic pollution in farmland not only directly reduces crop yields but also poses serious health risks to humans. What's even more alarming is that the dangers of farmland plastic pollution don't emerge suddenly; they slowly seep into every aspect of our lives, often going unnoticed and neglected as a critical issue.
 
-{% include figure.html url="https://static.igem.wiki/teams/5175/resources/description/description-01.png" description="Plastic Waste in Agricultural Fields" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/description/description-01.png" caption="Plastic Waste in Agricultural Fields" %}
 
 ## Background
 
@@ -30,13 +30,13 @@ Polyethylene terephthalate (PET), a durable and thermoplastic polyester, is one 
 
 The research team sought to identify microorganisms and their metabolic pathways that could be employed to degrade PET. Following an exhaustive investigation, we ultimately selected *E. coli* BL21 with *Pseudomonas putida* KT2440 as our chassis organisms. *E. coli*, one of the most extensively studied chassis organisms, facilitates genetic modification while enabling the use of its readily available metabolic pathways to produce by-products. The objective is to engineer the *E. coli* BL21 strain to secrete efficient PET hydrolases that will degrade PET plastic into monomers, namely ethylene glycol (EG) and terephthalic acid (TPA). The EG will be utilized by *E. coli* BL21 for metabolic energy production, while TPA will be converted by *Pseudomonas putida* KT2440 into soil remediation organisms, namely rhamnolipids. *E. coli* BL21 has a natural ethanolic acid metabolic pathway, which was genetically modified to improve the efficiency of EG conversion to ethanolic acid for metabolic energy production. *Pseudomonas putida* KT2440 has natural phenolic and lipid metabolism pathways. The introduction of exogenous genes has the effect of increasing the TPA utilization pathway and modifying the original metabolic pathway to synthesize rhamnolipids. Rhamnolipid is a surfactant that can accelerate the degradation of compost organic matter in agricultural production activities, reduce soil caking, and improve soil physicochemical properties. The combined effect of these two strains will result in the transformation and upgrading of PET to soil remediation organisms, effectively alleviating the problem of soil microplastic pollution.
 
-{% include figure.html url="https://static.igem.wiki/teams/5175/resources/description/description-02.png" description="The Schematic diagram of the metabolic coupling system between *Escherichia coli* BL21 and *Pseudomonas putida* KT2440." %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/description/description-02.png" caption="The Schematic diagram of the metabolic coupling system between *Escherichia coli* BL21 and *Pseudomonas putida* KT2440." %}
 
 ## Hardware
 
 We are working to develop a controlled and closed system for our co-culture setup to efficiently capture and degrade microplastics. This system will allow for precise testing in the laboratory while also laying the groundwork for future industrial applications. We have designed a microplastic enrichment device, and building on the modular design proposed last year, we have constructed a co-culture bioreactor of *Escherichia coli* and *Pseudomonas putida*. We further refined the design of the modular bioreactor, incorporating a bidirectional flow temperature control system to ensure both the convenience and replicability of the design. This hardware development continues to advance synthetic biology by enhancing the hardware implementation. As a result, we have successfully created a fermentation system based on our co-culture setup.
 
-{% include figure.html url="https://static.igem.wiki/teams/5175/resources/description/description-03.png" description="Sample lab diagram of the application hardware." %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/description/description-03.png" caption="Sample lab diagram of the application hardware." %}
 
 ---
 
