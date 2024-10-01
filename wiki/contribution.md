@@ -18,17 +18,17 @@ These parts are crucial for gene expression. Our project has registered several 
 
 ###  *E. coli* BL21
 
-####  pT7-lac operator-PETase-MHETase-T7-pT7 -aldA-fucO -T7
+**pT7-lac operator-PETase-MHETase-T7-pT7 -aldA-fucO -T7**
 
 Consisting of PETase-MHETase and aldA-fucO, it is used to introduce the PET degradation pathway into *E.coli* BL21. Hence, *E. coli* BL21 can degrade PET polymers into monomers TPA (terephthalic acid) and EG (ethylene glycol), which can be absorbed and utilized by our engineered bacteria. In addition, we overexpressed the EG-utilizing pathway (aldA-fucO) to enhance the viability of *E. coli*. Meanwhile, the G4S flexible peptide was selected as the linker of FAST-PETase and MHETase to form a double enzyme system. This configuration significantly reduces the diffusion barrier between the active sites of the enzyme, thereby promoting their synergistic effect and improving the catalytic efficiency.
 
 ###  *P. putida* KT2440 
 
-#### **pT7-tphA2-tphA3-tphB-tphA1-T7-pT7-tpaK-T7** 
+ **pT7-tphA2-tphA3-tphB-tphA1-T7-pT7-tpaK-T7** 
 
 We designed this plasmid to enable *P. putida* KT2440 to autonomously transport TPA into the cell and participate in metabolic pathways. TPA 1,2-dioxygenase (TPADO) can effectively catalyze the oxidation of TPA through the synergistic action of TphA1, TphA2 and TphA3, transforming TPA into the intermediate product 1,2-dihydroxy-3,5-cyclohexadiene-1,4-dicarboxylic acid (DCD). TphB can further oxidize DCD to produce PCA. Given the slow passive diffusion of aromatic carboxylates across the phospholipid bilayer of bacterial endomembrane, we introduced TpaK as a TPA transporter for application in engineered *P. putida* KT2440.
 
-#### **pT7-lac operator- Rrhla-Rlb-T7-PT7-lac operator-phaZ-T7** 
+**pT7-lac operator- Rrhla-Rlb-T7-PT7-lac operator-phaZ-T7** 
 
 The synergistic effect of rhlA and rhlB enables *P. putida* KT2440 to accumulate rhamnolipids during metabolism. In order to increase the proportion of carbon sources used by *P. putida* KT2440 for rhamnolipid synthesis, we overexpressed the gene phaZ, which encodes poly(3-hydroxyalkanoate) depolymerase. Consequently, the anabolic pathway of PHA was inhibited, leading an increased production of rhamnolipids.
 
