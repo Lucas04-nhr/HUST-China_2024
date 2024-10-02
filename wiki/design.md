@@ -38,7 +38,7 @@ The final products of PET degradation by the two-enzyme system are TPA and EG. H
 
 We chose fucO as the gene for L-1,2-propanediol oxidoreductase and aldA as the gene for aldehyde dehydrogenase A. L-1,2-propanediol oxidoreductase is an iron-dependent group III dehydrogenase [^8], and aldehyde dehydrogenase A is an enzyme with a relatively broad substrate specificity for small hydroxy aldehyde substrates [^9]. EG is first converted in *E.coli* to glycolaldehyde (GLA) by L-1,2 -propylene glycol oxidoreductase, which is subsequently converted to glycolic acid (GA) by aldehyde dehydrogenase A. GA can be metabolized by condensation with acetyl coenzyme A via the glyoxalate shunt to form malic acid. GA can also enter the metabolic pathway of H. coli by condensing with succinate via isocitrate lyase (encoded by the aceA gene), forming isocitrate [^10]. 
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design-2/design-02.png" alt=" " caption="Fig 2. Diagram of EG metabolic pathway in E. coli" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design-2/design-02.png" alt=" " caption="Fig 2. Diagram of EG metabolic pathway in <em>E. coli</em>" %}
 
 ### Strategy 2: Utilization of TPA by *Pseudomonas putida* KT2440
 
@@ -46,7 +46,7 @@ We chose fucO as the gene for L-1,2-propanediol oxidoreductase and aldA as the g
 ​     
 However, wild-type *P.putida* is unable to directly take up and utilize TPA, which is naturally possessed in the β-ketoadipic acid pathway(PCA-4,5-cleavage-pathway) in which protocatechuic acid (PCA) is a metabolic intermediate [^12], and in certain strains that are able to degrade TPA based on this way, TPA can be converted to PCA. Therefore, one of the keys to the modification of KT2440 is the conversion of TPA to PCA
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design-2/design-03.png" alt=" " caption="Fig 3. β-ketoadipic acid pathway of *P.putida*" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design-2/design-03.png" alt=" " caption="Fig 3. β-ketoadipic acid pathway of <em>P.putida</em>" %}
 
 *P.putida* KT2440 contains the introduced heterologous gene cluster (tphA2, tphA3, tphB, tphA1) from *Comamonas sp.*E6, which results in the conversion of *P.putida* intracellular TPA to PCA [^13], and each of the genes in the tph gene cluster collaborates in the conversion of TPA in *P.putida*.
 
