@@ -136,15 +136,15 @@ We aimed to validate the efficiency of *E. coli* BL21 engineered bacteria in deg
 
 First, we cultured *E. coli* DH5$\alpha$ (PETase-MHETase-aldA-fucO) and extracted plasmids. Then, we transferred the extracted plasmids into *E. coli* BL21 and inoculated them onto LB plates containing kanamycin. We incubated the solid culture medium at 37 °C overnight, and then picked bacterial plaque for PCR verification. After observing the correct bands, we mixed 800 $\mathrm{\mu L}$ of bacterial solution with 800 $\mathrm{\mu L}$ of 1:1 mixture of glycerol and double distilled water, and we stored the seeds at -20 °C.
 
-#### Testing
+#### Test
 
 Our plasmids were successfully transferred to *E. coli* BL21.
 
 After observing the correct and bright bands in the PCR verification of colonies, we cultured and expanded the bacteria plaque and stored the bacterial solution for future expansion and induction of expression.
 
-We cultured *E. coli* BL21 (PETase-MHETase-aldA-fucO) and *E. coli* BL21 (pUC19) in M9 culture medium containing ethylene glycol and glycerol as carbon sources.
+We cultured *E. coli* BL21 (PETase-MHETase), *E. coli* BL21 (MHETase-PETase), *E. coli* BL21 (pPeteg), and *E. coli* BL21 (pUC19) in M9 culture medium containing ethylene glycol and glycerol as carbon sources.
 
-We first verified the efficiency of *E. coli* BL21 engineered bacteria in degrading PET, specifically by inoculating *E. coli* BL21 (PETase-MHETase-aldA-fucO) and *E. coli* BL21 (pUC19) into LB liquid culture medium containing kanamycin and added IPTG during the logarithmic growth phase ($\mathrm{OD_{600}}$=0.6-0.8).  We cultured the strains for 2 days at 16 °C and 200 rpm. Then, we performed nickel affinity chromatography and SDS-PAGE gel electrophoresis on the supernatant of the culture medium. We did not observe the correct bands. We repeated the nickel affinity chromatography and SDS-PAGE gel electrophoresis on the cell lysate and the precipitate, and finally observed the correct bands.
+We first verified the efficiency of *E. coli* BL21 engineered bacteria in degrading PET, specifically by inoculating *E. coli* BL21 (PETase-MHETase), *E. coli* BL21 (MHETase-PETase) and *E. coli* BL21 (pUC19) into LB liquid culture medium containing kanamycin and added IPTG during the logarithmic growth phase ($\mathrm{OD_{600}}$=0.6-0.8).  We cultured the strains for 2 days at 16 °C and 200 rpm. Then, we performed nickel affinity chromatography and SDS-PAGE gel electrophoresis on the supernatant of the culture medium. We did not observe the correct bands. We repeated the nickel affinity chromatography and SDS-PAGE gel electrophoresis on the cell lysate and the precipitate, and finally observed the correct bands.
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-08.png" alt="SDS-PAGE gel electrophoresis of <em>E. coli</em> BL21 (PETase-MHETase) and <em>E. coli</em> BL21 (MHETase-PETase)" caption="Fig 8. The results of SDS-PAGE gel electrophoresis for the cell pellet, supernatant and cultural media of <em>E. coli</em> BL21 (PETase-MHETase) and <em>E. coli</em> BL21 (MHETase-PETase)" %}
 
