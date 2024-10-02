@@ -68,3 +68,7 @@ bundle exec jekyll serve
 #### Preview
 
 If there's no `errors`, you can preview the page on [`localhost:4000`](http://127.0.1:4000/hust-china).
+
+#### Mirrored Repositories on GitHub (only for development)
+
+This repository is mirrored on GitHub to test the CI/CD pipeline and some site functionalities. The mirrored repository is located at [this link](https://github.com/Lucas04-nhr/HUST-China_2024).
