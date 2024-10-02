@@ -14,6 +14,8 @@ Our project aims to enable *Escherichia coli* BL21 to efficiently degrade polyet
 
 We transferred these plasmids into *E. coli* BL21 and *P. putida* KT2440 to express the desired proteins. Concurrently, we conducted comprehensive investigations to validate the efficiency of PET degradation and the production efficiency of rhamnolipid.
 
+We proved the expression of the target protein by ultrasonic cell fragmentation, nickel column affinity chromatography and SDS-PAGE, meanwhile, we incubated PET by cell fragmentation solution, and detected the content of the degradation product, TPA, after three days of incubation by HPLC-MS, and finally 50 mL of the bacterial solution degraded 0.3 g/L of PET, meanwhile, we also detected the engineered odour pseudo by sulphuric acid-anthracene ketone method. The total sugar content of the engineered *P.putida* was significantly increased, indicating the production of rhamnolipids. With the two engineered bacteria, we achieved the in situ degradation of PET and the secretion of rhamnolipids in order to improve the yield of the crops and to promote agricultural production 
+
 ## Plasmid Amplification and Reconstruction
 
 Initially, we transformed the company-synthesized plasmids containing designed sequences into *E. coli* DH5α for amplification, allowing us to obtain a sufficient quantity of plasmid DNA for subsequent experiments. Following this, colony PCR was performed to confirm successful transformation, and the required plasmids were subsequently extracted for further experimentation.
