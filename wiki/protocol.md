@@ -148,7 +148,7 @@ The correspondent carbon source should be added before the culture medium being 
 
 ​	(When the fragment length is longer than the plasmid, regard the fragment as the plasmid and regard the plasmid as the fragment to calculation)
 
-1. Formulate the above system on the ice:
+1. Formulate the above system on the ice.
 
 2. Gently suck and mix(do not shake fiercely), briefly centrifuge to collect the reaction liquid to the bottom of the tube.
 

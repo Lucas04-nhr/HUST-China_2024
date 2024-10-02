@@ -76,9 +76,10 @@ PHA are a class of biopolyesters with plastic-like properties produced by microo
 
 Considering the difference in growth conditions and fermentation methods between *E. coli* and *P.putida*, we referenced the previous year's setup and separated the *E.coli* fermentation system from the *P.putida* fermentation system by using top and bottom tanks, with *E.coli* in the top tank being responsible for secretion of PET hydrolysis enzymes and utilizing a portion of the degradation product, EG, while *P.putida* was responsible for utilizing the other product of PET degradation, TPA, and the remaining EG in the bottom tank. Rhamnolipids are fermented to produce rhamnolipids, and the final rhamnolipids are sprayed into the soil to improve agricultural yields. For detailed hardware design, please refer to the [Hardware](../hardware).
 
-{% include button.html text="Click here to see the Hardware page" link="../hardware/" %}
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/design-2/design-07.png" alt=" " caption="Fig 7. Sample lab diagram of the application hardware" %}
+
+{% include button.html text="Click here to see the Hardware page" link="../hardware/" %}
 
 ## Pathway construction
 

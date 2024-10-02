@@ -51,4 +51,4 @@ Comparison of simulation goodness and prediction accuracy of different machine l
 
 {% include button.html text="Download Table S1" link="https://static.igem.wiki/teams/5175/resources/model/machine-learning-attachment-table-s1.xlsx" %}
 
-<center>{% include button.html link="../" text="Go back to Model-Machine Learning" %}</center>
+{% include button.html link="../" text="Go back to Model-Machine Learning" %}

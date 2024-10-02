@@ -76,7 +76,7 @@ Despite these limitations, we still believe that this study will provide data an
 <a href="attachment">Click here</a> to see all the attachments in this page.
 
 
-<center>{% include button.html link="../" text="Go back to Model Introduction" %}</center>
+{% include button.html link="../" text="Go back to Model Introduction" %}
 
 ---
 
