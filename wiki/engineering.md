@@ -154,7 +154,7 @@ We believe that the FAST-PETase-MHETase is not excreted, so we wanted to determi
 
 We also investigated the promotion of growth and metabolic capacity of *E. coli* BL21 by ethylene glycol. We measured the growth and metabolic capacity of *E. coli* BL21 (pPeteg) and *E. coli* BL21 (pUC19) and drew the growth curves. Compared to *E. coli* BL21 (pUC19), the concentration of *E. coli* BL21 (PETase-MHETase-aldA-fucO) was higher at all stages, and the growth rate was not significantly reduced. This indicates that fucO-aldA can promote *E. coli* BL21's utilization of ethylene glycol and improve its metabolic efficiency, thereby promoting cell growth better. This proves that the gene aldA-fucO has successfully transferred into *E. coli* BL21 and can be effectively expressed.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-10.png" alt="Growth Curves of <em>E. coli</em> BL21" caption="Fig 10. Growth curves for wild-type (WT) <em>E. coli</em> and engineered <em>E. coli</em> (EG) utilizing ethylene glycol (EG) as the sole carbon source" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-10.png" alt="Growth Curves of <em>E. coli</em> BL21" caption="Fig 10. Growth curves for wild-type (WT) <em>E. coli</em> and engineered <em>E. coli</em> (aldA-fucO) utilizing ethylene glycol (EG) as the sole carbon source" %}
 
 ### *P. putida* KT2440
 
