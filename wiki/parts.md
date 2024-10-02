@@ -16,7 +16,7 @@ Biology is different from other engineering fields due to a lack of modular natu
 
 ## Basic parts
 
-<figcaption class="caption table-caption">Table 1. Basic parts</figcaption>
+<figcaption class="caption table_caption">Table 1. Basic parts</figcaption>
 
 | **Part Number**                                         | **Type**   | **Part Name**       | **Length** |
 | ------------------------------------------------------- | ---------- | ------------------- | ---------- |
@@ -51,6 +51,8 @@ We introduced the PETase-MHETase double enzyme expression system into *E. coli* 
 For *P. putida* KT2440, we introduced tpaK gene to enable it to transport TPA. At the same time, phaZ gene was overexpressed, which inhibited PHA anabolic bypass and increased rhamnoolipid production. We also optimized the codon of several genes of tph gene cluster (tphA2, tphA3, tphA1, tphB), which provides a reliable basis for experimental research and development. 
 
 ## Composite parts
+
+<figcaption class="caption table_caption">Table 2. Composite parts</figcaption>
 
 | **Part Number** | **Type**  | **Part Name**                                                | **Length** |
 | --------------- | --------- | ------------------------------------------------------------ | ---------- |
