@@ -4,7 +4,7 @@ permalink: /design/
 feature_text: |
   ## Design
   This page contains the design of the wet-lab part of our project.
-feature_image: "https://static.igem.wiki/teams/5175/resources/background/bg-design.jpg"
+feature_image: "https://static.igem.wiki/teams/5175/resources/background/bg-design.webp"
 excerpt: "This page contains the design of the wet-lab part of our project."
 ---
 
