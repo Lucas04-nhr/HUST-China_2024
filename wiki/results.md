@@ -4,7 +4,7 @@ permalink: /results/
 feature_text: |
   ## Results
   This page contains the results of our project.
-feature_image: "https://static.igem.wiki/teams/5175/resources/bg-result.jpg"
+feature_image: https://static.igem.wiki/teams/5175/resources/background/bg-results.jpg
 excerpt: "This page contains the results of our project."
 ---
 
@@ -26,9 +26,9 @@ We constructed two plasmids, pPeteg-P and pPeteg-M, for *E. coli* BL21 to assess
 
 The pPeteg-P/pPeteg-M plasmids contain the constructs pelB-PETase-G4S-MHETase and pelB-MHETase-G4S-FAST-PETase (using pelB-PETase-G4S-MHETase as an example), along with aldA and fucO. The pelB-PETase-G4S-MHETase enables *E. coli* BL21 to secrete FAST-PETase-G4S-MHETase, degrading PET into TPA and EG, while the aldA-fucO converts EG into GA to enhance the absorption and utilization of EG.
 
-<figcaption class="caption table_caption">Table 1. Plasmids of *E. coli* BL21</figcaption>
+<figcaption class="caption table_caption">Table 1. Plasmids of <em>E. coli</em> BL21</figcaption>
 
-| Plasmids | Expected size(bp) | Fragments                                                    | Expected size(bp) |
+| Plasmids | Expected size(bp)  | Fragments                                                    | Expected size(bp)  |
 | -------- | ----------------- | ------------------------------------------------------------ | ----------------- |
 | pPeteg-P | 10712             | T7 promoter-lac operator-pelB-FAST-PETase-G4S-MHETase-T7 terminator | 2682              |
 |          |                   | T7 promoter-fucO-aldA-T7 terminator                          | 2862              |
@@ -38,17 +38,17 @@ The pPeteg-P/pPeteg-M plasmids contain the constructs pelB-PETase-G4S-MHETase an
 | pMP      | 7915              | T7 promoter-lac operator-pelB -G4S-MHETase-FAST-PETase -T7 terminator | 2682              |
 | pEG      | 5360              | T7 promoter-fucO-aldA-T7 terminator                          | 2862              |
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/result/result-01.png" caption="Fig 1. The bands of pPeteg-P (upper band) and pPeteg-M (lower band)(~3000 bp)from PCR" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/result/result-01.png" caption="Fig 1. The bands of pPeteg-P (upper band) and pPeteg-M (lower band)(~3000 bp) from PCR" %}
 
-The bands of pPeteg-P (upper band) and pPeteg-M (lower band)(~3000 bp)from PCR are identical to the theoretical lengths of 2862 bp estimated by the designed primer locations (homologous recombination fragments), which could demonstrate that these plasmids had successfully been obtained.
+The bands of pPeteg-P (upper band) and pPeteg-M (lower band)(~3000 bp) from PCR are identical to the theoretical lengths of 2862 bp estimated by the designed primer locations (homologous recombination fragments), which could demonstrate that these plasmids had successfully been obtained.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/result/result-02.png" caption="Fig 2. The bands of pPM(2500+ bp)from PCR" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/result/result-02.png" caption="Fig 2. The bands of pPM(2500+ bp) from PCR" %}
 
-The bands of pPM(2500+ bp)from PCR are identical to the theoretical lengths of 2682bp estimated by the designed primer locations (promoter to terminator), which could demonstrate that these plasmids had successfully been obtained.
+The bands of pPM(2500+ bp) from PCR are identical to the theoretical lengths of 2682bp estimated by the designed primer locations (promoter to terminator), which could demonstrate that these plasmids had successfully been obtained.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/result/result-03.png" caption="Fig 3. The bands of pEG(~3000 bp)from PCR" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/result/result-03.png" caption="Fig 3. The bands of pEG(~3000 bp) from PCR" %}
 
-The bands of pEG(~3000 bp)from PCR are identical to the theoretical lengths of 2862bp estimated by the designed primer locations (promoter to terminator), which could demonstrate that these plasmids had successfully been obtained.
+The bands of pEG(~3000 bp) from PCR are identical to the theoretical lengths of 2862bp estimated by the designed primer locations (promoter to terminator), which could demonstrate that these plasmids had successfully been obtained.
 
 All the results above showed us a success of the construction of pPeteg-P, pPeteg-M, pPM, pMP, pEG.
 
@@ -60,41 +60,94 @@ The pRhamnolipid plasmid is composed of rhlA-rhlB and phaZ, which collaborativel
 
 <figcaption class="caption table_caption">Table 2. Plasmids of <em>P. putida</em> KT2440</figcaption>
 
-| Plasmids         | Expected size(bp) | Fragments                                                    | Expected size(bp) |
-| ---------------- | ----------------- | ------------------------------------------------------------ | ----------------- |
-| pTerephthalate-A | 10622             | T7 promoter- tphA2-tphA3 -tphA1-T7 terminator- T7 promoter - tphB-tpaK-T7  terminator | 10622             |
-|                  |                   | T7 promoter- tphA2-tphA3 -tphA1-T7 terminator                | 2959              |
-|                  |                   | T7 promoter - tphB-tpaK-T7 terminator                        | 2449              |
-| pTerephthalate-B | 10832             | T7 promoter - tphA2-tphA3-tphB -tphA1-T7 terminator- T7 promoter -  tpaK-T7 terminator | 10832             |
-|                  |                   | T7 promoter - tphA2-tphA3-tphB -tphA1-T7 terminator          | 4111              |
-|                  |                   | T7 promoter - tpaK-T7 terminator                             | 1634              |
-| pRhlmnolipid     | 13277             | T7 promoter-lac operator-rhlA-rhlB-T7 terminator- T7 promoter -phaZ-T7 terminator | 13277             |
-|                  |                   | T7 promoter -lac operator -rhlA-rhlB-T7 terminator           | 2452              |
-|                  |                   | T7 promoter -phaZ-T7 terminator                              | 1075              |
-| rhlA-rhlB        | 12202             | T7 promoter -lac operator-rhlA-rhlB-T7 terminator            | 2452              |
-| phaZ             | 10837             | T7 promoter -lac operator-phaZ-T7 terminator                 | 1075              |
+  <table>
+    <thead>
+      <tr>
+        <th>Plasmids</th>
+        <th>Expected size(bp)</th>
+        <th>Fragments</th>
+        <th>Expected size(bp)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="3">pTerephthalate-A</td>
+        <td rowspan="3">10622</td>
+        <td>T7 promoter- tphA2-tphA3 -tphA1-T7 terminator- T7 promoter - tphB-tpaK-T7 terminator</td>
+        <td>10622</td>
+      </tr>
+      <tr>
+        <td>T7 promoter- tphA2-tphA3 -tphA1-T7 terminator</td>
+        <td>2959</td>
+      </tr>
+      <tr>
+        <td>T7 promoter - tphB-tpaK-T7 terminator</td>
+        <td>2449</td>
+      </tr>
+      <tr>
+        <td rowspan="3">pTerephthalate-B</td>
+        <td rowspan="3">10832</td>
+        <td>T7 promoter - tphA2-tphA3-tphB -tphA1-T7 terminator- T7 promoter - tpaK-T7 terminator</td>
+        <td>10832</td>
+      </tr>
+      <tr>
+        <td>T7 promoter - tphA2-tphA3-tphB -tphA1-T7 terminator</td>
+        <td>4111</td>
+      </tr>
+      <tr>
+        <td>T7 promoter - tpaK-T7 terminator</td>
+        <td>1634</td>
+      </tr>
+      <tr>
+        <td rowspan="3">pRhlmnolipid</td>
+        <td rowspan="3">13277</td>
+        <td>T7 promoter-lac operator-rhlA-rhlB-T7 terminator- T7 promoter -phaZ-T7 terminator</td>
+        <td>13277</td>
+      </tr>
+      <tr>
+        <td>T7 promoter -lac operator -rhlA-rhlB-T7 terminator</td>
+        <td>2452</td>
+      </tr>
+      <tr>
+        <td>T7 promoter -phaZ-T7 terminator</td>
+        <td>1075</td>
+      </tr>
+      <tr>
+        <td>rhlA-rhlB</td>
+        <td>12202</td>
+        <td>T7 promoter -lac operator-rhlA-rhlB-T7 terminator</td>
+        <td>2452</td>
+      </tr>
+      <tr>
+        <td>phaZ</td>
+        <td>10837</td>
+        <td>T7 promoter -lac operator-phaZ-T7 terminator</td>
+        <td>1075</td>
+      </tr>
+    </tbody>
+  </table>
 
-{% include figure.html url="https://static.igem.wiki/teams/5175/resources/result/result-04.png" caption="Fig 4. The bands of pTerephthalate-A (upper band) and pTerephthalate-B (lower band)(~3000 bp)from PCR" %}
+{% include figure.html url="https://static.igem.wiki/teams/5175/resources/result/result-04.png" caption="Fig 4. The bands of pTerephthalate-A (upper band) and pTerephthalate-B (lower band)(~3000 bp) from PCR" %}
 
-The bands of pTerephthalate-A(~3000bp)from PCR are identical to the theoretical lengths of 2959 bp, 2449 bp estimated by the designed primer locations (promoter to terminator), which could demonstrate that these plasmids had successfully been obtained.
+The bands of pTerephthalate-A(~3000bp) from PCR are identical to the theoretical lengths of 2959 bp, 2449 bp estimated by the designed primer locations (promoter to terminator), which could demonstrate that these plasmids had successfully been obtained.
 
-The bands of pTerephthalate-B(~4000 bp、~2000 bp)from PCR are identical to the theoretical lengths of 4111 bp，2000 bp estimated by the designed primer locations (promoter to terminator), which could demonstrate that these plasmids had successfully been obtained.
+The bands of pTerephthalate-B(~4000 bp、~2000 bp) from PCR are identical to the theoretical lengths of 4111 bp，2000 bp estimated by the designed primer locations (promoter to terminator), which could demonstrate that these plasmids had successfully been obtained.
 
-{% include figure.html url="https://static.igem.wiki/teams/5175/resources/result/result-05.png" caption="Fig 5. The bands of T7-tphA2-tphA3 -tphA1-T7(~3000 bp)from PCR" %}
+{% include figure.html url="https://static.igem.wiki/teams/5175/resources/result/result-05.png" caption="Fig 5. The bands of T7-tphA2-tphA3 -tphA1-T7(~3000 bp) from PCR" %}
 
-The bands of T7-tphA2-tphA3 -tphA1-T7(~3000 bp)from PCR are identical to the theoretical lengths of 2959 bp estimated by the designed primer locations (promoter to terminator), which could demonstrate that these plasmids had successfully been obtained.
+The bands of T7-tphA2-tphA3 -tphA1-T7(~3000 bp) from PCR are identical to the theoretical lengths of 2959 bp estimated by the designed primer locations (promoter to terminator), which could demonstrate that these plasmids had successfully been obtained.
 
-{% include figure.html url="https://static.igem.wiki/teams/5175/resources/result/result-06.png" caption="Fig 6.The bands of T7-tphB-tpaK(~2000+ bp)from PCR" %}
+{% include figure.html url="https://static.igem.wiki/teams/5175/resources/result/result-06.png" caption="Fig 6.The bands of T7-tphB-tpaK(~2000+ bp) from PCR" %}
 
-The bands of T7-tphB-tpaK(~2000+ bp)from PCR are identical to the theoretical lengths of 2576 bp estimated by the designed primer locations (promoter to terminator), which could demonstrate that these plasmids had successfully been obtained.
+The bands of T7-tphB-tpaK(~2000+ bp) from PCR are identical to the theoretical lengths of 2576 bp estimated by the designed primer locations (promoter to terminator), which could demonstrate that these plasmids had successfully been obtained.
 
-{% include figure.html url="https://static.igem.wiki/teams/5175/resources/result/result-07.png" caption="Fig 7.The bands of tphA2-tphA3-tphB-tphA1(~3000 bp)from PCR" %}
+{% include figure.html url="https://static.igem.wiki/teams/5175/resources/result/result-07.png" caption="Fig 7.The bands of tphA2-tphA3-tphB-tphA1(~3000 bp) from PCR" %}
 
-The bands of tphA2-tphA3-tphB -tphA1(~3000 bp)from PCR are identical to the theoretical lengths of 2971 bp estimated by the designed primer locations (promoter to terminator), which could demonstrate that these plasmids had successfully been obtained.
+The bands of tphA2-tphA3-tphB -tphA1(~3000 bp) from PCR are identical to the theoretical lengths of 2971 bp estimated by the designed primer locations (promoter to terminator), which could demonstrate that these plasmids had successfully been obtained.
 
-{% include figure.html url="https://static.igem.wiki/teams/5175/resources/result/result-08.png" caption="Fig 8.The bands of tpaK(~1500 bp)from PCR" %}
+{% include figure.html url="https://static.igem.wiki/teams/5175/resources/result/result-08.png" caption="Fig 8.The bands of tpaK(~1500 bp) from PCR" %}
 
-The bands of tpaK(~1500 bp)from PCR are identical to the theoretical lengths of 2971 bp estimated by the designed primer locations (promoter to terminator), which could demonstrate that these plasmids had successfully been obtained.
+The bands of tpaK(~1500 bp) from PCR are identical to the theoretical lengths of 2971 bp estimated by the designed primer locations (promoter to terminator), which could demonstrate that these plasmids had successfully been obtained.
 
 All the results above showed us a success of the construction of pTerephthalate-A, pTerephthalate-B.
 
@@ -102,13 +155,13 @@ All the results above showed us a success of the construction of pTerephthalate-
 
 Unfortunately, due to time constraints, we were unable to successfully construct the complete plasmids. Consequently, we opted to construct T7-rhlA-rhlB-T7 and T7-phaZ-T7 as alternative plasmids for individual validation of their functionalities.
 
-{% include figure.html url="https://static.igem.wiki/teams/5175/resources/result/result-10.png" caption="Fig 10.The bands of rhlA-rhlB(2000+ bp)from PCR" %}
+{% include figure.html url="https://static.igem.wiki/teams/5175/resources/result/result-10.png" caption="Fig 10.The bands of rhlA-rhlB(2000+ bp) from PCR" %}
 
-The bands of rhlA-rhlB(2000+ bp)from PCR are identical to the theoretical lengths of 2452bp estimated by the designed primer locations (promoter to terminator), which could demonstrate that these plasmids had successfully been obtained.
+The bands of rhlA-rhlB(2000+ bp) from PCR are identical to the theoretical lengths of 2452bp estimated by the designed primer locations (promoter to terminator), which could demonstrate that these plasmids had successfully been obtained.
 
-{% include figure.html url="https://static.igem.wiki/teams/5175/resources/result/result-11.png" caption="Fig 11.The bands of phaZ(~2000 bp)from PCR" %}
+{% include figure.html url="https://static.igem.wiki/teams/5175/resources/result/result-11.png" caption="Fig 11.The bands of phaZ(~2000 bp) from PCR" %}
 
-The bands of phaZ(~2000 bp)from PCR are identical to the theoretical lengths of 2452bp estimated by the designed primer locations (colony PCR flanking primers), which could demonstrate that these plasmids had successfully been obtained.
+The bands of phaZ(~2000 bp) from PCR are identical to the theoretical lengths of 2452bp estimated by the designed primer locations (colony PCR flanking primers), which could demonstrate that these plasmids had successfully been obtained.
 
 All the results above showed us a success of the construction of pVLT33-rhlA-rhlB-phaZ.
 
