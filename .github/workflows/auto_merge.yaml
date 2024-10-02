@@ -7,8 +7,6 @@ on:
       - Deploy Jekyll site to Pages
     types:
       - completed
-  schedule:
-    - cron: '0/15 * * * *'
     
   
 jobs:
