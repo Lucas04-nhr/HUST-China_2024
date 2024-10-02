@@ -907,7 +907,8 @@
     btn_box.css("display", "flex");
     btn_box.css("display", "none");
     const wrapper = document.querySelector(".below_index_wrapper");
-    const distance = 10; //距页面顶部/底部多少px时显示/隐藏按钮
+    const distance = 10; //距页面顶部多少px时显示按钮
+    const distance_top = -50; //距页面顶部多少px时隐藏按钮
     const animate_time = 50; //动画时长
     function show_btn(btn) {
       btn.stop().fadeIn(animate_time);
@@ -926,7 +927,7 @@
       if (btn_distance.bottom < scroll_distance_top || btn_distance.top > scroll_distance_bottom) {
         return;
       }
-      else if (btn_distance.top > scroll_distance_top + distance && btn_distance.bottom < scroll_distance_bottom - distance) {
+      else if (btn_distance.top > scroll_distance_top + distance_top && btn_distance.bottom < scroll_distance_bottom - distance) {
         show_btn($(btn));
       }
       else {
