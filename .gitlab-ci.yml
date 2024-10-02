@@ -1,6 +1,17 @@
 # .gitlab-ci.yml
-
 image: ruby:3.3
+
+stages:
+  - cleanup
+  - deploy
+
+cleanup:
+  stage: cleanup
+  script:
+    - docker system prune -a -f
+    - docker volume prune -f
+  only:
+    - main
 
 pages:
   stage: deploy
@@ -11,8 +22,8 @@ pages:
     - bundle update
     - bundle exec jekyll build
     - mv _site public
-    - docker system prune -a
-    - docker volume prune
+    - docker system prune -a -f
+    - docker volume prune -f
     - gem cleanup
   artifacts:
     paths:
