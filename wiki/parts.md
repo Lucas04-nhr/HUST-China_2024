@@ -59,7 +59,7 @@ For *P. putida* KT2440, we introduced tpaK gene to enable it to transport TPA. A
 | BBa_K5175030    | Composite | T7 promoter-lac operator-pelB-FAST-PETase-G4S-MHETase-T7 terminator | 2868       |
 | BBa_K5175031    | Composite | T7 promoter-lac operator-pelB-MHETase-G4S-FAST-PETase-T7 terminator | 2868       |
 | BBa_K5175032    | Composite | T7 promoter-fucO-aldA-T7 terminator                          | 2808       |
-| BBa_K5175033    | Composite | T7 promoter-lac operator-pelB-FAST-PETase-G4S-MHETase-T7 terminator-T7  promoter-fucO-aldA-T7 termina | 5684       |
+| BBa_K5175033    | Composite | T7 promoter-lac operator-pelB-FAST-PETase-G4S-MHETase-T7 terminator-T7  promoter-fucO-aldA-T7 terminator | 5684       |
 | BBa_K5175034    | Composite | T7 promoter-lac operator-pelB -MHETase-G4S-FAST-PETase-T7 terminator-T7  promoter-fucO-aldA-T7 terminator | 5684       |
 | BBa_K5175035    | Composite | T7 promoter-tphA2-tphA3 -tphA1-T7 terminator                 | 2939       |
 | BBa_K5175036    | Composite | T7 promoter-tphB-tpaK-T7 terminator                          | 2510       |
