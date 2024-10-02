@@ -244,7 +244,7 @@ We cultivated engineered *E. coli* BL21 (pEG) and wild-type strains by adding va
 
 The results indicate that, compared to the control group, the cell concentration of *Escherichia coli* BL21 (EG) improved under various temperatures and concentrations of ethylene glycol (EG), with an observed increase in growth rate, particularly at higher EG concentrations. This suggests that our engineered T7-fucO-aldA construct significantly enhances the utilization of ethylene glycol through the glycolate shunt, thereby promoting better cellular growth.
 
-### *P． putida* KT2440
+### *P. putida* KT2440
 
 #### Growth Curve of *P. putida* KT2440
 
