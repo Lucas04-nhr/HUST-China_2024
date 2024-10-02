@@ -234,7 +234,22 @@ As illustrated in Figure 13, our protein was successfully expressed in *E. coli*
 
 The mass spectrometry analysis revealed a peak with a retention time of 8.96 minutes, which closely matches that of the TPA standard, thereby confirming that the previously purified enzymes correspond to the introduced constructs PM and MP. By comparing the peak areas with the standard curve, we quantified the production levels, finding that PM yielded 223.12 ng/mL and MP yielded 310.20 ng/mL. These results indicate that the introduced genes can stably degrade PET.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/result/result-14.png" caption="Fig 14.the HPLC-MS results for FAST-PETase-MHETase, MHETase-FAST-PETase, and the control group" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/result2/result-18.png" caption="Fig 14.1 This figure shows the results of HPLC-MS measurements of FAST-PETase-MHETase, MHETase-FAST-PETase and Control, the growth curves were plotted by the standards, and the TPA content was measured before and after three days of incubation, respectively, with a significant peak detected at 8.96 min, indicating that both of our designed dual enzyme systems can effectively degradation of PET" %}
+
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/result/result-19.png" caption="Fig 14.2 Standard curves were plotted using standard samples (right) to quantify the TPA content in FAST-PETase-MHETase, MHETase-FAST-PETase and the control, which showed that the MP activity was significantly higher than that of PM in our designed dual enzyme system" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 A growth curve was established using standard samples, and the TPA concentrations were measured before incubation and after three days of incubation. A distinct peak was detected at 8.96 minutes, indicating that our designed dual-enzyme system effectively degrades PET. Furthermore, the activity of MHETase-FAST-PETase (MP) was found to be significantly higher than that of FAST-PETase-MHETase (PM).
 
