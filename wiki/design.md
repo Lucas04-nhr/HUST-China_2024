@@ -78,11 +78,11 @@ Considering the difference in growth conditions and fermentation methods between
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/design-2/design-07.png" alt=" " caption="Fig 7. Sample lab diagram of the application hardware" %}
 
-### Pathway construction
+## Pathway construction
 
 We designed a total of three plasmids in *E.coli* BL21 and *P.putida* KT2440 respectively.
 
-**In *E.coli* BL21:**
+### In *E.coli* BL21
 
 pPeteg-P: pT7-lac operator-PETase-MHETase-T7-pT7-fucO-aldA-T7
     
@@ -96,7 +96,7 @@ For MHETase-FAST-PETase, fucO, and aldA genes, we chose the T7 promoter to ensur
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/design-2/design-09.png" alt=" " caption="Fig 9. schematic diagram of pPeteg-M" %}
 
-**in *P.putida* KT2440:**
+### in *P.putida* KT2440
 
 pTerephthalate: pT7- tphA2-tphA3-tphB-tphA1-T7-pT7- tpaK-T7
 
