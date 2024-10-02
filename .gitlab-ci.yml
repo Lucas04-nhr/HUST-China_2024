@@ -16,4 +16,4 @@ pages:
       - public
   only:
     - main
-  retry: 5
+  retry: 2
