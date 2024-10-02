@@ -92,9 +92,9 @@ When constructing the plasmid rhlA-rhlB-pVLT33,we tried to obtain the linearized
 
 When constructing the plasmid pTerephthalate, in the first phase of the process, we perfrmed double enzyme digested on plasmid tpak-pBBR1-CS2 to obtain the linearized target vector. However, after multiple attempts, we consistently observed that the size of the obtained tpak-pBBR1-CS2 fragment was smaller than expected. We suspect that this was due to an error while we were designing our the plasmid, specifically, an inclusion of redundant restriction enzyme sites within the tpak gene fragment. To address this issue, we attempted to select new restriction endonucleases for double enzyme digestion. By designing primers, we used PCR technology to add restriction enzyme sites for *Sal* I and *EcoR* I on both ends of the tphA2A3BA1 gene fragment. Following this, we performed double enzyme digestion reaction on both the tphA2A3BA1 fragment and plasmid tpak-pBBR1-CS2, and then ligated the two fragments together to obtain the pTerephthalate system.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-03-new.png" alt=" " caption="Fig 5. The diagram of constructing the plasmid inserted with pTerephthalate by double enzyme digestion and enzyme ligation" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-05-new.png" alt=" " caption="Fig 5. The diagram of constructing the plasmid inserted with pTerephthalate by double enzyme digestion and enzyme ligation" %}
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-04-new.png" alt=" " caption="Fig 6. The diagram of constructing the plasmid inserted with rhlA-rhlB-pVLT33 by double enzyme digestion and enzyme ligation" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-06-new.png" alt=" " caption="Fig 6. The diagram of constructing the plasmid inserted with rhlA-rhlB-pVLT33 by double enzyme digestion and enzyme ligation" %}
 
 ### Build
 
@@ -110,7 +110,7 @@ To solve this problem, we attempted to select new restriction endonucleases for 
 
 After several attempts, we successfully constructed plasmids rhlA-rhlB-pVLT33 and pTerephthalate.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-03.png" alt="The results of PCR identification for tphA2A3BA1-pBBR1CS-2 and tpaK-pBBR1CS-2" caption="Fig.3 The results of PCR identification for pTerephthalate (left) and rhlA-rhlB-pVLT33 (right)" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-03.png" alt="The results of PCR identification for tphA2A3BA1-pBBR1CS-2 and tpaK-pBBR1CS-2" caption="Fig.7 The results of PCR identification for pTerephthalate (left) and rhlA-rhlB-pVLT33 (right)" %}
 
 In Fig.3, the left figure is the result of PCR identification of plasmid pTerephthalate. It shows that there is a bright band at about 3000 bp, and the length of the fragment we obtained by PCR using the primers we designed should be 2971 bp, which proves that we have successfully constructed the plasmid of pTerephthalate system pathway.
 
