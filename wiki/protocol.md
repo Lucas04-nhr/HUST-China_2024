@@ -171,7 +171,7 @@ The correspondent carbon source should be added before the culture medium being 
 
 2. Gently suck and mix(do not shake fiercely), briefly centrifuge to collect the reaction liquid to the bottom of the tube.
 
-3. Put the tube in PCR instrument, control the temperature at 37°C for 20 min, then put the tube on ice immediately.
+3. Put the tube in PCR instrument, control the temperature at 37 °C for 20 min, then put the tube on ice immediately.
 
 #### Enzyme ligation
 
@@ -211,20 +211,20 @@ The correspondent carbon source should be added before the culture medium being 
 3. Place the tube at 42 °C for 90s and transfer it to the ice immediately to bathe for 2 min.
 4. Add 700 $\mathrm{\mu L}$ non-antibiotics liquid LB to the tube and incubate it in a shaker at 37 °C for 20 min.
 5. Take solid LB medium, add antibiotics and pour the plate.
-6. Centrifugate at 5000 r/min for 2 min, pour out part of the supernatant, re-suspend it, spread it on a plate, and incubate it at 37 °C.
+6. Centrifugate at 5000 rpm for 2 min, pour out part of the supernatant, re-suspend it, spread it on a plate, and incubate it at 37 °C.
 
 ### *E. coli* conservation
 
-Add 800 $\mathrm{\mu L}$ 50% glycerol aqueous solution to the seed preservation tube for high-pressure steam sterilization, mix with 800$\mathrm{\mu L}$ bacteria solution, and store at -20 °C.
+Add 800 $\mathrm{\mu L}$ 50% glycerol aqueous solution to the seed preservation tube for high-pressure steam sterilization, mix with 800 $\mathrm{\mu L}$ bacteria solution, and store at -20 °C.
 
 # Expression Validation
 
 ### Preparation of *Pseudomonas putida* KT2440 competent cells
 
-1. Put *P. putida* KT2440 into 3 mL LB liquid culture medium with chloramphenicol resistance and inoculate at 30°C for overnight cultivation shaking at 220 rpm.
-2. Take 1 mL of overnight cultured bacterial solution and inoculate it into 50 mL of LB liquid culture medium with chloramphenicol resistance at 30°C, shaking at 220 rpm, and cultivate until the $\mathrm{OD_{600}}$ reaches approximately 0.6.
+1. Put *P. putida* KT2440 into 3 mL LB liquid culture medium with chloramphenicol resistance and inoculate at 30 °C for overnight cultivation shaking at 220 rpm.
+2. Take 1 mL of overnight cultured bacterial solution and inoculate it into 50 mL of LB liquid culture medium with chloramphenicol resistance at 30 °C, shaking at 220 rpm, and cultivate until the $\mathrm{OD_{600}}$ reaches approximately 0.6.
 3. Centrifuge at 5000 rpm for 10 min. Discard the supernatant and resuspend the bacteria in 5 mL of buffer on ice.
-4. Repeat step 3) for 2-3 times and suspend the plaque with 100 $\mathrm{\mu L}$ of buffer solution. Transfer the resuspended cells into 1.5 mL sterile centrifuge tubes and store them in the -20°C for future use.
+4. Repeat step 3) for 2-3 times and suspend the plaque with 100 $\mathrm{\mu L}$ of buffer solution. Transfer the resuspended cells into 1.5 mL sterile centrifuge tubes and store them in the -20 °C for future use.
 
 ### Electroporation for *Pseudomonas putida* KT2440
 
@@ -234,32 +234,32 @@ Add 800 $\mathrm{\mu L}$ 50% glycerol aqueous solution to the seed preservation 
 4. After electroporation, add 800 $\mathrm{\mu L}$ of LB broth without antibiotics to the electroporation cup and mix with the bacterial suspension. 
 5. Suck out the mixture and transfer it to a 1.5 mL EP tube. Incubate at 30 °C for 20 minutes.
 6. Take solid LB medium, add antibiotics and pour the plate.
-7. Centrifugate at 5000 r/min for 2 min, pour out part of the supernatant, re-suspend it, spread it on a plate, and incubate it at 30 °C overnight.
+7. Centrifugate at 5000 rpm for 2 min, pour out part of the supernatant, re-suspend it, spread it on a plate, and incubate it at 30 °C overnight.
 
 ### Protein purification
 
 #### Sample preparation
 
-1. Inoculate activated bacterial strains into the corresponding resistant medium for expanded culture. Cultivate at 37°C and shaking at 160 rpm until the $\mathrm{OD_{600}}$ reaches 0.6-0.8, then induce the culture by adding IPTG (1 mol/L) at a ratio of 1/1000. Induce expression at 30°C for 6 hours or at 16°C for overnight.
+1. Inoculate activated bacterial strains into the corresponding resistant medium for expanded culture. Cultivate at 37 °C and shaking at 160 rpm until the $\mathrm{OD_{600}}$ reaches 0.6-0.8, then induce the culture by adding IPTG (1 mol/L) at a ratio of 1/1000. Induce expression at 30 °C for 6 hours or at 16 °C for overnight.
 2. Centrifugate at 5000 rpm and 4 °C for 5 min. Collect the induced expression bacteria, discard the culture medium (collect the culture medium if it contains secreted proteins), add 30 mL of binding buffer to resuspend the cells, and sonicate the solution by using an ultrasonic cell disruptor at 800W for 10 minutes in an ice-water bath.
 3. Centrifugate at 9000 rpm for 5 min at 4 °C, and take the supernatant (be sure the balance is completely calibrated), collect the supernatant, resuspend the precipitate in 1 mL of binding buffer, and take samples of both the supernatant and the precipitate for SDS-PAGE gel electrophoresis detection.
 4. Protein purification is performed on ice. Add 2 mL of His purification gel to the purification column, equilibrate the column with 10 mL of binding buffer, slowly load the sample onto the column and collect the flow-through in a tube.
 5. Wash the column sequentially with 30 mL of binding buffer and 30 mL of 50 mM imidazole.
 6. Wash the column with 1 mL of 100 mM imidazole, then add 3 mL of 100 mM imidazole and collect the flow through for two 2 mL EP tubes, followed by elution of the target protein washed by 10 mL of 250 mM imidazole, collecting the elution in labeled tubes in order.
 7. Perform SDS-PAGE and protein dialysis.
-8. Procession of the samples: Take 40 $\mathrm{\mu L}$ of the eluted protein sample, add 10 $\mathrm{\mu L}$ of 5x SDS sample loading solution, heat at 100°C by using metal bath for 10 minutes, and centrifuge at 12000 rpm for 2 minutes.
-9. Mix the samples with Loading buffer in a 1.5 mL EP tube in the proportion of 4:1. Seal and heat in a metal bath at 95°C for 5 min to fully stretch the protein space structure.
-10. Perfuse the diluted electrophoresis buffer and fill it up to about 0.5cm above the glass plate in the groove, and take out the comb.
+8. Procession of the samples: Take 40 $\mathrm{\mu L}$ of the eluted protein sample, add 10 $\mathrm{\mu L}$ of 5x SDS sample loading solution, heat at 100 °C by using metal bath for 10 minutes, and centrifuge at 12000 rpm for 2 minutes.
+9. Mix the samples with Loading buffer in a 1.5 mL EP tube in the proportion of 4:1. Seal and heat in a metal bath at 95 °C for 5 min to fully stretch the protein space structure.
+10. Perfuse the diluted electrophoresis buffer and fill it up to about 0.5 cm above the glass plate in the groove, and take out the comb.
 11. Pipette 30 $\mathrm{\mu L}$ of the treated sample to pass through the buffer, and add the sample vertically.
-12. Add electrode buffer to the electrophoresis tank to make the liquid levels equal on both sides. Connect the positive and negative electrophoresis tanks of the electrophoresis apparatus at 140V for 30min.
-13. Peel the board, and dye with 0.1% Coomassie brilliant blue R250 dyeing solution for about 20min (baking dyeing: heating and boiling in microwave oven 6-7 times).
+12. Add electrode buffer to the electrophoresis tank to make the liquid levels equal on both sides. Connect the positive and negative electrophoresis tanks of the electrophoresis apparatus at 140 V for 30 min.
+13. Peel the board, and dye with 0.1% Coomassie brilliant blue R250 dyeing solution for about 20 min (baking dyeing: heating and boiling in microwave oven 6-7 times).
 14. Soak and rinse with rinsing solution twice for 10 min each time, change ddH2O and continue rinsing until the band is clear.
 15. Observe the bands and analyze the results
 
 #### Detection of PET enzyme activity in crude enzyme solution
 
 1. Centrifuge 1.5 mL of cell lysate, dry it to obtain 400 $\mathrm{\mu L}$ of crude enzyme solution. Prepare multiple tubes of crude enzyme solution, and store them at -20 °C.
-2. Weigh 6 mg of PET powder, mix it with 3 mL of the crude enzyme solution, and incubate the solution at 37°C and 200 rpm for 3 days.
+2. Weigh 6 mg of PET powder, mix it with 3 mL of the crude enzyme solution, and incubate the solution at 37 °C and 200 rpm for 3 days.
 3. After incubation, add an equal volume of methanol to the solution, centrifuge at 12000 rpm for 3 minutes, and collect the supernatant.
 4. Test the degration of PET in the supernatant by using HPLC-MS (mobile phase: 1/1000 phosphoric acid, 10% methanol).
 
@@ -272,7 +272,7 @@ Add 800 $\mathrm{\mu L}$ 50% glycerol aqueous solution to the seed preservation 
 
 #### Measurement of *P. putida* KT2440 growth curve
 
-1. Inoculate *P. putida* in 100 mL of M9 medium with terephthalic acid as the carbon source, Cultivate at 30°C.
+1. Inoculate *P. putida* in 100 mL of M9 medium with terephthalic acid as the carbon source, Cultivate at 30 °C.
 2. Transfer 3 mL of *E. coli* BL21 from the culture medium to an EP tube every 24 hours.
 3. Measure the absorbance at $\mathrm{OD_{600}}$.
 4. Measure the absorbance at $\mathrm{OD_{600}}$.
@@ -287,7 +287,7 @@ Add 800 $\mathrm{\mu L}$ 50% glycerol aqueous solution to the seed preservation 
 
 #### Thin-layer chromatography (TLC) of rhamnolipid
 
-1. Prepare the plate: Dissolve 0.5 g of carboxymethyl cellulose sodium (CMC-Na) in 100 mL of water, heat to boiling to dissolve, mix with the adsorbent silica gel at a ratio of 1:3 and grind evenly, then spread the gel on a glass plate, then shake it evenly. Dry the gel in the dark, and then place it in an oven at 105°C for about 30 minutes, then cool the plate and set aside.
+1. Prepare the plate: Dissolve 0.5 g of carboxymethyl cellulose sodium (CMC-Na) in 100 mL of water, heat to boiling to dissolve, mix with the adsorbent silica gel at a ratio of 1:3 and grind evenly, then spread the gel on a glass plate, then shake it evenly. Dry the gel in the dark, and then place it in an oven at 105 °C for about 30 minutes, then cool the plate and set aside.
 2. Spotting samples: Take the sample to be tested, and use a micro-syringe to draw a certain amount of sample, gently touch it to the TLC plate to allow the sample to be absorbed automatically (ensuring the spot diameter does not exceed 3 mm). You can spot multiple times, and blow away any residual solvent with a wash ball before each new spot. There must be a spacing of 15 mm between two spots to avoid interference.
 3. expansion: Choose an appropriate glass specimen tank based on the size of the TLC plate, and prepare the developing solvent (make sure the ratio of the developing solvent is: methanol : water : acetic acid = 65:15:12:1). Seal the glass specimen tank for 10-15 minutes to saturate the developing solvent, then place the TLC plate at an angle to immerse it for development, allowing the solvent to move up the TLC plate.
 4. Visualization: After expansion, remove the TLC plate and let it dry. Spray the TLC plate with a visualizing reagent and heat for 2 min to develop the color that could indicate the presence of carbohydrate compounds. The visualizing reagent is 2 g of anthrone dissolved in 1 L of 80% sulfuric acid. Place a small amount of iodine crystals in a sealed container to saturate the air with iodine vapor, then place the TLC plate inside for a few minutes. We can see the color development which indicates the presence of lipid compounds.
@@ -297,5 +297,5 @@ Add 800 $\mathrm{\mu L}$ 50% glycerol aqueous solution to the seed preservation 
 
 1. Take 400 $\mathrm{\mu L}$ of *P. putida* KT2440 (rhlA-rhlB-pVLT33) in an 1.5 mL EP tube.
 2. Weigh 0.04 g of anthrone, dissolve it in 20 mL of concentrated sulfuric acid to prepare the sulfuric acid-anthrone solution. The solution must be used as soon as it has been prepared.
-3. Slowly add 800 $\mathrm{\mu L}$ of sulfuric acid-anthrone solution into the 400 $\mathrm{\mu L}$ *P. putida* KT2440 solution, and incubate at 100°C for 10 min. Then cool the solution to room temperature.
+3. Slowly add 800 $\mathrm{\mu L}$ of sulfuric acid-anthrone solution into the 400 $\mathrm{\mu L}$ *P. putida* KT2440 solution, and incubate at 100 °C for 10 min. Then cool the solution to room temperature.
 4. Measure the absorbance of the solution at 625 nm by using a microplate reader.
