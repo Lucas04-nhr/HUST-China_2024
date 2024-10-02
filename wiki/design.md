@@ -70,7 +70,7 @@ Rhamnosyltransferase I is a key enzyme necessary for the synthesis of rhamnolipi
 ​     
 PHA are a class of biopolyesters with plastic-like properties produced by microorganisms under nutrient-limited conditions [^21]. *P.putida* synthesizes PHA via the fatty acid β-oxidation pathway and fatty acid de novo synthesis pathway, which serves as an intracellular storage material for energy and carbon sources. Whereas during PHA synthesis, it competes with rhamnolipid synthesis for the same substrate, β-hydroxyl-ACP. In order to increase the proportion of the carbon source utilized by *P.putida* that flows to the rhamnolipid synthesis pathway, we overexpressed the gene encoding the poly(3-hydroxyalkanoate) depolymerase gene phaZ [^22] Thus, inhibit PHA anabolic bypass increases rhamnolipid production.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design-2/design-06.png" alt=" " caption="Fig 6. Engineered rhamnolipid synthesis pathway in *P.putida*" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/design-2/design-06.png" alt=" " caption="Fig 6. Engineered rhamnolipid synthesis pathway in P.putida" %}
 
 ### Strategy 4: Metabolic coupling of *E.coli* BL21 and *P.putida* KT2440 for degradation of microplastics in water and agricultural production
 
