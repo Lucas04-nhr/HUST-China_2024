@@ -216,7 +216,7 @@ The theoretical length of 2682bp、2682bp and 2862bp estimated by the design pri
 
 The successful plasmids transformed into *E.coli* BL21 was verified by colony PCR.
 
-The plasmids were successfully introduced into *Pseudomonas putida* through electroporation. Given that our wild-type *Pseudomonas putida* exhibits resistance to chloramphenicol, the plasmids incorporated a kanamycin resistance marker. Consequently, we employed dual antibiotic selection plates to effectively screen for successfully transformed engineered strains.
+The plasmids were successfully introduced into *P. putida* through electroporation. Given that our wild-type *P. putida* exhibits resistance to chloramphenicol, the plasmids incorporated a kanamycin resistance marker. Consequently, we employed dual antibiotic selection plates to effectively screen for successfully transformed engineered strains.
 
 ## Expression Validation
 
@@ -224,7 +224,7 @@ The plasmids were successfully introduced into *Pseudomonas putida* through elec
 
 #### Characterization of PETase and Degradation Performance in *E. coli* BL21
 
-Initially, we aimed to evaluate the expression capacity and secretion efficiency of the engineered *Escherichia coli* BL21 strains expressing the dual enzyme system (FAST-PETase-MHETase and MHETase-FAST-PETase). The strains were cultivated in LB medium at 37°C, including both engineered strains (PM and MP) and a control strain with an empty vector. When the optical density (OD600) reached 0.6-0.8, IPTG was added to induce protein expression, and the cultures were subsequently incubated at 16°C on a shaker for 1 day. After incubation, we collected both the supernatant and the pellet, followed by protein affinity chromatography and SDS-PAGE gel electrophoresis to assess protein expression.
+Initially, we aimed to evaluate the expression capacity and secretion efficiency of the engineered *E. coli* BL21 strains expressing the dual enzyme system (FAST-PETase-MHETase and MHETase-FAST-PETase). The strains were cultivated in LB medium at 37°C, including both engineered strains (PM and MP) and a control strain with an empty vector. When the optical density (OD600) reached 0.6-0.8, IPTG was added to induce protein expression, and the cultures were subsequently incubated at 16°C on a shaker for 1 day. After incubation, we collected both the supernatant and the pellet, followed by protein affinity chromatography and SDS-PAGE gel electrophoresis to assess protein expression.
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/result/result-13.png" caption="Fig 13.FAST-PETase-MHETase，MHETase-FAST-PETase PAGE-SDS cell lysate (post-purification), cell pellet (left), and purified culture medium (right)" %}
 
@@ -242,21 +242,21 @@ We cultivated engineered *E. coli* BL21 (pEG) and wild-type strains by adding va
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/result/result-15.png" caption="Fig 15.Growth curves for wild-type (WT) <em>E. coli</em> and engineered <em>E. coli</em> (EG) utilizing ethylene glycol (EG) as the sole carbon source" %}
 
-The results indicate that, compared to the control group, the cell concentration of *Escherichia coli* BL21 (EG) improved under various temperatures and concentrations of ethylene glycol (EG), with an observed increase in growth rate, particularly at higher EG concentrations. This suggests that our engineered T7-fucO-aldA construct significantly enhances the utilization of ethylene glycol through the glycolate shunt, thereby promoting better cellular growth.
+The results indicate that, compared to the control group, the cell concentration of *E. coli* BL21 (EG) improved under various temperatures and concentrations of ethylene glycol (EG), with an observed increase in growth rate, particularly at higher EG concentrations. This suggests that our engineered T7-fucO-aldA construct significantly enhances the utilization of ethylene glycol through the glycolate shunt, thereby promoting better cellular growth.
 
 ### *P. putida* KT2440
 
 #### Growth Curve of *P. putida* KT2440
 
-We cultivated engineered *P. putida* KT2440 strains, including (pTerephthalate-A), (pTerephthalate-B), and the empty vector (pBBR1-CS2), in M9 medium with 2 g/L terephthalic acid (TPA) as the sole carbon source. Given that terephthalic acid is present at a low concentration and is considered a non-conventional carbon source, we initially inoculated *Pseudomonas putida* into 10 mL of LB medium for 48 hours. Following this incubation, the cells were collected via low-speed centrifugation and then resuspended in M9 medium. The optical density at 600 nm (OD600) was measured every 12 hours to monitor growth, and the methodology for obtaining the growth curves is described as follows.
+We cultivated engineered *P. putida* KT2440 strains, including (pTerephthalate-A), (pTerephthalate-B), and the empty vector (pBBR1-CS2), in M9 medium with 2 g/L terephthalic acid (TPA) as the sole carbon source. Given that terephthalic acid is present at a low concentration and is considered a non-conventional carbon source, we initially inoculated *P. putida* into 10 mL of LB medium for 48 hours. Following this incubation, the cells were collected via low-speed centrifugation and then resuspended in M9 medium. The optical density at 600 nm (OD600) was measured every 12 hours to monitor growth, and the methodology for obtaining the growth curves is described as follows.
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/result/result-16.png" caption="Fig 16.Growth Curves of <em>P. putida</em> KT2440 (pTerephthalate-A), (pTerephthalate-B), and Empty Vector (pBBR1-CS2) Utilizing Terephthalic Acid (TPA) as Carbon Source" %}
 
-The results indicate that, compared to the control group (pBBR1-CS2), *P. putida* KT2440 (pTerephthalate-A) and (pTerephthalate-B) were able to survive under the cultivation conditions of 2 g/L TPA. After 100 hours, a decline in cell concentration was observed due to the depletion of the carbon source, whereas the control group was unable to utilize TPA, leading to a significant reduction in cell concentration after 30 hours. This demonstrates that the introduction of pTerephthalate-A and pTerephthalate-B conferred *Pseudomonas putida* KT2440 with the capability to metabolize TPA.
+The results indicate that, compared to the control group (pBBR1-CS2), *P. putida* KT2440 (pTerephthalate-A) and (pTerephthalate-B) were able to survive under the cultivation conditions of 2 g/L TPA. After 100 hours, a decline in cell concentration was observed due to the depletion of the carbon source, whereas the control group was unable to utilize TPA, leading to a significant reduction in cell concentration after 30 hours. This demonstrates that the introduction of pTerephthalate-A and pTerephthalate-B conferred *P. putida* KT2440 with the capability to metabolize TPA.
 
 #### Validation of Rhamnolipid Secretion in *P. putida* KT2440
 
-We aimed to demonstrate the ability of *P. putida* harboring rhlA and rhlB to produce rhamnolipids. To ensure stable production of rhamnolipids, facilitating the confirmation of gene functionality, *Pseudomonas putida* was initially inoculated into 10 mL of LB medium and incubated for 48 hours. Following low-speed centrifugation to collect the cells, they were resuspended in M9 medium containing 10 g/L of soybean oil as the carbon source for fermentation. IPTG was added to induce gene expression. After incubating at 30 °C for 7 days, the fermentation broth was collected for rhamnolipid extraction, and quantification was performed using the sulfuric acid-anthrone method.
+We aimed to demonstrate the ability of *P. putida* harboring rhlA and rhlB to produce rhamnolipids. To ensure stable production of rhamnolipids, facilitating the confirmation of gene functionality, *P. putida* was initially inoculated into 10 mL of LB medium and incubated for 48 hours. Following low-speed centrifugation to collect the cells, they were resuspended in M9 medium containing 10 g/L of soybean oil as the carbon source for fermentation. IPTG was added to induce gene expression. After incubating at 30 °C for 7 days, the fermentation broth was collected for rhamnolipid extraction, and quantification was performed using the sulfuric acid-anthrone method.
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/result/result-17.png" caption="Fig 17.Determination of Rhamnolipid Content in <em>P. putida</em> KT2440 (rhlA-rhlB) and Empty Vector (WT) Using the Sulfuric Acid-Anthrone Method" %}
 
