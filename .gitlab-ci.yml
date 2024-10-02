@@ -3,6 +3,7 @@ image: ruby:3.3
 
 stages:
   - deploy
+  - cleanup
 
 pages:
   stage: deploy
@@ -14,6 +15,7 @@ pages:
     - bundle exec jekyll build
     - mv _site public
     - gem cleanup
+    - gem env gemdir
     - export GEM_PATH=$(gem env gemdir)
     - rm -rf $GEM_PATH
   artifacts:
@@ -21,4 +23,13 @@ pages:
       - public
   only:
     - main
-  retry: 2
+  
+cleanup:
+  stage: cleanup
+  script:
+    - gem env gemdir
+    - export GEM_PATH=$(gem env gemdir)
+    - rm -rf $GEM_PATH
+  only:
+    - main
+
