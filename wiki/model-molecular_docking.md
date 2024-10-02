@@ -75,7 +75,7 @@ The computational method also has limitations: AutoDock Vina employs iterative l
 
 
 
-<center>{% include button.html link="../" text="Go back to Model Introduction" %}</center>
+{% include button.html link="../" text="Go back to Model Introduction" %}
 
 ---
 

@@ -94,7 +94,7 @@ Despite of these limitations, we remain confident that metabolic modeling will c
 
 
 
-<center>{% include button.html link="../" text="Go back to Model Introduction" %}</center>
+{% include button.html link="../" text="Go back to Model Introduction" %}
 
 ---
 
