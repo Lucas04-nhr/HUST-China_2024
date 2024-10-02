@@ -28,15 +28,52 @@ The pPeteg-P/pPeteg-M plasmids contain the constructs pelB-PETase-G4S-MHETase an
 
 <figcaption class="caption table_caption">Table 1. Plasmids of <em>E. coli</em> BL21</figcaption>
 
-| Plasmids | Expected size(bp)  | Fragments                                                    | Expected size(bp)  |
-| -------- | ----------------- | ------------------------------------------------------------ | ----------------- |
-| pPeteg-P | 10712             | T7 promoter-lac operator-pelB-FAST-PETase-G4S-MHETase-T7 terminator | 2682              |
-|          |                   | T7 promoter-fucO-aldA-T7 terminator                          | 2862              |
-| pPeteg-M | 10736             | T7 promoter-lac operator-pelB -G4S-MHETase-FAST-PETase -T7 terminator | 2682              |
-|          |                   | T7 promoter-fucO-aldA-T7 terminator                          | 2862              |
-| pPM      | 7892              | T7 promoter-lac operator-pelB-FAST-PETase-G4S-MHETase-T7 terminator | 2682              |
-| pMP      | 7915              | T7 promoter-lac operator-pelB -G4S-MHETase-FAST-PETase -T7 terminator | 2682              |
-| pEG      | 5360              | T7 promoter-fucO-aldA-T7 terminator                          | 2862              |
+  <table>
+    <tr>
+      <th>Plasmids</th>
+      <th>Expected size(bp)</th>
+      <th>Fragments</th>
+      <th>Expected size(bp)</th>
+    </tr>
+    <tr>
+      <td rowspan="2">pPeteg-P</td>
+      <td rowspan="2">10712</td>
+      <td>T7 promoter-lac operator-pelB-FAST-PETase-G4S-MHETase-T7 terminator</td>
+      <td>2682</td>
+    </tr>
+    <tr>
+      <td>T7 promoter-fucO-aldA-T7 terminator</td>
+      <td>2862</td>
+    </tr>
+    <tr>
+      <td rowspan="2">pPeteg-M</td>
+      <td rowspan="2">10736</td>
+      <td>T7 promoter-lac operator-pelB -G4S-MHETase-FAST-PETase -T7 terminator</td>
+      <td>2682</td>
+    </tr>
+    <tr>
+      <td>T7 promoter-fucO-aldA-T7 terminator</td>
+      <td>2862</td>
+    </tr>
+    <tr>
+      <td>pPM</td>
+      <td>7892</td>
+      <td>T7 promoter-lac operator-pelB-FAST-PETase-G4S-MHETase-T7 terminator</td>
+      <td>2682</td>
+    </tr>
+    <tr>
+      <td>pMP</td>
+      <td>7915</td>
+      <td>T7 promoter-lac operator-pelB -G4S-MHETase-FAST-PETase -T7 terminator</td>
+      <td>2682</td>
+    </tr>
+    <tr>
+      <td>pEG</td>
+      <td>5360</td>
+      <td>T7 promoter-fucO-aldA-T7 terminator</td>
+      <td>2862</td>
+    </tr>
+  </table>
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/result/result-01.png" caption="Fig 1. The bands of pPeteg-P (upper band) and pPeteg-M (lower band)(~3000 bp) from PCR" %}
 
