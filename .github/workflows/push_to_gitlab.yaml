@@ -26,8 +26,8 @@ jobs:
         env:
             GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
         run: |
-            git config user.name "Lucas04"
-            git config user.email "lucas04@foxmail.com"
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
             git config --global user.token $GITLAB_TOKEN
   
       - name: Set up GitLab
