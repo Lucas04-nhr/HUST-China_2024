@@ -23,6 +23,7 @@ At present, the treatment methods for microplastics are mainly divided into thre
 We expect our users to consist of three main groups: government, plastic degradation research teams, and other iGEM teams.
 
 **1.Government**
+
 In China, 200000 to 300000 tons of residual plastic film are left in farmland every year, resulting in high concentrations of microplastics in agricultural soil. Microplastics have led to a significant decrease in agricultural production. Microplastics entering the human body through the food chain may lead to malignant diseases such as tumors, which are harmful to residents' health. The Chinese government attaches great importance to agricultural issues, pays attention to the yield of agricultural products and the lives of farmers, and adheres to the principle of people-oriented, focusing on food safety and residents' health. So solving the problem of soil microplastic pollution can be a new work achievement for the government. Correspondingly, the improvement of agricultural soil pollution areas with severe microplastic pollution is precisely the problem that this project aims to solve.
 
 Firstly, to solve the pollution of polyethylene terephthalate (PET) in soil microplastics, we introduced the PETase-MHETase dual-enzyme system for efficient PET degradation in *E. coli* BL21, which decomposes PET into terephthalic acid (TPA) and ethylene glycol (EG). In order to further utilize degradation products, we overexpressed the ethylene glycol (EG) utilization pathway (fucO ,aldA) in *E.coli* BL21 to improve its survival rate.
@@ -52,6 +53,7 @@ In terms of regulations and policies, according to Article 5(1) of the Agreement
 ## Future design
 
 **1. Industrialization blueprint**
+
 In order to meet the application requirements of our project, we have carefully designed corresponding hardware components, including a microplastic enrichment device, a fermentation tank that achieves metabolic coupling between odor producing *P.putida* KT2440 and *E.coli* BL21, and various "building block" modules. However, in actual production and daily life scenarios, the equipment we currently design is relatively simple and insufficient to meet current industrial needs. Therefore, we hereby propose our comprehensive industrialization blueprint.
 
 We envision establishing a microplastic pollution treatment center near the agricultural water source based on our project technology. By placing a microplastic enrichment device in the direction of water flow to "cut off" the water flow, the enrichment of microplastics is ensured, and different types of microplastics are enriched by adjusting different voltage ranges.
@@ -59,6 +61,7 @@ We envision establishing a microplastic pollution treatment center near the agri
 The core area of the center will serve as a designated area for the metabolic coupling fermentation tanks of *P.putida* KT2440 and *E.coli* BL21, and multiple reactors will be used to ensure optimal growth conditions for each strain, including flow control and temperature control. The center will also be equipped with storage systems around the fermentation tanks, and the rhamnolipids produced by these bacteria will be collected for agricultural irrigation. By equipping different irrigation modules, sprinkler or drip irrigation can be adapted to different application scenarios in agricultural regions.
 
 **2. Vision of the future**
+
 The use of fermentation tanks for the enrichment and treatment of microplastics in water is not the optimal scenario for our project. We hope to directly use bacterial agents to treat microplastics in situ in soil, which will greatly reduce costs and improve the feasibility of application.
 
 We are considering replacing the *E.coli* used in the project with the soil native bacterium, *Pseudomonas putida*. This soil native bacterium has stronger competitiveness and is more likely to survive when placed in the soil environment after modification, and is more in line with general requirements for microbial formulation development. After replacing the chassis bacteria, it is necessary to increase the expression of the PETase MHETase dual enzyme system by adding strong promoters, overexpression, and other methods to improve PET degradation efficiency. This will result in the production of microbial preparations of engineering odorous pseudomonas, which will greatly facilitate the treatment of agricultural microplastic pollution and the development of green agriculture as a portable and inexpensive product.
@@ -74,6 +77,8 @@ Our project faces the following challenges：
 2. Fermentation methods suitable for different environments, such as integrated fermentation tanks that can be used for water, and targeted placement of bacteriophages for heavily contaminated areas of soil; 
 3. Lower costs, such as the use of a more efficient culture solution as well as low-cost materials, which is convenient for popularization; 
 4. A more precise and larger model, which can be achieved through the enriched detection of more samples, which helps our model to be more accurate in order to determine the high microplastic contamination area in the region.
+
+---
 
 ## References
 
