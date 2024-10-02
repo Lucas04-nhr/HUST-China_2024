@@ -45,7 +45,7 @@ files.
     |__ README.md           -> File containing the text you are reading right now
     |__ dependencies.txt    -> Software dependencies from the Python code
     |__ Gemfile.lock.       -> (Optional) Lockfile that captures the exact versions of packages and their dependencies
-    |__ Gemfile.            -> (Optional) NPM dependencies for formatting the code
+    |__ Gemfile.            -> (Optional) Ruby dependencies for formatting the code
 
 ### Building locally (advanced users)
 
