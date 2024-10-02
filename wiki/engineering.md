@@ -56,13 +56,13 @@ Take the pTerephthalate system pathway(Here tells the way we construct pTerephth
 
 After that, We used double enzyme digestion on the plasmids tphA2A3BA1-pUC57 and tpaK-pBBR1CS-2 with restriction endonucleases *Xho* I and *EcoR* I for 30 minutes. And we use double enzyme digestion on the plasmids tpaK-pUC57 and the tphA2A3BA1-pBBR1-CS2 with restriction endonucleases *Spe* I and *EcoR* I for 30 minutes. We then verified and purified them through agarose gel extraction. Unfortunately, we did not find the target band.
 
-### Result
+### Results
 
 We successfully constructed plasmids pPeteg, phaZ-pVLT33, tphA2A3BA1-pBBR1-CS2 and tpak- pBBR1-CS2.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-01.png" alt="The results of PCR identification for PETase-MHETase-aldA-fucO and phaZ-pVLT33" caption="Fig 3. The results of PCR identification for PETase-MHETase-aldA-fucO (left) and phaZ-pVLT33 (right)" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-01.png" alt="The results of PCR identification for pPeteg and phaZ-pVLT33" caption="Fig 3. The results of PCR identification for pPeteg (left) and phaZ-pVLT33 (right)" %}
 
-In Fig.3, the left sub-figure is the result of PCR identification of PETase-MHETase-aldA-fucO plasmid, it shows that there is a bright band at about 2900 bp, and the length of the fragment we obtained by PCR using the primers we designed should be 2862 bp, which proves that we have successfully constructed the plasmid PETase-MHETase -aldA-fucO.
+In Fig.3, the left sub-figure is the result of PCR identification of plasmid pPeteg, it shows that there is a bright band at about 2900 bp, and the length of the fragment we obtained by PCR using the primers we designed should be 2862 bp, which proves that we have successfully constructed the plasmid PETase-MHETase -aldA-fucO.
 
 The right sub-figure of Fig.3 is the result of PCR identification of phaZ-pVLT33 plasmid. It shows that there is a bright band at about 800 bp, and the length of the fragment we obtained by PCR using the primers we designed should be 867 bp, which proves that we have successfully constructed the plasmid of phaZ-pVLT33 system pathway.
 
@@ -106,7 +106,7 @@ Initially, we separately cultured two strains of *E. coli* DH5$\alpha$ (rhlA-rhl
 
 To solve this problem, we attempted to select new restriction endonucleases for double enzyme digestion. First, we designed primers and used PCR to add restriction enzyme sites for *Sal* I and *EcoR* I at both ends of the tphA2A3BA1 gene fragment. Subsequently, we performed double enzyme digestion on both the tphA2A3BA1 fragment and the tpak-pBBR1-CS2 using the restriction endonucleases *Sal* I and *EcoR* I for 30 minutes. Following the digestion, we performed agarose gel recovery to purify and isolate the target gene fragment and vector fragment, ensuring they possessed identical cohesive ends. Then we constructed the pTerephthalate plasmid through ligation. Next, we transferred the constructed plasmid into *E. coli* DH5$\alpha$ and inoculated it onto an LB plate containing kanamycin. Then, the solid medium was placed in a 37 °C incubator for overnight incubation at a constant temperature. Subsequently, we selected individual colonies for PCR verification. After observing the correct bands, we mixed 800 $\mathrm{\mu L}$ of bacterial solution with 800 $\mathrm{\mu L}$ of 1:1 mixture of glycerol and double distilled water, and we stored the seeds at -20 °C.
 
-### Result
+### Results
 
 After several attempts, we successfully constructed plasmids rhlA-rhlB-pVLT33 and pTerephthalate.
 
@@ -136,15 +136,15 @@ We aimed to validate the efficiency of *E. coli* BL21 engineered bacteria in deg
 
 First, we cultured *E. coli* DH5$\alpha$ (PETase-MHETase-aldA-fucO) and extracted plasmids. Then, we transferred the extracted plasmids into *E. coli* BL21 and inoculated them onto LB plates containing kanamycin. We incubated the solid culture medium at 37 °C overnight, and then picked bacterial plaque for PCR verification. After observing the correct bands, we mixed 800 $\mathrm{\mu L}$ of bacterial solution with 800 $\mathrm{\mu L}$ of 1:1 mixture of glycerol and double distilled water, and we stored the seeds at -20 °C.
 
-#### Testing
+#### Test
 
 Our plasmids were successfully transferred to *E. coli* BL21.
 
 After observing the correct and bright bands in the PCR verification of colonies, we cultured and expanded the bacteria plaque and stored the bacterial solution for future expansion and induction of expression.
 
-We cultured *E. coli* BL21 (PETase-MHETase-aldA-fucO) and *E. coli* BL21 (pUC19) in M9 culture medium containing ethylene glycol and glycerol as carbon sources.
+We cultured *E. coli* BL21 (PETase-MHETase), *E. coli* BL21 (MHETase-PETase), *E. coli* BL21 (pPeteg), and *E. coli* BL21 (pUC19) in M9 culture medium containing ethylene glycol and glycerol as carbon sources.
 
-We first verified the efficiency of *E. coli* BL21 engineered bacteria in degrading PET, specifically by inoculating *E. coli* BL21 (PETase-MHETase-aldA-fucO) and *E. coli* BL21 (pUC19) into LB liquid culture medium containing kanamycin and added IPTG during the logarithmic growth phase ($\mathrm{OD_{600}}$=0.6-0.8).  We cultured the strains for 2 days at 16 °C and 200 rpm. Then, we performed nickel affinity chromatography and SDS-PAGE gel electrophoresis on the supernatant of the culture medium. We did not observe the correct bands. We repeated the nickel affinity chromatography and SDS-PAGE gel electrophoresis on the cell lysate and the precipitate, and finally observed the correct bands.
+We first verified the efficiency of *E. coli* BL21 engineered bacteria in degrading PET, specifically by inoculating *E. coli* BL21 (PETase-MHETase), *E. coli* BL21 (MHETase-PETase) and *E. coli* BL21 (pUC19) into LB liquid culture medium containing kanamycin and added IPTG during the logarithmic growth phase ($\mathrm{OD_{600}}$=0.6-0.8).  We cultured the strains for 2 days at 16 °C and 200 rpm. Then, we performed nickel affinity chromatography and SDS-PAGE gel electrophoresis on the supernatant of the culture medium. We did not observe the correct bands. We repeated the nickel affinity chromatography and SDS-PAGE gel electrophoresis on the cell lysate and the precipitate, and finally observed the correct bands.
 
 {% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-08.png" alt="SDS-PAGE gel electrophoresis of <em>E. coli</em> BL21 (PETase-MHETase) and <em>E. coli</em> BL21 (MHETase-PETase)" caption="Fig 8. The results of SDS-PAGE gel electrophoresis for the cell pellet, supernatant and cultural media of <em>E. coli</em> BL21 (PETase-MHETase) and <em>E. coli</em> BL21 (MHETase-PETase)" %}
 
@@ -154,7 +154,7 @@ We believe that the FAST-PETase-MHETase is not excreted, so we wanted to determi
 
 We also investigated the promotion of growth and metabolic capacity of *E. coli* BL21 by ethylene glycol. We measured the growth and metabolic capacity of *E. coli* BL21 (pPeteg) and *E. coli* BL21 (pUC19) and drew the growth curves. Compared to *E. coli* BL21 (pUC19), the concentration of *E. coli* BL21 (PETase-MHETase-aldA-fucO) was higher at all stages, and the growth rate was not significantly reduced. This indicates that fucO-aldA can promote *E. coli* BL21's utilization of ethylene glycol and improve its metabolic efficiency, thereby promoting cell growth better. This proves that the gene aldA-fucO has successfully transferred into *E. coli* BL21 and can be effectively expressed.
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-10.png" alt="Growth Curves of <em>E. coli</em> BL21" caption="Fig 10. Growth curves for wild-type (WT) <em>E. coli</em> and engineered <em>E. coli</em> (EG) utilizing ethylene glycol (EG) as the sole carbon source" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/engineering/engineering-10.png" alt="Growth Curves of <em>E. coli</em> BL21" caption="Fig 10. Growth curves for wild-type (WT) <em>E. coli</em> and engineered <em>E. coli</em> (aldA-fucO) utilizing ethylene glycol (EG) as the sole carbon source" %}
 
 ### *P. putida* KT2440
 
