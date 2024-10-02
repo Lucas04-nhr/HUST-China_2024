@@ -69,7 +69,7 @@ jobs:
           branch: main
           base: develop
           labels: auto-merge
-          assignees: Lucas04-nhr
+          assignees: github-actions[bot]
           reviewers: Lucas04-nhr
           draft: false
       
