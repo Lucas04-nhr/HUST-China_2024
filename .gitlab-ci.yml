@@ -5,14 +5,6 @@ stages:
   - cleanup
   - deploy
 
-cleanup:
-  stage: cleanup
-  script:
-    - docker system prune -a -f
-    - docker volume prune -f
-  only:
-    - main
-
 pages:
   stage: deploy
   script:
@@ -22,9 +14,9 @@ pages:
     - bundle update
     - bundle exec jekyll build
     - mv _site public
-    - docker system prune -a -f
-    - docker volume prune -f
     - gem cleanup
+    - export GEM_PATH=$(gem env gemdir)
+    - rm -rf $GEM_PATH
   artifacts:
     paths:
       - public
