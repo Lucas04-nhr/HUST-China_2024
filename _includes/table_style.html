@@ -94,10 +94,7 @@
       const tb_div = $("<div class='table-div'></div>");
       tb_container.append(tb_div);
       tb_div.append(table);
-      const p_text = table_caption.text();
-      const p = $(`<p>${p_text}</p>`);
-      table_caption.text("");
-      table_caption.append(p);
+      table_caption.html(`<p>${table_caption.html()}</p>`);
     });
   });
 </script>
