@@ -56,7 +56,7 @@ Take the pTerephthalate system pathway(Here tells the way we construct pTerephth
 
 After that, We used double enzyme digestion on the plasmids tphA2A3BA1-pUC57 and tpaK-pBBR1CS-2 with restriction endonucleases *Xho* I and *EcoR* I for 30 minutes. And we use double enzyme digestion on the plasmids tpaK-pUC57 and the tphA2A3BA1-pBBR1-CS2 with restriction endonucleases *Spe* I and *EcoR* I for 30 minutes. We then verified and purified them through agarose gel extraction. Unfortunately, we did not find the target band.
 
-### Result
+### Results
 
 We successfully constructed plasmids pPeteg, phaZ-pVLT33, tphA2A3BA1-pBBR1-CS2 and tpak- pBBR1-CS2.
 
@@ -106,7 +106,7 @@ Initially, we separately cultured two strains of *E. coli* DH5$\alpha$ (rhlA-rhl
 
 To solve this problem, we attempted to select new restriction endonucleases for double enzyme digestion. First, we designed primers and used PCR to add restriction enzyme sites for *Sal* I and *EcoR* I at both ends of the tphA2A3BA1 gene fragment. Subsequently, we performed double enzyme digestion on both the tphA2A3BA1 fragment and the tpak-pBBR1-CS2 using the restriction endonucleases *Sal* I and *EcoR* I for 30 minutes. Following the digestion, we performed agarose gel recovery to purify and isolate the target gene fragment and vector fragment, ensuring they possessed identical cohesive ends. Then we constructed the pTerephthalate plasmid through ligation. Next, we transferred the constructed plasmid into *E. coli* DH5$\alpha$ and inoculated it onto an LB plate containing kanamycin. Then, the solid medium was placed in a 37 °C incubator for overnight incubation at a constant temperature. Subsequently, we selected individual colonies for PCR verification. After observing the correct bands, we mixed 800 $\mathrm{\mu L}$ of bacterial solution with 800 $\mathrm{\mu L}$ of 1:1 mixture of glycerol and double distilled water, and we stored the seeds at -20 °C.
 
-### Result
+### Results
 
 After several attempts, we successfully constructed plasmids rhlA-rhlB-pVLT33 and pTerephthalate.
 
