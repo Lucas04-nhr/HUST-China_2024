@@ -53,7 +53,7 @@ We prepared stickers with images of plasmid components such as promoters, termin
 
 At the end of the lecture, children are encouraged to actively share what they have learned. The children said that they experienced the charm and creativity of science through participation and hands-on work. Many of the children were not satisfied, and many said: "I want to be a scientist!" Parents accompanying the children were also very impressed: "The children not only have fun, but also learn so much new knowledge, this kind of activity is really very meaningful."
 
-{% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-03.jpg" alt="Children's Sharing their art work" caption="Figure 3. Fig 3. Members of HUST-China take a photo with children" %}
+{% include figure.html image="https://static.igem.wiki/teams/5175/resources/education/education-03.jpg" alt="Children's Sharing their art work" caption="Fig 3. Members of HUST-China take a photo with children" %}
 
 > The participating children have signed the relevant agreement accompanied by their parents, authorizing us to use the children's portraits.
 
