@@ -11,6 +11,9 @@ pages:
     - bundle update
     - bundle exec jekyll build
     - mv _site public
+    - docker system prune -a
+    - docker volume prune
+    - gem cleanup
   artifacts:
     paths:
       - public
