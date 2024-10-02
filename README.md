@@ -18,10 +18,7 @@ You should probably only edit the files inside folders `static`, `wiki` and
 `docs`.
 
 1. Open the Web IDE
-2. Make the changes on the files you wish:
-    - For the menu, change the file [menu.html](wiki/menu.html)
-    - For the layout, change the file [base.html](wiki/base.html)
-    - For the pages, change the corresponding file in the foler [docs](docs)
+2. Make the changes on the files you wish.
 3. Review the changes you made
 4. Once you are done, save the changes by **committing** them to the _main branch_ of the repository
 5. An automated script will build, test and deploy your wiki, which should take
@@ -36,55 +33,38 @@ the `wiki` directory, and the pages live in the `docs` directory. Unless you are
 an experienced and/or adventurous human, you probably shouldn't change other
 files.
 
-    |__ docs/               -> Documentation files
+    |__ .github/            -> Workflow files used by GitHub actions
+    |__ wiki/               -> Documentation files
         |__ *.md            -> Markdown files with the content of your wiki
-    |__ static/             -> static assets (CSS and JavaScript files only)
-    |__ wiki/               -> Main directory for the pages and layouts
-        |__ base.html       -> Main layout of your wiki. All the pages will follow its structure
-        |__ footer.html     -> Footer that will appear in all the pages
-        |__ menu.html       -> Menu that will appear in all the pages
+    |__ _sass/              -> static assets (CSS files only)
+    |__ _layout/            -> Page layout of our wiki
+    |__ _includes/          -> static assets (inline HTML and JavaScript files only)
     |__ .gitignore          -> Tells GitLab which files/directories should not be uploaded to the repository
     |__ .gitlab-ci.yml      -> Automated flow for building, testing and deploying your website.
-    |__ .prettierignore     -> (Optional) Tells Prettier which files/directories should not be formatted
-    |__ .prettierrc.json    -> (Optional) Prettier configuration file
     |__ LICENSE             -> License CC-by-4.0, all wikis are required to have this license - DO NOT MODIFY
     |__ README.md           -> File containing the text you are reading right now
-    |__ app.py              -> Python code managing your wiki
     |__ dependencies.txt    -> Software dependencies from the Python code
-    |__ package-lock.json   -> (Optional) Lockfile that captures the exact versions of packages and their dependencies
-    |__ package.json        -> (Optional) NPM dependencies for formatting the code
-
-### Technologies
-
-- [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/)
-- [Python](https://www.python.org): Programming language
-- [Flask](https://palletsprojects.com/p/flask/): Python framework
-- [Fronzen-Flask](https://pythonhosted.org/Frozen-Flask): Library that builds
-  the wiki to be deployed as a static website
-- [Bootstrap](https://getbootstrap.com/docs/5.0/components): CSS and JS
-  components used
-- [Pypandoc](https://pypi.org/project/pypandoc-binary): Library that converts
-  markdown files to HTML
-- (Optional) [Node.js](https://nodejs.org): JavaScript runtime
-- (Optional) [Prettier](https://prettier.io): Code formatter
+    |__ Gemfile.lock.       -> (Optional) Lockfile that captures the exact versions of packages and their dependencies
+    |__ Gemfile.            -> (Optional) NPM dependencies for formatting the code
 
 ### Building locally (advanced users)
 
 To work locally with this project, follow the steps below:
 
-#### Install
+**Make sure you've already installed `Ruby` on your machine first.**
+
+#### Install and build
 
 ```bash
 git clone https://gitlab.igem.org/2024/hust-china.git
 cd hust-china
-python3 -m venv venv
-. venv/bin/activate # on Linux, MacOS; or
-. venv\Scripts\activate # on Windows
-pip install -r dependencies.txt
+gem install bundler
+gem install jekyll
+bundle install
+bundle update
+bundle exec jekyll serve
 ```
 
-#### Execute
+#### Preview
 
-```bash
-python app.py
-```
+If there's no `errors`, you can preview the page on [`localhost:4000`](http://127.0.1:4000/hust-china).
